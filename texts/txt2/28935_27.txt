@@ -1,0 +1,15 @@
+<div><p>We are happy to announce the release of <strong>YUI 3.12.0</strong>! This release is available on the <a href="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js">Yahoo! CDN</a> for you to include directly in your scripts, taking advantage of Yahoo!&rsquo;s fast CDN. You can also <a href="https://npmjs.org/package/yui">install it via npm</a> or <a href="http://yui.zenfs.com/releases/yui3/yui_3.12.0.zip">download it directly</a>. We&rsquo;ve also updated the <a href="http://yuilibrary.com/">YUI Library website</a> to reflect the changes in this release.</p>
+<h2>In This Release</h2>
+<p>Our <a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/">Release Candidate blog post</a> goes into details about this release, but here&rsquo;s a quick list of components updated in this release (click the links for more details):</p>
+<ul><li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#appframework">App Framework</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#button">Button</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#calendar">Calendar</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#charts">Charts</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#event">Event</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#node">Node</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#tabview">TabView</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#template">Template</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/#tree">Tree</a></li>
+</ul><h2>More Information</h2>
+<p>We also want to thank our two Summer Interns <a href="https://github.com/patjameson">Patrick Jameson</a> and <a href="https://github.com/rashadrussell">Rashad Russell</a> for all their hard work these past few months. They&rsquo;ve been a great help in testing and debugging issues for this release.</p>
+<p>There were a total of <strong>255</strong> commits for this release by <strong>24</strong> contributors. You can read all about the details in the <a href="https://github.com/yui/yui3/wiki/YUI-3.12.0-Change-History-Rollup">Change History Rollup</a> and <a href="https://github.com/yui/yui3/compare/v3.11.0...v3.12.0">compare it on GitHub</a> with <strong>YUI 3.11.0</strong>. We are always seeking ways to make our releases better, whether it&rsquo;s improved CI (almost 9,000 tests per target environment) , better release processes (our new release branch keeps the main branches open all the time now), or more community involvement. Please <a href="http://yuilibrary.com/projects/yui3/newticket/">file an issue</a> if you find something we can improve!</p></div>

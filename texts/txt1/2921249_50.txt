@@ -1,0 +1,6 @@
+<div><p>Nu har jag använt Xfce ett tag och trivs faktiskt ganska bra med det. Jag tycker dock om att experimentera så när följande tips hittades på <a title="reddit" href="http://www.reddit.com/r/linux/comments/14heuu/xfce_gala_plank_awesome/" target="_blank">reddit</a> så var jag tvungen att testa. gala-bzr finns i AUR så några konstigheter är det inte.</p>
+<p>cp /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml</p>
+<p>vim ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml</p>
+<p>Leta upp xfwm4 och ersätt med gala. Spara och logga ut.</p>
+<p><a title="Här" href="http://kaptenalex.deviantart.com/art/As-I-fly-366189027" target="_blank">Här</a> är en bild som kan ge ett hum om hur det kan se ut när det är färdigt.</p>
+<p> </p></div>

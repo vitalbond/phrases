@@ -1,0 +1,7 @@
+<div><p>I brist på annat att skriva tänkte jag här redovisa de tillägg jag har börjat använda till Gnome 3.</p>
+<p>1. <a title="User Themes" href="https://extensions.gnome.org/extension/19/user-themes/" target="_blank">User themes</a></p>
+<p>2. <a title="Media player indicator" href="https://extensions.gnome.org/extension/55/media-player-indicator/" target="_blank">Media player indicator</a></p>
+<p>3. <a title="Remove Rounded Corners" href="https://extensions.gnome.org/extension/448/remove-rounded-corners/" target="_blank">Remove Rounded Corners</a></p>
+<p>4. <a title="Remove Accessibility" href="https://extensions.gnome.org/extension/112/remove-accesibility/" target="_blank">Remove Accessibility</a></p>
+<p> </p>
+<p>Vilken funktion de har är antagligen ganska självklara, jag väljer därför att inte gå in närmare på det. Däremot kan jag säga att jag faktiskt är ganska nöjd med Gnome 3 än så länge. Jag är dock glad att Spacefm finns, ni vet antagligen varför…</p></div>

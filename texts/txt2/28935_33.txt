@@ -1,0 +1,24 @@
+<div><p><a id="registernow"></a></p>
+<h3>Register Now!</h3>
+<p><a href="http://yuiconf2013.eventbrite.com/">Registration is now open for YUIConf 2013!</a> This is our 5th year running, and it promises to be the best one yet.</p>
+<p>YUIConf 2013 will take place at the <a href="http://sanjose.place.hyatt.com/en/hotel/home.html">Hyatt Place in downtown San Jose, CA <strong>November 6 and 7</strong></a> and will bring together developers from all around the world to share the latest and greatest about YUI. <a href="http://yuiconf2013.eventbrite.com/">Register by <strong>October 25</strong></a> to take advantage of the $50 Early Bird price. After that, tickets will become $75.</p>
+<p><a id="workshopday"></a></p>
+<h3>Announcing Workshop Day: Tuesday, November 5 at Yahoo HQ</h3>
+<p>We are excited to offer two full-day workshops for new as well as experienced YUI users on <strong>Tuesday, November 5</strong> at a special YUIConf rate of $75. Whether you are just getting started with YUI or are ready to become a YUI ninja, these hands-on classes are a tremendous value and will take your YUI skills to the next level. <a href="http://yuiconf2013-workshops.eventbrite.com/">Registration is limited so sign up today</a>.</p>
+<p><a id="travelinfo"></a></p>
+<h3>Travel Information</h3>
+<p><a href="http://www.hyatt.com/hyatt/reservations/flow6/propCheckAvailability.jsp?pid=SJCZJ&amp;extCorporateId=G-YAHO">The Hyatt Place</a> is offering hotel rooms to attendees at a special YUIConf rate. <a href="http://www.hyatt.com/hyatt/reservations/flow6/propCheckAvailability.jsp?pid=SJCZJ&amp;extCorporateId=G-YAHO">Make your reservations with this special link</a> to take advantage of this limited offer. Check out the embedded map below for location information, directions, nearby public transportation, etc.</p>
+<div>
+  <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=hyatt+place+san+jose%2Fdowntown+282+Almaden+Boulevard+San+Jose,+California,+USA,+95113&amp;aq=&amp;sll=37.397161,-122.024121&amp;sspn=0.172379,0.330276&amp;ie=UTF8&amp;hq=hyatt+place+san+jose%2Fdowntown+282+Almaden+Boulevard+San+Jose,+California,+USA,+95113&amp;t=m&amp;ll=37.330174,-121.891637&amp;spn=0.010237,0.012875&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> <br><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=hyatt+place+san+jose%2Fdowntown+282+Almaden+Boulevard+San+Jose,+California,+USA,+95113&amp;aq=&amp;sll=37.397161,-122.024121&amp;sspn=0.172379,0.330276&amp;ie=UTF8&amp;hq=hyatt+place+san+jose%2Fdowntown+282+Almaden+Boulevard+San+Jose,+California,+USA,+95113&amp;t=m&amp;ll=37.330174,-121.891637&amp;spn=0.010237,0.012875&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
+<h3>Call for Speakers</h3>
+<p>Being a speaker at YUIConf gets you free admission and is the best way to enjoy the conference! Submit your proposal to <strong>yui-events (at) yahoo-inc.com</strong> and include the following information:</p>
+<ul><li>Title</li>
+<li>Description</li>
+<li>Intended audience</li>
+<li>Your name</li>
+<li>A brief bio</li>
+<li>Other info (any previous talks? papers? is this your first talk?)</li>
+</ul><p>If your talk gets accepted, we&rsquo;ll refund your conference ticket and trade it in for a VIP one!</p>
+<h3>Stay Tuned to YUI Blog</h3>
+<p>Stay tuned to <a href="http://yuiblog.com/">YUI Blog</a> for more details about speakers, sessions, and schedules. We are very excited about our amazing lineup of talks, YUI news, and the exceptional community that comes together for YUIConf, and we hope to see you there this year!</p></div>

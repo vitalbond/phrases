@@ -1,0 +1,99 @@
+<div><p>Sorry for the delay in posting this, folks. I&rsquo;ve been away on vacation and then at Pycon Canada, which was amazing. And another apology, in advance, that this article is going to be bloody short compared to parts 1 through 7. That&rsquo;s not only because I&rsquo;m short on time; it also turned out that what I wanted to do was easier than I expected!</p>
+<p>Anyway, time for content! Now that we have a working jabber client, is our job done? The client is certainly functional, but I&rsquo;d still like to experiment with displaying a different representation depending on the size of the window. Specifically, if it is wider than a certain number of pixels, let&rsquo;s show the buddy list beside the chat window; otherwise, let&rsquo;s stick with the switching back and forth that we currently have.</p>
+<p>If you haven&rsquo;t been following along or want to start this example at the same point at which I&rsquo;m starting, you can clone the github repository with my examples:</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_six
+</pre>
+<p>Remember to create and activate a virtualenv populated with the appropriate dependencies, as discussed in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">part 1</a>.</p>
+<h4>Table Of Contents</h4>
+<p>Here are links to all the articles in this tutorial series:</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Handling events</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4: Code and interface improvements</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/16/creating-an-application-in-kivy-part-5/">Part 5: Rendering a buddy list</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/24/creating-an-application-in-kivy-part-6/">Part 6: ListView Interaction</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/31/creating-an-application-in-kivy-part-7/">Part 7: Receiving messages and interface fixes</a></li>
+<li><a href="http://archlinux.me/dusty/2013/08/17/creating-an-application-in-kivy-part-8/">Part 8: Width based layout</a></li>
+</ol><h4>Thinking through design</h4>
+<p>Since I&rsquo;m not entirely certain how I want this code (or interface) to look, let&rsquo;s spend a few paragraphs describing it so we all know we&rsquo;re developing the same thing. It&rsquo;s simple to say &ldquo;we want chat windows to display beside the buddy list when the screen is big enough&rdquo;, but what does that mean exactly? At what points in the code do we have to handle it? I&rsquo;m actually &ldquo;thinking out loud&rdquo; here so you can see the various paths a brain can follow when programming.</p>
+<p>Let&rsquo;s follow the process from program startup. When the account credentials are displayed, we may as well just show the form no matter how big the screen is. When the Buddy List is first displayed after login, it can take up the whole screen as well. It&rsquo;s not until we open our first chat that we have to decide if we are going to add the new chat beside the buddy list or to replace it. Of course, it&rsquo;s not just a matter of adding the chat window, we also have to remove any existing chat windows, since we don&rsquo;t just want to keep adding windows every time they click a new buddy. One way we could do this is add a <code>ChatWindowContainer</code> and ensure that widget only contains one chat window. Another is to keep track of which widows are loaded and unload them as needed. A third option is to clear all widgets and add both the Buddy List and Chat Window to a clean slate.</p>
+<p>Regardless of the width of the screen, when the user clicks the &ldquo;Buddy List&rdquo; button in the chat window, it should do the same thing: close all chat windows and show only the buddy list, full width. One option worth exploring is to hide that button when we are in wide screen view. Or perhaps the button should be removed altogether; a <a href="http://archlinux.me/dusty/2012/11/18/gesture-recognition-in-kivy/">gesture</a> might be a better interface. While gestures are all the rage in mobile devices right now, I&rsquo;m not a fan of them from an affordance perspective. It&rsquo;s never clear to the end user when or where a gesture is appropriate. While I use them extensively in my highly customized <a href="http://aokp.co/">AOKP</a> installation, I wouldn&rsquo;t want to explain a gesture based interface to my parents.</p>
+<p>In addition to deciding what to render when chat windows are added or removed, we need to do something when the window changes size. If it is in wide screen mode while a chat window is displayed, and then gets smaller, we have to remove the buddy list to switch to the original behavior. If it is in narrow mode while a chat window is displayed and it gets wider, we have to add the buddy list back.</p>
+<p>I feel like it would be wise to have a &ldquo;mode&rdquo; property bound to the window size, so that we always know whether we are currently supposed to be in wide or narrow mode. However binding that property to size means that the mode will change without telling us what the &ldquo;old&rdquo; mode was. Thus, we have no way to know whether the mode we are supposed to be in is the one we are currently in. On the other hand, such information can be inferred from the size or contents of the child list on the <code>OrkivRoot</code> object. </p>
+<p>Finally, it seems most of our calculations can be simplified by noticing that we only have to do things different if a chat window is currently displayed or about to be displayed.</p>
+<p>Now I think I have a plan in my head. You may or may not have come to the same conclusions while reading the above, and it&rsquo;s possible you&rsquo;ve had some better ideas. That said, this is how I intend to implement this. It looks like it&rsquo;s going to be simpler than I originally expected. Hooray for thinking things through in advance!</p>
+<p>1. Add a <code>mode</code> property to <code>OrkivRoot</code> that is automatically set from the <code>size</code> of the window<br>
+2. Add <code>chat_visible</code> and <code>budddy_list_visible</code> python properties (not kivy properties) that tells us if there are buddy list or chat windows visible.<br>
+3. Check the <code>mode</code> when adding a chat window and decide whether to replace the buddy list or not<br>
+4. On a <code>size</code> event, if a chat window is currently visible, determine whether the buddy list needs to be added or removed.</p>
+<h4>Properties</h4>
+<p>We&rsquo;ve looked at Kivy properties in past parts of this tutorial, and you may already be familiar with <a href="http://docs.python.org/2/library/functions.html?highlight=properties#property">Python properties</a>. It&rsquo;s somewhat unfortunate that the same word is being used to explain two different programmatic concepts. However, there are only so many words to describe the idea of a &ldquo;characteristic&rdquo;, and this idea is extremely common in many different programming libraries. So some overloading of terminology is inevitable. I tend to use the phrase &ldquo;Kivy property&rdquo; to refer to the kinds of properties that Kivy supplies. Kivy properties are pretty cool because they can automatically update themselves when other properties change and events can be bound to them so that those other properties also update themselves. In other words, Kivy properties are <em>smart</em>.</p>
+<p>Python properties are not stupid, mind you. People sometimes have trouble wrapping their mind around Python properties, but they&rsquo;re actually pretty simple. It might be convenient to think of python properties as just a way to make a method look like an attribute. Thus, you can access something like <code>node.color</code> and underneath the hood, it&rsquo;s actually behaving as though <code>node.color()</code> was called. However, they&rsquo;re even more interesting than that, because you can actually call a completely different method when you <em>set</em> the value of the property. Thus <code>node.color = "red"</code> can do about the same thing as <code>node.color("red")</code>.</p>
+<p>The confusing thing about python properties is not so much &ldquo;how do I do this?&rdquo; as &ldquo;why would I do this&rdquo;? There are many problem-specific answers, but two general ones come to mind. The first is the Python idiom that <em>readability counts</em>. In general, when you access a property on an object, you are doing something <em>with</em> an adjective on a noun. In contrast, when you call a method on an object, you are doing something (a verb) <em>to</em> a noun. However, sometimes when you are manipulating an adjective, you need to do a little extra calculation or manipulation when the value is set or accessed. Using properties, it&rsquo;s possible for the code accessing the property to read &ldquo;naturally&rdquo;, as though you were doing something with an adjective on a noun, even though there is actually a little &ldquo;doing to&rdquo; going on as well.</p>
+<p>The second reason is actually an evolution of the first. Often, in the first version of an API, we just add an attribute to an object and allow client code to manipulate it. Then, in a later iteration of the code, we want to do some kind of calculation, caching, or validation on these attributes. However, we can&rsquo;t suddenly change the attribute into a method or the old client code will break. However, we can use properties to add these new manipulations and keep the original API, which is probably more readable from the calling code&rsquo;s perspective, anyway.</p>
+<p>At any rate, our <code>OrkivRoot</code> class needs to have one Kivy property and two Python properties in order to perform the calculations for treating the screen differently depending on its size:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/a22c40b6790f1e154fd28df00a2d4cfca3fd7c10">commit</a>)</p>
+<pre class="brush:python">
+    class OrkivRoot(BoxLayout):
+        mode = StringProperty("narrow")
+
+        @property
+        def chat_visible(self):
+            return ChatWindow in {c.__class__ for c in self.children}
+
+        @property
+        def buddy_list_visible(self):
+            return self.buddy_list in self.children
+</pre>
+<p>So we have a simple mode property that is exactly the same as any other Kivy property. We also have two read only python properties named <code>buddy_list_visible</code> and <code>chat_visible</code>. The former just checks if the <code>buddy_list</code> object is one of the children. The latter loops through the children of <code>OrkivRoot</code> and checks if any of them are instances of the <code>ChatWindow</code> class. Any time you access <code>orkivroot.chat_visible</code>, this method is executed.</p>
+<p>The odd notation in the <code>chat_visible</code> property may need some explanation. (Note: If you&rsquo;re running python 2.6 or older, it won&rsquo;t even run) Python has a variety of comprehension syntaxes that allow us to create new iterator objects such as lists, generators, dictionaries, and sets based on existing iterators. This syntax is optimized for efficiency as compared to looping over one iterator and manually adding it to another. It&rsquo;s also more readable if you know the syntax.</p>
+<p>The braces, which you are probably used to denoting a dictionary, in this case actually generate a set, based on the contents of another iterator: <code>self.children</code>. For each element in <code>self.children</code> it adds the class of that element to the new set. Then the <code>in</code> operator is used to determine if a <code>ChatWindow</code> class is in that set.</p>
+<p>In theory, we use a set instead of a list for efficiency. However, in this case, I&rsquo;m actually only using it for pedagogy. The <code>in</code> keyword supports much faster lookups in a large set than it does in a large list. However, in this case, the number of children of a <code>OrkivRoot</code> will never be large. I&rsquo;m just trying to drive home the point that different data structures have different strengths and weaknesses, and you need to choose them wisely. For example, a few months ago, one of my colleagues shaved nearly an hour off our loading process by converting a list to a set in this very fashion.</p>
+<p>I hope you find my digressions educational! As I&rsquo;ve said before, my goal is to not just explain how to build a Jabber application in Kivy, but to demonstrate the various thought processes behind designing your own application in whatever programming language or library you might choose.</p>
+<p>Let&rsquo;s ignore those python properties for a bit and look back at that Kivy property. While the <code>mode</code> <code>StringProperty</code> has been defined, it&rsquo;s not yet being set to anything. Let&rsquo;s fix that in the Kivy language file:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/d3f7c774f6b97f425bdb93ad5c38b5d1d9a05d6e">commit</a>)</p>
+<pre class="brush:python">
+    &lt;OrkivRoot&gt;
+        mode: "narrow" if self.width &lt; 600 else "wide"
+        AccountDetailsForm:
+</pre>
+<p>That one new line of code is all that is needed to have a dynamically updating <code>mode</code> attribute. Any time the window size changes, the mode will automatically (it&rsquo;s almost automagic, in fact) be set to either &ldquo;narrow&rdquo; or &ldquo;wide&rdquo; depending on what the width is. Kivy properties are very powerful. The <code>width</code> property of widget is automatically updated whenever the window gets resized. Then the Kivy language does a wonderful job of hooking up the event bindings such that any time that width changes, a callback that executes the line of code above is invoked.</p>
+<p>For the record, I tested these properties by adding a couple <code>print()</code> statements when the <code>show_buddy_chat</code> method is invoked to render the current mode.</p>
+<h4>Make it work</h4>
+<p>Now we need to rework the <code>show_buddy_chat</code> method just a little:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/839927047485745b90a7e670ec7c464b8938e68d">commit</a>)</p>
+<pre class="brush:python">
+    def show_buddy_chat(self, jabber_id):
+        self.clear_widgets()
+        if self.mode == "wide":
+            self.add_widget(self.buddy_list)
+        self.add_widget(self.get_chat_window(jabber_id))
+        self.buddy_list.new_messages.discard(jabber_id)
+        self.buddy_list.force_list_view_update()
+</pre>
+<p>Instead of explicitly removing the <code>buddy_list</code>, we now start with a clean slate by calling <code>clear_widgets</code>. Then we check if the mode is &ldquo;wide&rdquo; and add the <code>buddy_list</code> if it is. Then the chat window is added just like before, but now if the view is wide, it will peacefully slide in beside the <code>buddy_list</code> instead of replacing it.</p>
+<p>The code for changing the window contents when the mode changes is a bit longer. The logic is simple, it&rsquo;s just verbose. We need to add an <code>on_mode</code> method to the <code>OrkivRoot</code>. This method will only be fired when the mode changes thanks, once again, to the magic of Kivy properties.</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/4fd433d482f8493bd351388f983fcea37e49678d">commit</a>)</p>
+<pre class="brush:python">
+def on_mode(self, widget, mode):
+    if mode == "narrow":
+        if self.chat_visible and self.buddy_list_visible:
+            self.remove_widget(self.buddy_list)
+    else:
+        if self.chat_visible and not self.buddy_list_visible:
+            self.add_widget(self.buddy_list, index=1)
+</pre>
+<p>When I first tested this method, it failed because I didn&rsquo;t accept any arguments on the event. So I had to figure out what the expected arguments were. I did this by making the method accept <code>*args</code>, which says &ldquo;put all the non-keyword arguments in a list named args&rdquo;. Then I printed that list to see what they were. So I knew that the arguments passed were a widget object and the current value of mode. Introspection in Python is so easy!</p>
+<p>If the mode is narrow, it checks if both widgets are currently visible and removes the <code>buddy_list</code> if this is the case. The only way both widgets could be visible on an <code>on_mode</code> event is if the mode just switched from <code>wide</code> to <code>narrow</code>.</p>
+<p>If the mode is wide, it checks if a chat window is visible and the buddy list is not. My first attempt only checked if the <code>buddy_list</code> was not visible and added it arbitrarily. This failed on startup, since <code>OrkivRoot</code> has a <code>size</code>, and therefore a <code>mode</code>, right from startup, even when the login form is being displayed. Thus, we only do the widget juggling if a <code>chat_window</code> is currently visible.</p>
+<p>The <code>index=1</code> argument to <code>add_widget</code> tells it to insert the <code>buddy_list</code> before the already visible <code>chat_window</code> rather than after.</p>
+<p>And that&rsquo;s it! Test that, try switching back and forth between the buddy list and the chat window, try resizing the window, try switching chats while the buddy list is visible. I&rsquo;m a little dubious that it&rsquo;s perfect, but I can&rsquo;t find a situation where these few lines of code aren&rsquo;t enough to do what I want. That&rsquo;s rather unfortunate, because even with all my detours and excursions, this tutorial is incredibly short! However, I&rsquo;m going to publish it as is, since you&rsquo;ve all been waiting patiently while I was taking vacations and wandering around at <a href="https://2013.pycon.ca/en/">Pycon Canada</a> (where Kivy was mentioned both in the keynote speech and in the first talk of the day). Next week, let&rsquo;s try to run this sucker on Android!</p>
+<h4>Financial Feedback</h4>
+<p> If you are enjoying this tutorial series and would like to see similar work published in the future, please support me. I dream of a future where open companies like <a href="http://www.gittip.com/">gittip</a> and open contributions help the world run in harmony instead of in competition. I believe that my work is high quality and worth backing. If you think this article held enough value that you would have paid for it, please consider backing me in one or more of the following ways:</p>
+<ul><li>Purchase my books: <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a> and <a href="http://hackinghappy.com/">Hacking Happy</a></li>
+<li>Write a positive review of said books on amazon</li>
+<li>Tip me on <a href="https://www.gittip.com/buchuki/">Gittip</a></li>
+<li>Share my articles far and wide on your favourite social media platforms</li>
+</ul></div>

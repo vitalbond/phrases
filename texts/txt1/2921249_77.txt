@@ -1,0 +1,28 @@
+<div><p>Jag har tv&aring; datorer, en med Arch Linux och en med elementary OS. Jag t&auml;nkte lite kort skriva ner det f&ouml;rsta jag g&ouml;r n&auml;r jag har installerat eOS, om inte annat f&ouml;r min egna del. Jag brukar n&auml;mligen leka s&ouml;nder installationerna ganska ofta. Elementary har jag installerat om &aring;tminstone 5 &ndash; 6 g&aring;nger den senaste tiden.</p>
+<p>1. Ladda ner elementary OS fr&aring;n deras <a title="hemsida" href="http://elementaryos.org/">hemsida</a>.<br>
+2. Installera som vanligt.<br>
+3. Uppdatera systemet (via GUI eller <code> sudo apt-get update &amp;&amp; sudo apt-get upgrade</code>)<br>
+4. Har du en RAT 5 mus som jag, l&auml;gg d&aring; f&ouml;ljande i /usr/share/X11/xorg.conf.d/20-cyborgrat5.conf</p>
+<p><code>Section "InputClass"<br>
+Identifier "Mouse Remap"<br>
+MatchProduct "Mad Catz Mad Catz R.A.T.5 Mouse"<br>
+#May also be "Mad Catz Mad Catz R.A.T.5 Mouse" depending on production date.<br>
+MatchDevicePath "/dev/input/event*"<br>
+Option "AccelerationProfile" "1"<br>
+Option "ConstantDeceleration" "5"<br>
+Option "ButtonMapping" "1 2 3 4 5 6 7 8 9 10 11 12 0 0 0"<br>
+Option "ZAxisMapping" "4 5 6 7"<br>
+EndSection</code></p>
+<p>5. Installera Firefox. <img src="http://archlinux.me/kaptenen/wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley">  (sudo apt-get install firefox)<br>
+6. Installera den svenska spr&aring;klistan (sudo apt-get install hunspell-sv-se)<br>
+7. L&auml;gg till community ppa fr&aring;n elementary update (<code>sudo apt-add-repository ppa:versable/elementary-update</code>) k&ouml;r sedan sudo apt-get update<br>
+8. Installera elementary-tweaks (sudo apt-get install elementary-tweaks<br>
+9. &Ouml;ppna systeminst&auml;llningar och leta dig fram till Tweaks och aktiva dubbelklick under files<br>
+10. Installera wingpanel-slim (sudo apt-get install wingpanel-slim) &ndash; sedan g&aring;r du in i systeminst&auml;llningar igen och aktiverar det.<br>
+11. Installera elementary-taprevival-icons (sudo apt-get install elementary-taprevival-icons) och aktivera dessa i Tweaks.<br>
+12. Uppdatera din <a title="k&auml;rna" href="http://www.upubuntu.com/">k&auml;rna</a>.<br>
+13. Starta om</p>
+<p><strong>Lite andra saker jag brukar g&ouml;ra</strong><br>
+Installera senaste Libreoffice och fixa s&aring; det inte ser ut som <a title="Windows 95" href="http://archlinux.me/kaptenen/2013/01/01/make-libreoffice-looks-good-in-elementary/">Windows 95</a></p>
+<p><strong>Bra sidor</strong><br><a title="elementary update" href="http://www.elementaryupdate.com/">elementary update</a><br><a title="Deviantart" href="http://www.deviantart.com/?order=5&amp;q=elementary">Deviantart</a> &ndash; f&ouml;r inspiration<br><a title="Reddit" href="http://www.reddit.com/r/elementaryos">Reddit</a></p>
+<p>&nbsp;</p></div>

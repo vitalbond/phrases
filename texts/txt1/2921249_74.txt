@@ -1,0 +1,166 @@
+<div><p>Welcome to the final part of this series on creating a working Jabber client in Kivy. While there are numerous things we could do with our code to take it to Orkiv version 2, I think it&rsquo;s currently in a lovely state that we can call &ldquo;finished&rdquo; for 1.0.</p>
+<p>In this article, we&rsquo;re going to talk about releasing and distributing Kivy to an Android mobile device. We&rsquo;ll use a tool called buildozer that the Kivy developers have written. These commands will, in the future, extend to other operating systems.</p>
+<p>We aren&rsquo;t going to be writing a lot of code in this part (some adaptation to make it run on android is expected). If you&rsquo;re more interested in deploying than coding, you can check out my state of the orkiv repository as follows:</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_eight
+</pre>
+<p>Remember to create and activate a virtualenv populated with the appropriate dependencies, as discussed in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">part 1</a>.</p>
+<h4>Table Of Contents</h4>
+<p>Here are links to all the articles in this tutorial series:</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Handling events</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4: Code and interface improvements</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/16/creating-an-application-in-kivy-part-5/">Part 5: Rendering a buddy list</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/24/creating-an-application-in-kivy-part-6/">Part 6: ListView Interaction</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/31/creating-an-application-in-kivy-part-7/">Part 7: Receiving messages and interface fixes</a></li>
+<li><a href="http://archlinux.me/dusty/2013/08/17/creating-an-application-in-kivy-part-8/">Part 8: Different views for different screens</a></li>
+<li><a href="http://archlinux.me/dusty/2013/08/26/creating-an-application-in-kivy-part-9/">Part 9: Deploying your kivy application</a></li>
+</ol><h4>Restructuring the directory</h4>
+<p>Back in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1</a>, we chose to put all our code in <code>__main__.py</code> so that we could run it from a zip file or directly from the directory. In some ways, this is pretty awesome for making a package that can easily be distributed to other systems (assuming those systems have the dependencies installed). However, Kivy&rsquo;s build systems presume that the file is called <code>main.py</code>.</p>
+<p>I&rsquo;m not overly happy about this. Kivy sometimes neglects Python best practices and reinvents tools that are widely used by the Python community. That said, it is possible for us to have the best of both worlds. We can move our code into <code>orkiv/main.py</code> and still have a <code>__main__.py</code> that imports it.</p>
+<p>First, move the entire <code>__main__.py</code> file into <code>main.py</code>, using git:</p>
+<pre class="brush:bash">
+    git mv orkiv/__main__.py orkiv/main.py
+</pre>
+<p>Next, edit the new <code>main.py</code> so that it can be imported from other modules without automatically running the app. There is a standard idiomatic way to do this in python. Replace the code that calls <code>Orkiv().run()</code> with the following:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/6f4f2afe81daedbf201b808f4ff3583ccfc06039">commit</a>)</p>
+<pre class="brush:python">
+    def main():
+        Orkiv().run()
+
+    if __name__ == "__main__":
+        main()
+</pre>
+<p>There are two things going on here. First, we moved the code that instantiates the application and starts it running in a function called <code>main()</code>. There is nothing exciting about this function. It does the same thing that used to happen as soon as the module was imported. However, nothing will happen now unless that function is called.</p>
+<p>One way to regain the previous functionality of immediately running the app when we type <code>python main.py</code> would be to just call <code>main()</code> at the bottom of the module. However, that is not what we want. Instead, our goal is to make the application automatically run if the user runs <code>python orkiv/main.py</code>, but if they run <code>import main</code> from a different module or the interpreter, nothing is explicitly run.</p>
+<p>That&rsquo;s what the <code>if __name__</code> conditional does. Every module that is ever imported has a magic <code>__name__</code> attribute. This is almost always the name of the module file without the <code>.py</code> extension (eg: <code>main.py</code> has a <code>__name__</code> of <code>main</code>). However, if the module is not an imported module, but is the script that was run from the command line, that <code>__name__</code> attribute is set to <code>__main__</code> instead of the name of the module. Thus, we can easily tell if we are an invoked script or an imported script by testing if <code>__name__</code> is <code>__main__</code>. Indeed, we are taking advantage of the same type of magic when we name a module <code>__main__.py</code>. When we run <code>python zipfile_or_directory</code> it tries to load the <code>__main__</code> module in that directory.</p>
+<p>However, we do not currently have a <code>__main__</code> module, since we just moved it. Let&rsquo;s rectify that:</p>
+<p><!-- Same Example --></p>
+<pre class="brush:python">
+    from main import main
+    main()
+</pre>
+<p>Save this as a new <code>orkiv/__main__.py</code> and test that running <code>python orkiv</code> from the parent directory still works.</p>
+<p>You&rsquo;ll find that the window runs, however, if you try to connect to a jabber server, you get an exception when it tries to display the buddy list. This is because our <code>orkiv.kv</code> file was explicitly importing from <code>__main__</code>. Fix the import at the top of the file so that it imports from <code>main</code> instead:</p>
+<p><!-- Same commit --></p>
+<pre class="brush:python">
+#:import la kivy.adapters.listadapter
+#:import ok main
+
+OrkivRoot:
+</pre>
+<p>While we&rsquo;re editing code files, let&rsquo;s also add a <code>__version__</code> string to the top of our <code>main.py</code> that the Kivy build tools can introspect:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/1338952be2b8d9337fb8c2dfbddc6349df873594">commit</a>)</p>
+<pre class="brush:python">
+    __version__ = 1.0
+</pre>
+<h4>Deploying to Android with buildozer</h4>
+<p>Deploying to Android used to be a fairly painful process. Back in December, 2012, I <a href="http://archlinux.me/dusty/2012/12/05/building-a-python-kivy-app-in-android-easier-than-it-looks-but-harder-than-it-needs-to-be/">described</a> how to do it using a bulky Ubuntu virtual machine the Kivy devs had put together. Since then, they&rsquo;ve designed a tool called <a href="https://github.com/kivy/buildozer">buildozer</a> that is supposed to do all the heavy lifting. Once again, I have some issues with this plan; it would be much better if Kivy integrated properly with setuptools, the de facto standard python packaging system than to design their own build system. However, buildozer is available and it works, so we&rsquo;ll use it. The tool is still in alpha, so your mileage may vary. However, I&rsquo;ve discovered that Kivy products in alpha format are a lot better than final releases from a lot of other projects, so you should be ok.</p>
+<p>Let&rsquo;s take it out for a spin. First activate your virtualenv and install the buildozer app into it:</p>
+<pre class="brush:bash">
+    . venv/bin/activate
+    pip install buildozer
+</pre>
+<p>Also make sure you have a java compiler, apache ant, and the android platform tools installed. This is OS specific; these are the commands I used in Arch Linux:</p>
+<pre class="brush:bash">
+    sudo pacman -S jdk7-openjdk
+    sudo pacman -S apache-ant
+    yaourt android-sdk-platform-tools
+</pre>
+<p>Then run the init command to create a boilerplate <code>buildozer.spec</code>:</p>
+<pre class="brush:python">
+    buildozer init
+</pre>
+<p>Now edit the <code>buildozer.spec</code> to suit your needs. Most of the configuration is either straightforward (such as changing the application name to <code>Orkiv</code>) or you can keep the default values. One you might overlook is that <code>source.dir</code> should be set to <code>orkiv</code> the directory that contains <code>main.py</code>.</p>
+<p>The <code>requirements</code> should include not only <code>kivy</code> and <code>sleekxmpp</code> but also <code>dnspython</code>, a library that sleekxmpp depends on. You can use the <code>pip freeze</code> command to get a list of packages currently installed in your virtualenv. Then make a conscious decision as to whether you need to include each one, remembering that many of those (cython, buildozer, etc) are required for development, but not Android deployment.</p>
+<p>For testing, I didn&rsquo;t feel like creating images for presplash and the application icon, so I just pointed those at <code>icons/available.png</code>. It&rsquo;s probably prettier than anything I could devise myself, anyway!</p>
+<p>If you want to see exactly what changes I made, have a look at the <a href="https://github.com/buchuki/orkiv/commit/d5f4b622d6a411a92a745bad73c7b7442a0cc1ec">diff</a>.</p>
+<p>The next step is to actually build and deploy the app. This takes a while, as buildozer automatically downloads and installs a wide variety of tools on your behalf. I don&rsquo;t recommend doing it over 3G!</p>
+<p>First, <a href="http://www.wugfresh.com/faq/how-do-i-enable-usb-debugging-on-android-4-2-the-developer-options-menu-item-is-gone/">Enable USB debugging</a> on the phone and plug it into your development machine with a USB cable. Then tell buildozer to do all the things it needs to do to run a debug build on the phone:</p>
+<pre class="brush:bash">
+buildozer android debug deploy run
+</pre>
+<p>I had a couple false starts before this worked. Mostly I got pertinent error messages that instructed me to install the dependencies I mentioned earlier. Then, to my surprise, the phone showed a Kivy &ldquo;loading&hellip;&rdquo; screen. Woohoo! It worked!</p>
+<p>And then the app promptly crashed without any obvious error messages or debugging information.</p>
+<p>Luckily, such information does exist. With the phone plugged into usb, run <code>adb logcat</code> from your development machine. Review the Python tracebacks and you&rsquo;ll discover that it is having trouble finding the sound file <code>in.wav</code>:</p>
+<pre>
+I/python  (25368):    File "/home/dusty/code/orkiv/.buildozer/android/platform/python-for-android/build/python-install/lib/python2.7/site-packages/kivy/core/audio/__init__.py", line 135, in on_source
+I/python  (25368):    File "/home/dusty/code/orkiv/.buildozer/android/platform/python-for-android/build/python-install/lib/python2.7/site-packages/kivy/core/audio/audio_pygame.py", line 84, in load
+I/python  (25368):    File "/home/dusty/code/orkiv/.buildozer/android/platform/python-for-android/build/python-install/lib/python2.7/site-packages/android/mixer.py", line 202, in __init__
+I/python  (25368):  IOError: [Errno 2] No such file or directory: '/data/data/ca.archlinux.orkiv/files/orkiv/sounds/in.wav'
+I/python  (25368): Python for android ended.
+</pre>
+<p>The problem here is that the code specifies a relative path to the sound file as <code>orkiv/sounds/in.wav</code>. This worked when we were running <code>python orkiv/</code> from the parent directory, but python for android is running the code as if it was inside the <code>orkiv</code> directory. We can reconcile this later, but for now, let&rsquo;s focus on getting android working and just hard code the file location:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/90acef90d961c268cffe6d265fa303d9472c7a31">commit</a>)</p>
+<pre class="brush:python">
+    self.in_sound = SoundLoader.load("sounds/in.wav")
+</pre>
+<p>While we&rsquo;re at it, we probably also need to remove &ldquo;orkiv&rdquo; from the location of the icon files in <code>orkiv.kv</code>:</p>
+<p><!-- same example --></p>
+<pre class="brush:python">
+    source: "icons/" + root.online_status + ".png"
+</pre>
+<p>Finally, running <code>buildozer</code> and <code>adb logcat</code> again indicates the error message hasn&rsquo;t changed. This is because we aren&rsquo;t explicitly including the <code>.wav</code> file with our distribution. Edit <code>buildozer.spec</code> to change that:</p>
+<pre class="brush:python">
+    # (list) Source files to include (let empty to include all the files)
+    source.include_exts = py,png,jpg,kv,atlas,wav
+</pre>
+<p>Run the <code>buildozer</code> command once again and the app fire up and start running! Seeing your Python app running on an Android phone is a bit of a rush, isn&rsquo;t it? I was able to log into a jabber account, but selecting a chat window goes into &ldquo;narrow&rdquo; mode because the phone&rsquo;s screen has a much higher pixel density than my laptop. We&rsquo;ll have to convert our size handler to display pixels somehow.</p>
+<p>I was able to send a chat message, which was exciting, but when the phone received a response, it crashed. Hard. <code>adb logcat</code> showed a segmentation fault or something equally horrifying. I initially guessed that some concurrency issue was happening in <code>sleekxmpp</code>, but it turned out that the problem was in Kivy. I debugged this by putting print statements between each line in the <code>handle_xmpp_message</code> method and seeing which ones executed before it crashed. It turned out that Kivy is crashing in its attempt to play the <code>.wav</code> file on an incoming message. Maybe it can&rsquo;t handle the file format of that particular audio file or maybe there&rsquo;s something wrong with the media service. Hopefully the media service will be improved in future versions of Kivy. For now, let&rsquo;s use the most tried and true method of bugfixing: pretend we never needed that feature! Comment out the line:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/69b5fce4ad63f68fef65a817f938d5d535bd70b5">commit</a>)</p>
+<pre class="brush:python">
+    #self.in_sound.play()
+</pre>
+<p>and rerun <code>buildozer android debug deploy run</code>.</p>
+<p>Now the chat application interacts more or less as expected, though there are definitely some Android related quirks. Let&rsquo;s fix the display pixel issue in orkiv.kv:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/1dce47bc3d2647805cc9c9cbbefcb8b525c04aed">commit</a>)</p>
+<pre class="brush:python">
+    &lt;OrkivRoot&gt;:
+        mode: "narrow" if self.width &lt; dp(600) else "wide"
+        AccountDetailsForm:
+</pre>
+<p>All I did was wrap the <code>600</code> in a call to <code>dp</code>, which converts the 600 display pixels into real pixels so the comparison is accurate. Now when we run the app, it goes into &ldquo;narrow&rdquo; mode because the screen is correctly reporting as &ldquo;not wide enough for wide mode&rdquo;. However, if you start the app in landscape mode, it does allow side-by-side display. Perfect!</p>
+<p>And that&rsquo;s the app running on Android. Unfortunately, in all honesty, it&rsquo;s essentially useless. As soon as the phone display goes to sleep, the jabber app closes which means the user is logged out. It might be possible to partially fix this using judicious use of <a href="http://kivy.org/docs/api-kivy.app.html#pause-mode">Pause mode</a>. However, since the phone has to shut down internet connectivity to preserve any kind of battery life, there&rsquo;s probably a lot more involved than that.</p>
+<p>On my phone, there also seems to be a weird interaction that the <code>BuddyList</code> buttons all show up in a green color instead of the colors specified in the Kivy language file and the args_converter.</p>
+<p>Third, the app crashes whenever we switch orientations. This is probably a bug fixable in our code rather than in Kivy itself, but I don&rsquo;t know what it is.</p>
+<p>Also, touch events are erratic on the phone. Sometimes the scroll view won&rsquo;t allow me to scroll when I first touch it, but immediately interprets a touch event on the ListItem. Sometimes touch events appear to be forgotten or ignored and I have to tap several times for a button to work. Sometimes trying to select a text box utterly fails. I think there must be some kind of interaction between Kivy&rsquo;s machinery and my hardware here, but I&rsquo;m not certain how to fix it.</p>
+<p>Occasionally, when I first log in, the BuddyList refuses to act like a <code>ScrollView</code> and the first touch event is interpreted as opening a chat instead of scrolling the window. This is not a problem for subsequent touch events on the buddy list.</p>
+<p>Finally, there are some issues with the onscreen keyboard. When I touch a text area, my keyboard (I&rsquo;m using SwiftKey) pops up, and it works well enough. However, the swipe to delete behavior, which deletes an entire word in standard android apps, only deletes one letter here. More alarmingly, when I type into the password field, while the characters I typed are astrisk&rsquo;d out in the field, they are still showing up in the SwiftKey autocomplete area. There seems to be some missing hinting between the OS and the app for password fields.</p>
+<p>Before closing, I&rsquo;d like to fix the problem where the app is no longer displaying icons on the laptop when I run <code>python orkiv/</code>. My solution for this is not neat, but it&rsquo;s simple and it works. However, it doesn&rsquo;t solve the problem if we put the files in a <code>.zip</code>. I&rsquo;m not going to worry about this too much, since <code>buildozer</code> is expected, in the future, to be able to make packages for desktop operating systems. It&rsquo;s probably better to stick with Kivy&rsquo;s tool. So in the end, this <code>__main__.py</code> feature is probably not very useful and could be removed. (Removing features and useless code is one of the most important parts of programming.) However, for the sake of learning, let&rsquo;s make it work for now! First we need to add a <code>root_dir</code> field to the <code>Orkiv</code> app. This variable can be accessed as <code>app.root_dir</code> in kv files and as <code>Orkiv.get_running_app().root_dir</code> in python files.</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/4bb02bc906479662ee3948977180f1e9da2650fd">commit</a>)</p>
+<pre class="brush:python">
+    class Orkiv(App):
+        def __init__(self, root_dir):
+            super(Orkiv, self).__init__()
+            self.root_dir = root_dir
+            self.xmpp = None
+</pre>
+<p>Of course, we also have to change the <code>main()</code> function that invokes the app to pass a value in. However, we can have it default to the current behavior by making the <code>root_dir</code>a keyword argument with a default value:</p>
+<p><!-- same example --></p>
+<pre class="brush:python">
+    def main(root_dir=""):
+        Orkiv(root_dir).run()
+</pre>
+<p>Next, we can change the <code>__main__.py</code> to set this <code>root_dir</code> variable to <code>orkiv/</code>:</p>
+<p><!-- same example --></p>
+<pre class="brush:python">
+    from main import main
+    main("orkiv/")
+</pre>
+<p>The idea is that whenever a file is accessed, it will be specified relative to <code>Orkiv.root_dir</code>. So if we ran <code>python main.py</code> from inside the <code>orkiv/</code> directory (this is essentially what happens on android), the root_dir is empty, so the relative path is relative to the directory holding <code>main.py</code>. But when we run <code>python orkiv/</code> from the parent directory, the <code>root_dir</code> is set to <code>orkiv</code>, so the icon files are now relative to the directory holding <code>orkiv/</code>.</p>
+<p>Finally, we have to change the icons line in the kivy file to reference <code>app.root_dir</code> instead of hardcoding the path (a similar fix would be required for the sound file if we hadn&rsquo;t commented it out):</p>
+<p><!-- same example --></p>
+<pre class="brush:python">
+    Image:
+        source: app.root_dir + "icons/" + root.online_status + ".png"
+</pre>
+<p>And now, the app works if we run <code>python orkiv/</code> or <code>python main.py</code> and also works correctly on Android.</p>
+<p>There are a million things that could be done with this Jabber client, from persistent logs to managed credentials to IOS deployment. I encourage you to explore all these options and more. However, this is as far as I can guide you on this journey. Thus part 9 is the last part of this tutorial. I hope you&rsquo;ve enjoyed the ride and have learned much along the way. Most importantly, I hope you&rsquo;ve been inspired to start developing your own applications and user interfaces using Kivy.</p>
+<h4>Financial Feedback</h4>
+<p>Writing this tutorial has required more effort and consumed more time than I expected. I&rsquo;ve put on average five hours per tutorial (with an intended timeline of one tutorial per week) into this work, for a total of around 50 hours for the whole project.</p>
+<p>The writing itself and reader feedback has certainly been compensation enough. However, I&rsquo;m a bit used up after this marathon series and I&rsquo;m planning to take a couple months off before writing anything like this tutorial again in my free time.</p>
+<p>That said, I have a couple of ideas for further tutorials in Kivy that would build on this one. I may even consider collecting them into a book. It would be ideal to see this funded on gittip, but I&rsquo;d want to be making $20 / hour (far less than half my normal wage, so I&rsquo;d still be &ldquo;donating&rdquo; much of my time) for four hours per week before I could take half a day off from my day job to work on such pursuits &mdash; without using up my  free time.</p>
+<p>A recent <a href="https://twitter.com/whit537/status/370712315466768385">tweet</a> by Gittip founder Chad Whitacre suggests that people hoping to be funded on gittip need to market themselves. I don&rsquo;t want to do that. I worked as a freelancer for several years, and I have no interest in returning to that paradigm. If I have to spend time &ldquo;selling&rdquo; myself, it is time I&rsquo;m not spending doing what I love. In my mind, if I have to advertise myself, then my work is not exceptional enough to market itself. So I leave it up to the community to choose whether to market my work. If it is, someone will start marketing me and I&rsquo;ll see $80/week in my gittip account.  Then I&rsquo;ll give those 4 hours per week to tutorials like this or other open source contributions. If it&rsquo;s not, then I&rsquo;ll feel more freedom to spend my free time however I like. Either way, I&rsquo;ll be doing something that I have a lot of motivation to do.</p>
+<p>Regardless of any financial value, I really hope this tutorial has been worth the time you spent reading it and implementing the examples! Thank you for being an attentive audience, and I hope to see you back here next time, whenever that is!</p></div>

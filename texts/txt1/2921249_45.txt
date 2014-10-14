@@ -1,0 +1,10 @@
+<div><p>Efter lite tester råkade jag förstöra någonting. Wingpanel går inte längre att starta. Nåväl, jag har planer på att införskaffa mig en SSD till laptopen i vilket fall och då kommer det att krävas en ominstallation utav systemet, då kommer jag att installera allt det där igen. Tillsvidare får faktiskt GNOME funka, något jag tycker det ändå gör ganska bra. Jag har testat Cinnamon igen, men det är faktiskt inget som faller mig i smaken. MATE har jag också testat, det var snabbt och relativt stabilt men föll inte mig i smaken det heller. Av någon anledning kan jag inte installera min väldigt modifierade version av DWM, ganska skumt men samtidigt inget jag orkar lägga ner någon större energi vid, även om jag önskar att så var fallet.</p>
+<p> </p>
+<p>Dessa tillägg har jag till GNOME, de är alla väldigt bra och fyller sin funktion:</p>
+<h3><a title="Alternative Status Menu" href="https://extensions.gnome.org/extension/5/alternative-status-menu/" target="_blank">Alternative Status Menu</a></h3>
+<h3 id="extension_name"><a title="Frippery Applications Menu" href="https://extensions.gnome.org/extension/13/applications-menu/" target="_blank">Frippery Applications Menu</a></h3>
+<h3 id="extension_name"><a title="Media player indicator" href="https://extensions.gnome.org/extension/55/media-player-indicator/" target="_blank">Media player indicator</a></h3>
+<h3 id="extension_name"><a title="Quit Button" href="https://extensions.gnome.org/extension/156/quit-button/" target="_blank">Quit Button</a></h3>
+<h3 id="extension_name"><a title="Remove Accessibility" href="https://extensions.gnome.org/extension/112/remove-accesibility/" target="_blank">Remove Accessibility</a></h3>
+<h3 id="extension_name"><a title="Remove Rounded Corners" href="https://extensions.gnome.org/extension/448/remove-rounded-corners/" target="_blank">Remove Rounded Corners</a></h3>
+<h3 id="extension_name"><a title="User Themes" href="https://extensions.gnome.org/extension/19/user-themes/" target="_blank">User Themes</a></h3></div>

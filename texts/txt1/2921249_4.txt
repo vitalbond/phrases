@@ -1,0 +1,6 @@
+<div><pre>This is pretty easy...but a handy tip none the less.
+
+VIM: AutoIndent php/html files.
+:set ft=phtml
+gg=G</pre>
+<p> </p></div>

@@ -1,0 +1,5 @@
+<div><p>Kan man tänka sig vad tiden går fort ibland. Detta skall firas med lite kaffe, så här på kvällskvisten.</p>
+<p> </p>
+<p>Nu till något helt annat. Jag har efter en del arbete fått ett par indicators att funka med Pantheon Shell. Som ni ser har jag en indikator jag gärna skulle vilja bli av med, dessvärre verkar den andra (för nätverket alltså) försvinna också. När jag känner mig färdig kanske jag kommer skriva hur jag gjorde för att få det så bra som det är möjligt på en installation med Arch Linux. Indicator-me funkar dock inte, skulle någon få det att kompilera skulle jag tacksamt ta emot hjälp.</p>
+<p><a href="http://archlinux.me/kaptenen/files/2013/02/Sk%C3%A4rmbild-fr%C3%A5n-2013-02-08-202932.png"><img class="alignnone size-medium wp-image-454" src="http://archlinux.me/kaptenen/files/2013/02/Sk%C3%A4rmbild-fr%C3%A5n-2013-02-08-202932-300x78.png" alt="" width="300" height="78"></a></p>
+<p> </p></div>

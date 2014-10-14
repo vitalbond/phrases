@@ -1,0 +1,156 @@
+<div><p>#!/bin/bash<br>
+#<br>
+# Author: Josh Bailey<br>
+#<br>
+# Start configure: Hopefully you&rsquo;ve read this far<br>
+#<br>
+# outfile=/var/log/httpd/log_rotation<br>
+outfile=/var/tmp/log_backups/log_rotation.out<br>
+num_days=30<br>
+uncompress_days=7<br>
+bob=-1<br>
+# log_dir=/var/log/httpd<br>
+log_dir=/var/tmp/log_backups<br>
+log_dir_old=${log_dir}/old/<br>
+old_access=${log_dir_old}access/<br>
+old_error=${log_dir_old}error/</p>
+<p># End configure</p>
+<p>cur_date=`date +%Y%m%d`<br>
+outfile=&rdquo;${outfile}.${cur_date}.out&rdquo;</p>
+<p>function usage<br>
+{<br>
+	echo &ldquo;&rdquo;<br>
+	echo &ldquo;# &lsquo;$0 -0&prime; (dry run)&rdquo;<br>
+	if [[ $bob == 0 ]]; then echo -e &ldquo;# &lsquo;$0 -f&rsquo; (live run)\n# Note: Double-check other configs before using&rdquo;; fi<br>
+	echo &ldquo;&rdquo;<br>
+	exit<br>
+}</p>
+<p>function daysbetween<br>
+{<br>
+	future=$1<br>
+	past=$2<br>
+	echo &ldquo;$(( ( $(date -d &ldquo;$future&rdquo; +%s) &ndash; $(date -d &ldquo;$past&rdquo; +%s) ) /86400 ))&rdquo;<br>
+}</p>
+<p>if [[ $bob != 0 &amp;&amp; "$1" != "-0" ]]<br>
+then<br>
+	usage;<br>
+elif [[ "$1" == "-0" ]]<br>
+then<br>
+	bob=1<br>
+fi</p>
+<p>if [[ "$1" != "-f" &amp;&amp; $bob == 0 ]]<br>
+then<br>
+	usage;<br>
+fi</p>
+<p># making file structure<br>
+if [[ $bob == 0 ]]<br>
+then<br>
+	mkdir -p ${log_dir_old}<br>
+	mkdir -p ${old_access}<br>
+	mkdir -p ${old_error}<br>
+fi</p>
+<p># start logging<br>
+echo &ldquo;### Starting log rotation: `date` ###&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;# &rdquo; &gt;&gt; ${outfile}<br>
+if [[ $bob != 0 ]]; then echo -e &ldquo;#       *** Dry Run *** \n#       To do live run, change bob to 0\n#&rdquo; &gt;&gt; ${outfile}; fi<br>
+echo &ldquo;# Details: &rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;# Number of days retention:&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;#		${num_days}: Total (compressed and uncompressed)&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;#		${uncompress_days}: Uncompressed&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;# Log Directory to be rotated: ${log_dir}&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;# Old Log Directory (where the logs go):&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;#		${old_access}: Old Access Log files.&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;#		${old_error}: Old Error Log files.&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;### &rdquo; &gt;&gt; ${outfile}</p>
+<p># enter log directory<br>
+cd ${log_dir}</p>
+<p># work on error_logs<br>
+for error_file in `ls error_log.*`<br>
+do<br>
+	log_date=`echo ${error_file} | sed &ldquo;s#error_log\.##g&rdquo; | sed &lsquo;s/\.//g&rsquo;`<br>
+	if [[ "${log_date:${#log_date}-2}" == "gz" ]]<br>
+	then<br>
+		iscompress_tag=true<br>
+		log_date=${log_date:0:${#log_date}-2}<br>
+	else<br>
+		iscompress_tag=false<br>
+	fi</p>
+<p>	age_file=`daysbetween $cur_date $log_date`</p>
+<p>	if [[ "$age_file" -lt ${uncompress_days} ]]<br>
+	then<br>
+		echo &ldquo;# File: $error_file newer than ${uncompress_days} days, skipping&rdquo; &gt;&gt; $outfile<br>
+	else</p>
+<p>		if [[ "$age_file" -gt $num_days ]]<br>
+		then<br>
+			echo &ldquo;# Removed: $log_date &ndash; $age_file days old} : $error_file &rdquo; &gt;&gt; $outfile<br>
+			if [[ $bob == 0 ]]; then rm -f ${log_dir}/${error_file}; fi<br>
+		else<br>
+				echo &ldquo;# Compressing and moving: $error_file to ${old_error}${error_file}.gz&rdquo; &gt;&gt; $outfile<br>
+				if [[ $iscompress_tag == false ]]<br>
+				then<br>
+					echo &ldquo;# Compressing: $error_file&rdquo; &gt;&gt; $outfile<br>
+					if [[ $bob == 0 ]]; then gzip ${log_dir}/${error_file}; fi<br>
+					error_file=${error_file}.gz<br>
+				fi<br>
+				echo &ldquo;# Moving: $error_file&rdquo; &gt;&gt; $outfile<br>
+				if [[ $bob == 0 ]]; then mv ${log_dir}/${error_file} ${old_error}; fi<br>
+		fi<br>
+	fi<br>
+done</p>
+<p># reset age_file<br>
+age_file=&rdquo;"</p>
+<p># work on access_logs<br>
+for access_file in `ls access_log.*`<br>
+do<br>
+	log_date=`echo ${access_file} | sed &ldquo;s#access_log\.##g&rdquo; | sed &lsquo;s/\.//g&rsquo;`<br>
+        if [[ "${log_date:${#log_date}-2}" == "gz" ]]<br>
+        then<br>
+                iscompress_tag=true<br>
+                log_date=${log_date:0:${#log_date}-2}<br>
+        else<br>
+                iscompress_tag=false<br>
+        fi</p>
+<p>	age_file=`daysbetween $cur_date $log_date`</p>
+<p>        if [[ "$age_file" -lt $uncompress_days ]]<br>
+        then<br>
+                echo &ldquo;# File: $access_file newer than ${uncompress_days} days, skipping&rdquo; &gt;&gt; $outfile<br>
+        else<br>
+                echo &ldquo;# Compressing and moving: $access_file to ${old_access}${access_file}.gz&rdquo; &gt;&gt; $outfile<br>
+		if [[ $iscompress_tag == false ]]<br>
+		then<br>
+			echo &ldquo;# Compressing: $access_file&rdquo; &gt;&gt; $outfile<br>
+			if [[ $bob == 0 ]]; then gzip ${log_dir}/${access_file}; fi<br>
+			access_file=${access_file}.gz<br>
+		fi<br>
+		echo &ldquo;# Moving: $access_file&rdquo; &gt;&gt; $outfile<br>
+		if [[ $bob == 0 ]]; then mv ${log_dir}/${access_file} ${old_access}; fi<br>
+	fi<br>
+done</p>
+<p># get out of log dir<br>
+cd &ndash; &gt;/dev/null</p>
+<p># get into old dir<br>
+# add a matching for loop for access logs (if you want to remove some)<br>
+if [[ `grep "### Log rotation completed:" $outfile` &amp;&amp; `ls -R ${log_dir_old} | grep ".gz" | wc -l` -gt 0 ]]<br>
+then<br>
+	cd ${old_error}</p>
+<p>#	reset age_file<br>
+	age_file=&rdquo;"</p>
+<p>	# work on old error logs<br>
+	for error_old in `ls error_log.*.gz`<br>
+	do<br>
+		log_date=`echo ${error_old} | sed &ldquo;s#error_log\.##g&rdquo; | sed &lsquo;s/\.//g&rsquo; | sed &lsquo;s/gz//g&rsquo;`<br>
+		age_file=`daysbetween $cur_date $log_date`</p>
+<p>		if [[ "$age_file" -gt $num_days ]]<br>
+		then<br>
+			echo &ldquo;# Removed: $log_date : $error_old : $age_file days old&rdquo; &gt;&gt; $outfile<br>
+			if [[ $bob == 0 ]]; then rm -f ${old_error}${error_old}; fi<br>
+		else<br>
+			echo &ldquo;# Skipped: $log_date : $error_old : $age_file days old&rdquo; &gt;&gt; $outfile<br>
+		fi<br>
+	done<br>
+	cd &ndash; &gt;/dev/null<br>
+fi<br>
+# add matching for loop here<br>
+echo &ldquo;### Log rotation completed: `date` ###&rdquo; &gt;&gt; ${outfile}<br>
+echo &ldquo;&rdquo; &gt;&gt; ${outfile}</p>
+<p>echo &ldquo;View status at: ${outfile}&rdquo;</p></div>

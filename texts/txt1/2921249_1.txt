@@ -1,0 +1,43 @@
+<div><p>I purchased a <a href="http://www.amazon.com/SanDisk-Sansa-Clip-Player-SDMX22-004G-A57K/dp/B005FVNGRS/ref=sr_1_2?ie=UTF8&qid=1349340396&sr=8-2&keywords=sansa+clip+zip" target="_blank">4gb Sansa Clip Zip from Amazon</a> after researching online for a small, minimalistic, convenient mp3 player.</p>
+<p><strong>What is Rockbox?</strong></p>
+<p><a href="http://www.rockbox.org/wiki/WhyRockbox" target="_blank">Rockbox</a> is an open-source firmware replacement for compatible mp3 players. It provides additional functionality, efficiency, customisability and improved playback quality.</p>
+<p>At time of writing, the only thing that hasn’t been fully ported is the <a href="http://www.rockbox.org/wiki/SansaClip#Sansa_Clip_Zip_port_status" target="_blank">sudoku plugin</a>.</p>
+<p><strong>Manual Installation</strong><br>
+For automated installation, you could use the <a href="https://aur.archlinux.org/packages.php?ID=25559" target="_blank">rbutil</a> package from the AUR, which provides a simple GUI interface. However, the GUI interface has a qt dependency. I don’t use any other qt applications, so I opted for the manual installation method.</p>
+<p>See the <a href="http://www.rockbox.org/wiki/SansaAMS" target="_blank">Rockbox wiki</a> for complete instructions.</p>
+<ol><li>Ensure that the <a href="http://kb.sandisk.com/app/answers/detail/a_id/162/related/1" target="_blank">player’s USB setting</a> is on MSC (Mass Storage Class).
+<pre>On the Clip Zip -> Settings -> System Settings -> USB Mode -> MSC</pre>
+</li>
+<li>Plug in the player and mount it as a normal user.
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="" style="font-family:monospace;">$ sudo mount -o uid=$<span class="br0">(</span>id -u<span class="br0">)</span>,gid=$<span class="br0">(</span>id -g<span class="br0">)</span>,fmask=<span style="">113</span>,dmask=002 /dev/disk/by-label/SANSA\\x20CLIPZ /mnt/usb</pre></td></tr></table></div>
+
+</li>
+<li>Extract the firmware.
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="" style="font-family:monospace;">$ wget http://build.rockbox.org/data/rockbox-sansaclipzip.zip -O ~/downloads/rockbox-sansaclipzip.zip
+$ unzip ~/downloads/rockbox-sansaclipzip.zip -d /mnt/usb</pre></td></tr></table></div>
+
+</li>
+<li>Extract the bootloader.
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="" style="font-family:monospace;">$ wget http://download.rockbox.org/bootloader/sandisk-sansa/mkamsboot/linux-x86-<span style="">64</span>/mkamsboot -O ~/downloads/rbinstall/mkamsboot
+$ wget http://download.rockbox.org/bootloader/sandisk-sansa/clipzip/bootloader-clipzip.sansa -O ~/downloads/rbinstall/bootloader-clipzip.sansa
+$ wget http://mp3support.sandisk.com/firmware/clipzip/clipzip01.01.18.zip -O ~/downloads/clipzip_of.zip
+$ unzip ~/downloads/clipzip_of.zip -d ~/downloads/rbinstall</pre></td></tr></table></div>
+
+</li>
+<li>Install the bootloader.
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="" style="font-family:monospace;">$ cd ~/downloads/rbinstall
+$ chmod +x mkamsboot
+$ ./mkamsboot clpza.bin bootloader-clipzip.sansa patched.bin
+$ cp patched.bin /mnt/usb/clpza.bin</pre></td></tr></table></div>
+
+</li>
+<li>Unmount the player. Unplug the usb. Wait for firmware update to finish.
+
+<div class="wp_syntax"><table><tr><td class="code"><pre class="" style="font-family:monospace;">$ sudo umount /mnt/usb</pre></td></tr></table></div>
+
+</li>
+</ol></div>

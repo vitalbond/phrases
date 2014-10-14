@@ -1,0 +1,31 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>Just two weeks to <a href="http://yuilibrary.com/yuiconf/">YUIConf</a>! Thanks to everyone who submitted feedback on <a href="http://www.yuiblog.com/blog/2013/10/17/yuiconf-technical-sessions-and-survey/">last week&rsquo;s survey</a> which has been helpful to optimize the session schedule and reduce conflicts. If you haven&rsquo;t had a chance to submit your feedback yet, please take a few minutes to do so. Also, to help YUIConf speakers practice and <a href="http://yuilibrary.com/yuiconf/speakers/">give great tech talks</a>, we ask that they give at least one practice session in front of a live audience. If you&rsquo;d like to sit in on any of these practice sessions, please sign-up on <a href="https://docs.google.com/document/d/1PtVGYEOhFrFFstOQH0DPdCyvSgzwoQsVcjK6EN_FInE/edit">this spreadsheet</a>.</p>
+</li>
+<li>
+<p>A reminder that there will be two full-day workshops the day before YUIConf, <em>&ldquo;YUI Introduction&rdquo;</em> for beginners, and <em>&ldquo;YUI Building Blocks&rdquo;</em> for more advanced developers. You can RSVP for either of those sessions <a href="http://yuiconf2013-workshops.eventbrite.com/">here</a>.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics focused on <a href="http://purecss.io/">Pure</a>, specifically integration with Bower/Grunt/Yeoman, preprocessors, configuration &amp; customization, additional layouts, and more. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=JJkLRRLFrks">here</a>.</p>
+</li>
+<li>
+<p>Discussion this week on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> focused on <a href="https://groups.google.com/forum/?fromgroups#!topic/yui-contrib/20MGVD2J3GM">importing Pure Base and Grids into YUI</a> and its <a href="https://github.com/yui/yui3/pull/1240">associated pull request</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/GlitterCakes/Aws-S3-ImageManager">AWS S3 ImageManager</a> is a YUI-based app that uses a responsive design grid layout to display images in an S3 bucket. You can check out a demo <a href="http://im.trepe.net/">here</a>.</p>
+</li>
+<li>
+<p>Version bumps this week for the following YUI devtools: <a href="https://github.com/yui/grover/">Grover</a> and <a href="https://github.com/yui/yuidoc">YUI Doc</a>. Upgrade with <code>npm install -g grover yuidocjs</code>.</p>
+</li>
+<li>
+<p>Updated modules in this week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.10.24-18-05">Gallery build</a> include: <a href="http://yuilibrary.com/gallery/show/datetime-utils">datetime-utils</a> and <a href="http://yuilibrary.com/gallery/show/datasource-async-function">datasource-async-function</a>.</p>
+</li>
+<li>
+<p>Links of the Week:</p>
+<ul><li><a href="http://mathiasbynens.be/notes/javascript-unicode">JavaScript has a Unicode problem</a></li>
+<li><a href="http://keithwhor.com/music/">Musical Keyboard &ndash; JS Dynamic Audio Synth</a></li>
+<li><a href="https://medium.com/objects-in-space/9b8a9dd7bfe3">Introducing Event-Focused JS and CSS (EFJAC)</a></li>
+<li><a href="https://variadic.me/posts/2013-10-22-bind-call-and-apply-in-javascript.html">Bind, Call and Apply in JavaScript</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/153.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

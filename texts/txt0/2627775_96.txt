@@ -1,0 +1,26 @@
+<div><p>Since shortly after the game’s release, a lot of gamers who have been playing UbiSoft’s <em>Watch_Dogs</em> have been experiencing issues loading their save games. In particular, their games would get stuck loading the game at around 90%.</p>
+<p>Ubisoft announced shortly after people started having the issue that they knew what was causing the problem and were working on a fix. Today, Ubisoft has announced they believe they have fixed the problem and will be releasing a patch on all platforms for the game very soon that will fix this issue as well as some other issues specific to the PC version.</p>
+<p>The patch will launch on the PS3 and PS4 versions of the game later today. PC owners will get the patch later in the next few days.  Xbox One and Xbox 360 players should find their patches in the next week.</p>
+<p>Here’s a full list of all the patch notes.</p>
+<p><strong>GAMEPLAY FIXES</strong><br>
+•	Fixed several mission-breaking bugs.<br>
+•	Fixed minor mission and item-related issues.<br>
+•	Fixed the issue that caused the empty weapon-wheel.</p>
+<p><strong>MULTIPLAYER FIXES</strong><br>
+•	Fixed several minor respawn issues.<br>
+•	Fixed some connection and session joining issues.</p>
+<p><strong>PC SPECIFIC FIXES</strong><br>
+•	Fixed graphical glitches on Low &#38; Medium settings.<br>
+•	Fixed some crashes on SLI configurations.<br>
+•	Implemented several performance improvements.<br>
+•	Implemented a few control improvements.<br>
+•	Fixed issues causing infinite messaging and timing-out when trying to access the Online Shop from the Extras Menu while Uplay is set to Offline mode.<br>
+•	Fixed issues connecting to a Multiplayer game.<br>
+•	Implemented several mouse modifications.<br>
+•	Fixed “Drinking Game” control issue where wrong information was displayed when played with a gamepad.<br>
+•	Fixed “Chess Game” control issue.<br>
+•	Fixed bug where the invasion setting was never saved.<br>
+•	Fixed graphical issues during cut scenes and cinematics.<br>
+•	Fixed several graphical and texture bugs.<br>
+•	Removed Vista OS check to prevent false positives.<br>
+•	Added game version in main menu.</p><br><a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/gamexcess.wordpress.com/7266/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/gamexcess.wordpress.com/7266/"></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=gamexcess.net&#38;blog=12380894&#38;post=7266&#38;subd=gamexcess&#38;ref=&#38;feed=1" width="1" height="1"></div>

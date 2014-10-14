@@ -1,0 +1,65 @@
+<div><p>My company uses Mercurial for internal hosting. Other than that, it’s an absolutely terrific place to work.</p>
+<p>About three quarters of my colleagues are sick of hearing the rest of us complain about Mercurial’s inadequacies. They mention tutorials like <a href="http://chris.improbable.org/2010/07/15/how-work-git-and-push-changes-mercurial-using-hg-g/">this one</a> that simply don’t work in real life. I’ve done my research, and I have not been able to find a viable git to hg pipeline anywhere. There is a <a href="https://github.com/cosmin/git-hg">git-hg</a> repo, but it appears to be un-maintained and not overly well documented. It’s also written in bash, so I’m not eager to take over maintenance.</p>
+<p>Instead, I’ve been spending some of my non-working hours trying to make a python wrapper around hg-git named <a href="https://github.com/buchuki/gitifyhg">gitifyhg</a>. It started out as an automated version of the hg-git tutorials, but is now expanding to provide additional support and tools.</p>
+<p>Right now I’m following a git-svn style of workflow, where your git master branch can be synced up with the hg default branch. It seems to be working somewhat ok. I think at this point, the pain of using gitifyhg is about equal to the pain of using hg alone. Hopefully future improvements will reduce that pain, and as always, patches are most welcome!</p>
+<p>The <a href="https://github.com/buchuki/gitifyhg/blob/master/README.rst">instructions</a> are pretty clear and the <a href="https://github.com/buchuki/gitifyhg/blob/master/test/test_gitifyhg.py">unit tests</a> provide a pretty good description of basic usage. Non-basic usage probably doesn’t work (yet). Here’s a tutorial of what does work:</p>
+<p>Acme corporation uses Mercurial for all their repositories. Fred and Wilma are developing a project named AcmeAdmin together. Fred is content to use Mercurial for hosting, but Wilma is a git advocate who is going crazy with the restrictions Mercurial places on her. She decides she’s going to try gitifyhg on this new project to see how much trouble it is. </p>
+<p>Fred starts the project by creating a Mercurial repo that will serve as the remote repo for both of them:</p>
+<pre class="brush:bash">
+mkdir acmeadmin
+cd acmeadmin
+hg init
+</pre>
+<p>Fred and Wilma are doing a very strange sort of pair programming where they have separate repositories on the same machine. They are doing this so if you were reading along, you could type in the same commands they are typing and the demo would work. Rest assured that in spite of this queer practice, Fred and Wilma are hotshot programmers. So Fred now clones this remote repo and starts working. In the meantime, Wilma is browsing the gitifyhg README, so she hasn’t cloned anything yet.</p>
+<pre class="brush:bash">
+cd ..
+hg clone acmeadmin fredacme
+cd fredacme
+echo "Write Documentation" >> TODO
+hg add TODO
+hg commit -m "write the documentation for this project."
+echo "Write Unit Tests" >>TODO
+hg commit -m "unit tests are done"
+hg push
+</pre>
+<p>Wilma’s caught up now and eager to try gitifyhg. She takes over the keyboard and clones the remote repository, which already contains Fred’s changes. Then she runs gitifyhg and verifies that a git repository exists with Fred’s two commits.</p>
+<pre class="brush:bash">
+cd ..
+hg clone acmeadmin wilmaacme
+cd wilmaacme
+gitifyhg
+git log
+</pre>
+<p>Fred’s gone for coffee. Wilma now starts her own hacking and pushes the commits using gitifyhg.</p>
+<pre class="brush:bash">
+echo "Implement code until tests pass" >>TODO
+git commit -m "code implemented" -a
+git hgpush
+</pre>
+<p>Wilma got kind of lucky here because she implemented her code on the master branch and there were no conflicts with Fred’s work. If there had been, I’m not sure what would have happened. Fred’s finished his coffee and pulls in Wilma’s change via Mercurial. He then commits some more changes.</p>
+<pre class="brush:bash">
+cd ../fredacme
+hg pull -u
+echo "deploy" >> TODO 
+hg commit -m "it's up and running"
+hg push
+</pre>
+<p>Meanwhile, Wilma is working on a separate feature. She remembers to create a new git branch this time, which is good because she’s going to want to do some rebasing when Fred’s commit comes in.</p>
+<pre class="brush:bash">
+cd ../wilmaacme
+git checkout -b feature_branch
+echo "new feature documentation" >> FEATURE
+git add FEATURE
+git commit -m "start new feature by documenting it"
+</pre>
+<p>Before pushing her changes, Wilma pulls to see if Fred has done anything. He has! But the <code>hgpull</code> merges all that into her master branch. She checks out her working branch and rebases it onto master. Then she pushes it upstream.</p>
+<pre class="brush:bash">
+git hgpull
+git checkout feature_branch
+git rebase master
+git checkout master
+git merge feature_branch
+git hgpush
+</pre>
+<p>And that’s the basic workflow! I’m probably going to add an hgrebase command to take care of that checkout rebase checkout merge step, since I expect it to be common. It should probably use <code>git rebase -i</code>, which is probably the most amazing thing that ever happened to version control.</p>
+<p>Like I said, this is how gitifyhg works when all goes well. When things don’t go well it’s still a bit of a mess. I’ve had to manually sync up the hg and git working directories using <code>git reset --hard</code> and <code>hg update -C</code> a couple times. Once, my <code>hgpush</code> ended up putting a bookmarked branch on my hg repo that I didn’t want to go public (luckily, hg push fails by default when there are multiple heads); I ended up having to use <code>hg strip</code> to clean it up. I’m hoping to automate or prevent some of this in the future. For now, try it out and submit patches or at least issues!</p></div>

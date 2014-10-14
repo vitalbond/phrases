@@ -1,0 +1,40 @@
+<div><p>A few years ago, I <a href="http://archlinux.me/dusty/2009/05/20/introducing-opterator/">wrote</a> a simple decorator that introspects a <code>main()</code> method signature and docstring to generate an option parser. I never really used it, mostly because back then, I wasn’t too keen on third party dependencies. Nowadays with <a href="http://packages.python.org/distribute/">distribute</a> being maintained, well-documented, and working (plus I know how to use it properly), I no longer have this concern.</p>
+<p>A friend recently linked me to the brilliantly designed <a href="http://docopt.org/">docopt</a> and reminded me of my interest in opterator. I revisited <a href="https://github.com/buchuki/opterator">my code</a> and decided it’s a pretty neat little design. So I ported it to Python 3. This took a matter of minutes, largely because I originally wrote it shortly after taking the <a href="http://pytest.org/latest/">pytest</a> tutorial at Pycon 2009 and it was easy to find the failing code. It now supports Python 2.6, 2.7, and 3.3, according to <a href="http://tox.testrun.org/latest/">tox</a>.</p>
+<p>I originally designed opterator to be a full replacement for optparse and friends. However, my main purpose for it now is to create quick and dirty command line applications, often for my personal use. These apps usually have a couple of options and it doesn’t seem worth the trouble of setting up <code>optparse</code>. Yet, mucking around with <code>sys.argv</code> is also annoying. Opterator minimizes the boilerplate. Check out this basic example:</p>
+<pre class="brush:python">
+from opterator import opterate                      
+
+
+@opterate                                           
+def main(filename, color='red', verbose=False):     
+    print(filename, color, verbose)
+
+main()                                              
+</pre>
+<p>with three lines of boilerplate code, a function can be turned into a command line program that can be called like so:</p>
+<pre class="brush:bash">
+  $ python examples/basic.py this_file
+  this_file red False
+</pre>
+<p>or so:</p>
+<pre class="brush:bash">
+  python examples/basic.py this_file --color=blue
+  this_file blue False
+</pre>
+<p>or even so:</p>
+<pre class="brush:bash">
+  $ python examples/basic.py --color=purple another_file --verbose
+  another_file purple True
+</pre>
+<p>And you even get a not totally (but somewhat) useless helpfile:</p>
+<pre class="brush:bash">
+  $ python examples/basic.py -h
+  Usage: basic.py [options] filename
+
+
+
+Options:
+  -h, --help            show this help message and exit
+  -c COLOR, --color=COLOR
+  -v, --verbose
+</pre></div>

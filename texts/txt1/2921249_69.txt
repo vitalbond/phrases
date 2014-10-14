@@ -1,0 +1,6 @@
+<div><p>Long time no see.<br>
+I alla fall. Se till att du har pantheon-notify-bzr installerat (det finns i AUR). Sedan &ouml;ppnar du filen /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service och ers&auml;tter raden<br>
+Exec=/usr/lib/xfce4/notifyd/xfce4-notifyd<br>
+med<br>
+Exec = /usr/bin/pantheon-notify<br>
+Spara och njut.</p></div>

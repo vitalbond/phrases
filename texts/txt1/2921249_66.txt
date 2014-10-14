@@ -1,0 +1,264 @@
+<div><p>In <a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4</a>, we took a break from developing Kivy interfaces and focused on improving the interface we already had. In this part, we&rsquo;ll get back to interface development by creating a widget to display the buddy list. Here&rsquo;s the plan: we&rsquo;ll start with a new widget to render the information we&rsquo;re getting from the roster. Then we&rsquo;ll figure out how to query <code>sleekxmpp</code> to get additional information about the user, such as their online status and status message.</p>
+<p>If you haven&rsquo;t been following along or want to start with a clean slate, you can clone the state of the <a href="https://github.com/buchuki/orkiv">example repository</a> as of the end of part 4:</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_four
+</pre>
+<p>Remember to create and activate a virtualenv populated with the appropriate dependencies, as discussed in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">part 1</a>.</p>
+<h4>Table Of Contents</h4>
+<p>If you&rsquo;re just joining us, you might want to jump to earlier steps in this tutorial:</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Handling events</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4: Code and interface improvements</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/16/creating-an-application-in-kivy-part-5/">Part 5: Rendering a Buddy List</a></li>
+</ol><h4>Rendering A Basic ListView</h4>
+<p>So far, after successful login, a list of usernames is printed on the <code>ConnectionModal</code> popup. That&rsquo;s not quite what we want to do. Rather, we want to dismiss the popup and render the buddy list in the root window instead of the login form.</p>
+<p>The first thing we&rsquo;ll have to do here is wrap the login form in a new root widget. We should have done this from the start, but to be honest, I didn&rsquo;t think of it. This widget will be a sort of manager for the <code>AccountDetailsForm</code>, <code>BuddyList</code>, and <code>ChatWindow</code>. If we only ever wanted to show one window at a time, we could use Kivy&rsquo;s <a href="http://kivy.org/docs/api-kivy.uix.screenmanager.html">ScreenManager</a> class to great effect. However, I hope to display widgets side by side if the window is wide enough, so let&rsquo;s try coding it up manually.</p>
+<p>First we can add an <code>OrkivRoot</code> (leaving it empty for now) class to <code>__main__.py</code>. Let&rsquo;s add a <code>BuddyList</code> class while we&rsquo;re at it, since we&rsquo;ll need that shortly.</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/eec5cbda69ab34e781e848bd4878c69c27709f42">commit</a>)</p>
+<pre class="brush:python">
+from kivy.boxlayout import BoxLayout  # at top of file
+
+class BuddyList(BoxLayout):
+    pass
+
+
+class OrkivRoot(BoxLayout):
+    pass
+</pre>
+<p>Next, we update the <code>orkiv.kv</code> to make <code>OrkivRoot</code> the new root object (replacing the current <code>AccountDetailsForm:</code> opening line) and make any instances of <code>OrkivRoot</code> contain an <code>AccountDetailsForm</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/75c8d668344e98c4f1b27a5689a3765f5fb0baf0">commit</a>)</p>
+<pre class="brush:python">
+OrkivRoot:
+
+&lt;OrkivRoot&gt;:
+    AccountDetailsForm:
+</pre>
+<p>Now let&rsquo;s add a <code>show_buddy_list</code> method to the <code>OrkivRoot</code> class. This method will simply clear the contents of the widget and construct a new <code>BuddyList</code> object for now:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/80e57bbf6836dc75e35e8ef3506311f28b5382ac">commit</a>)</p>
+<pre class="brush:python">
+class OrkivRoot(BoxLayout):
+    def show_buddy_list(self):
+        self.clear_widgets()
+        self.buddy_list = BuddyList()
+        self.add_widget(self.buddy_list)
+</pre>
+<p>And finally, we can remove the temporary code that renders buddy list jabberids on the <code>ConnectionModal</code> label and replace it with a call to <code>show_buddy_list</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/2e5c77bfd80105adb5b39bf5e94cd3d35e99e759">commit</a>)</p>
+<pre class="brush:python">
+def connect_to_jabber(self):
+    app = Orkiv.get_running_app()
+    try:
+        app.connect_to_jabber(self.jabber_id, self.password)
+        app.root.show_buddy_list()
+        self.dismiss()
+</pre>
+<p>Note that we also explicitly dismiss the <code>ConnectionModal</code>. The new <code>BuddyList</code> widget, which is currently blank, will be displayed as soon as we have a valid connection.</p>
+<p>Let&rsquo;s add some styling to that <code>BuddyList</code> class in our <code>orkiv.kv</code> file. We&rsquo;ll add a <code>ListView</code> which provides a scrollable list of widgets. Of course, we&rsquo;re not actually putting anything into the <code>ListView</code>, so if we run it now, it won&rsquo;t show anything&hellip; but it&rsquo;s there!</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/c482015a8a6bac564a8ec2af4fe5ad662adc0969">commit</a>)</p>
+<pre class="brush:python">
+&lt;BuddyList&gt;:
+    list_view: list_view
+    ListView:
+        id: list_view
+</pre>
+<p>Notice that I gave the <code>ListView</code> an <code>id</code> property and connected it to a <code>list_view</code> property on the root widget. If you remember <a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">part 3</a> at all, you&rsquo;re probably expecting to add an <code>ObjectProperty</code> to the <code>BuddyList</code> class next. You&rsquo;re right!</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/374d6a5dfdc1abf6753c62aad4c38b223dc43a2e">commit</a>)</p>
+<pre class="brush:python">
+class BuddyList(BoxLayout):
+    list_view = ObjectProperty()
+
+    def __init__(self):
+        super(BuddyList, self).__init__()
+        self.app = Orkiv.get_running_app()
+        self.list_view.adapter.data = sorted(self.app.xmpp.client_roster.keys())
+</pre>
+<p>Since you guessed that <code>ObjectProperty</code> was coming, I added an initializer as well. I have to keep you interested, after all! The initializer first sets up the superclass, then sets the <code>list_view</code>&lsquo;s data to the buddy list keys we&rsquo;ve been using all along. There&rsquo;s a couple complexities in this line of code, though. First note the call to <code>sorted</code>, which accepts a python list (in this case containing the ids in the buddy list) and returns a copy of the list in alphabetical order. Second, we are setting the <code>list_view.adapter.data</code> property. Underneath the hood, <code>ListView</code> has constructed a <a href="http://kivy.org/docs/api-kivy.adapters.simplelistadapter.html">SimpleListAdapter</a> for us. This object has a <code>data</code> property that contains a list of strings. As soon as that list is updated, the adapter and <code>ListView</code> work together to update the display.</p>
+<p>The reason that the data is stored in an adapter is to separate the data representation from the controller that renders that data. Thus, different types of adapters can be used to represent different types of data. It&rsquo;s possible to construct your own adapter as long as you implement the relevant methods, but this is typically unnecessary because the adapters that come with Kivy are quite versatile.</p>
+<p>Try running this code. Upon successful login, the modal dialog disappears and the buddy list pops up in sorted order. Resize the window to be smaller than the list and you can even see that the <code>ListView</code> takes care of scrolling.</p>
+<p>The <code>SimpleListAdapter</code> is not sufficient for our needs. We need to be able to display additional information such as the user&rsquo;s status and availability, and we want to lay it out in a pretty way. We&rsquo;ll also eventually want to allow selecting of a Buddy in the list so we can chat with them. <code>SimpleListAdapter</code> supports none of this. However, Kivy&rsquo;s <code>ListAdapter</code> does. So let&rsquo;s edit the <code>orkiv.kv</code> to use a <code>ListAdapter</code> for the <code>BuddyList</code> class:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/f57cdbebe2decf07c78c180a425186d5bdb196bc">commit</a>)</p>
+<pre class="brush:python">
+# at top of file:
+#:import la kivy.adapters.listadapter.ListAdapter  # at top of file
+#:import lbl kivy.uix.label
+
+&lt;BuddyList&gt;:
+    list_view: list_view
+    ListView:
+        id: list_view
+        adapter: la.ListAdapter(data=[], cls=lbl.Label)
+</pre>
+<p>First, we import the <code>listadapter</code> module using the name <code>la</code>. This has a similar effect to a <code>from kivy.adapters import listadapter as la</code> line in a standard Python file. This <code>#:import</code> syntax can be used to import any python module that you might need inside the kv language file. The syntax is always <code>#:import &lt;alias&gt; &lt;module_path&gt;</code>. However, you can only import modules, you can&rsquo;t import specific classes inside modules. This is why I used a rather uninformative variable name (<code>la</code>). When we construct the <code>ListAdapter</code> at the end of the snippet, the shortened form happens to be more readable, since we are immediately following it by a class name.</p>
+<p>We also import the label class as <code>lbl</code>. While it seems odd to have to import <code>Label</code> when we have seen <code>Label</code> used in other parts of the KVLanguage file, we have to remember that sometimes KV Language allows us to switch to normal Python. That&rsquo;s what&rsquo;s happening here; the code after <code>adapter:</code> is normal python code that doesn&rsquo;t know about the magic stuff Kivy has imported. So we have to import it explicitly.</p>
+<p>This is probably not the best way to do this; we&rsquo;re probably going to have to replace this view with a custom <code>ListView</code> subclass later, but it suits our needs for the time being.</p>
+<p>That code is simply constructing a new <code>ListAdapter</code> object. It assigns empty data (that will be replaced in <code>BuddyList.__init__</code>) and tells the <code>ListAdapter</code> that the <code>cls</code> to render the data should be a <code>Label</code>. So when we run this code, we see a scrollable list of <code>Label</code>code&gt; objects each with their <code>text</code> attribute automatically set to one of the jabber ids we set up in the <code>BuddyList</code> initializer.</p>
+<p>However, a <code>Label</code> still isn&rsquo;t the right widget for rendering a buddy list item. We need to show more information in there, like whether they are available or away and what their status message is. A label won&rsquo;t cover this, at least not cleanly, so let&rsquo;s start writing a custom widget instead.</p>
+<p>First, add a <code>BuddyListItem</code> class to the <code>__main__.py</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/f373817b19501d7b4203b8b2f816c38cc0f42dfc">commit</a>)</p>
+<pre class="brush:python">
+from kivy.properties import StringProperty  # At top of file
+
+class BuddyListItem(BoxLayout):
+    text = StringProperty()
+</pre>
+<p>By default, <code>ListAdapter</code> passes a <code>text</code> property into the widget that is used as its <code>cls</code>. So we hook up such a property which will be rendered by the label in the KV language file. This is a <code>StringProperty</code>, which behaves like any other property but is restricted to character content. Now we can use this class in the KV Language file:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/54ca673b404959295e8aa26efe1aea440896ac2f">commit</a>)</p>
+<pre class="brush:python">
+# at top of file:
+#:import ok __main__
+
+&lt;BuddyListItem&gt;:
+    size_hint_y: None
+    height: "100dp"
+    Label:
+        text: root.text
+
+&lt;BuddyList&gt;:
+    list_view: list_view
+    ListView:
+        id: list_view
+        adapter: la.ListAdapter(data=[], cls=ok.BuddyListItem)
+</pre>
+<p>Don&rsquo;t forget to make the adapter <code>cls</code> point at the new <code>BuddyListItem</code> class. You can also remove the <code>Label</code> import at the top.</p>
+<p>We set a height property on the <code>BuddyListItem</code> mostly just to demonstrate that the custom class is being used when we run the app. Notice also how the label is referencing the <code>root.text</code> property we set up in the python file.</p>
+<p>This property is being set, seemingly by magic, to the value from the data list we set on <code>ListAdapter</code>. In fact, it&rsquo;s not magic; Kivy is just doing a lot of work on our behalf. For each string in that list, it&rsquo;s constructing a new <code>BuddyListItem</code> object and adding it to that scrollable window. It then sets properties on that object using its default <code>arg_converter</code>. The <code>arg_converter</code> is responsible for taking an item from a data list and converting it to a dictionary of properties to be set on the <code>cls</code> object. The default is to simply take a string and set the <code>text</code> property to that string. Not so magic after all.</p>
+<p>And now we&rsquo;re going to make it less magic. Instead of a text property, let&rsquo;s make a few properties that better reflect the kind of data we want to display:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/6a561f736aa6595cf1c9230b172541f531830f9e">commit</a>)</p>
+<pre class="brush:python">
+class BuddyListItem(BoxLayout):
+    jabberid = StringProperty()
+    full_name = StringProperty()
+    status_message = StringProperty()
+    online_status = StringProperty()
+</pre>
+<p>Don&rsquo;t try running this without updating the KV file, since it&rsquo;s trying to reference a text property that is no longer there:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/542977c77975384965cbeb8212ea638fd9466b3e">commit</a>)</p>
+<pre class="brush:python">
+&lt;BuddyListItem&gt;:
+    size_hint_y: None
+    height: "40dp"
+    Label:
+        text: root.jabberid
+    Label:
+        text: root.full_name
+    Label:
+        text: root.status_message
+    Label:
+        text: root.online_status
+</pre>
+<p>Of course, running it in this state will bring us an empty window, since the <code>ListAdapter</code> is still using the default <code>args_converter</code>. Let&rsquo;s add a new method to the <code>BuddyList</code> class. Make sure you&rsquo;re sitting down for this one, it&rsquo;s a bit complicated:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/b7f0400253f511af562f301e45022769480e3bb2">commit</a>)</p>
+<pre class="brush:python">
+def roster_converter(self, index, jabberid):
+    result = {
+        "jabberid": jabberid,
+        "full_name": self.app.xmpp.client_roster[jabberid]['name']
+    }
+
+    presence = sorted(
+        self.app.xmpp.client_roster.presence(jabberid).values(),
+        key=lambda p: p.get("priority", 100), reverse=True)
+
+    if presence:
+        result['status_message'] = presence[0].get('status', '')
+        show = presence[0].get('show')
+        result['online_status'] = show if show else "available"
+    else:
+        result['status_message'] = ""
+        result['online_status'] = "offline"
+
+    return result
+</pre>
+<p>Deep breaths, we&rsquo;ll explore this code one line at a time. First, the new method is named <code>roster_converter</code> and takes two arguments, the index of the item in the list (which we&rsquo;ll ignore for now), and the jabberid coming in from the data list. These are the normal arguments for any <code>ListAdapter</code> <a href="http://kivy.org/docs/api-kivy.adapters.args_converters.html">args_converter</a> in Kivy.</p>
+<p>Next, we start constructing the <code>result</code> dictionary that we&rsquo;ll be returning from this method. Its keys are the properties in the <code>BuddyListItem</code> class. It&rsquo;s values, of course, will be displayed on the window.</p>
+<p>Then we ask sleekxmpp to give us <code>presence</code> information about the user in question. This is not a trivial piece of code. I don&rsquo;t want to spend a lot of time on it, since it involves ugly Jabber and sleekxmpp details, and our focus is on Kivy. In fact, you can skip the next paragraph if you&rsquo;re not interested.</p>
+<p>First, sleekxmpp&rsquo;s <code>client_roster.presence</code> method returns a dictionary mapping connected <em>resources</em> to information about that resource. For simplicity, we&rsquo;re ignoring resources here, but the basic idea is that you can be connected from two locations, say your cell phone and your laptop, and you&rsquo;ll have two sets of presence information. Since we don&rsquo;t care about resources, we ignore the keys in the dictionary and ask for just the <code>values()</code>. However, we still need to pick the &ldquo;most important&rdquo; resource as the one that we want to get presence information from. We do this by wrapping the list in the <code>sorted</code> function. Each resource has an integer priority, and the highest priority is the resource we want. So we tell the sorted function to sort by priority, passing it a <code>key</code> argument that gets the priority using a <a href="http://docs.python.org/2/tutorial/controlflow.html#lambda-forms">lambda</a> function. The function defaults to 100 if the resource doesn&rsquo;t specify a priority; thus we prefer an empty priority over any other value. The <code>reversed</code> keyword puts the highest priority at the front of the list.</p>
+<p>Seriously, I hope you skipped that, because it&rsquo;s a lot of information that is not too pertinent to this tutorial, even if the code it describes is. It took me a lot of trial and error to come up with this code, so just be glad you don&rsquo;t have to!</p>
+<p>So, assuming a list of resources is returned for the given jabber id, we pick the front one off the list, which is the one deemed to have highest priority. We then set the status_message directly from that item, defaulting to an empty string if they user hasn&rsquo;t set one. The <code>show</code> key in this dict may return the empty string if the user is online (available) without an explicit status, so we check if the value is set and default to &ldquo;available&rdquo; if it is not.</p>
+<p> However, there&rsquo;s a chance that call returns a completely empty list which tells us what?: That the user is not online. So we have that else clause constructing a fake presence dict indicating that the user is offline.</p>
+<p>Finally, things become simple again. We return the constructed dictionary that maps property names to values, and let Kivy populate the list for us. All we have to do for that to happen is tell Kivy to use our custom <code>args_converter</code> instead of the default one. Change the adapter property in the KV Language file to:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/e5330130b7e7c5598d9a40b03726a2de5b357fc2">commit</a>)</p>
+<pre class="brush:python">
+adapter:
+    la.ListAdapter(data=[], cls=ok.BuddyListItem,
+    args_converter=root.roster_converter)
+</pre>
+<p>Notice that I split the command into two lines (indentation is important, if a bit bizarre.) in order to conform to <a href="http://www.python.org/dev/peps/pep-0008/">pep 8</a>&lsquo;s suggestion that line length always be less than 80 characters.</p>
+<p>Now, finally, if you run this code and login, you should see all the information about your buddies pop up! However, it&rsquo;s still a wee bit ugly. Let&rsquo;s find some ways to spice it up.</p>
+<p>One simple thing we can do is highlight different rows by giving each one a background color. We can start by adding a <code>background</code> attribute as an <code>ObjectProperty</code> to the <code>BuddyListItem</code>. Then we can set this value inside the <code>roster_converter</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/ab56e90c2918340b0bbf932f195e80f3cddddb9d">commit</a>)</p>
+<pre class="brush:python">
+if index % 2:
+    result['background'] = (0, 0, 0, 1)
+else:
+    result['background'] = (0.05, 0.05, 0.07, 1)
+</pre>
+<p>Remember that index parameter that is passed into all <code>args_converter</code>s and we were ignoring. Turns out it comes in handy. We can take the modulo (that&rsquo;s the remainder after integer devision if you didn&rsquo;t know) 2 of this value to determine if it&rsquo;s an even or odd numbered row. If it&rsquo;s odd (the remainder is not zero), then we set the background to black. Otherwise, we set it to almost black, a very deep navy. The background color is set as a tuple of 4 values, the RGBA value (Red, Green, Blue, Alpha). Each of those takes a float between 0 and 1 representing the percentage of each of those to add to the color.</p>
+<p>Now, most Kivy widgets don&rsquo;t have a background attribute, so we&rsquo;re going to have to draw a full screen rectangle on the widget&rsquo;s canvas. This is great news for you, because we get to cover the canvas or graphics instructions, something this tutorial has neglected so far. The canvas is a drawing surface that accepts arbitrary drawing commands. You can think of it as lower level than widget, although in reality, widgets are also drawn on the canvas, and every widget has a canvas. Here&rsquo;s how we set up a rectangle on the <code>BuddyListItem</code> canvas:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/a19ff67e1c8ff8c4d4f581b9180f0ebc2d8ab9de">commit</a>)</p>
+<pre class="brush:python">
+canvas.before:
+    Color:
+        rgba: self.background
+    Rectangle:
+        pos: self.pos
+        size: self.size
+</pre>
+<p>I put this code above the labels in the <code>BudyListItem</code>. The <code>canvas.before</code> directive says &ldquo;issue this group of commands before painting the rest of the widget&rdquo;. We first issue a <code>Color</code> command, setting its rgba attribute to the 4-tuple we defined as the background. Then we issue a <code>Rectangle</code> instruction, using the currently set <code>Color</code> and setting the position and size to be <em>dynamically</em> bound to the size of the window. If you resize the window, the rectangle will be automatically redrawn at the correct size.</p>
+<p>Another thing I want to do to improve the interface is render status messages underneath the username. They could go in a smaller font and maybe different color. This can be done entirely in KV Language:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/cce0f9f301e9e642201e9963e8ac1d3e021a3b74">commit</a>)</p>
+<pre class="brush:python">
+&lt;BuddyListItem&gt;:
+    size_hint_y: None
+    height: "75dp"
+    canvas.before:
+        Color:
+            rgba: self.background
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    BoxLayout:
+        size_hint_x: 3
+        orientation: 'vertical'
+        Label:
+            text: root.jabberid
+            font_size: "25dp"
+            size_hint_y: 0.7
+        Label:
+            text: root.status_message
+            color: (0.5, 0.5, 0.5, 1.0)
+            font_size: "15dp"
+            size_hint_y: 0.3
+    Label:
+        text: root.full_name
+    Label:
+        text: root.online_status
+</pre>
+<p>I changed the height of the rows to be more friendly. The canvas I left alone, but I added a <code>BoxLayout</code> around two of the labels to stack one above the other in a vertical orientation. I made this <code>BoxLayout</code> 3 times as wide as the other boxes in the horizontal layout by giving it a <code>size_hint_x</code>. The two labels also get size hints, font size, and a color.</p>
+<p>When we run this it looks&hellip; a little better. Actually, it still looks like ass, but this is because of my incompetence as a designer and has nothing to do with Kivy!</p>
+<p>Now one more thing I&rsquo;d like to do is render a status icon instead of the text &ldquo;available&rdquo;, &ldquo;offline&rdquo;, etc. Before we can do that, we need some icons. I wanted something in the public domain since licensing on this tutorial is a bit hazy. A web search found <a href="http://openiconlibrary.sourceforge.net/">this library</a> and I found some public domain icons named <code>circle_&lt;color&gt;</code> there. I grabbed four of them using wget:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/977fd5e0dce808bbd419b84d013f423e0044478c">commit</a>)</p>
+<pre class="brush:bash">
+cd orkiv
+mkdir icons
+wget http://openiconlibrary.sourceforge.net/gallery2/open_icon_library-full/icons/png/48x48/others/circle_green.png -O icons/available.png
+wget http://openiconlibrary.sourceforge.net/gallery2/open_icon_library-full/icons/png/48x48/others/circle_grey.png -O icons/offline.png
+wget http://openiconlibrary.sourceforge.net/gallery2/open_icon_library-full/icons/png/48x48/others/circle_yellow.png -O icons/xa.png 
+wget http://openiconlibrary.sourceforge.net/gallery2/open_icon_library-full/icons/png/48x48/others/circle_red.png -O icons/away.png
+</pre>
+<p>Once the files are saved, all we have to do to render them is replace the <code>online_status</code> label with an <code>Image</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/434cc3e26f15bd3d25dded9898ab400062af2e78">commit</a>)</p>
+<pre class="brush:python">
+    Image:
+        source: "orkiv/icons/" + root.online_status + ".png"
+</pre>
+<p>And that&rsquo;s it for part 5. I promised we would render a complete buddy list, and that&rsquo;s what we&rsquo;ve done! In part 6, we&rsquo;ll make this list interactive. Until then, happy hacking!</p>
+<h4>Monetary feedback</h4>
+<p> If you are enjoying this tutorial and would like to see similar work published in the future, please support me. I plan to one day reduce the working hours at my day job to devote more time to open source development and technical writing. If you think this article was valuable enough that you would have paid for it, please consider supporting me in one or more of the following ways:</p>
+<ul><li>Purchase my books: <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a> and <a href="http://hackinghappy.com/">Hacking Happy</a></li>
+<li>Write a positive review of said books</li>
+<li>Tip me on <a href="https://www.gittip.com/buchuki/">Gittip</a></li>
+</ul><p>Finally, if you aren&rsquo;t in the mood or financial position to help fund this work, you can always share it on your favorite social platforms.</p></div>

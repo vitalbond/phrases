@@ -1,0 +1,53 @@
+<div><p><a href="http://cordova.apache.org/">Apache Cordova</a> is a framework for developing cross-platform smartphone apps using HTML, CSS, and JavaScript. I recently had the opportunity to create an app for Android and iOS devices, and it was great to be able to do this using familiar web technologies.</p>
+<p>One unfamiliar aspect, however, was building a <strong>single-page app</strong>. It is possible to create multi-page apps with Cordova, but you lose the program state when changing from one page to another, and a lag is introduced as assets for the new page are loaded and parsed. Fortunately using a JavaScript framework makes it relatively easy to build single-page apps, as a long-time YUI user I naturally gravitated towards <a href="http://yuilibrary.com/yui/docs/app/">YUI&rsquo;s App Framework</a>.</p>
+<p>There is good documentation on setting up Cordova, so I won&rsquo;t go into that. Once set up, here&rsquo;s all that&rsquo;s needed to create a new app, using the Android platform as an example:</p>
+<pre>[~]$ cordova create scotchapp com.example.scotchapp "ScotchApp"
+[~]$ cd scotchapp/
+[scotchapp]$ cordova platform add android
+</pre>
+<p>This creates a <code>www</code> folder for the app&rsquo;s code:</p>
+<pre>[scotchapp]$ ls www/
+css  img  index.html  js
+</pre>
+<h2>A Simple App</h2>
+<p>Let&rsquo;s make a simple test app, with all code in <code>index.html</code> for simplicity.</p>
+<p>First we&rsquo;ll include <a href="http://purecss.io/">Pure</a> (a set of CSS modules that play nice with YUI) and the YUI seed file:</p>
+<p><script src="https://gist.github.com/triptych/1a72987f89f5b5093d97.js"></script> While loading remote assets like this is okay for this sample app, I&rsquo;d recommend switching to using <strong>local copies of the CSS and JavaScript</strong> modules once the requirements are settled: we don&rsquo;t want to rely on devices being connected to the Internet, or make users wait for these resources to download.</p>
+<p>Now we can add the code for our app:</p>
+<p><script src="https://gist.github.com/triptych/d6e013a2565ad37002be.js"></script><strong>And that&rsquo;s it!</strong> We can now run the app on a connected device or an emulator:</p>
+<pre>[scotchapp]$ cordova run android
+</pre>
+<p>This also creates an apk file in <code>platforms/android/ant-build/</code>. If you have an Android device and would like to give it a spin, <a href="http://www.jacksonpauls.com/ScotchApp-0.0.1.apk">download the apk for this sample app</a>.</p>
+<p>That was pretty easy, but when making a more complicated app there are some device quirks to be wary of: I&rsquo;ll cover some of those I came across next.</p>
+<h2>Tap Lag and Ghost Clicks</h2>
+<p>On iOS and older Android devices, there is about <strong>300ms delay</strong> between when a user taps the screen and the <code>click</code> event is fired. This is because the device is waiting to check for a double-tap. You can get rid of this delay by adding YUI&rsquo;s <a href="http://yuilibrary.com/yui/docs/event/tap.html"><code>event-tap</code> module</a> and listening for <code>tap</code> events rather than <code>click</code> events:</p>
+<pre>YUI().use('app', <strong>'event-tap'</strong>, function (Y) {
+  // ...
+  events : {
+    'button' : {
+      <strong>tap</strong> : function (e) {
+  // ...
+</pre>
+<p>There is, however, a catch: <strong>ghost clicks</strong>. A <code>tap</code> event will fire instantly, but the <code>click</code> event will still fire after 300ms, and can even trigger an action on a new view the app has just rendered. I ended up using a transparent <code>&lt;div&gt;</code> with a high <code>z-index</code> to capture ghost clicks when transitioning between views, removing it after 400ms, but I can&rsquo;t claim that&rsquo;s a very elegant solution.</p>
+<h2>Other Quirks</h2>
+<p>Cordova and YUI both support Android devices back to version 2.3, but there are some quirks. <a href="http://cordova.apache.org/docs/en/3.3.0/cordova_device_device.md.htm">Cordova&rsquo;s device detection</a> can be used to trigger different code paths depending on what OS the device is running.</p>
+<p>Android devices use an overlay with a list of options when a user taps a <code>&lt;select&gt;</code>, but Android 2.3 can <strong>fail to detect <code>&lt;select&gt;</code> tags when they&rsquo;re added dynamically</strong>, for example when rendered in a <code>Y.View</code>. I ended up using <code>&lt;radio&gt;</code> tags on Android 2.3 devices as a replacement.</p>
+<p>Once a <code>Y.View</code> has rendered, adding additional dynamic content with <strong><code>setHTML()</code></strong> to one of its nodes <strong>can cause all content to disappear</strong> in Android 2.3. For example, if data for a table in a view needs to be loaded from a remote source, it might be nice to:</p>
+<ul><li>make an AJAX request for the data, </li>
+<li>render the view, </li>
+<li>update the view&rsquo;s table once the AJAX request has completed.</li>
+</ul><p>But on Android 2.3 I found I had to fetch the table data then render the view, otherwise I ended up with a blank screen when trying to update the view.</p>
+<p>On a couple devices (HTC One X on 4.2.2 and Samsung Galaxy Note II on 4.1.1), I found that after the app had rendered its initial view, <strong>navigating</strong> to a new view didn&rsquo;t work with <strong>transitions</strong> enabled. Try setting <code>transitions: false</code> when initializing <code>Y.App</code> if you think you&rsquo;re hitting the same issue:</p>
+<pre>var app = new Y.App({
+  <strong>transitions : false,</strong>
+  // ...
+</pre>
+<h2>Closing Thoughts</h2>
+<p>Overall, YUI&rsquo;s App Framework and Apache Cordova make a great combination, I&rsquo;d certainly use it again. If you have a team with experience building websites and want to start also making mobile apps, this might also be the right choice for you.</p>
+<h2>Full Code Listing</h2>
+<p><script src="https://gist.github.com/triptych/48649fe0093bcde01df1.js"></script></p>
+<div class="authorbox">
+<p>
+    <em> <strong> <img style="margin-left:10px" align="right" alt="Jackson Pauls" src="http://www.jacksonpauls.com/jp.jpg">About the author:</strong> <a href="https://plus.google.com/+JacksonPauls/?rel=author">Jackson Pauls</a> is a Holistic software engineer based in Edinburgh, Scotland. </em>
+  </p>
+</div></div>

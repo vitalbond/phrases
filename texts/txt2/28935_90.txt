@@ -1,0 +1,24 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2>Release News</h2>
+<h2>YUI</h2>
+<p>All systems are working within normal parameters and we expect to have the next version of YUI out on <a href="https://github.com/yui/yui3/wiki/Development-Schedule"><strong>April 8th</strong></a>. We are officially in Code Freeze mode, which means that feature development for this sprint has ended. Any code that lands from here on in, until the release, is code that&rsquo;s meant to fix specific bugs.</p>
+<h2>Pure</h2>
+<p>We launched <a href="https://github.com/yui/pure/releases/tag/v0.5.0-rc-1">Pure 0.5.0 Release Candidate 1</a> a few weeks ago and haven&rsquo;t had any major issues filed. We&rsquo;ll be cleaning up a few loose ends and releasing Pure 0.5.0 shortly! If you haven&rsquo;t had a time to check out the RC, I highly recommend building a layout with the new grid system. You can check out the docs over on the <a href="http://stage.purecss.io/">Pure Staging Site</a>.</p>
+<p>Remember that YUI depends on Pure (namely, the CSS Grids and CSS Base modules), so if you&rsquo;re a YUI Grids user, I recommend checking out this RC as these changes will eventually land in YUI-land as well.</p>
+<h2 id="open-roundtable">YUI Open Roundtable</h2>
+<p>In his week&rsquo;s <a href="http://www.youtube.com/watch?v=vgh4uqQVu2o">YUI Open Roundtable</a>, <a href="https://twitter.com/clarler">Clarence</a>, <a href="https://twitter.com/itsasbreuk">Marco</a>, and <a href="http://www.yuiblog.com/twitter.com/triptych">Andrew</a> sat down with Steven Olmsted of IBI Group. Steven discussed two amazing YUI-based products: <a href="https://www.youtube.com/watch?v=vgh4uqQVu2o">Transit-Realtime</a> which provides a web front end to a transit alert system and a <a href="https://www.youtube.com/watch?feature=player_detailpage&amp;v=vgh4uqQVu2o#t=2885">Telephony system</a> that connects Node.js to Asterisk using YUI. Steven is a YUI power user, so you should check out the video and see how YUI is being used in very robust and unique ways. (Steven wanted us to mention he can be reached at <a href="mailto:steven.olmsted@ibigroup.com">steven.olmsted@ibigroup.com</a> and that they are actively hiring!)</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/vgh4uqQVu2o" frameborder="0" allowfullscreen></iframe></p>
+<h2 id="world-of-js">The World of JavaScript</h2>
+<ul><li>
+<p>Nicolas Zakas <a href="http://www.nczonline.net/blog/2014/03/26/announcing-understanding-ecmascript-6/?utm_source=javascriptweekly&amp;utm_medium=email">outlined his thoughts</a> on his upcoming CC-licensed book, Understanding ECMAScript 6.</p>
+</li>
+<li>
+<p>Rich Harris wrote a blog post on why he thinks <a href="http://flippinawesome.org/2014/03/24/string-templating-considered-harmful/">string templating is harmful</a>.</p>
+</li>
+<li>
+<p>Despite all the love that Go is receiving, Duncan Smith talks about why <a href="http://notduncansmith.github.io/blog/why-i-wont-switch-to-go/">he&rsquo;s not switching over to it from Node.js</a>. I reckon quite a few people will agree with his points.</p>
+</li>
+<li>
+<p>Finally, <a href="http://tagtree.tv/">Tagtree</a> has added 2 more ES6 screencasts to their ever-growing list of tutorials: <a href="http://tagtree.tv/ecmascript-6-episode-3">Introduction to modules</a>, and <a href="http://tagtree.tv/ecmascript-6-episode-2">Enhanced literals, parameter magic, and more</a>.</p>
+</li>
+</ul><p>So basically, ES6! ES6! ES6! That&rsquo;s all for this week. Catch you in 7 days!</p></div>

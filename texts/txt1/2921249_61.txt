@@ -1,0 +1,120 @@
+<div><p>This article continues the tutorial we started in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1</a>. In the first part, we set up a Kivy project and developed a very basic Kivy application. We also discussed version control to aid in project management. In this part, we’ll be designing an actual user interface for a Jabber client and begin to implement it in the KV language.</p>
+<p>Make sure you have completed part 1, or if you want to skip the preliminaries, you can clone the <a href="https://github.com/buchuki/orkiv/tree/end_part_one">end_part_one</a> tag of the <a href="https://github.com/buchuki/orkiv">Orkiv git repository</a> and start from there. It’s probably a good idea to name a new branch for your working changes so your master branch doesn’t diverge from my upstream repository. Remember to activate the virtualenv you created in Part 1 (or create one if you’re starting from the git clone.)</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_one
+git checkout -b working_changes
+source venv/bin/activate
+</pre>
+<h4>Table Of Contents</h4>
+<p>Here are links to other parts of the tutorial. I’m sorry for the navigation faux pas; blogs are not the best interface for multi-part articles.</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: Creating a form</a></li>
+</ol><h4>Interface Design</h4>
+<p>In general, before developing a user interface, it is a good idea to know what you want it to look like. I see this project having three main views. When the user first opens the application, they’ll see an <em>Account Details</em> screen to provide their jabber server and login credentials. We won’t bother with saving these details since this tutorial series is focused on Kivy interface development, not persistence. Once they have logged in, the other two views are a <em>Buddy List</em> and the individual <em>Chat Window</em>.</p>
+<p>I would like to develop the app to show the buddy list and chat windows side by side if the screen is large enough (eg: a laptop screen or large tablet in horizontal orientation), but only one window at a time on small screens. It is very important to evaluate screen size when developing cross platform applications; it is generally not desirable or feasible to render the same view on large monitors and small phones. We’ll look at this feature in later tutorials, but knowing that we want to plan for it now will affect how we implement our design.</p>
+<p>All of these windows are pretty simple. In this second part, we will focus on the account details screen. It will be a simple form with labels on the left and fields for entering the various details on the right. The fields covered will include server, username, and password. Below these fields will be a <em>Login</em> button. Normally I’d sketch the interface on a piece of paper, but since this looks like every other Jabber client on the market, I don’t think it’s necessary.</p>
+<h4>The Account Details Form Widget</h4>
+<p>In Kivy, virtually every object that gets displayed on the screen is a widget. Just a few examples include:</p>
+<ul><li>The label we rendered in the first tutorial</li>
+<li>The text input fields and buttons we’ll render in this tutorial</li>
+<li>Layout classes that contain other widgets and decide where they should be displayed</li>
+<li>Complicated tree views such as file pickers</li>
+<li>Movie and photo renderers</li>
+<li>Tabbed boxes that display different widgets depending on the selected tab</li>
+</ul><p>It is easy to make custom widgets, and to access all widgets, whether custom or otherwise, from KV language files. We’ll be creating a new widget to contain our entire <em>Account Details</em> form. Start by adding a new import and class to <code>__main__.py</code>:</p>
+<p><!--example 4--></p>
+<pre class="brush:python">
+from kivy.uix.boxlayout import BoxLayout
+
+
+class AccountDetailsForm(BoxLayout):
+    pass
+</pre>
+<p>Running the code with this addition won’t change anything in the output, since the newly created widget hasn’t been added to the root window. However, there are a few things we need to discuss before we change the KV language file to use this widget. You might be asking yourself why we created a new widget instead of adding a <code>BoxLayout</code> widget (whatever that is!) directly to the root of the KV language file <code>orkiv.kv</code>. While it would have been trivial to do this, it would have made putting a new widget (such as the Buddy List) on the root screen more difficult. Further, when it comes time to attach events to the Login button, we can make it a method of this new class, where it makes the most sense.</p>
+<p>The <code>BoxLayout</code> is a very simple widget that simply takes the available space and places all the child widgets in it from left to right or top to bottom. By default, each widget gets an equal amount of space, but it’s also possible to make certain widgets have specific sizes or percentages of space or to expand to fill available area.</p>
+<p><code>BoxLayout</code> is one of several kinds of layouts available in Kivy. A layout is simply a container widget that holds other widgets and knows how to position those child widgets in a specific pattern. We’ll be seeing a <code>GridLayout</code> shortly. You can read about other Kivy layouts in the <a href="http://kivy.org/docs/api-kivy.uix.layout.html?highlight=layout#kivy.uix.layout">Kivy API Reference</a>.</p>
+<p>Let’s edit <code>orkiv.kv</code> to render this new widget as the child form instead of the label we used before. We’ll also add a couple labels to the <code>AccountDetailsForm</code> class so you can see the relationship between root widgets and classes in the KV Language:</p>
+<p><!--example 5--></p>
+<pre class="brush:python">
+AccountDetailsForm:
+
+<AccountDetailsForm>:
+    Label: 
+        text: 'Hello World'
+    Label:
+        text: 'Another World'
+</pre>
+<p>There’s a couple things going on here. The root widget of the <code>Orkiv</code> app is defined as a <code>AccountDetailsForm</code>. This is followed by a colon in case we wanted to add other child widgets to the object, but in this case, it’s just followed by a blank line. Then we define the structure of the child widgets of the <code>AccountDetailsForm</code> class itself. We know it’s a class and not a root widget because the class name is surrounded in angle brackets (< and >). Further, one app can only have one root widget. We just defined that root to be pointing at a single <code>AccountDetailsForm</code>. However, note that a class can be styled once and added in more than one place. Just as our <code>AccountDetailsForm</code> has two labels, it would be possible (though silly, from an interface perspective) to create a container widget that contains two <code>AccountDetailsForm</code>s. The point is, an <code>AccountDetailsForm</code>, once its layout has been defined, can be used just like any of the built-in widgets supplied with Kivy.</p>
+<p>If you run <code>python orkiv</code> now, it will render the two labels side by side, each taking a full half the window. Note that there are actually three widgets being rendered; first, the <code>AccountDetailsForm</code> (which <em>is a</em> <code>BoxLayout</code> by inheritance) is rendered to fill the whole screen, and then it lays out the two labels as child widgets.</p>
+<p>However, that’s not the AccountDetailsForm we were looking for! Let’s create our first nontrivial Kivy Language class. Replace the <code></code> class in your <code>orkiv.kv</code> with the following:</p>
+<p><!--example 6--></p>
+<pre class="brush:python">
+<AccountDetailsForm>:
+    orientation: "vertical"
+    GridLayout:
+        cols: 2
+        Label:
+            text: "Server"
+        TextInput:
+        Label:
+            text: "Username"
+        TextInput:
+        Label:
+            text: "Password"
+        TextInput:
+            password: True
+    Button:
+        text: "Login"
+</pre>
+<p>It’s time to discuss just how the Kivy language lays things out. In my mind, it uses a box model similar to HTML, except instead of ugly HTML tags, indentation is used to specify what widgets go inside other widgets. Also, unlike HTML, style information is included in the <code>.kv</code> file instead of an external <code>.css</code> file. Though it’s not a hard and fast rule, style information (called properties in Kivy) typically begins with a lowercase letter, while child widgets start with a capital.</p>
+<p>Look at the first level of indentation under the <code><AccountDetailsForm></code> declaration. There are three items; <code>orientation</code>, <code>GridLayout</code>, and <code>Button</code>. The former counts as “style information”. Remember that the <code>AccountDetailsForm</code> class extends <a href="http://kivy.org/docs/api-kivy.uix.boxlayout.html#kivy.uix.boxlayout.BoxLayout">BoxLayout</a>. One of the attributes on BoxLayout is “orientation”; we are telling BoxLayout here that we want a vertical layout.</p>
+<p>This vertical box layout then contains two widgets, a <code>GridLayout</code> and a <code>Button</code>. The <a href="http://kivy.org/docs/api-kivy.uix.gridlayout.html#kivy.uix.gridlayout.GridLayout">GridLayout</a> spaces all it’s children equally. We just have to tell it that there are 2 columns (the <code>cols</code> property) and then start adding our objects, which are displayed from left to right and wrap to the next row in the grid after every two widgets. We add <code>Label</code>s and <code>TextInput</code>s. Each label has a <code>text</code> property that we set using a further level of indent. The <code>TextInput</code> objects don’t require any extra properties except the password.</p>
+<p>Later, we’ll have to give these objects some identifiers so we can refer to them in code. For this initial prototyping stage, we can start with the bare minimum. If we render the above example, we end up with a recognizable, but rather ugly form:</p>
+<p><a href="http://archlinux.me/dusty/files/2013/06/example_6.png"><img src="http://archlinux.me/dusty/files/2013/06/example_6-300x225.png" alt="example_6" width="300" height="225" class="size-medium wp-image-937"></a></p>
+<h4>Restricting sizes</h4>
+<p>Let’s try to make the form a little less ugly:</p>
+<pre class="brush:python">
+<AccountDetailsForm>:
+    orientation: "vertical"
+    height: "200dp"
+    size_hint_y: None
+    GridLayout:
+        cols: 2
+        row_default_height: "40dp"
+        row_force_default: True
+        spacing: "10dp"
+        padding: "10dp"
+        Label:
+            text: "Server"
+        TextInput:
+        Label:
+            text: "Username"
+        TextInput:
+        Label:
+            text: "Password"
+        TextInput:
+            password: True
+    Button:
+        size_hint_y: None
+        height: "40dp"
+        text: "Login"
+</pre>
+<p>All we’ve done here is add some styling information to make the layout a little more friendly. This can be complicated as we want the app to look good on a variety of devices at a variety of resolutions and screen sizes. The main thing is to ensure all the widgets have a known height. As you might guess, this can be accomplished by adding a <code>height</code> property to each of the widgets. However, doing this alone will not work because <code>BoxLayout</code> likes to think of itself as in charge of deciding what size a widget should be. Without any styling, heights in a vertical <code>BoxLayout</code> are calculated as the number of widgets divided by the available screen space. However, it’s possible to tell <code>BoxLayout</code> to make certain widgets take a higher percentage of available space by giving it a <code>size_hint_y</code> attribute, which should be a float and defaults to 1.0. Unfortunately, for textboxes and buttons, percentages don’t really make a lot of sense, since we have no idea what size the window or screen of a particular advice is going to be, but we do know we want them to be about the same height on each screen.</p>
+<p>So in addition to setting the <code>height</code> attribute, we also have to set <code>size_hint_y</code> to <code>None</code> for those widgets to prevent <code>BoxLayout</code> from ignoring the <code>height</code> property and laying things out by percentages instead.</p>
+<p>You’ll also not that we are specifying the heights using strings that end in the suffix “dp”. It’s possible to provide integer values here, which would be interpreted as the number of pixels high the button is. However, due to the massive variance in screen resolutions on modern devices, it’s not really feasible to use pixels as a measurement. A login button that is 40 pixels high and looks good on a desktop monitor would look very small, indeed, on a “retina” display tablet.</p>
+<p>Therefore, Kivy provides us with the concept of “display pixels”; hence the “dp” in the strings. Display pixels should be <em>about</em> the same size on every device; on a standard desktop monitor they generally map to a single pixel, but on higher density displays, they will be multiplied by a scaling factor. There are other <a href="http://kivy.org/docs/api-kivy.metrics.html">metric properties</a> such as <code>cm</code> or <code>in</code> that you can use, but I generally find it most convenient to think in display pixels.</p>
+<p>Note also that instead of supplying heights for each of the <code>Label</code> and <code>TextInput</code> widgets inside the grid layout, we cheated and used the <code>row_default_height</code> attribute so all rows have the same height. For this to work, you also have to set <code>row_force_default</code> to True.</p>
+<p>Finally we added <code>spacing</code> and <code>padding</code> properties to the <code>GridLayout</code> to add a 10dp space between child widgets and a “frame” around the whole <code>GridLayout</code> as well. If we run this example, it looks like this:</p>
+<p><a href="http://archlinux.me/dusty/files/2013/06/example_7.png"><img src="http://archlinux.me/dusty/files/2013/06/example_7-300x220.png" alt="example_7" width="300" height="220" class="alignnone size-medium wp-image-943"></a></p>
+<p>There’s one more thing I’d like to do before ending this part of the tutorial. As you can see above, the form is showing up at the bottom of the window, no matter what size the window is. That might look a bit bizarre on a tablet or even phone screen. It would be better if the entire form was anchored to the top of the window.</p>
+<p>As an exercise, take a few moments to experiment (remember to use a different git branch!) and see if you can figure out how to move the form to the top by yourself. The next paragraph contains some hints if you get stuck, and the working code is linked after that. (I’m not about to tell you not to cheat, since it really depends what your personal goals are in reading this tutorial.)</p>
+<p>There are probably multiple ways to do this, and I’m not even certain my solution is the best one. But I suggest making the <code>AccountDetailsForm</code> into an <a href="http://kivy.org/docs/api-kivy.uix.anchorlayout.html">AnchorLayout</a> and anchor a child <code>BoxLayout</code> to the top of the form. Note that you’ll have to change both files to make this happen.</p>
+<p>If you’re still confused, have a look at the full changeset at <a href="https://github.com/buchuki/orkiv/commit/6a9a815f29e3913bb4cf38125e21416ad3c7770d">the changeset</a> on github.</p>
+<p>That’s it for part 2 of this tutorial, which focused on laying out widgets in the KV Language. In part 3, we’ll figure out how to log into an XMPP library and render a buddy list. Note that I don’t actually know how to do this, so we’ll have to figure it out together!</p>
+<h4>Monetary feedback</h4>
+<p>I don’t expect the collected parts of this tutorial to be big enough to publish as a book, so I’m hosting them for free here on my blog. If you liked the tutorial and would like to see similar work published in the future, please support me. I plan on one day reducing my working hours at my day job to devote more time to open source development and technical writing. If you think this article was valuable enough that you would have paid for it, please consider supporting me in one or more of the following ways:</p>
+<ul><li>Purchase my books: <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a> and <a href="http://hackinghappy.com/">Hacking Happy</a></li>
+<li>Tip me on <a href="https://www.gittip.com/buchuki/">Gittip</a></li>
+<li>E-mail <em>dusty at archlinux dot ca</em> to let me know you would fund a book about Kivy via crowd funding</li>
+</ul><p>If you aren’t in the mood or financial position to help fund this work, at least share it on your favorite social platforms!</p></div>

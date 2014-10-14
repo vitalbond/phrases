@@ -1,0 +1,27 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week marks the conclusion of the <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-10-next-release">Sprint 10 development cycle</a>. The release window opens up next Tuesday, and if everything goes according to plan, YUI 3.13 should become available on the CDN shortly afterwards. Thanks to the dozens of contributors who have submitted hundreds of commits <a href="https://github.com/yui/yui3/pulse/monthly">over the past month</a>. If you are anxious to get started, check out the <a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/">3.13.0-rc-1 release announcement</a> and the <a href="https://github.com/yui/yui3/tree/release-3.13.0">release-3.13.0 branch</a>.</p>
+</li>
+<li>
+<p>A reminder of <a href="http://www.yuiblog.com/blog/2013/09/26/yuiconf-2013-call-for-speakers-deadline/">last week&rsquo;s announcement</a> that the Call for <a href="http://yuilibrary.com/yuiconf/">YUIConf</a> Speakers deadline is next Friday, October 11th. So if you have a talk you&rsquo;d like to propose, let us know!</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included the possible convergence of <a href="https://github.com/clarle/yui-db">yui-db</a> and <a href="https://gist.github.com/juandopazo/5405383">Y.Storage</a>, as well as an update on YUI 3.13 and <a href="http://yuilibrary.com/yuiconf/">YUIConf</a>. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=-YLxWIVRse0">here</a>.</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include continued discussion on <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/hwRCA2o5Ks8">a proposal to improve gesture events</a> and <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/vFZV2zUMepM">nesting Y.Apps</a>.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://www.yuiblog.com/blog">Gallery build</a> include: <a href="http://yuilibrary.com/gallery/show/bulkedit">bulkedit</a>, <a href="https://github.com/tilomitra/cssextras/blob/master/README.md">cssextras</a>, <a href="https://github.com/tilomitra/csstypography/blob/master/README.md">csstypography</a>, <a href="http://yuilibrary.com/gallery/show/funcprog">funcprog</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsacheckbox">itsacheckbox</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsadatetimepicker">itsadatetimepicker</a>, <a href="http://yuilibrary.com/gallery/show/itsadialogbox">itsadialogbox</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsaformelement">itsaformelement</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsaformmodel">itsaformmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsamodellistsyncpromise">itsamodellistsyncpromise</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsamodelsyncpromise">itsamodelsyncpromise</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsapanel">itsapanel</a>, <a href="http://yuilibrary.com/gallery/show/itsaselectlist">itsaselectlist</a>, <a href="http://yuilibrary.com/gallery/show/itsatoolbar">itsatoolbar</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsaviewmodel">itsaviewmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/blob/master/src/gallery-itsaviewmodelpanel">itsaviewmodelpanel</a>, and <a href="https://github.com/ekashida/gallery/blob/master/src/gallery-pathogen-encoder/README.md">pathogen-encoder</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://toys.usvsth3m.com/javascript-under-pressure/">You Can&rsquo;t JavaScript Under Pressure</a></li>
+<li><a href="http://braythwayt.com/2013/10/01/javascript-allonge-is-free.html">JavaScript Allonge is Free</a></li>
+<li><a href="https://developers.google.com/chrome-developer-tools/docs/javascript-memory-profiling">JavaScript Memory Profiling in Chrome DevTools</a></li>
+<li><a href="http://www.2ality.com/2013/10/safe-integers.html">Safe integers in JavaScript</a></li>
+<li><a href="http://programming.oreilly.com/2013/10/the-joys-of-static-memory-javascript.html">The Joys of Static Memory JavaScript</a></li>
+<li><a href="http://www.youtube.com/watch?v=iSxNCYcPAFk">Martha Girdler: The JavaScript Interpreter, Interpreted &mdash; JSConf EU 2013 </a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/150.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

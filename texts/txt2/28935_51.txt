@@ -1,0 +1,23 @@
+<div><p>Howdy! Well, this week zoomed by faster than JavaScript running on V8, and it&rsquo;s YUI Weekly time again. This will be the last YUI Weekly before Thanksgiving, and we have quite a bit to share, so let&rsquo;s get started.</p>
+<h2 id="nov-22-release">Release News</h2>
+<p>We were busy testing YUI across a myriad of browsers in order to release YUI 3.14.0 on <strong>November 25th</strong>. Everything looks good, and you can grab YUI 3.14.0 RC-1 today. It&rsquo;s available from <a href="https://npmjs.org/package/yui">npm</a>, as a <a href="http://yui.zenfs.com/releases/yui3/yui_3.14.0-rc-1.zip">zip</a>, or <a href="http://yui.yahooapis.com/3.14.0-rc-1/build/yui/yui-min.js">directly off the CDN</a>. I&rsquo;m sure you guys are eager to find out what changed in this version. Andrew will have the full details in our release blog post. You can get a preview by checking out the <a href="https://github.com/yui/yui3/wiki/YUI-3.14.0-Change-History-Rollup">Change History Rollup</a>.</p>
+<p>We recommend all developers try out the release candidate. If you encounter any problems, you can <a href="https://github.com/yui/yui3/issues/new">file an issue</a>, and we can look into it before releasing the GA.</p>
+<h2 id="nov-22-roundtable">Open Roundtable</h2>
+<p>This week&rsquo;s <a href="http://www.youtube.com/watch?v=8TRXJAa_eP0">Open Roundtable</a> featured discussions on the upcoming YUI release, the status of YUIConf videos, the delay in Gallery deployments, WinJS, and Bayjax. You can <a href="http://www.youtube.com/watch?v=8TRXJAa_eP0">catch the entire video on YouTube</a>. It&rsquo;s your weekly dose of YUI in 30 minutes!</p>
+<h2 id="nov-22-this-week">New This Week</h2>
+<ul><li>
+<p>There was a <a href="http://www.meetup.com/BayJax/events/150785372/">BayJax meetup</a> this week that focused on JavaScript testing. Our CI expert, <a href="http://twitter.com/reid">Reid</a> was there to talk about how we test YUI. You can <a href="http://reid.in/baytest">check out his awesome slides</a> here.</p>
+</li>
+<li>
+<p>I&rsquo;m a big fan of Reid&rsquo;s web-based slides, but did you know that they are built using YUI? It&rsquo;s a project called <a href="https://github.com/reid/upstage">Upstage</a> and you can check it out on GitHub.</p>
+</li>
+<li>
+<p><a href="https://twitter.com/caridy">Caridy</a> <a href="https://github.com/square/es6-module-transpiler/pull/78">added the YUI Transpiler</a> into Square&rsquo;s <code>es6-module-transpiler</code>, which is a step towards being able to transpile ES6 modules into YUI modules.</p>
+</li>
+</ul><h2 id="nov-22-js">The World of JavaScript</h2>
+<ul><li>I recently found out that iOS 7 has a native JavaScript bridge that allows bi-directional communication between JavaScript and Obj-C. <a href="http://strongloop.com/strongblog/apples-ios7-native-javascript-bridge/">This article</a> talks a bit more about that. </li>
+<li>There was a status report published by Dave Herman on the <a href="https://speakerdeck.com/dherman/status-report-es6-modules">State of ES6 Modules</a>. </li>
+<li>John Resig has created a <a href="http://ejohn.org/blog/node-js-stream-playground/">web application</a> that allows you to play streams in NodeJS.</li>
+<li><a href="http://2013.jsconf.asia/">JSConf Asia</a> is coming up! If you&rsquo;re attending, I&rsquo;m jealous.</li>
+</ul><h2 id="nov-22-thanksgiving">Happy Thanksgiving</h2>
+<p>Well, that&rsquo;s all for this week! If you noticed, we changed up the format of these YUI Weekly posts a bit this week. Let us know if you prefer this format or the older format in the comments. Finally, on behalf of the whole team, I wish everyone a happy Thanksgiving!</p></div>

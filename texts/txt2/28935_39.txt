@@ -1,0 +1,21 @@
+<div><p>We are very happy to announce the release of <strong>YUI 3.13.0</strong>! You can find this release via the <a href="http://yui.yahooapis.com/3.13.0/build/yui/yui-min.js">Yahoo CDN</a>, installable through <a href="https://npmjs.org/package/yui">npm</a>, or available as a <a href="http://yui.zenfs.com/releases/yui3/yui_3.13.0.zip">download</a>. We have also updated the <a href="http://yuilibrary.com/">YUI Library website</a> to reflect changes in this release.</p>
+<h2>In This Release</h2>
+<p>Much of the information about this release is detailed in our <a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/">Release Candidate blog post</a>. The components updated by this release are listed below.</p>
+<ul><li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#router">Router</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#model">Model</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#button">Button</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#calendar">Calendar</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#datatable">DataTable</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#rich">Rich Text Editor</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#event">Event, Custom Event, and Event ValueChange</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#file">File</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#graphics">Graphics</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#history">History</a><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#node"></a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#node">Node and ScrollInfo Node Plugin</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#paginator">Paginator</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#transition">Transition</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#uploader">Uploader</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#widget">Widget</a></li>
+<li><a href="http://www.yuiblog.com/blog/2013/10/02/yui-3-13-0-release-candidate-1/#yuicore">YUI Core</a></li>
+</ul><h2>More Information</h2>
+<p>There was a total of <a href="https://github.com/yui/yui3/compare/v3.12.0...v3.13.0"><strong>544</strong> commits by <strong>19</strong> contributors</a> for this release. If you would like to read more about the details of the changes for this release, check out the <a href="https://github.com/yui/yui3/wiki/YUI-3.13.0-Change-History-Rollup">Change History Rollup</a> as well as the <a href="https://github.com/yui/yui3/compare/v3.12.0...v3.13.0">GitHub comparison</a> with <strong>YUI 3.12.0</strong>. We run almost 9,000 tests per <a href="http://yuilibrary.com/yui/environments/">target environment</a> daily on our source code and we are always looking into ways to improve the process. If you find an issue, <a href="https://github.com/yui/yui3/issues/new">please file it on GitHub</a>. If you would like to contribute tests, documentation, code fixes, and new features, please check out our <a href="https://github.com/yui/yui3/wiki/Contributing-to-YUI">Contributing to YUI</a> Wiki entry. We also have a special set of <a href="https://github.com/yui/yui3/issues?direction=desc&amp;labels=up+for+grabs&amp;page=1&amp;sort=created&amp;state=open">up for grabs issues</a> that can serve as an excellent way to get involved in the YUI community.</p></div>

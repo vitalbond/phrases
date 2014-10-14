@@ -1,0 +1,8 @@
+<div><p>When I use <a href="http://pytest.org/">py.test</a>, I often rely on the <code>-k</code> switch to swiftly select the test I want to run. Instead of having to type the full module, class, and test path as is required with unittest and nose, I can just type a few characters that uniquely match the name of the test.</p>
+<p>For example, if I have a test file containing methods <code>test_basic_clone</code> and <code>test_basic_clone_notes</code>, I can run the latter test simply by calling <code>py.test -k clone_no</code>.</p>
+<p>However, I often create multiple tests that have similar names. This can make it difficult to run just one test if the test name is a prefix of a longer test name. If I want to run just <code>test_basic_clone</code>, any substring will also be a substring of the <code>test_basic_clone_notes</code> test, and both tests are matched by <code>-k</code>.</p>
+<p>Since pytest version 2.3.4, the -k keyword supports expressions. So I can build an expression like this:</p>
+<pre class="brush:bash">
+py.test -k "basic_clone and not notes"
+</pre>
+<p>This selects all tests matching “basic_clone”, then excludes any containing the word “notes”. Thus, I run only the test I’m interested in without having to fix my crappy naming scheme. It’s more typing than is normally the case, but is still less cognitive load than trying to remember what module and class I’m editing and constructing a selector based on those attributes.</p></div>

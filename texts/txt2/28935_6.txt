@@ -1,0 +1,1 @@
+<div>We are releasing YUI 3.10.3 today to fix a .swf vulnerability that was inadvertantly reintroduced in YUI 3.10.2. Any project which is self-hosting the YUI 3.10.2 io.swf file should upgrade to YUI 3.10.3 to resolve the vulnerability. Any project which is not self-hosting the YUI 3.10.2 io.swf file is not affected by the vulnerability. You [...]</div>

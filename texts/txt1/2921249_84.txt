@@ -1,0 +1,97 @@
+<div><p><code><br>
+#!/bin/bash</code></p>
+<p># Backup<br>
+# Usage: backup-pg.sh<br>
+#</p>
+<p># If you have another method for obtaining your filer's ip<br>
+# use that instead to assign this variable<br>
+FILERIP=`mount | grep db01 | cut -d':' -f1`</p>
+<p># username associated with the key used<br>
+UN="snappy"<br>
+# location of the ssh key used for above user<br>
+SNAPKEY=/opt/bbcollab/voice/postgres.stuff/snapkey</p>
+<p># If you have another method for obtaining the volume name or archive<br>
+# Edit the two lower variables; your ARCHIVE name should have a grepable line<br>
+VOLUME=`mount | grep db01 | cut -d':' -f2 | sed 's#/vol/##g' | sed 's#/db01.*##g'`<br>
+COMNAME="backup_pgdata"<br>
+ARCHIVE="${COMNAME}-${HOST}-${TODAY}"</p>
+<p># location of the .snapshot directory<br>
+SSDIR=/var/voice/postgres/.snapshot</p>
+<p># retention in snapshot count<br>
+RETEN=4</p>
+<p>function get_oldest_snapshot_by_filesystem<br>
+{<br>
+	ss=`ls -lct $SSDIR | grep -v "total" | head -1 | awk '{print $9}'`<br>
+	echo $ss<br>
+}</p>
+<p>function get_oldest_snapshot_by_netapp<br>
+{<br>
+        # looking for archives with ${COMNAME}<br>
+	cur_ss=`ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap list ${VOLUME}" | grep "${COMNAME}" | awk '{print $10}' | grep -v "^$" | tail -1`<br>
+	echo $cur_ss<br>
+}</p>
+<p>function remove_oldest<br>
+{<br>
+	ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap list ${VOLUME}" | grep "${COMNAME}" &gt; /var/tmp/ss.lst<br>
+	ss_count=`wc -l /var/tmp/ss.lst | awk '{print $1}'`<br>
+	if [[ "$ss_count" -gt $RETEN ]]<br>
+	then<br>
+		obf=`get_oldest_snapshot_by_filesystem`<br>
+		obn=`get_oldest_snapshot_by_netapp`<br>
+		if [[ "$obf" == "$obn" ]]<br>
+		then<br>
+			ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap delete ${VOLUME} $obf"<br>
+		fi<br>
+	else<br>
+		echo "none to remove"<br>
+	fi<br>
+}</p>
+<p>function usage<br>
+{<br>
+	echo ""<br>
+	echo "### $0 Usage ###"<br>
+	echo ""<br>
+	echo "Call script like:"<br>
+	echo ""<br>
+	echo "		$0  ()"<br>
+	echo "		(cron uses -a)"<br>
+	echo ""<br>
+	echo "Options:"<br>
+	echo "		-a	####	Create a new snapshot and delete the oldest"<br>
+	echo "		-c	####	Only create a new snapshot"<br>
+	echo "		-l	####	List the current snapshots"<br>
+	echo "		-d 	Delete snapshot  (regardless of age or retention)"<br>
+	echo "		-q	####	Delete the oldest snapshot (will not delete if you have fewer snapshots than $RETEN)"<br>
+	echo ""<br>
+}</p>
+<p>if [[ $# &gt; 0 ]]<br>
+then<br>
+	case $1 in<br>
+		-a)	psql -U postgres -h localhost -c "SELECT pg_start_backup('${ARCHIVE}');" template1<br>
+			ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap create ${VOLUME} ${ARCHIVE}"<br>
+			psql -U postgres -h localhost -c "SELECT pg_stop_backup();" template1<br>
+			remove_oldest<br>
+			exit<br>
+			;;<br>
+		-c)	psql -U postgres -h localhost -c "SELECT pg_start_backup('${ARCHIVE}');" template1<br>
+			ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap create ${VOLUME} ${ARCHIVE}"<br>
+			psql -U postgres -h localhost -c "SELECT pg_stop_backup();" template1<br>
+			exit<br>
+			;;<br>
+		-l)	ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap list ${VOLUME}"<br>
+			exit<br>
+			;;<br>
+		-d)	ssh -i ${SNAPKEY} -o StrictHostKeyChecking=no ${UN}@${FILERIP} "snap delete ${VOLUME} $2"<br>
+			exit<br>
+			;;<br>
+		-q)	remove_oldest<br>
+			exit<br>
+			;;<br>
+		*)	usage<br>
+			exit<br>
+			;;<br>
+	esac<br>
+else<br>
+	usage<br>
+	exit<br>
+fi<br></p></div>

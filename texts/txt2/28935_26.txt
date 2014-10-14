@@ -1,0 +1,33 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week marks the conclusion of the <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-9-next-release">Sprint 9 development cycle</a>. The release window opens up next Tuesday, and if everything goes according to plan, <strong>YUI 3.12</strong> should become available on the CDN shortly afterwards. Thanks to the dozens of contributors who have submitted hundreds of commits <a href="https://github.com/yui/yui3/pulse/monthly">over the past month</a>. If you are anxious to get started, check out the <a href="http://www.yuiblog.com/blog/2013/08/15/yui-3-12-0-release-candidate-1/">3.12.0-beta-1 announcement</a> and the <a href="https://github.com/yui/yui3/tree/release-3.12.0">release-3.12.0</a> branch.</p>
+</li>
+<li>
+<p>YUIConf 2013 is just around the corner! This year&rsquo;s event will be held at <a href="http://sanjose.place.hyatt.com/en/hotel/home.html">Hyatt Place in downtown San Jose, California</a> on November 6th-7th. You can find more details in the <a href="http://www.yuiblog.com/blog/2013/08/23/save-the-date-yuiconf-nov-6-7/">announcement</a>.</p>
+</li>
+<li>
+<p>Happy to <a href="http://www.yuiblog.com/blog/2013/08/22/ryuichi-okumura-is-now-a-yui-commiter/">announce</a> that longtime YUI Contributor Ryuichi Okumura (<a href="https://twitter.com/okuryu">@okuryu</a>) has been promoted from a <a href="https://github.com/yui/yui3/wiki/Contributor-Model#23-committers">Committer</a>! Congrats Ryuichi, and thanks for all your hard work over the years.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://purecss.io/buttons/">Pure Buttons</a> vs <a href="http://yuilibrary.com/yui/docs/button/#usecssbutton">CSSButton</a> architecture, how to handle performance regressions in CI, the state of linting in YUI, and a demo of YUI&rsquo;s new CI dashboard. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=-4Dz30iNF_Y">here</a>.</p>
+</li>
+<li>
+<p>Over at <a href="http://tech.pro/">Tech.pro</a>, Dan Wellman (<a href="https://twitter.com/danwellman">@danwellman</a>) recently posted <a href="http://tech.pro/tutorial/1451/yui3-the-complete-guide-widgets-1-lesson-1">a series of 15 video tutorials</a> covering many things in YUI, including: the global object, <a href="https://yuilibrary.com/yui/docs/node/">Node</a>, <a href="https://yuilibrary.com/yui/docs/event">Event</a>, <a href="https://yuilibrary.com/yui/docs/widget">Widget</a>, and more. Video tutorials such as these, and <a href="http://twitter.com/klamping">Kevin Lamping</a>&lsquo;s <a href="http://www.youtube.com/watch?v=1iDt5mpaNXM">YUI 3&prime;s Use and Add Methods</a> are great ways to contribute to the project. If you have experience creating video tutorials, or it is just something that interests you, let us know and we can help you get started with some ideas.</p>
+</li>
+<li>
+<p>Earlier this week the project <a href="http://www.yuiblog.com/blog/2013/08/21/announcing-the-new-yui-community-forums/">announced</a> plans for the migration from the <a href="http://yuilibrary.com/forum/">YUI Forums</a> to <a href="https://groups.google.com/forum/#!forum/yui-support">yui-support</a>, a Google Group-based support forum.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.08.22-21-03">Gallery build</a> include: <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsadialog">itsadialog</a>, <a href="https://github.com/earnubs/rangyinputs">rangyinputs</a>, <a href="http://github.com/camsong/yui.rocket">rocket</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-anim">y3d</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-anim">y3d-anim</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-camera">y3d-camera</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-color">y3d-color</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-geometry">y3d-geometry</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-math">y3d-math</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-picker-plugin">y3d-picker-plugin</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-scene">y3d-scene</a>, <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-shader">y3d-shader</a>, and <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-texture">y3d-texture</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://www.youtube.com/watch?v=li4Y0E_x8zE">Enough with the JavaScript Already by Nicholas Zakas </a></li>
+<li><a href="http://www.youtube.com/watch?v=O83-d0t0Ldw">Brendan Eich: Toward a language-neutral browser VM </a></li>
+<li><a href="http://addyosmani.com/blog/tracking-es6-support/">Tracking ECMAScript 6 Support</a></li>
+<li><a href="http://kripken.github.io/mloc_emscripten_talk/qcon.html#/">JavaScript + Other Languages</a></li>
+<li><a href="http://www.thinkful.com/learn/javascript-best-practices-1/">Javascript Best Practices, Part 1</a></li>
+<li><a href="http://mrale.ph/blog/2013/08/14/hidden-classes-vs-jsperf.html">Hidden classes vs jsPerf </a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/144.html">JavaScript Weekly</a> and <a href="http://yahoodevelopers.tumblr.com/post/59003602663/tech-weekly-roundup-responsive-web-typography-awesome">YDN</a></li>
+</ul></li>
+</ul></div>

@@ -1,0 +1,25 @@
+<div><p>Another week has rolled by, which means another edition of YUI Weekly has made its way to your browser of choice. Let&rsquo;s find out what&rsquo;s happened this week in the world of YUI.</p>
+<h1 id="releasenews">Release News</h1>
+<p>We finalized our sprint schedule this week. It&rsquo;s on the <a href="https://github.com/yui/yui3/wiki/Development-Schedule">YUI Wiki</a> but here are the important dates:</p>
+<ul><li>Jan 28, 2014: Sprint Begins.</li>
+<li>Feb 11, 2014: Code Freeze Pull Request Deadline.</li>
+<li>Feb 14, 2014: Code Freeze.</li>
+<li>Feb 18, 2014: Commit Freeze Pull Request Deadline.</li>
+<li>Feb 21, 2014: Commit Freeze.</li>
+<li>Feb 25, 2014: Stable Release.</li>
+</ul><h1 id="roundtable">Open Roundtable</h1>
+<p>In this week&rsquo;s <a href="http://www.youtube.com/watch?v=t4w3e-JRXy0">Open Roundtable</a>, <a href="http://twitter.com/ericf">Eric</a> and I joined <a href="https://twitter.com/triptych">Andrew</a>, <a href="https://twitter.com/clarler">Clarence</a> and <a href="https://twitter.com/juandopazo">Juan</a> to discuss the work that we&rsquo;ve been doing to make CSS easier and more enjoyable to write.</p>
+<p>If you haven&rsquo;t seen <a href="http://www.youtube.com/watch?v=t4w3e-JRXy0">the video</a>, you&rsquo;re missing out because I live-coded a responsive layout from scratch using the new mobile-first grid system that we&rsquo;ve been working on.</p>
+<p>Here are some of the tools that we mentioned in the talk:</p>
+<ul><li><a href="http://www.yuiblog.com/github.com/ericf/rework-pure-grids"><code>rework-pure-grids</code></a>: A Rework plugin to create mobile-first responsive grids.</li>
+<li><a href="https://github.com/jtangelder/grunt-stripmq/"><code>grunt-stripmq</code></a>: A Grunt plugin that makes sure your mobile-first layouts still look great in old browsers that don&rsquo;t support media queries.</li>
+<li><a href="https://github.com/ericf/css-mediaquery"><code>css-mediaquery</code></a>: A media query parser, written in JS.</li>
+<li><a href="https://github.com/ericf/grunt-css-selectors"><code>grunt-css-selectors</code></a>: A Grunt plugin that lets you mutate CSS selectors within your CSS file. This is how YUI consumes Pure, but we&rsquo;ve generalized it to work with any CSS input.</li>
+</ul><p>Stay tuned for more information as we finalize our story around responsive web design.</p>
+<h1 id="videos">YUIConf Videos</h1>
+<p>There were some more YUIConf videos out this week! Are you caught up yet?</p>
+<ul><li><a href="https://www.youtube.com/watch?v=DIF5woZGsYU">Reintroducing AlloyUI</a> by Eduardo Lundgren</li>
+<li><a href="https://www.youtube.com/watch?v=3DcCfBT_wcI">Moonwalking with JavaScript</a> by Markandey Singh</li>
+</ul><h1 id="other">Other News</h1>
+<ul><li><a href="https://github.com/apipkin">Tony Pipkin</a> wrote a nice article on <a href="http://www.yuiblog.com/blog/2014/01/21/paginator-and-datatable/">Datatable and Paginator developments</a> so make sure to check that out if you are interested in those widgets. </li>
+</ul><p>Catch y&rsquo;all next week!</p></div>

@@ -1,0 +1,5 @@
+<div><p><strong>F&ouml;r Ubuntu/elementary OS osv:</strong><br>
+sudo apt-get install hunspell-sv-se</p>
+<p>&nbsp;</p>
+<p><strong>F&ouml;r Arch Linux:</strong><br>
+sudo yaourt (eller vad du nu anv&auml;nder f&ouml;r att installera fr&aring;n AUR)-S hunspell-sv</p></div>

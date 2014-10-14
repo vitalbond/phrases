@@ -1,0 +1,3 @@
+<div><p>We are happy to announce the addition of Ezequiel Rodriguez to the YUI Team! Ezequiel hails from Queens, New York, where he spent the last five years studying Computer Science and Mathematics. In the midst of it all, he still found the time to learn and love JavaScript, and now resides in a much happier place because of it. He&rsquo;s a big fan of the DOM, though he knows it can be a bit mind boggling. He hopes to spend his time right now getting ramped up on the codebase and then focusing on improving core YUI features.</p>
+<p>You can find him on <a href="https://github.com/ezequiel">GitHub</a>, <a href="https://twitter.com/ziggyism">Twitter</a>, and #yui on irc.</p>
+<p>Welcome Ezequiel!</p></div>

@@ -1,0 +1,4 @@
+<div><p><img alt="" src="http://schwag.archlinux.ca/media/products/laptopsticker.png" class="alignright" width="100" height="123"><br>
+I’ve tweaked the design on the incredibly popular <a href="http://schwag.archlinux.ca/product/laptopsticker/">Arch Linux Laptop Stickers</a> available through the <a href="http://schwag.archlinux.ca/">Arch Linux Schwag</a> store. I’ve taken the black outline of the sticker for both a more modern look and to alleviate problems when the decal cutters don’t quite line up with the border. I hope you like the effect!</p>
+<p>My camera isn’t top of the line, so if someone would supply me some quality photos of these new stickers in action, I’d be happy to include them on the Arch Schwag website.</p>
+<p>Thank you for supporting Arch Linux.I am always eager for new ideas to put in the Arch Schwag store. I’</p></div>

@@ -1,0 +1,64 @@
+<div><p>Flash on Linux sucks. You may find it useful to stream live flash streams to mplayer (or vlc).</p>
+<p>Example live flash stream: <a href="http://cricfree.tv/sky-sports-1-live-stream.php" target="_blank">http://cricfree.tv/sky-sports-1-live-stream.php</a>. Screenshot of it in mplayer: <a href="http://ompldr.org/vZ2NubA" target="_blank">http://ompldr.org/vZ2NubA</a>.</p>
+<p>Redirect RTMP traffic through to local port:</p>
+<pre><strong>$ sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT</strong></pre>
+<p>Start RTMP Server to hold sniffed RTMP info:</p>
+<pre><strong>$ rtmpsrv</strong>
+
+RTMP Server v2.4
+(c) 2010 Andrej Stepanchuk, Howard Chu; license: GPL
+
+Streaming on rtmp://0.0.0.0:1935
+...</pre>
+<p>Open or refresh the link to live flash stream in your web browser. The corresponding rtmpdump command output will be printed in the RTMP Server window.  e.g.</p>
+<pre>...
+rtmpdump -r "rtmp://212.7.212.22:1935/lb/" -a "lb/" -f "LNX 11,2,202,251" -W "http://cdn.yycast.com/player/player.swf" -p "http://www.yycast.com" -y "kjghfsdm" -o kjghfsdm.flv
+...
+</pre>
+<p>Close RTMP Server with Ctrl-C:</p>
+<pre>...
+^CCaught signal: 2, cleaning up, just a second...</pre>
+<p>Delete previously added iptables rule:</p>
+<pre><strong>$ sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT</strong></pre>
+<p>Test sniffed rtmpdump command, omitting output:</p>
+<pre><strong>$ rtmpdump -r "rtmp://212.7.212.22:1935/lb/" -a "lb/" -f "LNX 11,2,202,251" -W "http://cdn.yycast.com/player/player.swf" -p "http://www.yycast.com" -y "kjghfsdm"</strong>
+
+RTMPDump v2.4
+(c) 2010 Andrej Stepanchuk, Howard Chu, The Flvstreamer Team; license: GPL
+WARNING: You haven't specified an output file (-o filename), using stdout
+Connecting ...
+INFO: Connected...
+ERROR: rtmp server sent error
+ERROR: rtmp server requested close
+</pre>
+<p>If similar errors are received, analyse sniffed command with the verbose flag, -V:</p>
+<pre><strong>$ rtmpdump -r "rtmp://212.7.212.22:1935/lb/" -a "lb/" -f "LNX 11,2,202,251" -W "http://cdn.yycast.com/player/player.swf" -p "http://www.yycast.com" -y "kjghfsdm" -V</strong>
+
+...
+DEBUG: Property: <Name:              level, STRING: error>
+DEBUG: Property: <Name:               code, STRING: NetConnection.Connect.Rejected>
+DEBUG: Property: <Name:        description, STRING: Connection failed: Application rejected connection.>
+DEBUG: Property: <Name:                 ex, OBJECT>
+DEBUG: (object begin)
+DEBUG: Property: <Name:           redirect, STRING: rtmp://95.211.186.227:1935/live/_definst_>
+DEBUG: Property: <Name:               code, NUMBER: 302.00>
+DEBUG: (object end)
+DEBUG: Property: <Name:           clientid, NUMBER: 1754134368.00>
+...
+</pre>
+<p>This log shows errors due to unhandled URL redirection. Update rtmpdump command to reflect direct URL:</p>
+<pre><strong>$ rtmpdump -r "rtmp://95.211.186.227:1935/live/_definst_" -a "live/" -f "LNX 11,2,202,251" -W "http://cdn.yycast.com/player/player.swf" -p "http://www.yycast.com" -y "kjghfsdm" -V</strong>
+
+...
+DEBUG: Property: <Name:              level, STRING: status>
+DEBUG: Property: <Name:               code, STRING: NetConnection.Connect.Success>
+DEBUG: Property: <Name:        description, STRING: Connection succeeded.>
+DEBUG: Property: <Name:               data, OBJECT>
+...</pre>
+<p>Error message is now gone. Remove verbose option. Pipe output to mplayer:  </p>
+<pre><strong>$ rtmpdump -r "rtmp://95.211.186.227:1935/live/_definst_" -a "live/" -f "LNX 11,2,202,251" -W "http://cdn.yycast.com/player/player.swf" -p "http://www.yycast.com" -y "kjghfsdm" | mplayer -</strong></pre>
+<p>Other things to try in case of <code>rtmpdump</code> errors:</p>
+<ul><li>Adding the <code>--live</code> option.</li>
+<li>Using <code>--port 80</code>.</li>
+<li>Increase cache when piping to mplayer: <code>rtmpdump... | mplayer -cache 4096 -</code></li>
+</ul></div>

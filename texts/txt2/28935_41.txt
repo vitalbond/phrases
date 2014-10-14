@@ -1,0 +1,10 @@
+<div><p>Thank you to everyone who submitted a talk proposal for <a href="http://yuilibrary.com/yuiconf/"><strong>YUIConf</strong></a> this year! We&rsquo;re excited to bring in some fresh ideas to make this the best year ever, but as always the quality of the tech talks will be the highest priority.</p>
+<p>Highlights include:</p>
+<ul><li>Event gestures, mobile apps, testing, performance</li>
+<li>Case studies from Yahoo Search, Yahoo Mail, and Yahoo Sports</li>
+<li>Back by popular demand, a sequel to <a href="http://www.yuiblog.com/blog/2012/12/10/yuiconf-2012-talk-writing-for-developers-some-rational-techniques-by-evan-goer/">last year&rsquo;s talk</a> by Evan Goer</li>
+<li>Keynotes by Eric Ferraiuolo, Ariya Hidayat, and Dav Glass</li>
+<li>And much, much more!</li>
+</ul><p>Take advantage of this opportunity to meet the YUI team as well as fellow community members. It&rsquo;s an excellent time to get a glimpse of the future as well as look back on the progress we&rsquo;ve made over the past year in features, performance, and stability.</p>
+<p>For complete newbies, the <a href="http://yuiconf2013-workshops.eventbrite.com/">YUI Intro Workshop</a>  on <strong>November 5</strong> is a great way to ramp up fast on YUI basics, just in time to hit the conference at full speed. And seats are still available for the <a href="http://yuiconf2013-workshops.eventbrite.com/">Building Blocks Workshop</a> for anyone looking to take their YUI skills to the next level.</p>
+<p><a href="http://yuiconf2013.eventbrite.com/">Early Bird pricing</a> for YUIConf 2013 ends <strong>October 25</strong>!</p></div>

@@ -1,0 +1,17 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release-news">Release News</h2>
+<p><a href="https://github.com/yui/yeti/releases/tag/v0.2.27">Yeti 0.2.27 was released</a> this week. This release of Yeti brings code coverage reporting provided by <a href="https://github.com/gotwarlost/istanbul">Istanbul</a>. Check out the latest <a href="http://yeti.cx/">docs on Yeti&rsquo;s website</a>.</p>
+<p><a href="https://github.com/yui/pure/releases/tag/v0.4.1">Pure 0.4.1 was also released</a> this week. This Pure release brings a bunch of little enhancements to your favorite mini CSS library.</p>
+<h2 id="open-roundtable">YUI Open Roundtable</h2>
+<p>This week&rsquo;s <a href="http://www.youtube.com/watch?v=4XhtP5arLHE">Open Roundtable</a> featured Drew Folta discussing Intl support in Modown. The talk was a great introduction to using Intl for localizing your Modown projects.</p>
+<h2 id="yuiconf">YUIConf Videos</h2>
+<p>The following YUIConf videos were released over the course of the week:</p>
+<ul><li><a href="https://www.youtube.com/watch?v=IZVzK_IrRtU">Building a Performant HTML5/Hybrid App</a> by Diego Ferreiro and Norbert Hu</li>
+<li><a href="http://www.youtube.com/watch?v=0H5m25YA-_4">Touch Football: Rebuilding Yahoo Fantasy Sports for the Modern Web</a> by Mark Kawakami</li>
+<li><a href="https://www.youtube.com/watch?v=uElc4ZUE6qo">Next-Generation JavaScript Language Tooling</a> by Ariya Hidayat</li>
+</ul><h2 id="javascript">In the JavaScript World</h2>
+<p>There were some interesting developments this week in the world of JavaScript:</p>
+<ul><li>The Chromium team posted an article <a href="http://blog.chromium.org/2014/02/compiling-in-background-for-smoother.html?utm_source=javascriptweekly&amp;utm_medium=email">explaining background compilation</a> in Chrome.</li>
+<li><a href="http://flippinawesome.org/authors/matt-baker/">Matt Baker</a> wrote an article on how you&rsquo;d go about <a href="http://flippinawesome.org/2014/02/10/replacing-callbacks-with-es6-generators/?utm_source=javascriptweekly&amp;utm_medium=email">replacing callbacks with ES6 generators</a>.</li>
+<li>This is an older article but one that I found valuable this week: How to <a href="http://css-tricks.com/automatic-css-testing/">automatically test CSS</a> by Simon Madine over at CSS Tricks. </li>
+</ul><p>That&rsquo;s all for this week! Happy Valentine&rsquo;s Day to everyone!</p></div>

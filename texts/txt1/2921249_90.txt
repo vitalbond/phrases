@@ -1,0 +1,5 @@
+<div><p><img class="aligncenter" alt="" src="http://i.imgur.com/EYKPpx2.png" width="295" height="88"></p>
+<p>H&auml;r kommer ett kort tips hur du kan f&aring; plank att fungera med Debian utan att beh&ouml;va kompilera fr&aring;n k&auml;llkoden.</p>
+<p>&Ouml;ppna upp /etc/apt/sources.list med ut&ouml;kade r&auml;ttigheter.<br>
+Skriv in deb http://people.ubuntu.com/~ricotz/debian-plank wheezy main<br>
+Sedan installera du plank #apt-get install plank</p></div>

@@ -1,0 +1,48 @@
+<div><p>When I introduced <a href="http://kivy.org/">Kivy</a> a while back, I mentioned that I had not been able to deploy a Kivy app on Android. I’ve managed to do this now, using the VirtualBox image provided by the <a href="http://python-for-android.readthedocs.org/en/latest/">Python For Android</a> project. Using this image was substantially less work than trying to figure out how to install and set up all the <a href="http://python-for-android.readthedocs.org/en/latest/prerequisites/">prerequisites</a> under Arch Linux. So here’s how to do it:</p>
+<p>First download the VirtualBox image from <a href="http://www.google.com/url?sa=D&q=https://docs.google.com/file/d/0B1WO07-OL50_VDNESDRUaDhXSmM/edit&usg=AFQjCNGrsg0SU8EMgAcLHWxbjSe8KM2kyA">Google Drive</a>. Sadly I cannot find an adequate <code>wget</code> command to download this. Shame on you, Google!</p>
+<p>You may want to double check the <a href="http://python-for-android.readthedocs.org/en/latest/prerequisites/">documentation</a> to see if a later image has been made available.</p>
+<p>It’s a big honkin’ file (1.4GB), so grab a cup of coffee, lunch, or go to bed, depending on your bandwidth and the current time of day.</p>
+<p>Extract the file using p7zip. This takes a while, so you might want to grab another coffee:</p>
+<pre class="brush:bash">
+7z e Python\ for\ Android\ -\ Ubuntu\ 12.04.7z
+</pre>
+<p>Make sure VirtualBox is installed and the kernel module is loaded. The commands on Arch Linux are:</p>
+<pre>
+pacman -S virtualbox virtualbox-host-modules
+sudo modprobe vboxdrv
+</pre>
+<p>Fire up VirtualBox and hit Machine->Add.</p>
+<p>Navigate to the folder the vbox image was extractedto. Select the <code>Python for Android - Ubuntu 12.04.vbox</code> machine and hit open.</p>
+<p>If you have enough RAM, select the <code>Python for Android</code> machine and hit settings. Browse to the <code>System</code> tab and increase the RAM to a comfortable level (I set it to 2GB on my 4GB machine). You might also want to increase the number of processors and the video RAM. Hit <code>Start</code> to power on the machine.</p>
+<p>Once Ubuntu has loaded, review the README for some important information. You may want to update the VirtualBox Guest Additions install, although I’m sure it will work fine without it.</p>
+<p>Now you’re ready to build an APK from a Python project. Open a terminal from the menu on the sidebar. The first thing you’ll want to do is update the <code>python-for-android<code> project to the latest git checkout. This is a bit messy because there are a couple edits in the current checkout that were later fixed upstream. So you'll want to stash the changes before pulling:</code></code></p>
+<pre class="brush:bash">
+cd android/python-for-android
+git stash
+git pull
+git stash apply
+</pre>
+<p>Unfortunately, this introduces a merge conflict in <code>distribute.sh</code>. The upstream project has made some of the customizations obsolete by including more generic code. Luckily, it's a trivial fix. Open <code>distribute.sh</code> in an editor (<code>gedit distribute.sh</code> works, but I used vim.) and search for the characters <code>=======</code>. It's at line 170. Delete the line above that says <code><<<<<<< Updated upstream</code>. Leave the export line that was above the <code>=======</code>. Then delete the <code>=======</code> and <code>>>>>>>> Stashed changes</code> and the outdated <code>export</code> line in between. Save the file and close the editor.</p>
+<p>Now you need a Kivy application to install. Presumably you've written your own, but for this example, I'm going to use a cool one supplied by the Kivy team. The <a href="https://github.com/kivy/kivy-remote-shell">Kivy Remote Shell</a> creates an ssh server on the phone that allows you to log in from your computer over ssh and execute Python commands on the phone. You can even run Java commands using the beta <a href="http://pyjnius.readthedocs.org/en/latest/installation.html#installation">pyjnius</a> connector.</p>
+<p>These commands will prepare a python for android distribution ready for installation:</p>
+<pre class="brush:bash">
+cd ..
+git clone git://github.com/kivy/kivy-remote-shell
+cd python-for-android
+./distribute.sh -m 'openssl pycrypto pyasn1 pyjnius twisted kivy'
+</pre>
+<p>This will prompt to see if you want to overwrite the previous python for android distribution. Press <enter> to do so. Give it some time to connect to the network, download the dependencies from <a href="http://pypi.python.org/">Pypi</a>, and compile them. </p>
+<p>Now you need a rather ugly command to actually build the apk. The options are summarized in the <a href="http://python-for-android.readthedocs.org/en/latest/usage/#step-2-package-your-application">Python for Android</a> documentation.</p>
+<pre class="brush:bash">
+cd dist/default
+./build.py --package org.kivy.sshshell --name "Kivy Remote Shell" \
+  --version 1 --dir ../../../kivy-remote-shell/ \
+  --icon ../../../kivy-remote-shell/icon.png --permission INTERNET debug
+</pre>
+<p>This will create the file <code>bin/KivyRemoteShell-1-.debug.apk</code>. Now let's install it to the phone! First make sure USB debugging is enabled on your phone. Go to the <code>Settings-->Developer Options</code> menu and make sure <code>Developer Options</code> are enabled and that <code>Android Debugging</code> is enabled.</p>
+<p>Plug the phone into your computer via the USB cord. Click the little "USB" icon in the VirtualBox status bar and check the box next to the name for your phone.</p>
+<p><a href="http://archlinux.me/dusty/files/2012/12/2012-12-02-171624_1366x768_scrot.png"><img src="http://archlinux.me/dusty/files/2012/12/2012-12-02-171624_1366x768_scrot-300x96.png" alt="" width="300" height="96" class="alignnone size-medium wp-image-836"></a></p>
+<p>Run the command <code>~/android/android-sdk-linux_x86/platform-tools/adb devices</code> to make sure it outputs the identifier of your phone. If it works, simply run <code>~/android/android-sdk-linux_x86/platform-tools/adb install bin/KivyRemoteShell-1-debug.apk</code> to install the app.</p>
+<p>(If you can't get the phone to connect to the VM, you can also copy the <code>.apk</code> to the host machine to install it. Use VirtualBox's shared folders feature).</p>
+<p>You can now shut down the virtual machine from Ubuntu's shutdown menu. For security, it's a good idea to turn off USB debugging on your phone until you need it again. Run the "Kivy Remote Shell" app that is now in your phone's app drawer. Type the command that comes up onto your screen into a terminal on your computer, and you will have access to a Python prompt running on your phone!</p>
+<p>This same process can be used to install self-developed Kivy apps to your phone. Congratulations!</p></div>

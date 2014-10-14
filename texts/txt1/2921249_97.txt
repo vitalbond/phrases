@@ -1,0 +1,33 @@
+<div><p>H&auml;r kommer ett kort tips p&aring; hur man g&aring;r tillv&auml;ga f&ouml;r att f&aring; Mozilla Firefox att bli mer som Safari &ndash; en webbl&auml;sare jag faktiskt gillar. F&ouml;rutom det faktum att det &auml;r propriet&auml;r programvara. Jag gillar dock designen mycket och har &auml;gnat lite tid f&ouml;r att f&aring; det att se ut som Safari.</p>
+<p>F&ouml;rst, skriv about:support i Firefox, sedan v&auml;ljer du att &ouml;ppna i Finder (bredvid Profilmapp). Sedan g&aring;r du in i din profilmapp och skapar mappen chrome om den inte finns. V&auml;l d&auml;r skapar du textfilen UserChrome.css och &ouml;ppnar den. Vad du sedan ska g&ouml;ra &auml;r att klistra in f&ouml;ljande:<br><code>#personal-bookmarks .toolbarbutton-icon {<br>
+  display: none !important;<br>
+}<br>
+.tabbrowser-tab[fadein]:not([pinned]) {<br>
+    max-width: 1000px !important;<br>
+    min-width: 26px !important;<br>
+}<br>
+.tabbrowser-tab[fadein][selected]:not([pinned]) {<br>
+    min-width: 88px !important;<br>
+}<br>
+#tabbrowser-tabs ~ #alltabs-button {<br>
+    visibility: visible !important;<br>
+}<br>
+/* Tabs: no icons */<br>
+.tabbrowser-tabs .tab-icon-image { display: none !important; }<br>
+/* Move the close button to the left and hide it until the tab is hovered over */</code></p>
+<p>tab .tab-close-button {<br>
+  -moz-box-ordinal-group: 1 !important;<br>
+  display: -moz-box !important;<br>
+  visibility: hidden !important;</p>
+<p>}</p>
+<p>tab .tab-text { -moz-box-ordinal-group: 2 !important; }<br>
+tab:hover .tab-close-button { visibility: visible !important; }<br>
+tab[selected="true"][first-tab][last-tab] .tab-close-button { visibility: hidden !important; }<br><br>
+Vad detta g&ouml;r &auml;r att se till att flikarna blir l&auml;ngre, samt att favicons f&ouml;rsvinner. Modifiera hur du vill, jag uppskattar minimalism och kommer d&auml;rf&ouml;r ha det s&aring; h&auml;r &ndash; m&aring;let &auml;r trots allt att det ska efterlikna Safari s&aring; gott det g&aring;r.</p>
+<p>Sedan ska vi installera ett par till&auml;gg.<br>
+Det f&ouml;rsta vi ska installera &auml;r <a title="Omnibar" href="https://addons.mozilla.org/sv-SE/firefox/addon/omnibar/" target="_blank">Omnibar</a>. G&aring; in i inst&auml;llningarna och v&auml;lj att d&ouml;lja s&ouml;kmotorns favicon.<br>
+Vi ska ocks&aring; installera <a title="Status-4-Evar" href="https://addons.mozilla.org/sv-SE/firefox/addon/status-4-evar/" target="_blank">Status-4-Evar</a>. G&aring; in i inst&auml;llningarna och ha <a title="denna bild" href="http://i.imgur.com/Xd5Ut9r.png" target="_blank">denna bild</a> vid &ldquo;F&ouml;rlopp&rdquo;</p>
+<p>Det var det, tror jag. F&ouml;rhoppningsvis har jag inte gl&ouml;mt n&aring;gonting.</p>
+<p>&nbsp;</p>
+<p>Update!<br>
+Ha st&auml;ngknappen till v&auml;nster med den uppdaterande CSS-koden.</p></div>

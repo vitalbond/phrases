@@ -1,0 +1,28 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week saw the release of Pure v0.3.0, which improves grid support, <a href="http://purecss.io/grids/#using-grids-with-custom-fonts">use of custom fonts</a>, and more. For all the details, check out the <a href="https://github.com/yui/pure/releases/tag/v0.3.0">release announcement</a> and <a href="https://github.com/yui/pure/blob/master/HISTORY.md#030-2013-09-09">changelog</a>. In YUI news, the <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-10-next-release">Sprint 10 calendar</a> was announced, and the next milestone for this development cycle is the <a href="https://github.com/yui/yui3/wiki/Contribution-Standards#code-freeze">Code Freeze</a> Pull Request Deadline on September 25th.</p>
+</li>
+<li>
+<p>If you are located in the Bay Area, come hang out and hack with YUI &amp; Mojito team members at Yahoo&rsquo;s <a href="http://yahoodevelopers.tumblr.com/post/59121365583/yahoo-hack-usa-back-to-sunnyvale-september-28-29">Hack Day</a> September 28th &amp; 29th! It&rsquo;s free, but you&rsquo;ll need to <a href="https://yahoohackusa2013.eventbrite.com/">register</a>.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included cats inheriting the Earth, <a href="https://github.com/yui/yui3/pull/1163">more Widget/Button updates</a>, a demo of <a href="https://github.com/node-inspector/node-inspector">node-inspector</a>, <a href="http://spolu.github.io/exo_browser/2013/09/11/my-quest-for-a-new-browser.html">ExoBrowser</a>, SimpleYUI&rsquo;s deprecation, and a review of <a href="https://github.com/yui/yui3/pulls">open pull requests</a>. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=ofekVQd1KaA">here</a>.</p>
+</li>
+<li>
+<p><a href="http://29decibel.github.io/go-combo/">Go Combo</a> is a YUI combo handler built using <a href="http://golang.org/">Go</a>, written by <a href="https://github.com/29decibel">Mike Li</a>.</p>
+</li>
+<li>
+<p>This week the team <a href="https://groups.google.com/forum/?fromgroups#!topic/yui-contrib/5ttGWPHwJjs">announced</a> that the <a href="http://yuilibrary.com/forum/">old YUI Forums</a> are going to be made read-only on <strong>September 16th</strong>. Please direct all support discussion to the <a href="https://groups.google.com/forum/#!forum/yui-support">new yui-support forum</a>.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.09.12-21-28">Gallery build</a> include: <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-animatespin">itsa-animatespin</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-arrows">itsa-arrows</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-base">itsa-base</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-controll">itsa-controll</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-datetime">itsa-datetime</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-edit">itsa-edit</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-editoradvanced">itsa-editoradvanced</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-editorbase">itsa-editorbase</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-form">itsa-form</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-grid">itsa-grid</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-hands">itsa-hands</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-music">itsa-music</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-shop">itsa-shop</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-social">itsa-social</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-special">itsa-special</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-users">itsa-users</a>, <a href="http://yuilibrary.com/gallery/show/paginator">Paginator Port</a>, and <a href="https://github.com/ekashida/gallery/tree/master/src/gallery-pathogen-encoder">pathogen-encoder</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="https://eloquentjavascript.net/2nd_edition/">Eloquent JavaScript: second edition</a></li>
+<li><a href="http://www.nczonline.net/blog/2013/09/10/understanding-ecmascript-6-arrow-functions/">Understanding ECMAScript 6 arrow functions</a></li>
+<li><a href="http://www.2ality.com/2013/09/data-in-prototypes.html">Anti-pattern: data in prototype properties</a></li>
+<li><a href="http://modernjavascript.blogspot.com/2013/09/promise-patterns.html">Promise Patterns</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/147.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

@@ -1,0 +1,544 @@
+<div><p>http://usalug.com/phpBB3//viewtopic.php?f=15&amp;t=8086</p>
+<p><code><br>
+#!/bin/bash<br>
+# Author: Josh Bailey<br>
+# Email: jbsnake   gmail.com<br>
+# A function/subroutine library<br>
+# A lot of these functions and subroutines I use<br>
+# in all my scripts, some I have only used once.<br>
+# This is a lot of hard work right here, so please<br>
+# don't get tempted by saying you did it yourself <img src="http://archlinux.me/jbsnake/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley"><br>
+# If you use something here (which you ofcourse are free to do)<br>
+# Please atleast give a link to www.usalug.org or www.bashscripts.org<br>
+# You don't have to mention me, just mention where you found such awesome code <img src="http://archlinux.me/jbsnake/wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley"></code></p>
+<p>function notAForwardSlash<br>
+{<br>
+   if [[ ${1} != '/' ]]<br>
+        then<br>
+      return 0<br>
+        else<br>
+           return 1<br>
+        fi<br>
+}</p>
+<p>function notADot<br>
+{<br>
+   if [[ ${1} != '.' ]]<br>
+   then<br>
+      return 0<br>
+   else<br>
+      return 1<br>
+   fi<br>
+}</p>
+<p>function getFileName<br>
+{</p>
+<p># call this function like<br>
+# filename_variable=`getFileName /some/path/with/a/file.name`</p>
+<p>   local STRING=$1<br>
+        local LENGTH=${#STRING}<br>
+   local n=0<br>
+   local FileName=""<br>
+   for ((n=0;n &lt;= $LENGTH; n++))<br>
+        do<br>
+      local CHAR=${STRING:$n:1}<br>
+      if notAForwardSlash $CHAR<br>
+      then<br>
+         FileName=$FileName$CHAR<br>
+      else<br>
+         FileName=""<br>
+      fi<br>
+   done<br>
+   echo "FileName"<br>
+}</p>
+<p>function getExtension<br>
+{</p>
+<p># call this like<br>
+# extension_variable=`getExtension /path/to/some/file.txt`<br>
+# extension_variable would be "txt" for that example<br>
+# you can also just pass it a filename<br>
+# extension_variable=`getExtension somefile.lst`<br>
+# extention_variable would be "lst" for that example<br>
+# but if you pass it a filename or path without a .<br>
+# it will return exactly what you pass it<br>
+# extension_variable=`getExtension /path/to/my/script`<br>
+# extension_variable would be "/path/to/my/script"</p>
+<p>   local STRING="${1}"<br>
+   local LENGTH="${#STRING}"<br>
+   local n=0<br>
+   local Extension=""</p>
+<p>   for ((n=0; n &lt;= $LENGTH; n++))<br>
+   do<br>
+      local CHAR=${STRING:$n:1}<br>
+      if notADot $CHAR<br>
+      then<br>
+         Extension=$Extension$CHAR<br>
+      else<br>
+         Extension=""<br>
+      fi<br>
+   done<br>
+   echo "$Extension"<br>
+}</p>
+<p>function getPath<br>
+{</p>
+<p># call this like<br>
+# chop_path=`getPath /path/to/something.file`<br>
+# chop_path would be populated with "/path/to/"</p>
+<p>   # function to get only the path from a path/filename combo<br>
+   # first get the filename from $1 which is a path/filename combo<br>
+   local just_filename=`getFileName "$1"`</p>
+<p>   # set the variable containing the path<br>
+   local newPath=${1:0:(${#1}-${#just_filename})}<br>
+   echo "$newPath"<br>
+}</p>
+<p>function inStr<br>
+{</p>
+<p># call this function like<br>
+# instr_variable=`inStr "=" "1=2"`<br>
+# since the position of = is 1 (i.e. 0 1 2 )<br>
+# instr_variable would equal 1</p>
+<p>        local searchFor="$1";<br>
+        local lenOf=${#searchFor};<br>
+        local searchIn="$2";<br>
+        for (( i=0; i  /dev/null&lt; /dev/null<br>
+   if [[ $? -eq 1 ]]<br>
+   then<br>
+      return 1<br>
+   else<br>
+      touch ${1}/bob.yea\ do0d 2&gt; /dev/null<br>
+      if [[ $? -eq 1 ]]<br>
+      then<br>
+         rm ${1}/bob.yea\ do0d 2&gt; /dev/null<br>
+         return 1<br>
+      else<br>
+         rm ${1}/bob.yea\do0d 2&gt; /dev/null<br>
+         return 0<br>
+      fi</p>
+<p>   fi<br>
+}</p>
+<p>function trimspaces<br>
+{</p>
+<p># call this like<br>
+# new_string=`trimspaces "some random text" " "`<br>
+# new_string variable would be "somerandomtext"<br>
+# new_string=`trimspaces "some_random_text" "_"`<br>
+# new_string variable would be "somerandomtest"<br>
+# new_string=`trimspaces "some random_text"<br>
+# new_string variable would be "somerandom_text" (default, if nothing is passed, to remove are spaces)</p>
+<p>   local NewString=""<br>
+   local STRING="$1"<br>
+   local rmChar="$2"<br>
+   local CHAR=""<br>
+   local NewString=""</p>
+<p>   if [[ $rmChar = "" ]]<br>
+   then<br>
+      rmChar=' '<br>
+   fi<br>
+   for ((i=0; i&lt;${#STRING}; i++))<br>
+   do<br>
+      CHAR=${STRING:$i:1}<br>
+      if [[ $CHAR != $rmChar ]]<br>
+      then<br>
+         NewString=$NewString$CHAR<br>
+      fi<br>
+   done<br>
+   echo "${NewString}"<br>
+}</p>
+<p>function fileExist<br>
+{</p>
+<p># call this like<br>
+# if [[ fileExist "/path/to/some/file.name" ]]<br>
+# then<br>
+#   yes it does<br>
+# else<br>
+#   no it doesn't<br>
+# fi</p>
+<p>   if [[ -a "$1" ]]<br>
+   then<br>
+      return 0<br>
+   else<br>
+      return 1<br>
+   fi<br>
+}</p>
+<p>function isNumeric<br>
+{</p>
+<p># call this like<br>
+# if [[ isNumeric  ]]<br>
+# then<br>
+#   yes it is<br>
+# else<br>
+#    no it's not<br>
+# fi</p>
+<p>   local Numeric='y'<br>
+   local len=`echo ${#1}`<br>
+   local val=""<br>
+   local retval=""</p>
+<p>   for ((i=0; i /dev/null<br>
+      retval=$?<br>
+      if [[ $retval -eq 1 ]]<br>
+      then<br>
+         if [[ $i -eq 0 &amp;&amp; $val = '-' ]]<br>
+         then<br>
+            num="negative"<br>
+         else<br>
+            Numeric='n'<br>
+            break<br>
+         fi<br>
+      fi<br>
+   done<br>
+   if [[ $Numeric = 'y' ]]<br>
+   then<br>
+      return 0<br>
+   else<br>
+      return 1<br>
+   fi<br>
+}</p>
+<p>function isAlpha<br>
+{</p>
+<p># call this like<br>
+# if [[ isAlpha  ]]<br>
+# then<br>
+#   yes it is<br>
+# else<br>
+#    no it's not<br>
+# fi</p>
+<p>   local Alpha='y'<br>
+   local len=`echo ${#1}`<br>
+   local val=""<br>
+   local retval=""</p>
+<p>   for ((i=0; i /dev/null<br>
+      retval=$?<br>
+      if [[ $retval -eq 1 ]]<br>
+      then<br>
+         Alpha='n'<br>
+         break<br>
+      fi<br>
+   done<br>
+   if [[ $Alpha = 'y' ]]<br>
+   then<br>
+      return 0<br>
+   else<br>
+      return 1<br>
+   fi<br>
+}</p>
+<p>function isAlphaNum<br>
+{</p>
+<p># call this like<br>
+# if [[ isAlphNum  ]]<br>
+# then<br>
+#    yes it is<br>
+# else<br>
+#    no it's not<br>
+# fi</p>
+<p>   local AlphaNum='y'<br>
+   local len=`echo ${#1}`<br>
+   local val=""<br>
+   local retval=""</p>
+<p>   for ((i=0; i /dev/null<br>
+      retval=$?<br>
+      if [[ $retval -eq 1 ]]<br>
+      then<br>
+         echo $val | grep ^[0-9] &gt; /dev/null<br>
+         retval=$?<br>
+         if [[ $retval -eq 1 ]]<br>
+         then<br>
+            AlphaNum='n'<br>
+            break<br>
+         fi<br>
+      fi<br>
+   done<br>
+   if [[ $AlphaNum = 'y' ]]<br>
+   then<br>
+      return 0<br>
+   else<br>
+      return 1<br>
+   fi<br>
+}</p>
+<p>function initialCaps()<br>
+{</p>
+<p># call this like<br>
+# new_string=`initialCaps "john doe"`<br>
+# new_string variable would be "John Doe"</p>
+<p>   local Cap=""<br>
+   local Info=""<br>
+   local Word=""<br>
+   local string="${1}"<br>
+   local cut=""</p>
+<p>   while [ ${#1} != 0 ]<br>
+   do<br>
+      Cap=`echo ${string:0:1} | tr [:lower:] [:upper:]`<br>
+      Info=`echo -n $Cap; echo ${string:1:${#string}} | tr [:upper:] [:lower:]`<br>
+      Info=${Info}" "<br>
+      Word=${Word}${Info}<br>
+      shift 1<br>
+   done<br>
+   cut=${#Word}-1<br>
+   Word="${Word:0:${cut}}"<br>
+   echo "${Word}"<br>
+}</p>
+<p>######## Music file format stuff #################################</p>
+<p>function get_ogg_info<br>
+{</p>
+<p># call this like<br>
+# ogg_info_string=`get_ogg_info "/path/to/file.ogg"`<br>
+# ofcourse the string would have to be parsed<br>
+# it is pipe | delimited<br>
+# in order artist, title, album, genre, date, and track number<br>
+# inStr function needed; vorbiscomment (comes with oggenc)<br>
+   local turn=""<br>
+   local index=0<br>
+   local item=""<br>
+   local cartist=""<br>
+   local ctitle=""<br>
+   local calbum=""<br>
+   local cgenre=""<br>
+   local cdate=""<br>
+   local ctracknumber=""</p>
+<p>   vorbiscomment -l "$1" &gt; info.lst<br>
+   for turn in artist title album genre date tracknumber<br>
+   do<br>
+      tmp_comment=`grep -i "$turn" info.lst`<br>
+      item=`inStr "=" "$tmp_comment"`<br>
+      comment=${tmp_comment:${item}+1}<br>
+      ((index++))<br>
+      case $index in<br>
+      1)   cartist="$comment";<br>
+         ;;<br>
+      2)   ctitle="$comment";<br>
+         ;;<br>
+      3)   calbum="$comment";<br>
+         ;;<br>
+      4)   cgenre="$comment";<br>
+         ;;<br>
+      5)   cdate="$comment";<br>
+         ;;<br>
+      6)   ctracknumber="$comment";<br>
+         ;;<br>
+      esac<br>
+   done<br>
+   info="${cartist}|${ctitle}|${calbum}|${cgenre}|${cdate}|${ctracknumber}"<br>
+   echo "${info}"<br>
+   rm -f info.lst<br>
+}</p>
+<p>function encode_flac2mp3<br>
+{</p>
+<p># call this like<br>
+# encode_flac2mp3 /path/to/source/file.flac /path/to/destination<br>
+# needs: getFileName function; flac encoder/decoder; lame</p>
+<p>   local old_file="${1}"<br>
+   local new_dir="${2}"<br>
+   local short_filename=`getFileName "${old_file}"`<br>
+   local new_file="${short_filename:0:${#short_filename}-5}.mp3"</p>
+<p>   flac -d -o - "${old_file}" | lame -b 320 -h - &gt; "${new_dir}/${new_file}"<br>
+}</p>
+<p>function encode_flac2ogg<br>
+{</p>
+<p># call this like<br>
+# encode_flac2ogg /path/to/source/file.flac /path/to/destination<br>
+# needs: getFileName function; flac encoder/decoder; oggenc</p>
+<p>   local old_file="${1}"<br>
+   local new_dir="${2}"<br>
+   local short_filename=`getFileName "${old_file}"`<br>
+   local new_file="${short_filename:0:${#short_filename}-5}.ogg"<br>
+   ###### get artist and album before release #########<br>
+   # flac -d -o - "${old_file}" | oggenc -a "$artist" -l "$album" -t "${title}" - -o "${new_dir}/${new_file}"<br>
+   ####################################################<br>
+   local title="${short_filename:0:${#short_filename}-4}"</p>
+<p>   flac -d -o - "${old_file}" | oggenc -t "${title}" - -o "${new_dir}/${new_file}"<br>
+}</p>
+<p>function encode_ogg2mp3<br>
+{</p>
+<p># call this like<br>
+# encode_ogg2mp3 /path/to/source/file.flac /path/to/destination<br>
+# needs: getFileName function; oggdec; lame</p>
+<p>   local old_file="${1}"<br>
+   local new_dir="${2}"<br>
+   local short_filename=`getFileName "${old_file}"`<br>
+   local new_file="${short_filename:0:${#short_filename}-4}.mp3"<br>
+   local info_string=`get_ogg_info "$old_file"`<br>
+   local cartist=`cut -d| -f1 ${info_string}`<br>
+   local ctitle=`cut -d| -f2 ${info_string}`<br>
+   local calbum=`cut -d| -f3 ${info_string}`<br>
+   local cgenre=`cut -d| -f4 ${info_string}`<br>
+   local cdate=`cut -d| -f5 ${info_string}`<br>
+   local ctracknumber=`cut -d| -f6 ${info_string}`</p>
+<p>   oggdec "${old_file}" -o - | lame  -b 320 --tt "$ctitle" --ta "$cartist" --tl "$calbum" --ty $cdate --tn $ctracknumber --tg "$cgenre" -h - &gt; "${new_dir}/${new_file}"<br>
+   sleep .5<br>
+}</p>
+<p>####################################################################################</p>
+<p>############################ gpg stuff #############################################</p>
+<p>function list_private_keys<br>
+{</p>
+<p># call this like<br>
+# list_private_keys<br>
+# it just clears the screen then<br>
+# pipes the private items on your keyring to less</p>
+<p>   clear;<br>
+   echo ":: Listing private keys";<br>
+   gpg --list-secret-keys | less;<br>
+   echo ":: Done";<br>
+}</p>
+<p>function list_public_keys<br>
+{</p>
+<p># call this like<br>
+# list_public_keys<br>
+# it just clears the screen then<br>
+# pipes the public imported keys on<br>
+# your keyring to less</p>
+<p>   clear;<br>
+   echo ":: Listing public keys";<br>
+   gpg --list-keys | less;<br>
+   echo ":: Done";<br>
+}</p>
+<p>function decrypt_any_file<br>
+{</p>
+<p># call this like<br>
+# decrypt_any_file /path/to/some/encrypted/file.asc<br>
+# it clears the screen then prompts you for your passphrase<br>
+# then decrypts the encrypted file into another file</p>
+<p>   local filename="$1";<br>
+   local person=`whoami`;<br>
+   clear;<br>
+   if [[ ${filename:${#filename}-11:11} -eq "-encrypted" ]]<br>
+   then<br>
+      local newfilename="${filename:0:${#filename}-${#person}-12}";<br>
+      gpg -d --output "$newfilename" "$filename";<br>
+      echo ":: Decrypted $filename";<br>
+      echo ":: Saved as $newfilename";<br>
+   else<br>
+      gpg -d --output "$filename.decrypted" "$filename";<br>
+      echo ":: Decrypted $filename";<br>
+      echo ":: Saved as $filename.decrypted";<br>
+   fi<br>
+}</p>
+<p>function encrypt_any_file<br>
+{</p>
+<p># call this like<br>
+# encrypt_any_file /path/to/file/to/encrypt.asc "who it's encrypted for"<br>
+# it clears the screen then encrypts the file you specified<br>
+# saving the encrypted file to have the persons name and "-encrypted" at the end</p>
+<p>   local filename="$1";<br>
+   local person="$2";<br>
+   clear;<br>
+   gpg -sea --output "$filename"."$person"-encrypted --recipient "$person";<br>
+   echo ":: File $filename encrypted";<br>
+   echo ":: Encrypted file saved as $filename.$person-encrypted";<br>
+}</p>
+<p>function export_public_key<br>
+{</p>
+<p># call this like<br>
+# export_public_key "Key Identifier"<br>
+# generates a key pair and saves the public key as "Key Identifier.pub"</p>
+<p>   local ID="$1";<br>
+   gpg -ao $ID.pub --export $ID;<br>
+   echo ":: Public Key for $ID has been generated"<br>
+   echo ":: File is saved as $ID.pub"<br>
+}</p>
+<p>function import_public_directory<br>
+{</p>
+<p># call this like<br>
+# import_public_directory /path/to/directory/full/of/public/keys<br>
+# changes directory to the public key directory and imports every file there<br>
+# then goes back to the directory you started in</p>
+<p>   local DIR=$1;<br>
+   cd "$DIR";<br>
+   for filename in *<br>
+   do<br>
+      gpg --import "$filename";<br>
+   done;<br>
+   cd ~-;<br>
+}</p>
+<p>function create_encrypted_ascii_file<br>
+{</p>
+<p># call this like<br>
+# create_encrypted_ascii_file /path/to/location/for/future/message.asc "Who to encrypt for"<br>
+# opens a vi session (note you can make the editor whatever you want by changing the variable)<br>
+# once you close the editor, the file you just edited is encrypted<br>
+# then it's echo'd to the console for easy copy and pasting</p>
+<p>   local editor="vi"<br>
+   local file="${1}";<br>
+   local person="${2}";<br>
+   ${editor} "${file}";<br>
+   gpg -sea --output "${file}.${person}-encrypted" --recipient "${person}" "${file}";<br>
+   clear;<br>
+   echo ":: Encrypted file created";<br>
+   echo ":: File saved as ${file}.${person}-encrypted";<br>
+   echo ":: Contents of file shown below";<br>
+   echo -e "\n\n";<br>
+   cat "${file}.${person}-encrypted"<br>
+}</p>
+<p>function import_public_key<br>
+{</p>
+<p># call this like<br>
+# import_public_key<br>
+# it prompts you for the key-file you wish to import</p>
+<p>   read -p "Please type the path of the public key you wish to import: " file<br>
+   if [[ -e "$file" ]]<br>
+   then<br>
+      gpg --import "$file"<br>
+   else<br>
+      echo "${file}: doesn't exist, or you typed the wrong path!"<br>
+      exit<br>
+   fi<br>
+}</p>
+<p>function create_user_list<br>
+{</p>
+<p># call this like<br>
+# create_user_list<br>
+# makes a list of users on the system<br>
+# it grabs the contents of /etc/passwd<br>
+# then removes the entry for root<br>
+# and saves the list as users.list</p>
+<p>   cat /etc/passwd | cut -d: -f1 &gt; pre.list;<br>
+   cat pre.list | grep -v "root" &gt; users.list;<br>
+   rm pre.list;<br>
+}<br>
+#####################################################################################3</p>
+<p>function app_up<br>
+{</p>
+<p># call this like<br>
+# app_up /path/to/file/append.from /path/to/file/append.to<br>
+# puts data from a file at the top of another file instead of the bottom</p>
+<p>   if [[ ! -e ${2} ]]<br>
+   then<br>
+      touch ${2}<br>
+   fi</p>
+<p>   ${1} &gt; temp<br>
+   cat ${2} &gt;&gt; temp<br>
+   rm -f ${2}<br>
+   mv temp ${2}<br>
+}</p>
+<p>function createROMISO<br>
+{</p>
+<p># call this like<br>
+# createROMISO /dev/cdrom /path/to/new/rom.iso</p>
+<p>   # the command that makes an ISO from a cd/dvd<br>
+   # $1 should be the device path (/dev/cdrom)<br>
+   # $2 should be the iso path and filename<br>
+   dd if=$1 of=$2 bs=32k<br>
+}</p>
+<p>function createDIRISO<br>
+{</p>
+<p># call this like<br>
+# createDIRISO /path/to/new/rom.iso /path/to/directory/you/want/to/backup</p>
+<p>   # the command that makes an ISO from a directory<br>
+   # $1 should be the iso path and filename<br>
+   # $2 should be the directory to backup<br>
+   mkisofs -o $1 $2<br>
+}</p>
+<p>function msg<br>
+{</p>
+<p># call this like<br>
+# msg "Title of Message Box"<br>
+# or<br>
+# msg "Title of Message Box" $height $width</p>
+<p>   # function for making a messagebox<br>
+   # if it has less than two arguments<br>
+   if [[ $# &lt; 2 ]]<br>
+   then<br>
+      # use auto-size for the messagebox<br>
+      dialog --msgbox "$1" 0 0<br>
+   else<br>
+      # use specified height and width<br>
+      dialog --msgbox "$1" $2 $3<br>
+   fi<br>
+   clear<br>
+}<br></p></div>

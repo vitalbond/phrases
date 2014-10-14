@@ -1,0 +1,85 @@
+<div><p>So, you want to know how to write a class, do you? Well, tough luck, because <a href="http://stackoverflow.com/questions/2752868/does-javascript-have-classes">JavaScript doesn’t have classes</a>. What does it have, then? You see, JS doesn’t follow the now-typical <a href="http://en.wikipedia.org/wiki/Class-based_programming">class-based programming</a> model. Rather, it follows the much more rare <a href="http://en.wikipedia.org/wiki/Class-based_programming">prototype-based programming</a> model. While working with this model does require a shift in thinking, it is not as disadvantaged relative to the class model as some have been led to believe.</p>
+<p>My goal here is to provide two things:</p>
+<ul><li><span style="line-height: 13px">An introduction to the prototype model for people who’ve been entrenched in the class model for the majority of their lives (like myself).</span></li>
+<li>A quick cheat-sheet of how to write things such as singletons and static functions correctly in JavaScript.</li>
+</ul><p>As much as possible, I will try to have inline citations in the form of hyperlinks. However, this document is the culmination of more Google searches than you can shake a stick at, so that won’t always be possible. Further, many examples I give are self-written and tested. This will be a multi-part document, since I have no intention of writing everything I’ve learned about JavaScript classes in one sitting. Before I begin in earnest, remember that <a href="http://bit.ly/11WfJmO" target="_blank">Google </a>is thy friend. <a href="http://enterprisejquery.com/2010/10/how-good-c-habits-can-encourage-bad-javascript-habits-part-1/" target="_blank">Enterprise jQuery</a> is also thy friend. I learned a ton reading their posts and anyone doing serious JS coding would do well to follow suit. Now, on to the show!</p>
+<p><strong>An Intro to the Prototype Model</strong></p>
+<p>In the traditional class-based model, the programmer writes a class <em>definition</em> that is separated from the actual data it will later be filled with. The class definition is not concerned with the specific values it will be used for, only with the things the class will do. Functions and data types are often tied to the class, which will later be filled with specific sets of data to operate upon. In order to actually use the class, <em>instances</em> have to be created. The core difference between these two models is in this distinction. In the prototype-based model, everything is an object and can already be used. A ‘class’ is created by defining an object with a set of properties. This is a <em>real object</em> and can be operated upon immediately. In order to have multiple instances of an object, each storing separate data (much like class instances), the object is cloned.</p>
+<table style="margin-left: auto;margin-right: auto"><thead><tr><th>Class-Based Programming</th>
+<th>Prototype-Based Programming</th>
+</tr></thead><tbody><tr><td>
+<ol><li>Define Structure and Relationships (such as inheritance)</li>
+<li>Create Instance and Use</li>
+</ol></td>
+<td>
+<ol><li>Create Object Instance with desired properties</li>
+<li>Clone Instance and assign property values</li>
+</ol></td>
+</tr></tbody></table><p style="text-align: center"><strong>Table 1.</strong><strong> </strong>‘Class’ Creation Workflow</p>
+<p style="text-align: left">The prototype model is extremely flexible and, as I will show later, it can be used to create a variety of different class types including your bog-standard containers and more rarified ones like singletons. In fact, we can use its flexibility to hide the fact that we are actually cloning object instances and make it appear as though we are truly creating new instances a la C++! But I’m getting ahead of myself! Before diving into classes, some more basic concepts are extremely important to one’s understanding of why things are written the way they are in JavaScript. I will begin with the difference between using literal notation and the new command.</p>
+<p style="text-align: left"><em>Literally Declaring</em></p>
+<p style="text-align: left">While using the ‘new’ command may appear to be the more sane and less expensive way to create arrays and objects, that is actually <a href="http://jsperf.com/literal-notation-vs-new" target="_blank">not the case!</a> As those benchmarks show, the array literal notation is roughly twice as fast (in my browser, at least) as using the new command. Meanwhile, the object literal is an astonishing <i>five times</i> as fast as the new command. Moral of the story: don’t use the new command.</p>
+<p style="text-align: left">What’s the point of that aside? Well, to have a JavaScript class you need an object. Remember: everything is an object. There are no header files defining class structure. The moment you instantiate an object, it can be anything you want. So, let’s create an object!</p>
+<pre class="brush:js">var car = {};</pre>
+<p style="text-align: left">Well, that was anti-climactic. Of course, we’ll want our object to have some properties, won’t we? So let’s define some of those:</p>
+<pre class="brush:js">var car = {
+    year: 1990,
+    manufacturer: "Ford",
+    miles: 300000
+};</pre>
+<p style="text-align: left">“Wait!” you may say, “that’s not a class!” That is correct. It isn’t a class. It’s an <em>object</em>. Understanding how these are structured is important for being able to write your own. This object that we just created has three properties: year, manufacturer and miles. They can be accessed the same was as public member variables in C++:</p>
+<pre class="brush:js">console.log(car.year); // output: 1990</pre>
+<p style="text-align: left">What happens if we were to make a typo?</p>
+<pre class="brush:js">console.log(car.yera); // output: undefined</pre>
+<p style="text-align: left">Makes sense, right? car.yera is undefined, so when you try to print it in the log, it spits out undefined. undefined is a special value in JS. It is comparable to Java’s null. There is no ‘special’ value in C++ for null or undefined, but 0 is commonly used (usually with #define NULL 0 if your libraries haven’t done that already).</p>
+<p style="text-align: left">Examine this code and guess at what should happen, then run it in your friendly neighborhood console and check the results:</p>
+<pre class="brush:js">var car = {
+    year: 1990,
+    manufacturer: "Ford",
+    miles: 300000
+};
+
+car.yera = 1982;
+
+console.log(car);</pre>
+<p>Most C++ programmers like myself expect an error, but that doesn’t occur! Instead, the property ‘yera’ is added to the ‘car’ object. Here is something extremely important to grasp early on: each JavaScript Object is nothing more than an associative array mapping strings to values. In fact, you can do the following:</p>
+<pre class="brush:js">var car = {
+    year: 1990,
+    manufacturer: "Ford",
+    miles: 300000
+};
+
+car["yera"] = 1982;
+
+console.log(car);</pre>
+<p>So now you know how to construct both types of arrays (numeric-associative and string-associative) in JavaScript. How can one use that to create a class? Well, here is one naive way:</p>
+<pre class="brush:js">var Car = function(year, manufacturer, miles) {
+    return {"year": year, "manufacturer": manufacturer, "miles": miles};
+};
+
+var myClunker = Car(1990, "Ford", 300000);
+
+console.log(myClunker);</pre>
+<p>We create a function, assign it the name Car (note: function Car(year, manufacturer, miles) is equivalent in this case), and then create an object using the function. In this case, the function ‘Car’ is our constructor. What if we want a function in our object? As you can see above, one can assign a function to a variable. This is akin to using function pointers in C/C++. In fact, you can store functions as properties of objects. I’ll leave figuring out how to do that up to your imagination.</p>
+<p>There is one last thing to understand before I display the code used to make a class (or namespace, as it happens, but I’m getting ahead of myself). JavaScript is a scripting language, exactly as its name applies. If you put any of the above code into a JS file and reference it from HTML, it will be executed. If you put that last snippet in, it will output the Object myClunker. myClunker and Car will both be accessible from the console and other JS files.</p>
+<p><strong></strong><strong>Putting It Together</strong></p>
+<p>The naive way I showed you a moment ago, while working, isn’t very good. For one thing: you can’t have private member variables. For another, it’s not very clean. Never fear! There is a solution. I proudly present to you: <em>Car!</em></p>
+<pre class="brush:js">var Car = (function() {
+
+	function Car(year, manufacturer, miles) {
+		this.year = year;
+		this.manufacturer = manufacturer;
+		this.miles = miles;
+	}
+
+	return Car;
+})();
+
+var myClunker = new Car(1990, "Ford", 300000);
+
+console.log(myClunker); // output: Car {year: 1990, manufacturer: "Ford", miles: 300000}</pre>
+<p>This ought to look more familiar. Maybe. We have a function Car which is the constructor for our class Car. What is this (function()  {….})(); doohickey doing, though? That is a <em>self-executing anonymous function</em>.</p>
+<ul><li><span style="line-height: 13px"><strong>Self Executing:</strong> It is executed when the script is run and creates an object which can create Car objects.<br></span></li>
+<li><strong>Anonymous:</strong> The function to create the factory object is never given a name or assigned to a variable. The factory object is assigned to the Car name.</li>
+<li><strong>Function:</strong> This is a function. It returns the constructor (which is a Function object). You can actually do anything in here that you could do in any other function. For sanity’s sake, though, you probably ought to restrict it to being a wannabe-header file.</li>
+</ul><p>That’s all for today. Tomorrow, I will get into the meat of fleshing the Car prototype out.</p></div>

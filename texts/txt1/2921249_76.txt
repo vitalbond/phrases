@@ -1,0 +1,97 @@
+<div><p>This is a short post how to install Pantheon shell on Arch Linux. It&acute;s based on information from the <a title="wiki" href="https://wiki.archlinux.org/index.php/Pantheon" target="_blank">wiki</a> and from the <a title="bbs" href="https://bbs.archlinux.org/viewtopic.php?id=152930&amp;p=1" target="_blank">bbs</a> Here is my yaourt -Qm output of packages I have installed from AUR:</p>
+<p><code>local/appmenu-gtk2 12.10.3daily13.04.03-102 (unity)<br>
+local/appmenu-gtk3 12.10.3daily13.04.03-102 (unity)<br>
+local/aspell-sv 0.51-1<br>
+local/automake-1.11 1.11.5-5 (base-devel)<br>
+local/bamfdaemon 0.4.0daily13.04.03-102 (unity)<br>
+local/cairo-ubuntu 1.12.14-2<br>
+local/cerbere-bzr 42-1<br>
+local/elementary-gtk-theme4.0-bzr 53-1<br>
+local/elementary-icons-bzr 1105-1 (pantheon)<br>
+local/elementary-xfce-icons-git 0.3_4_g606a003-1<br>
+local/evemu 1.0.11daily13.02.20-103 (unity)1<br>
+local/fontconfig-ubuntu 2.10.2-4<br>
+local/freetype2-ubuntu 2.5.0.1-4<br>
+local/gala-bzr 351-1 (pantheon)<br>
+local/gnome-control-center-git 20130320-1 (gnome)<br>
+local/granite-bzr 606-1<br>
+local/gtk2-ubuntu 2.24.17-103<br>
+local/gtk3-ubuntu 3.8.1-100<br>
+local/ido 12.10.3daily13.03.01-104 (unity)<br>
+local/indicator-applet 12.10.2daily13.03.01-104 (unity)<br>
+local/indicator-appmenu 13.01.0daily13.03.28-103 (unity)<br>
+local/indicator-bluetooth 0.0.6.daily13.02.19-104 (unity)<br>
+local/indicator-cpufreq 0.2.2-102 (unity-extra)<br>
+local/indicator-datetime 12.10.2-4<br>
+local/indicator-messages 12.10.6daily13.04.09-104 (unity)<br>
+local/indicator-pantheon-session-bzr 241-5<br>
+local/indicator-power 12.10.5-2<br>
+local/indicator-sound 12.10.2daily13.04.12-102 (unity)<br>
+local/libappindicator 12.10.1daily13.04.15-102 (unity)<br>
+local/libappindicator3 12.10.1daily13.04.15-102 (unity)<br>
+local/libbamf3 0.4.0daily13.04.03-102 (unity)<br>
+local/libcolumbus 0.4.0.daily13.04.16.13.04-101 (unity)<br>
+local/libdbusmenu 12.10.3daily13.02.01-105 (unity)<br>
+local/libdbusmenu-gtk2 12.10.3daily13.02.01-105 (unity)<br>
+local/libdbusmenu-gtk3 12.10.3daily13.02.01-105 (unity)<br>
+local/libindicate 12.10.1-105 (unity)<br>
+local/libindicator 12.10.2daily13.04.10-102 (unity)<br>
+local/libindicator3 12.10.2daily13.04.10-102 (unity)<br>
+local/libpantheon-bzr 23-1<br>
+local/libreoffice-faenza-mod 0.7.4i-3<br>
+local/libunity 6.90.2daily13.04.05-103 (unity)<br>
+local/libunity-misc 4.0.5daily13.02.26-104 (unity)<br>
+local/libunity-webapps 2.5.0.daily13.03.18-103 (unity)<br>
+local/lightdm-pantheon-greeter-bzr 170-1 (lightdm)<br>
+local/lightdm-webkit-greeter 0.1.2-6<br>
+local/ls++-git 20130311-1<br>
+local/mygtkmenu 1.3-6<br>
+local/network-manager-applet-ubuntu 0.9.8.0-106<br>
+local/noise-bzr 1522-1 (pantheon)<br>
+local/pantheon-files-bzr 1303-1 (pantheon)<br>
+local/pantheon-notify-bzr 27-1<br>
+local/pantheon-session-bzr 57-1<br>
+local/pantheon-terminal-bzr 456-1 (pantheon)<br>
+local/pantheon-wallpaper-bzr 34-1<br>
+local/perl-term-extendedcolor 0.224-1<br>
+local/plank-bzr 859-1 (pantheon)<br>
+local/preload 0.6.4-6<br>
+local/pychrom 2012-3<br>
+local/scratch-text-editor-bzr 1193-1<br>
+local/screenfetch-git 20130409-1<br>
+local/slingshot-launcher-bzr 373-1<br>
+local/switchboard-bzr 399-1<br>
+local/switchboard-plug-about-bzr 134-1<br>
+local/switchboard-plug-default-applications-bzr 64-1<br>
+local/switchboard-plug-pantheon-shell-bzr 171-1<br>
+local/toluapp 1.0.93-6<br>
+local/ttf-droid-sans-mono-slashed-glyphs-powerline 20121017-2<br>
+local/ttf-envy-code-r preview7-6<br>
+local/ttf-google-webfonts 130210-1<br>
+local/vala0.16 0.16.1-3<br>
+local/vte3-select-text 0.34.7-1<br>
+local/wingpanel-bzr 148-1<br></code></p>
+<p>&nbsp;</p>
+<p>You will not need every packages, in fact you only need <a title="some" href="https://wiki.archlinux.org/index.php/Pantheon#Installation" target="_blank">some</a> of them. So first, get them.<br>
+Then, install SLIM and enable it. After that you should just have to modify your .xinit file, with this:</p>
+<p><code>#!/bin/sh</code></p>
+<p>if [ -d /etc/X11/xinit/xinitrc.d ]; then<br>
+for f in /etc/X11/xinit/xinitrc.d/*; do<br>
+[ -x "$f" ] &amp;&amp; . &ldquo;$f&rdquo;<br>
+done<br>
+unset f<br>
+fi</p>
+<p>gsettings-data-convert &amp;<br>
+xdg-user-dirs-gtk-update &amp;<br>
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;<br>
+/usr/lib/gnome-settings-daemon/gnome-settings-daemon &amp;<br>
+/usr/lib/gnome-user-share/gnome-user-share &amp;<br>
+eval $(gnome-keyring-daemon &ndash;start &ndash;components=pkcs11,secrets,ssh,gpg)<br>
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK<br>
+cerbere &amp;<br>
+exec gala</p>
+<p><strong>Some tips</strong><br><a title="Install elementary theme 4" href="https://aur.archlinux.org/packages/elementary-gtk-theme4.0-bzr/" target="_blank">Install elementary theme4</a> for a great theme! I can&acute;t theme wingpanel by myself but right know I don&acute;t need to because if this new theme. Yey!<br>
+Install <a title="this" href="https://aur.archlinux.org/packages/contractor-bzr/" target="_blank">this</a> to be able to &ldquo;extract files here&rdquo; and stuff like that.<br>
+Set the wallpaper with this command : gsettings set org.pantheon.wallpaper picture-path &ldquo;/path/to/wallpaper&rdquo;<br>
+You will need some indicators. Grab <a title="indicator-datetime" href="https://aur.archlinux.org/packages/indicator-datetime/" target="_blank">indicator-datetime,</a> and <a title="indicator-bluetooth" href="https://aur.archlinux.org/packages/indicator-bluetooth/" target="_blank">indicator-bluetooth</a> and others <a title="indicators" href="https://aur.archlinux.org/packages/?O=0&amp;K=indicator-" target="_blank">indicators</a> and install nm-applet-ubuntu and hope that it will work (it wont work for me). I think its from the Unity repo.<br>
+Read the thread and contribute if you can!</p></div>

@@ -1,0 +1,22 @@
+<div><p>I am extremely proud to announce the release of my new book, <a href="http://hackinghappy.com/">Hacking Happy</a>. I believe every geek should read this book to help them find the joy and happiness in their lives that I have in mine.</p>
+<p>The foundations of this book started with a hospital stay, as I <a href="http://archlinux.me/dusty/2012/10/11/coming-out-on-mental-health/">outlined</a> a couple of months ago. It was on the psychiatric ward that I started learning about the skills that ultimately led to my recovery. These techniques are as learnable as any programming language. My book helps you discover them for yourself.</p>
+<p><em>Hacking Happy</em> will motivate you to find techniques that work for you to optimize the happiness levels in your life. It is not a book of ready-made solutions. It is a true hacker’s manual. It provides processes. You find the solutions for the system you are hacking: yourself. The entire book is a series of analogies (some suitable, others simply amusing) to common software and systems development situations. However, the systems presented have been scientifically proven by psychologists and psychiatrists.</p>
+<p>I have to admit that about halfway through writing <em>Hacking Happy</em>, I decided not to publish it. It seemed corny and the tools I was describing appeared so obvious to me. I couldn’t see how anyone would pay to read it. Then I asked myself, “If they are so obvious, why did it take me two decades and several mental breakdowns to find them?”</p>
+<p>So I rewrote the book. It is now the best writing and most important work I have created, yet. It is hilarious. It is motivating, moving, and inspiring. It is educational and instructive. It is essential.</p>
+<p>Marketing is a skill I’m still trying to learn. So I’m turning to you, “the crowd” to help market it! If you don’t buy the book, at least share it. Tell your friends about it. Retweet it. Like it. Plus One it. I think “Hacking Happy” is vital reading for every coder and systems professional out there. If you don’t love yourself completely and unconditionally, buy this book.</p>
+<p><em>Hacking Happy</em> is available in print and eBook formats. I’ll be adding more links to the <a href="http://hackinghappy.com/">home page</a> as it propagates to more retailers. As of today, you can buy the book in print from <a href="https://www.createspace.com/3984937">CreateSpace</a> or <a href="http://www.amazon.com/Hacking-Happy-Dusty-Phillips/dp/1479245054/">Amazon.com</a>, or download eBooks in the following formats:</p>
+<ul><li>
+<a href="http://gum.co/oLYr">pdf</a>
+</li>
+<li>
+<a href="http://gum.co/lZKF">mobi</a>
+</li>
+<li>
+<a href="http://gum.co/RUYSo">epub</a>
+</li>
+<li>
+<a href="http://gum.co/CbFH">azw3</a>
+</li>
+<li>
+<a href="http://www.amazon.com/Hacking-Happy-ebook/dp/B00AGOLLVC/">Kindle</a>
+</li></ul></div>

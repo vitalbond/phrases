@@ -1,0 +1,21 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release">Release News</h2>
+<h3>YUI</h3>
+<p>We shipped <a href="https://github.com/yui/yui3/releases/tag/v3.15.0">YUI 3.15.0</a> last week, and started work on our next sprint. The <a href="https://github.com/yui/yui3/wiki/Development-Schedule#wiki-sprint-13">development schedule</a> has been posted on the YUI Wiki. Our goal is to have another release ready by <strong>April 13, 2014</strong>.</p>
+<h3>Pure</h3>
+<p>The Pure team released the Grunt and Rework tools that they have been working on over the last quarter. These tools make writing CSS more enjoyable, and are not just restricted to Pure. If you write CSS, you may find these tools handy.</p>
+<p>You can check them out on Pure&rsquo;s new <a href="http://purecss.io/tools/">Tools page</a>. The new tools are:</p>
+<ul><li><a href="https://www.npmjs.org/package/grunt-pure-grids">grunt-pure-grids</a>: Generate custom mobile-first responsive grids</li>
+<li><a href="https://www.npmjs.org/package/grunt-stripmq">grunt-stripmq</a>: IE fallback for mobile-first CSS</li>
+<li><a href="https://www.npmjs.org/package/grunt-css-selectors">grunt-css-selectors</a>: Mutate CSS selectors </li>
+</ul><p>Stay tuned for more from Pure next week!</p>
+<h2 id="open-roundtable">YUI Open Roundtable</h2>
+<p>Our YUI Open Roundtable this week featured a conversation with Andy Earnshaw, the author of <a href="https://github.com/andyearnshaw/Intl.js">Intl.js</a>. Intl.js provides an important polyfill for the ECMAScript Internationalization API (ECMA-402) for both client side and server side javascript. You can also find out more about Intl support in Modown in a previous <a href="http://www.youtube.com/watch?v=4XhtP5arLHE">Open Roundtable</a>.</p>
+<h2 id="yuiconf-videos">YUIConf Videos</h2>
+<p>This week, we released the video for <a href="http://twitter.com/reid">Reid Burke&rsquo;s</a> talk on <a href="https://www.youtube.com/watch?v=AABmn_h4HAM">Testing YUI Everywhere</a>. In addition, we released the <a href="https://www.youtube.com/watch?v=MPaKarJ52Ic">Lightning Talks</a> video. Check out <a href="http://www.yuiblog.com/blog/2014/03/07/yuiconf-2013-lightning-talks/">this blog post</a> for more details on the Lightning talks.</p>
+<h2 id="world-of-js">The World of JavaScript</h2>
+<p>Here are some good articles to get you up-to-speed on what&rsquo;s been happening in the world of JavaScript this week.</p>
+<ul><li>You&rsquo;ve surely heard of <a href="https://atom.io/">Atom</a> by now, right? I&rsquo;m personally still a big Sublime Text fan but folks really seem to be liking Atom&rsquo;s plugin infrastructure.</li>
+<li>Luke Hoban has a great overview of all ES6 features over at <a href="https://github.com/lukehoban/es6features">this GitHub repo</a>.</li>
+<li>The Yeoman folks wrote a nice blog post detailing how you can use <a href="http://yeoman.io/blog/performance-optimization.html">Grunt and Gulp tasks to optimize performance</a>.</li>
+</ul><p>Enjoy the weekend, folks!</p></div>

@@ -1,0 +1,76 @@
+<div><p><a href="http://kivy.org/">Kivy</a> is a modern GUI platform that runs on Windows, Linux, Mac, iOS, and Android.</p>
+<p>Kivy supports gestures, but the <a href="http://kivy.org/docs/api-kivy.gesture.html">documentation</a> is a as to how to use them. Reviewing the <a href="https://github.com/kivy/kivy/blob/master/examples/gestures/gesture_board.py">Gesture Board example</a> provides most of the missing pieces if you’re willing to experiment. I have done these experiments and hope this article will make it easier for the next coder.</p>
+<p>The <code>kivy.gesture</code> module contains two main classes, the <code>Gesture</code> and <code>GestureDatabase</code>. A <code>Gesture</code> represents the stroke or strokes in a gesture. It maps a sequence of (x,y) coordinates to a normalized representation and can be compared to another sequence of points to determine if the two sequences “match”. In Kivy, gestures can be encoded in base64. This provides an easy way to store and load gestures in source code.</p>
+<p>The <code>GestureDatabase</code> is essentially a collection of <code>Gesture</code> objects. Its primary purpose is to compare a new gesture as input by the user to those stored in the <code>GestureDatabase</code> and return the closest matching gesture, if one exists.</p>
+<p>Before we can recognize whether a user’s gesture is meaningful, we need some gestures to compare it to. Luckily, the <code>gesture_board.py</code> that ships in Kivy’s examples directory does this for us. Run <code>python gesture_board.py</code> from a terminal. A blank window opens up. Draw a gesture on it.</p>
+<p>Have a look in the terminal. There is a variety of output there, but the important one is the long base64 encoded string following the words “gesture_representation:”. Copy that string into a variable in a basic Kivy app:</p>
+<pre>
+from kivy.app import App
+
+down_stroke = "eNq1l91u4zYQhe/1IslNjPkfzgtkb<snip>"
+square = "eNq1mEluIzcYRvd1EXsT4Z+HC6i3AXyAwG<snip>"
+
+
+class TestApp(App):
+    pass
+
+TestApp().run()
+</pre>
+<p>Now let’s set up a quick and dirty <code>GestureDatabase</code> from the given strings. Normally, I’d put these as an instance variable on the App or a specific widget, but for easy illustration, I’ll just toss them into the module:</p>
+<pre>
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.graphics import Line
+from kivy.gesture import Gesture, GestureDatabase
+
+down_stroke = "eNq1l91u4zYQhe/1IslNjPkfzgtkb<snip>"
+square = "eNq1mEluIzcYRvd1EXsT4Z+HC6i3AXyAwG<snip>"
+
+gestures = GestureDatabase()
+gesture = gestures.str_to_gesture(down_stroke)
+gesture.name = "down_stroke"
+gestures.add_gesture(gesture)
+gesture = gestures.str_to_gesture(square)
+gesture.name = "square"
+gestures.add_gesture(gesture)
+
+.
+.
+.
+</pre>
+<p>The next step is recording the gesture that the user makes. This requires keeping track of the touch down, move, and up events. Let’s create a new widget to handle this (Note, for clarity, I’ve omitted collision detection and error conditions):</p>
+<pre>
+from kivy.uix.widget import Widget
+from kivy.graphics import Line
+
+
+class TestWidget(Widget):
+
+    def on_touch_down(self, touch):
+        touch.ud['gesture_line'] = Line(points=(touch.x, touch.y))
+
+    def on_touch_move(self, touch):
+        touch.ud['gesture_line'].points += [touch.x, touch.y]
+
+    def on_touch_up(self, touch):
+        # compare the gestures
+</pre>
+<p>The final step is to implement <code>on_touch_up</code> to convert the stroke the user created into a gesture and compare that gesture to those in the database:</p>
+<pre>
+    def on_touch_up(self, touch):
+        gesture = Gesture()
+        gesture.add_stroke(
+            zip(touch.ud['gesture_line'].points[::2],
+                touch.ud['gesture_line'].points[1::2]))
+        gesture.normalize()
+        match = gestures.find(gesture, minscore=0.70)
+        if match:
+            print("{} gesture occured".format(match[1].name))
+        else:
+            print("No gesture recognized")
+</pre>
+<p>This code requires some explanation. The <code>Line</code> object stores it’s points in a one dimensional list, where alternate indexes represent the x and y coordinates of each point. However, <code>add_stroke</code> expects a list of tuples of x and y values. In code, <code>Line</code> stores <code>[x1, y1, x2, y2, x3, y3]</code> while <code>add_stroke</code> expects <code>[(x1, y1), (x2, y2), (x3, y3)]</code>. Hence, the rather complicated call to <a href="http://docs.python.org/2/library/functions.html?highlight=zip#zip">zip</a>.</p>
+<p>The <code>gestures.find</code> call accepts a <code>minscore</code> (1.0 would mean the gesture matched perfectly). It will return the gesture that matches with the maximum matching score, but only if that maximum is above <code>minscore</code>. 0.70 seems to be suitable for basic gestures, though I have been able to confuse a ‘square’ with a ‘circle’ in my experiments.</p>
+<p><code>gestures.find</code> returns either <code>None</code> or a tuple of <code>(score, gesture)</code>. Thus, if there is a match we need to pull out the <code>Gesture</code> via <code>match[1]</code>.</p>
+<p>And there you have it: basic gesture recognition in Kivy.</p>
+<p> Unfortunately, the touch events are gobbled up by the gesture code, so if you have a gesture widget that contains other widgets, they won’t receive any events. I have taken a stab at creating a <a href="https://github.com/kivy/kivy/pull/791">GestureBox</a> widget that passes events through to child widgets. It seems to work for touch events, but deciding whether a motion event</p></div>

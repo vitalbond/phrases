@@ -1,0 +1,6 @@
+<div><pre>
+try:
+    from OpenSSL import SSL
+except ImportError:
+    SSL = None
+</pre></div>

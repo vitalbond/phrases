@@ -1,0 +1,27 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release">Release News</h2>
+<p>Work is ongoing on <a href="https://github.com/yui/yui3/wiki/Development-Schedule">Sprint 14</a>, which is slated to culminate in a YUI release on May 22nd. We have a lot of open pull requests from the community which we&rsquo;ll be reviewing and merging in over the next few days!</p>
+<h2 id="yui-or">YUI Open Roundtable</h2>
+<p>Since I missed a few YUI Weekly&rsquo;s, we have to do some catching-up on the Open Roundtable updates! In case you&rsquo;ve been out of the loop, here&rsquo;s what&rsquo;s been happening:</p>
+<h3>Learning Paths with Andrew Wooldridge</h3>
+<p>Our very own awesome community engineer, <a href="http://twitter.com/triptych">Andrew</a>, showed off the Learning Paths that he&rsquo;s been developing. It&rsquo;s a great way for folks to understand YUI in meaningful steps.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/b7ASnMSofYA" frameborder="0" allowfullscreen></iframe></p>
+<h3>Using Promises in Mojito with Marco Asbreuk</h3>
+<p>Marco dropped by for a great <em>YUI In The Wild</em> episode, where he talked about how to implement promises in a Mojito application. Lots of code shown in this Roundtable, and a must-watch if you use <a href="https://github.com/yahoo/mojito">Mojito</a>.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/rFRFaimPTuk" frameborder="0" allowfullscreen></iframe></p>
+<h3>The Modown Project by Eric Ferraiuolo and Caridy Patino</h3>
+<p>Finally, last week, <a href="https://twitter.com/ericf">Eric</a> and <a href="https://twitter.com/caridy">Caridy</a> talked about the Modown Project, which is something that we&rsquo;ve been working very hard on over the last few months. Modown is a set of components that take care of hard problems related to the web-stack so developers can focus on making apps.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/0Mp0ff9uTUY" frameborder="0" allowfullscreen></iframe></p>
+<h3>This Thursday: ReactJS with Pete Hunt</h3>
+<p>Finally, <a href="https://twitter.com/floydophone">Pete Hunt</a> from Facebook is coming in this week to talk about <a href="http://facebook.github.io/react/">ReactJS</a>, so join us on Thursday at 2pm PST. Add <a href="https://plus.google.com/105600930514903803035/videos">YUI Library</a> to your Google Plus account to get our invite, or check us out on <a href="https://twitter.com/yuilibrary">Twitter</a> where we&rsquo;ll post the live-streaming Youtube link.</p>
+<h2>The World of JavaScript</h2>
+<ul><li>
+<p><a href="https://twitter.com/ericf">Eric</a> gave a talk at <a href="http://www.joyent.com/developers/videos/node-js-on-the-road-boston-node-js-at-yahoo">Node on the Road</a> conference on how Yahoo uses NodeJS. The <a href="http://www.joyent.com/developers/videos/node-js-on-the-road-boston-node-js-at-yahoo">video for his talk is up</a>!</p>
+</li>
+<li>
+<p>Jim Cowart has a <a href="http://tech.pro/blog/2020/a-thrown-to-the-wolves-hands-on-introduction-to-react">great introduction to ReactJS</a> up. Go through it before joining Thursday&rsquo;s Tech Talk with Pete Hunt!</p>
+</li>
+<li>
+<p>Leland Richardson <a href="http://tech.pro/tutorial/2010/functional-javascript-part-3-apply-call-and-the-arguments-object">explains functional programming in JavaScript</a> by touching on <code>.call()</code> and <code>.apply()</code>, two methods that aren&rsquo;t used very often by many developers.</p>
+</li>
+</ul><p>Sorry for the lengthy hiatus guys! We&rsquo;re back on schedule now, so stay tuned for another YUI Weekly this Friday!</p></div>

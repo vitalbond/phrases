@@ -1,0 +1,38 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>Hot of the release of last week&rsquo;s YUI 3.12.0 GA, this week saw the release of <strong>YUI 3.13.0 Beta 1</strong>. As noted in the <a href="http://www.yuiblog.com/blog/2013/09/04/yui-3-13-0-beta-1-released/">announcement</a>, the primary focus of this release is to provide a build for developers to test a new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Content_Editable">content editable feature</a> in <a href="http://stage.yuilibrary.com/yui/docs/editor/">Editor</a>. Also included in this release are updates to <a href="http://stage.yuilibrary.com/yui/docs/datatable/">DataTable</a>, <a href="http://stage.yuilibrary.com/yui/docs/history/">History</a>, <a href="http://stage.yuilibrary.com/yui/docs/api/modules/node-scroll-info.html">ScrollInfo</a>, and <a href="http://stage.yuilibrary.com/yui/docs/widget/">Widget</a>. To see all the specific changes, check out the <a href="https://gist.github.com/triptych/6430650">YUI 3.13.0 Beta 1 Change History Rollup</a>. Happy testing!</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://www.yuiblog.com/blog/2013/09/04/yui-3-13-0-beta-1-released/">YUI 3.13.0 Beta 1</a>, an inline Editor demo, discussion about upcoming Widget and Button updates, and YUIConf. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=Fks_KWzwU30">here</a>.</p>
+</li>
+<li>
+<p>Just a friendly reminder, a few weeks ago the project <a href="http://www.yuiblog.com/blog/2013/08/21/announcing-the-new-yui-community-forums/">announced</a> plans to migrate from the YUI Forums to <a href="https://groups.google.com/forum/#!forum/yui-support">yui-support</a>. Please subscribe to the new group if you haven&rsquo;t already, and begin posting any support questions there instead of the forum. Thanks!</p>
+</li>
+<li>
+<p>Pull request activity this week included the addition of <a href="https://github.com/yui/yui3/pull/1162">HTML support for Button labels</a>, <a href="https://github.com/yui/yui3/pull/1148">ContentEditable plugin to Editor</a>, <a href="https://github.com/yui/yui3/pull/1166">French translation to datatable-paginator</a>, and <a href="https://github.com/yui/yui3/pulls">more</a>.</p>
+</li>
+<li>
+<p>This week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.09.04-21-56">Gallery build</a> included: <a href="http://github.com/bmustiata/fast-ui">fast-ui</a>, <a href="http://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsadatetimepicker">itsadatetimepicker</a>, <a href="http://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsaeditorrenderpromise">itsaeditorrenderpromise</a>, <a href="http://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsanodepromise">itsanodepromise</a>, <a href="http://yuilibrary.com/gallery/show/itsaselectlist">itsaselectlist</a>, <a href="https://github.com/ekashida/gallery/tree/master/src/gallery-pathogen-encoder">pathogen-encoder</a>, <a href="https://github.com/earnubs/rangyinputs">rangyinputs</a>, <a href="https://github.com/camsong/yui.rocket">rocket</a>, <a href="https://github.com/smugmug/yui-gallery/tree/master/src/sm-map">sm-map</a>, <a href="https://github.com/brunofarache/y3d">y3d</a>, and <a href="https://github.com/brunofarache/y3d/tree/master/src/y3d-loader">y3d-loader</a>.</p>
+</li>
+<li>
+<p>Additions to the Gallery this week include:</p>
+<ul><li><a href="https://github.com/ekashida/gallery/tree/master/src/gallery-pathogen-encoder">Pathogen Encoder</a> is <em>&ldquo;a module that monkey-patches YUI Loader to generate pathogen-encoded combo urls.&rdquo;</em></li>
+<li><a href="https://github.com/bmustiata/fast-ui">FastUi</a> is <em>&ldquo;a YUI3 module that is focused on building UIs fast, inspired from frameworks like GWT and JSF2, focused on a composition model that is easily described in an easy to understand XML.&rdquo;</em></li>
+<li><a href="https://github.com/earnubs/rangyinputs">rangyinputs</a> is <em>&ldquo;a port of <a href="http://code.google.com/p/rangyinputs">jQuery rangyinputs</a>.&rdquo;</em></li>
+<li><a href="https://github.com/smugmug/yui-gallery/tree/master/src/sm-map">SmugMug Map</a> is <em>&ldquo;an ordered map data structure with an interface and behavior similar to (but not exactly the same as) ECMAScript 6 Maps.&rdquo;</em></li>
+</ul></li>
+<li>
+<p>Coming soon to the Gallery is <a href="https://github.com/smugmug/yui-gallery/tree/master/src/sm-indexed-map">SmugMug IndexedMap</a>, <em>&ldquo;An ordered, indexed hash map data structure. Like Map and Array got together and had a beautiful baby.&rdquo;</em></p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://tomdale.net/2013/09/progressive-enhancement-is-dead/">Progressive Enhancement: Zed&rsquo;s Dead, Baby</a></li>
+<li><a href="http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts#september_5_2013_draft">Revision 18 of the ECMAScript 6 Draft Spec</a></li>
+<li><a href="http://howtonode.org/generators-vs-fibers">Generators vs Fibers</a></li>
+<li><a href="http://domenic.me/2013/09/06/es6-iterators-generators-and-iterables/">ES6 Iterators, Generators, and Iterables</a></li>
+<li><a href="http://h3manth.com/new/blog/2013/es6-on-nodejs/">ES6 on node.js</a></li>
+<li><a href="http://blog.strongloop.com/using-express-js-for-apis/">Using Express.js for APIs</a></li>
+<li><a href="http://designpepper.com/blog/drips/variable-and-function-hoisting">Variable and Function Hoisting in JavaScript</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/146.html">JavaScript Weekly</a>.</li>
+</ul></li>
+</ul></div>

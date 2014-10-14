@@ -1,0 +1,8 @@
+<div><p>We&rsquo;re excited to announce our lineup of technical sessions for <a href="http://yuilibrary.com/yuiconf">YUIConf 2013</a>. To help us schedule all the talks, we want to get your feedback about which ones you most want to see.</p>
+<p>Please take our survey below (or follow <a href="http://www.surveymonkey.com/s/KLSZZWL" target="_blank">this link</a> to open in a new window). Review the talk descriptions and select your favorites. This will help us make better decisions about our calendar of events.</p>
+<p>Also remember to <a href="http://yuiconf2013.eventbrite.com/">register for YUIConf 2013</a> today! Early bird registration ends October 25.</p>
+<div id="surveyMonkeyInfo" style="width:660px;font-size:10px;color:#666;border:1px solid #ccc;padding:4px;">
+<div>
+    <iframe id="sm_e_s" src="http://www.surveymonkey.com/jsEmbed.aspx?sm=BZPuNLNvCN0Un_2bTG9vTVKw_3d_3d" width="660" height="1000" style="border:0px;padding-bottom:4px;" frameborder="0" allowtransparency="true"></iframe>
+  </div>
+</div></div>

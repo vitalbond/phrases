@@ -1,0 +1,22 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>Work continues on Sprint 9, which is slated to <a href="https://github.com/yui/yui3/releases">release</a> on August 27th. Remember that <a href="https://github.com/yui/yui3/wiki/Contribution-Standards#important-milestones">the deadline for submitting pull requests</a> for this sprint is August 11th.</p>
+</li>
+<li>
+<p>Patrick &ndash; one of our awesome interns &ndash; did some work on <a href="http://tweets.yuilibrary.com/">tweets.yuilibrary.com</a> this week. That site is back up and is highlighting tweets about the library. Check it out and help out the classifier by up-voting relevant tweets.</p>
+</li>
+<li>
+<p>In release news, we launched a <a href="http://blog.purecss.io/">new blog</a> for <a href="http://purecss.io/">Pure</a>. Subsequent news and updates regarding the Pure project will be posted there, so be sure to subscribe to it. If you&rsquo;re using Pure in a project and are interested in writing a post about it, you can <a href="http://blog.purecss.io/submit/">get in touch with the team</a> and submit a guest post.</p>
+</li>
+<li>
+<p>An awesome set of video tutorials popped up on TechPro earlier this week. It&rsquo;s titled <a href="https://github.com/yui/yui3/wiki/Contribution-Standards#code-freeze">YUI 3: The complete guide</a>, and consists of 6 short-length screencasts that introduce you to the library. It&rsquo;s definitely worth a look if you&rsquo;re new to YUI.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="https://github.com/visionmedia/axon">Super Sockets: Message-Oriented Socket Library for Node.js</a></li>
+<li><a href="http://www.nczonline.net/blog/2012/08/01/a-critical-review-of-ecmascript-6-quasi-literals/">A critical review of ECMAScript 6 quasi-literals</a></li>
+<li><a href="http://oreilly.com/javascript/radarreports/past-present-future-javascript.html">The Past, Present, and Future of JavaScript: A Free Report</a></li>
+<li><a href="http://dailyjs.com/2013/07/25/nodebots/">Building a robot with NodeJS</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/">JavaScript Weekly</a> and <a href="http://developer.yahoo.com/blogs/ydn/">YDN</a></li>
+</ul></li>
+</ul></div>

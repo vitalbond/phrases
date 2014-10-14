@@ -1,0 +1,19 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release">Release News</h2>
+<h3>Pure</h3>
+<p>The Pure team released <a href="https://github.com/yui/pure/releases/tag/v0.5.0-rc-1">Pure 0.5.0 Release Candidate 1</a> this week. This RC includes a complete overhaul of Pure&rsquo;s current Grid system, and replaces it with a new mobile-first responsive grid.</p>
+<p>There have also been new additions to the <a href="http://stage.purecss.io/">Pure Website</a>, including a brand new <a href="http://stage.purecss.io/start/">Getting Started</a> page and new <a href="http://stage.purecss.io/grids/">Grids Documentation</a>. Since this is an RC release, you can find the new changes over on the <a href="http://stage.purecss.io/">staging website</a>.</p>
+<p>Let us know what you think of the new changes! We&rsquo;ll squash any remaining bugs and release Pure 0.5.0 shortly.</p>
+<p><img src="https://github-camo.global.ssl.fastly.net/857c77c75573e0907f6d592257cd6011b320d7ae/687474703a2f2f636c2e6c792f696d6167652f3333313432473152323533772f53637265656e25323053686f74253230323031342d30332d31302532306174253230322e33352e3338253230504d2e706e67" width="500" class="alignnone"></p>
+<h2 id="open-roundtable">YUI Open Roundtable</h2>
+<p>This week&rsquo;s <a href="http://www.youtube.com/watch?v=RrqVlLeOl-I">YUI Open Roundtable</a> featured discussions with <a href="https://twitter.com/redonkulus">Seth Bertalotto</a>, <a href="https://twitter.com/ericf">Eric Ferraiuolo</a> and <a href="https://twitter.com/tilomitra">yours truly</a>. Seth showed off how Yahoo uses custom <a href="http://yeoman.io/">Yeoman</a> generators to create modules, while Eric and I discussed the <a href="http://github.com/yui/pure/releases">latest Pure release</a>.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/RrqVlLeOl-I" frameborder="0" allowfullscreen></iframe></p>
+<h2 id="yuiconf-videos">YUIConf Videos</h2>
+<p>Unless I&rsquo;m mistaken, all the YUIConf videos have now been made available! Hurrah! You can check out the <a href="http://www.youtube.com/playlist?list=PLjKP9DUCzZorde6sLWHJ3GNd-6VrGrbqm">complete playlist</a> over on the <a href="http://youtube.com/yuilibrary">YUI Library Youtube Channel</a>.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLjKP9DUCzZorde6sLWHJ3GNd-6VrGrbqm" frameborder="0" allowfullscreen></iframe></p>
+<h2 id="world-of-js">The World of JavaScript</h2>
+<p>Here are some good articles to get you up-to-speed on what&rsquo;s been happening in the world of JavaScript this week.</p>
+<ul><li>Chris Sevilleja <a href="http://scotch.io/bar-talk/expressjs-4-0-new-features-and-upgrading-from-3-0">wrote a post</a> explaining the upcoming changes in <a href="http://expressjs.com/">Express</a> 4.0.</li>
+<li>Tagtree has started <a href="http://tagtree.tv/ecmascript-6-episode-1">a video series on ES6</a>. The first video is out and it covers arrow functions, string templating and destructuring assignments. I like these videos since they are short and easily consumable. </li>
+<li>The folks over at <a href="http://segment.io/">Segment.io</a> released <a href="http://www.metalsmith.io/">MetalSmith</a>, an extremely simple, pluggable static site generator. I&rsquo;m looking forward to checking this out.</li>
+</ul><p>That&rsquo;s all for this week. Catch you in 7 days!</p></div>

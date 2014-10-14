@@ -1,0 +1,29 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p><a href="http://yuilibrary.com/yuiconf/">YUIConf 2013</a> is quickly approaching! <a href="http://www.yuiblog.com/blog/2013/09/17/yuiconf-2013-registration-now-open/">Registration</a> is now open, and if the last 4 years are any indication, there will be a full house so register soon! We&rsquo;re also happy to announce that there will be <a href="https://yuiconf2013-workshops.eventbrite.com/">two workshops</a> the day before the conference available for anyone interesting in enhancing their knowledge of the library. One class is an entry level course while the other provides more advanced information.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://yuilibrary.com/yuiconf/">YUIConf</a>, code coverage using <a href="http://gotwarlost.github.io/istanbul/">Istanbul</a>, an update on shorter combo URLs, migration of the YUI Forums to <a href="https://groups.google.com/forum/#!forum/yui-support">yui-support</a>, <a href="https://github.com/yui/yui3/pulls">pulls requests</a>, and <a href="https://github.com/yui/yui3/issues?direction=desc&amp;labels=up+for+grabs&amp;sort=created&amp;state=open">up for grabs bugs</a>. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=oeM6y-oEACc">here</a>.</p>
+</li>
+<li>
+<p>Core team member Clarence Leung (<a href="https://gist.github.com/clarle">@clarle</a>) <a href="https://gist.github.com/clarle/6644126">posted a gist</a> that proposes the introduction of <code>AttributeComputable</code> and <code>BaseComputable</code>, which centers on the idea of idea of computable properties. These are properties where one <code>Attribute</code> may be dependent on the value of one or more other <code>Attributes</code>. Check out this <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/0Cy7sm3SHh0">discussion thread</a> on <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">yui-contrib</a> for further details.</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/hwRCA2o5Ks8">a proposal to improve gesture events</a>, a proposal to <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/qDDlBVN_aXs">formally deprecate PHP Loader</a>, and an update on the <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/_SaE7C8Asks">removal of all SWF-based features from YUI</a>.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.09.18-18-49">Gallery build</a> include: <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-animatespin">itsa-animatespin</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-base">itsa-base</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallerycss-itsa-editoradvanced">itsa-editoradvanced</a>, <a href="https://github.com/jlecomte/yui3-gallery-modules/tree/master/src/gallery-nav-assist">nav-assist</a>, and <a href="https://github.com/camsong/yui.rocket">rocket</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://yahoodevelopers.tumblr.com/post/61587559844/a-look-back-at-nodeconfeu">A look back at NodeConfEU</a></li>
+<li><a href="http://javascriptjabber.com/075-jsj-maintainable-javascript-with-nicholas-zakas/">JavaScript Jabber &ndash; Maintainable JavaScript with Nicholas Zakas</a></li>
+<li><a href="http://www.youtube.com/playlist?list=PL37ZVnwpeshF7AHpbZt33aW0brYJyNftx">27 Presentations from JSConf US 2013</a></li>
+<li><a href="http://www.youtube.com/watch?v=PJ1hUr7YJ-8">TC39 JavaScript Panel at Bocoup</a></li>
+<li><a href="http://robcee.net/2013/fat-arrow-functions-in-javascript/">Fat Arrow Functions in JavaScript</a></li>
+<li><a href="http://tech.i.tv/09-17-2013/dependency-injection-in-nodejs/">Dependency Injection in Node.JS</a></li>
+<li><a href="https://github.com/maximecb/Higgs">Higgs JavaScript Virtual Machine</a></li>
+<li><a href="http://css-tricks.com/controlling-css-animations-transitions-javascript/">Controlling CSS Animations and Transitions with JavaScript</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/142.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

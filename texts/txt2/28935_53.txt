@@ -1,0 +1,19 @@
+<div><p>It&rsquo;s that wonderful time of year when we drink hot chocolate, sing carols and read YUI Weekly by an open fire. The year is quickly coming to a close, but there&rsquo;s still a lot happening in the world of YUI and JavaScript.</p>
+<h1>Release News</h1>
+<p>We&rsquo;ve been busy testing the next release of YUI, YUI 3.14.1 against our target environments. YUI 3.14.1 is slated to release next week, so stay tuned for that. This release will bring IE11 support along with some fixes for Android 4.4. As always, Andrew will have a blog post up with the release notes shortly.</p>
+<h1>Open Roundtable</h1>
+<p>In this week&rsquo;s <a href="http://www.youtube.com/watch?v=CohFGWYueGo">Open Roundtable</a>, regulars Andrew and Clarence discussed YUI 3.14.1, along with <a href="https://npmjs.org/package/yui-benchmark">YUI Benchmark</a>, a toolkit to simplify JavaScript performance testing. You can <a href="http://www.youtube.com/watch?v=CohFGWYueGo">catch this week&rsquo;s Roundtable on YouTube</a>.</p>
+<p>Next week is going to be the last Open Roundtable of the year! If you&rsquo;re interested in talking about something that you&rsquo;ve been building using YUI, <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">sign up for a spot</a>.</p>
+<h1>New This Week</h1>
+<ul><li>
+<p>The Modown team merged in Node support to the <a href="https://github.com/andyearnshaw/Intl.js">Intl.js polyfill library</a> this week! You can now use JavaScript&rsquo;s new Internationalization features, both on the browser and server, and possibly even sharing the same code on both sides.</p>
+</li>
+<li>
+<p>Thierry Koblentz, Yahoo and guest blogger for our CSS 101 series has updated his <a href="http://www.yuiblog.com/blog/2010/05/19/css-101-block-formatting-contexts/">CSS 101 post</a> to include new information about the list of styles that trigger a block-formatting context. Block-formatting contexts are super-important to understand in CSS so you should definitely check that post out.</p>
+</li>
+</ul><h1>The World of JavaScript</h1>
+<ul><li>Do you know about ES6 generators? They can help you escape &ldquo;callback hell&rdquo;, also lovingly known as &ldquo;The Pyramid of Doom&rdquo;. Find out how in <a href="http://blog.carbonfive.com/2013/12/01/hanging-up-on-callbacks-generators-in-ecmascript-6/">this article</a> from Erin Swenson-Healey. </li>
+<li>Alex MacCaw has <a href="http://blog.alexmaccaw.com/">a great blog</a> on Svbtle where he discusses various aspects of JavaScript. I recommend going through some of his posts on JS encryption.</li>
+<li>Addy Osmani wrote <a href="http://addyosmani.com/blog/full-stack-javascript-with-mean-and-yeoman/">an awesome article</a> on using JavaScript across the entire stack with MEAN and Yeoman. </li>
+<li>According to <a href="http://en.wikipedia.org/wiki/Jeff_Atwood">Atwood&rsquo;s law</a>, any application that can be written in JavaScript will eventually be written in JavaScript. This week, <a href="https://github.com/coolwanglu">Lu Wang</a> decided to <a href="http://coolwanglu.github.io/vim.js/web/vim.html">port Vim to JavaScript</a>. Interesting!</li>
+</ul><p>That wraps up this week. See you all next week, in what will be the last YUI Weekly of 2013!</p></div>

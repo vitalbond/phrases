@@ -1,0 +1,4 @@
+<div><p>We&rsquo;re excited to release <a href="http://purecss.io/">Pure</a> 0.2.1 today! Visit the <a href="https://github.com/yui/pure/releases/">Github Releases page</a> to find out what&rsquo;s new in this release. A full summary of changes can be found in the <a href="https://github.com/yui/pure/blob/master/HISTORY.md#021-2013-07-17">project&rsquo;s HISTORY.md</a>. You can pull in the Pure 0.2.1 into your project by adding this <code>&lt;link&gt;</code> to your page:</p>
+<pre><code>&lt;link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css"&gt;
+</code></pre>
+<p>Thanks to everyone for filing bugs, sending pull requests and participating in discussions leading up to this release!</p></div>

@@ -1,0 +1,1 @@
+<div>We are pleased to announce a new preview release for you to try out. YUI 3.11pr1 is available via Yahoo! CDN, a downloadable archive, or on npm. Our YUI Library staging website has also been updated to reflect the changes in this release. Given that this is a preview release, please take note of the [...]</div>

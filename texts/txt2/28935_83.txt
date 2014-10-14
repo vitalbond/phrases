@@ -1,0 +1,20 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release-news">Release News</h2>
+<p>This week, we released <a href="https://github.com/yui/yui3/releases/tag/v3.15.0"><strong>YUI 3.15.0</strong></a>, the latest and greatest version of YUI. It&rsquo;s now available via the CDN, npm, or as a zip archive. <a href="http://twitter.com/triptych">Andrew Wooldridge</a> did a great job <a href="http://www.yuiblog.com/blog/2014/02/26/yui-3-15-0-released/">introducing the new features in this release</a>, so make sure to check that out. You can also <a href="https://github.com/yui/yui3/wiki/YUI-3.15.0-Change-History-Rollup">view the changelog</a>.</p>
+<p>There were a total of <a href="https://github.com/yui/yui3/compare/v3.14.1...v3.15.0">449 commits by 19 contributors for this release</a>. Thanks again to the entire YUI community for helping us ship another release. Try it out today!</p>
+<h2 id="open-roundtable">YUI Open Roundtable</h2>
+<p>We had a great <a href="https://www.youtube.com/watch?v=JYj1GE8aT08">YUI Open Roundtable</a> featuring <a href="https://twitter.com/_andrewrn_">Andrew Nicols</a> from Moodle talking about all of the challenges dealing with a broad range of browers, supporting many legacy versions of their software, and distributing a large codebase.</p>
+<p>Next week&rsquo;s guest on the YUI Open Roundtable will be Andy Earnshaw, author of <a href="https://github.com/andyearnshaw/Intl.js">Intl.js</a>.</p>
+<h2 id="yuiconf">YUIConf Videos</h2>
+<p>There were some more YUIConf videos out this week! Are you caught up yet?</p>
+<ul><li>Evan Goer on <a href="http://www.youtube.com/watch?v=mEvvc80ZYU8&amp;feature=youtu.be">Thinking of Documentation as Code</a></li>
+<li><a href="https://www.youtube.com/watch?v=OuN1X8MEaZs">Pull-Request-A-Palooza</a> with Anthony Pipkin</li>
+<li>Bill Walker on <a href="http://youtu.be/pE-uVuq1SNM">Firefox Marketplace: Breaking the Stranglehold of App Stores</a></li>
+</ul><h2 id="world-of-js">The World of JavaScript</h2>
+<p>Here are some good articles to get you up-to-speed on what&rsquo;s been happening in the world of JavaScript this week.</p>
+<ul><li>TasteJS had a great post on <a href="http://blog.tastejs.com/rewriting-a-webapp-with-ecmascript-6/">how to write a web app using ES6</a>, and then transpile it to work in ES5 environments.</li>
+<li>Ariya Hidayat <a href="http://ariya.ofilabs.com/2014/02/javascript-string-substring-substr-slice.html">dicussed the differences</a> between `substring()`, `slice()`, and `substr()`.</li>
+<li>There was a great article on <a href="http://taoofcode.net/promise-anti-patterns/">Promise Anti-patterns</a> over at Tao Of Code.</li>
+</ul><p>That&rsquo;s all for this week! See you in 7 days!</p>
+<h2>Conclusion</h2>
+<p>That&rsquo;s all for this week. Until next time, folks!</p></div>

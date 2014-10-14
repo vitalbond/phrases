@@ -1,0 +1,6 @@
+<div><p>Jag har svårt att bestämma mig om jag ska använda GNOME 3, DWM eller MATE. Alla är olika och har sina fördelar. Just nu använder jag dock MATE, samtidigt som jag har satt upp DWM så som jag vill ha det, ifall jag skulle få för mig att börja använda det istället. Vad finns det att skriva om MATE då? Ja, inte speciellt mycket tror jag. Gillar du GNOME 2 så kommer du att gilla MATE, gillar du snabbhet och enkelhet så kommer du att gilla MATE.</p>
+<p>Jag verkar ha svårt att kunna lägga upp bilder just nu, så därför kan jag inte posta en skärmbild på hur det ser ut för tillfället. Vad jag dock kan göra är att förmedla det tema och de ikoner som används för tillfället.<br>
+GTK thema: <a title="Mint themes" href="https://aur.archlinux.org/packages/mint-themes/" target="_blank">Mint-themes</a><br>
+Ikoner:  <a title="Mint-x-icons" href="https://aur.archlinux.org/packages/mint-x-icons/" target="_blank">Mint-x-icons</a></p>
+<p> </p>
+<p>Tack för mig.</p></div>
