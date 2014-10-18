@@ -26,71 +26,26 @@ def is_stopword(w):
 
 
 
-def find_phrases(documents, N=2, measure='raw_freq', words_filter = 'default', window_size = 0, freq_min = 0):
-    if N==2:
-        ngram = 'Bigram'
-    elif N==3:
-        ngram = 'Trigram'
-    elif N==4:
-        ngram = 'Quadgram'
-    else:
-        raise Exception("wrong N: %d" % N)
-
-    window_size += N
-
-    finder = getattr(nltk, ngram + 'CollocationFinder')
-
-    ngram_documents_fd = FreqDist()
-    ngram_fd = FreqDist()
+def find_phrases(documents, N=2):
+    L = len(documents)
+    ngram_counter = {}
     for document in documents:
-
-        print "\n"
-        print document
-
-        finder = finder.from_words(document)
-
-        if words_filter=='default':
-            finder.apply_word_filter(lambda w: is_punct(w))
-            finder.apply_ngram_filter(lambda *ngram: is_stopword(ngram[0]) or is_stopword(ngram[-1]))
-        elif words_filter=='punct':
-            finder.apply_word_filter(lambda w: is_punct(w))
-        elif words_filter=='stopwords':
-            finder.apply_word_filter(is_stopword)
-
-        ngs = finder.ngram_fd
-
-        print "\n"
-        print [item for item in ngs.iteritems()]
-
+        ngrams_in_document = {}
         for ng in ngrams(document, N):
             if not is_stopword(ng[0]) and not  is_stopword(ng[-1]) and not any(is_punct(w) for w in ng):
-                ngram_fd[ng] += item[1]
-                ngram_documents_fd[item[0]] += 1
+                if not ng in ngram_counter:
+                    ngram_counter[ng] = [0, 0]
+                ngram_counter[ng][0] += 1
+                ngrams_in_document[ng] = 1
 
-    return
+        for ng in ngrams_in_document.keys():
+            ngram_counter[ng][1] += 1
 
-    print "\n"
-    print [item for item in ngram_fd.iteritems()]
-    print "\n"
-    print [item for item in ngram_documents_fd.iteritems()]
+    ngs = [(ng, ngram_counter[ng][0], ngram_counter[ng][1]) for ng in ngram_counter]
+    ngs_best = sorted(ngs, key=lambda t: (-t[1], -t[2]))[:10]
 
-    return
-
-    measure_obj = getattr(getattr(nltk.metrics.association, ngram + 'AssocMeasures')(), measure)
-
-    if freq_min:
-        finder.apply_freq_filter(freq_min)
-
-    #ngrams = finder.ngram_fd
-
-    print "\n"
-    #print [item for item in ngrams.iteritems()]
-    print "\n"
-
-    ngrams_scored = finder.score_ngrams(measure_obj)[:10]
-
-    print("--- N=%d measure=%s filter=%s ---" % (N, measure, words_filter))
-    print("\n".join([' '.join(x[0]) + (' [%02f]' % x[1]) for x in ngrams_scored]))
+    print("--- N=%d ---" % (N))
+    print("\n".join([' '.join(x[0]) + (' [%d/%d]' % (x[1], x[2])) for x in ngs_best]))
 
 
 if len(sys.argv) > 1:
@@ -124,8 +79,8 @@ for f in os.listdir(dir):
 #poisson_stirling
 #jaccard
 
-for N in [3]:
-    find_phrases(documents, N=N, measure="raw_freq", freq_min=0, words_filter="default")
+for N in [2, 3, 4]:
+    find_phrases(documents, N=N)
 
 print "\n"
 
