@@ -1,9 +1,8 @@
 from __future__ import division
 import nltk, os, sys, re
-from HTMLParser import HTMLParser
-#import itertools as _itertools
-#from nltk.compat import iteritems
 from nltk.probability import FreqDist
+from HTMLParser import HTMLParser
+
 
 
 def sqmean(nums):
@@ -48,9 +47,10 @@ def is_punct(w):
     return not _re_non_punct.search(w)
 
 
-_stopwords = nltk.corpus.stopwords.words('english')
+_english_stopwords = set(nltk.corpus.stopwords.words('english'))
+_non_english_stopwords = set(nltk.corpus.stopwords.words())-_english_stopwords
 def is_stopword(w):
-    return is_punct(w) or w.lower() in _stopwords
+    return is_punct(w) or w.lower() in _english_stopwords
 
 
 def get_corpus_words_fd():
@@ -99,19 +99,27 @@ else:
     exit()
 
 documents = []
+tokens_set = set()
 for f in os.listdir(dir):
     file = os.path.join(dir, f)
     if os.path.isfile(file):
         str = strip_tags(open(file, 'r').read()).decode('utf-8')
-        #print str
         tokens = nltk.word_tokenize(str)
         tokens = [w.lower() for w in tokens]
+        tokens_set = tokens_set.union(tokens)
         documents.append(tokens)
+
+
+if len(tokens_set & _english_stopwords) <= len(tokens_set & _non_english_stopwords):
+    print("Not english text")
+    exit()
 
 
 corpus_words_fd = get_corpus_words_fd()
 words_fd = get_words_fd(documents)
 def word_ratio(w):
+    if is_stopword(w):
+        return 0
     a = words_fd.freq(w)
     b = corpus_words_fd.freq(w)
     if b==0:
@@ -119,19 +127,16 @@ def word_ratio(w):
     return a/b
 
 
-
-
-for N in [2, 3, 4]:
-    ngrams = find_phrases(documents, N=N, count=100)
+for N in [2, 3, 4, 5, 6]:
+    ngrams = find_phrases(documents, N=N, count=20)
     print("--- N=%d ---" % (N))
     for x in ngrams:
-        word_ratios = map(lambda w: word_ratio(w), x[0])
-        am = amean(word_ratios)
+        word_ratios = [word_ratio(w) for w in x[0] if word_ratio(w)]
         gm = gmean(word_ratios)
         sqm = sqmean(word_ratios)
 
-        bad_symptoms = (am<10) + (gm<15)
-        colors = ['', 'yellow', 'red']
+        bad_symptoms = (gm<15)
+        colors = ['', 'red']
 
         str = colored(' '.join(x[0]), colors[bad_symptoms])
         str += ' [%d/%d]' % (x[1], x[2])
@@ -139,7 +144,6 @@ for N in [2, 3, 4]:
         str += ' '.join(['%0.2f' % x for x in word_ratios])
         str += ')'
 
-        str += '%0.2f ' % am
         str += '%0.2f ' % gm
         str += '%0.2f ' % sqm
 
