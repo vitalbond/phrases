@@ -6,6 +6,7 @@ Needs Python 2, NLTK installed (http://www.nltk.org/install.html)
 
 Usage:
 
->python phrases.py texts/txt0
+>python phrases.py --dir=texts/txt0 --count=20 --maxLength=6
 
-texts/txt0 - directory with text files
+dir - directory with text files
+maxLength - max words in phrase
