@@ -1,7 +1,10 @@
 phrases
 =====
 
-Needs Python 2 (2.7), NLTK installed (http://www.nltk.org/install.html)
+Installation:
+- Python 2 (2.7)
+- install NLTK http://www.nltk.org/install.html
+- download NLTK data: python -m nltk.downloader stopwords gutenberg punkt
 
 
 Usage:
