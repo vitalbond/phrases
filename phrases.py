@@ -4,10 +4,6 @@ from nltk.probability import FreqDist
 from HTMLParser import HTMLParser
 
 
-def sqmean(nums):
-    return (sum([x*x for x in nums])/len(nums))**0.5
-
-
 def gmean(nums):
     return (reduce(lambda x, y: x*y, nums))**(1.0/len(nums))
 
@@ -37,7 +33,6 @@ def get_corpus_words_fd():
     for text in nltk.corpus.gutenberg.fileids():
         for word in nltk.corpus.gutenberg.words(text):
             fd[word] += 1
-        #break
     return fd
 
 
@@ -88,7 +83,7 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
 
 
         for ng in ngram_counter:
-            #filter
+            #filter by document frequency
             if ngram_counter[ng][1]/documents_count<min_doc_freq:
                 continue
 
@@ -98,21 +93,20 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
                 if wfr:
                     word_freq_ratios.append(wfr)
 
-            gm = gmean(word_freq_ratios)
+            phrase_value = gmean(word_freq_ratios)
 
-            #filter
-            if gm<15:
+            #filter by phrase value
+            if phrase_value<15:
                 continue
 
-            sqm = sqmean(word_freq_ratios)
-            phrases.append((ng, ngram_counter[ng][0]*N, ngram_counter[ng][1]*N, gm, sqm))
+            phrases.append((ng, ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
 
     max_freq = max([x[1] for x in phrases])
     max_freq_docs = max([x[2] for x in phrases])
-    max_value = max([x[4] for x in phrases])
+    max_value = max([x[3] for x in phrases])
 
     #rank
-    phrases_ranked = [(x[0], 0.6*x[2]/max_freq_docs+0.3*x[1]/max_freq+0.1*x[4]/max_value) for x in phrases]
+    phrases_ranked = [(x[0], 0.5*x[2]/max_freq_docs+0.3*x[1]/max_freq+0.2*x[3]/max_value) for x in phrases]
 
     #sort
     phrases_sorted = sorted(phrases_ranked, key=lambda t: -t[1])[:count]
