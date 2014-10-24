@@ -1,0 +1,16 @@
+<div><p>As we say goodbye to this year, we have some nice goodies lined up for you. Learn out about our latest releases, and find out what happens when you run YUI inside a Tesla Model S. All this and more, in 2013&prime;s last YUI Weekly:</p>
+<h1>Release News</h1>
+<p>This week, we released <a href="http://www.yuiblog.com/blog/2013/12/18/yui-3-14-1-released/">YUI 3.14.1</a>, which brings support for IE11 and Android 4.4. You can find it on the <a href="http://yui.yahooapis.com/3.14.1/build/yui/yui-min.js">CDN</a> and <a href="https://npmjs.org/package/yui">npm</a>, or download it as a <a href="http://yui.zenfs.com/releases/yui3/yui_3.14.1.zip">zip</a>. Check out the <a href="http://www.yuiblog.com/blog/2013/12/18/yui-3-14-1-released/">release post</a> for more details.</p>
+<p>There was also a new release of <a href="http://yeti.cx/">Yeti</a>. We use Yeti to automate our tests across browsers. In fact, <em>over 21 million</em> tests have been automated with Yeti since July! <a href="https://github.com/yui/yeti/releases/tag/v0.2.25">Yeti 0.2.25</a> lets you specify Selenium capabilities directly along with some other nice improvements. Get it off <a href="https://npmjs.org/package/yeti">npm</a> or <a href="http://yeti.cx/">view the release post</a> for more details.</p>
+<h1>Open Roundtable</h1>
+<p>We continued our &ldquo;YUI in the Wild&rdquo; series at the <a href="http://www.youtube.com/watch?v=JiNlE8DOdus">Open Roundtable</a> this week. Mayumi joined us and discussed how she uses YUI at her work. It was an interesting conversation and I recommend checking it out.</p>
+<p>If you are using YUI and you&rsquo;d like to show off what you&rsquo;ve been building, you can sign up for a spot at our Open Roundtable at <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">this wiki</a>. Open Roundtable will return on January 9th!</p>
+<h1>New This Week</h1>
+<ul><li>What&rsquo;s the first thing that you do when you sit inside a Tesla? Well, I check out the comfortable seats but others run some YUI unit tests. <a href="http://www.flickr.com/photos/uberlife/11362128574/">Find out what happens next</a> on Reid&rsquo;s Flickr!</li>
+<li><a href="https://twitter.com/ericf">Eric</a> has been working on <a href="https://github.com/ericf/rework-pure-grids">a Rework plugin</a> that generates CSS for mobile-first responsive grids. Stay tuned for more news related to this in the new year!</li>
+</ul><h1>The World of JavaScript</h1>
+<ul><li>Jake Archibald wrote <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">a great article about Promises</a> on HTML5Rocks. It&rsquo;s a great place to start for those who are new to Promises and Generators. I got a lot out of it. </li>
+<li>There&rsquo;s a good discussion over at Hacker News about the <a href="https://news.ycombinator.com/item?id=6936975">Future of JavaScript MVCs</a>.</li>
+<li>Stoyan Stefanov gives his tips on <a href="http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-writing-high-quality-javascript/">Writing High Quality JavaScript</a> over at Tuts+. </li>
+</ul><h1>Happy Holidays</h1>
+<p>That&rsquo;s a wrap, folks. From everyone at the YUI Team, we wish you Happy Holidays and a Happy New Year! YUI Weekly will be back in the first week of January. See you all in 2014!</p></div>

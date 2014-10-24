@@ -1,0 +1,38 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="110" height="110" alt="" src="http://www.icrw.org/files/images/people/Jen_Headshot.jpg?1381516325"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Jennifer        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Abrahamson        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Senior Director of Strategic Communications        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="font-family: Calibri; font-size: 15px; line-height: normal; ">Jennifer Abrahamson is a strategic communications, policy advocacy and humanitarian media expert with on the ground experience in 25 developing and conflict-affected countries&nbsp;</span><span style="font-family: Calibri; font-size: 15px; line-height: normal; ">worldwide. Prior to joining ICRW in 2011 as its Senior Director of Strategic Communications, Jennifer worked for Oxfam International, Oxfam GB and the United Nations World Food Program, among other international organizations. She is also an author of a book of non-fiction about the civilian cost of the wars in Afghanistan and Iraq, published by Simon and Schuster in 2006, and has worked as a freelance journalist and photographer from Africa.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="font-family: Calibri; font-size: 15px; line-height: normal; ">Jennifer holds a Master&rsquo;s Degree in International Affairs from Columbia University (SIPA).</span></p>        </div>
+        </div>
+</div></div>

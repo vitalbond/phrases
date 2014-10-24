@@ -1,0 +1,1 @@
+<div>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you’d like to share, feel free to leave a comment below. This week saw the release of Pure v0.2.0, an update that includes improvements to Forms, Grids, and Menus. In [...]</div>

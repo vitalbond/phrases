@@ -1,0 +1,24 @@
+<div><div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    AllAfrica        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="line-height: 1.5;">WomanCare Global has been awarded a cooperative agreement from USAID&rsquo;s Office of Population and Reproductive Health to support the research, development and introduction of woman-controlled family planning technologies. This five-year program will be implemented in partnership with Population Services International (PSI), Every1Mobile (E1M), the International Center for Research on Women (ICRW) and Evofem.</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>WomanCare Global has been awarded a cooperative agreement from USAID&rsquo;s Office of Population and Reproductive Health to support the research, development and introduction of woman-controlled family planning technologies. This five-year program will be implemented in partnership with Population Services International (PSI), Every1Mobile (E1M), the International Center for Research on Women (ICRW) and Evofem.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://allafrica.com/stories/201312181507.html?viewall=1" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

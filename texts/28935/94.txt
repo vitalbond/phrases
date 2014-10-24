@@ -1,0 +1,21 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release">Release News</h2>
+<p>We released <strong>YUI 3.16.0</strong> this week! Big props to everyone on the core team and the community!</p>
+<pre><code>&lt;script src="http://yui.yahooapis.com/3.16.0/build/yui/yui-min.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>Find out more about what&rsquo;s changed in this release by viewing the <a href="https://github.com/yui/yui3/wiki/YUI-3.16.0-Change-History-Rollup">change history rollup</a>. Andrew also has a <a href="http://www.yuiblog.com/blog/2014/04/10/yui-3-16-0-released/">nice blog post</a> summarizing the changes in this release.</p>
+<h2 id="yui-or">YUI Open Roundtable</h2>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/SO6hbFIgQlg" frameborder="0" allowfullscreen></iframe></p>
+<p>In this week&rsquo;s <a href="https://www.youtube.com/watch?v=SO6hbFIgQlg">YUI Open Roundtable</a>, <a href="https://twitter.com/juandopazo">Juan Dopazo</a> from the YUI Team sat down with <a href="http://www.yuiblog.com/twitter.com/triptych">Andrew</a> to talk about Promises and ES6 Modules in YUI. Juan stepped through what Promises are and how you can use them today. It was a great discussion that I highly recommend checking it out if you&rsquo;re new to Promises.</p>
+<p><a href="http://www.youtube.com/watch?v=SO6hbFIgQlg&amp;feature=share&amp;t=58m44s">Towards the end of the video</a>, Juan also talked about how you can write YUI modules in ES6 by leveraging the new <code>YUI.require()</code> method, <code>imports</code>/<code>exports</code>, and transpiling code via the <a href="https://github.com/square/es6-module-transpiler">Square ES6 Transpiler</a>.</p>
+<h2 id="world-of-js">The World of JavaScript</h2>
+<ul><li>
+<p>If you follow Node.js news, you probably know that <a href="http://expressjs.com/4x/api.html">Express 4.0 was released</a> this week! So are you going to upgrade to Express 4.0 or use <a href="http://koajs.com/">Koa</a>?</p>
+</li>
+<li>
+<p>Lauren Orsini has a nice tutorial up on how to leverage the newly open-sourced <a href="http://msdn.microsoft.com/en-us/windows/dn632015">WinJS API</a> to <a href="http://readwrite.com/2014/04/04/winjs-how-to-build-app-html5-10-steps">build a Windows app in 10 easy steps</a> using HTML technologies.</p>
+</li>
+<li>
+<p>Most sites on the web use Google Analytics, and David Walsh has a short post up on how you can <a href="http://davidwalsh.name/track-errors-google-analytics">use GA to track JavaScript errors</a>.</p>
+</li>
+</ul><p>This was an exciting week for the team, with the release of 3.16.0 and a great Open Roundtable discussion! Remember that next Friday is Good Friday, so there will not be a YUI Weekly next week. I&rsquo;ll see you guys back here on April 25th!</p></div>

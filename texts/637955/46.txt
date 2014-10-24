@@ -1,0 +1,44 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Soko, Inc. has developed an innovative e-commerce technology for the developing world, enabling crafts persons to easily connect to online customers. Vendors can create and manage their online storefronts via their personal mobile phones. Global consumers can then buy directly from the vendors on Soko&rsquo;s&nbsp; e-commerce website, revolutionizing the supply chain into a peer-to-peer exchange. Soko securely transfers&nbsp;credit card payments made online into a mobile money payment for the vendor. Thus far Soko has recruited over 250 vendors and sold over 40 different products on their website (<a href="http://www.shopsoko.com/">www.shopsoko.com</a>).</p>
+<p>ICRW will support Soko&nbsp;in developing a comprehensive performance monitoring system that collects periodic data about the implementation of project activities and vendors&rsquo; sales. This system will provide ongoing feedback to Soko, enabling it to modify project activities to enhance effectiveness and profits as the company expands its network of vendors.</p>
+<p>Specifically, the&nbsp;monitoring and evaluation&nbsp;system will:</p>
+<ul><li>Track data related to project implementation such as vendor and agent recruitment, training, retention and level of engagement within the sales network</li>
+<li>Determine which methods of recruitment, retention, and training yield the highest number of sales and profit</li>
+<li>Collect data on outcomes of social impact for vendors such as enterprise-related skills and knowledge, the diversification of income-generating activities and vendors ability to exercise agency through the use and ownership of mobile phones and money</li>
+<li>Provide data about what is working and where challenges lie related to project implementation and vendor sales.&nbsp;</li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    Soko, Inc.        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Soko, Inc.        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Allison Glinski        </div>
+        </div>
+</div></div>

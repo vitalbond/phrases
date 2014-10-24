@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Wed, 09/25/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-byline">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Lisa Anderson        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW is mentioned as one of Vital Voices' partners in a $1.5 billion commitment, announced at the Clinton Global Initiative, to advance and scale-up women-owned businesses in the global supply chain.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Vital Voices announced a new $1.5 billion commitment at the Clinton Global Initiative (CGI). The commitment supports the advancement of small and medium sized, women-owned businesses in the global supply chain. The pledge, which unites Vital Voices with ICRW along with other NGOs and businesses, may be one of the largest commitments made at this year's CGI. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.trust.org/item/20130925091027-6a0qt/" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

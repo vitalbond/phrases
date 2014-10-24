@@ -1,0 +1,12 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release">Release News</h2>
+<p>Work continues on <a href="https://github.com/yui/yui3/wiki/Development-Schedule">Sprint 12</a>, which is slated to release on February 25th. You can track the commits as they land on the <a href="https://github.com/yui/yui3/commits/dev-3.x"><code>dev-3.x</code></a> and <a href="https://github.com/yui/yui3/commits/dev-3.x"><code>dev-master</code></a> branches.</p>
+<h2 id="open-roundtable">Open Roundtable</h2>
+<p>This week&rsquo;s <a href="http://www.youtube.com/watch?v=s9BQta07N_A">Open Roundtable</a> featured another episode of <em>YUI In The Wild</em>. This week, <a href="https://twitter.com/tivac">Pat Cavit</a> from <a href="http://www.arena.net/">ArenaNet</a> joined us to talk about how they use YUI for their <a href="http://www.guildwars2.com/">websites</a> and in-game user-interfaces.</p>
+<p>Pat touched on a bunch of tools that are used in ArenaNet, such a NodeJS-powered task runner called <a href="http://github.com/tivac/dullard">Dullard</a>, and a YUI meta-data extractor called <a href="https://github.com/tivac/yui-configger">Configgur</a>. He also showed a bunch of modules and <a href="https://github.com/tivac/yui-viewparent">extensions</a> on top of YUI. Check out the <a href="http://www.youtube.com/watch?v=s9BQta07N_A">entire video</a> and browse <a href="http://github.com/tivac/">Pat&rsquo;s GitHub</a> to find the repositories that was referenced.</p>
+<h2 id="yuiconf-videos">YUIConf Videos</h2>
+<p>Last but not least, we&rsquo;re still posting out YUIConf videos every other day or so. The videos released this week were:</p>
+<ul><li><a href="http://www.youtube.com/watch?v=tQZhzSQM-l4">The &ldquo;Building Blocks&rdquo; of Prototyping</a> by Lauren Tsung</li>
+<li><a href="http://www.youtube.com/watch?v=HYl7ReNB5TA">JavaScript API Design Principles</a> by Ariya Hidayat</li>
+<li><a href="http://www.youtube.com/watch?v=eBLyPeVoetc">YUI and the History of OSS at Yahoo</a> by Dav Glass</li>
+</ul><p>Remember that you can find a full list of all the videos over on the <a href="http://www.youtube.com/yuilibrary">YUI Library Youtube Channel</a>. That&rsquo;s all for this week! See you in 7 days, folks.</p></div>

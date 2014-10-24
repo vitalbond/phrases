@@ -1,0 +1,30 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week saw the release of <strong>YUI 3.12.0</strong>. You can find all the details in the <a href="http://www.yuiblog.com/blog/2013/08/29/yui-3-12-0-released/">release announcement</a>. Thanks to the dozens of contributors who have submitted hundreds of commits <a href="https://github.com/yui/yui3/pulse/monthly">over the past month</a>. With Sprint 10 will beginning next week, expect an update to the <a href="https://github.com/yui/yui3/wiki/Development-Schedule">development schedule wiki</a> soon.</p>
+</li>
+<li>
+<p>A big YUI welcome to Ezequiel Rodriguez who joins the team this week! Stay tuned to for a more formal introduction here on the blog, but in the meantime you can find him on Github as <a href="https://github.com/ezequiel">@ezequiel</a> and Twitter at <a href="https://twitter.com/ziggyism">@ziggyism</a>.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://en.wikipedia.org/wiki/Data_binding">data binding</a> in YUI, <a href="https://yuilibrary.com/yui/docs/model/">Models</a> and <a href="https://yuilibrary.com/yui/docs/model-list/">ModelLists</a>, <a href="http://yuilibrary.com/yui/docs/promise">Promise</a> control flow, nested <a href="https://yuilibrary.com/yui/docs/view/">Views</a>, and <a href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">ES6 modules</a>. You can find a video <a href="http://www.youtube.com/watch?v=1nUvywbwCKo">over on YouTube</a>.</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/B1n050KE1SY">a Git tip</a> to help out with the <a href="https://github.com/yui/yui3/wiki/Developer-Workflow#merging-fixes-into-a-release-branch">new release workflow</a>, and continued discussion on <a href="https://groups.google.com/forum/?fromgroups#!topic/yui-contrib/NroWMOr-51g">Button improvements</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/smugmug/yui-gallery/tree/master/src/sm-map">SmugMug Map</a> is <em>&ldquo;an ordered map data structure with an interface and behavior similar to (but not exactly the same as) <a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-15.14">ECMAScript 6 Maps</a>.&rdquo;</em> Coming soon to a <a href="http://yuilibrary.com/gallery/">YUI Gallery</a> near you! Speaking of the Gallery, there was no deploy this week due to a few technical glitches. We hope to have those resolved for next week&rsquo;s deployment.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://lazd.github.io/mdn-io-passive-url-shortening-for-mdn.html">mdn.io &ndash; Passive URL shortening for MDN</a></li>
+<li><a href="http://generatedcontent.org/post/59403168016/esintlapi">ECMAScript Internationalization API</a></li>
+<li><a href="http://www.2ality.com/2013/08/protecting-objects.html">Protecting Objects in JavaScript</a></li>
+<li><a href="http://flippinawesome.org/2013/08/26/understanding-scope-and-context-in-javascript/?">Understanding Scope and Context in JavaScript</a></li>
+<li><a href="http://swannodette.github.io/2013/08/24/es6-generators-and-csp/">ES6 Generators Deliver Go Style Concurrency</a></li>
+<li><a href="http://tech.pro/tutorial/1404/debugging-modern-web-applications-part-1">Debugging Modern Web Applications Part 1</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/145.html">JavaScript Weekly</a></li>
+</ul></li>
+<li>
+<p>And finally, happy birthday to <a href="http://www.yuiblog.com/blog/category/yui-weekly/">YUI Weekly</a> who turns 1-year old this month!</p>
+</li>
+</ul></div>

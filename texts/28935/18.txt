@@ -1,0 +1,31 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>After last week&rsquo;s batch of releases for <a href="http://yuilibrary.com/">YUI</a>, <a href="http://yeti.cx/">Yeti</a>, and <a href="http://purecss.io/">Pure</a>, the team has begun working towards the next cycle of releases. Announced this week was the <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-9-next-release">Sprint 9 development schedule</a>, which began on July 23rd and concludes with a stable release on August 27th. The next milestone for this sprint is the Aug 11th <a href="https://github.com/yui/yui3/wiki/Contribution-Standards#code-freeze">code freeze</a> pull request deadline. So for anyone working towards backwards incompatible updates, that is your deadline to submit a pull request.</p>
+</li>
+<li>
+<p>Recently Github announced <a href="https://github.com/blog/1547-release-your-software">Releases</a>, a place for projects to host information and downloads for releases. You can now find all current and future release information for YUI at <a href="https://github.com/yui/yui3/releases">github.com/yui/yui3/releases</a> (<a href="https://github.com/yui/yui3/releases.atom">atom feed</a>).</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included the recently released <a href="http://yuilibrary.com/yui/docs/paginator/">Paginator</a> component, a <a href="https://github.com/yui/yui3/pull/1029">Perf test refresh proposal</a>, a demo of <a href="http://twitter.com/rashadrussell">@rashadrussell</a>&lsquo;s Pure Layout Generator project, and a discussion on Github&rsquo;s <a href="https://help.github.com/articles/setting-the-default-branch">default branches</a>. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=NTA3fQYdOHE">here</a> or view it below.</p>
+</li>
+</ul><div align="center">
+<iframe width="560" height="315" src="//www.youtube.com/embed/NTA3fQYdOHE?list=PLjKP9DUCzZoqAKuA4P4llDb6BR_obpeV_" frameborder="0" allowfullscreen></iframe>
+</div>
+<ul><li>
+<p>For anyone interested in <a href="http://yuilibrary.com/yui/docs/datatable/">DataTable</a> development, just a reminder that there is a <a href="https://trello.com/b/fTpWY4oN/datatable-roadmap">DataTable Trello Roadmap board</a> where you can track development and suggest enhancements.</p>
+</li>
+<li>
+<p>In devtool news, <a href="https://github.com/yui/shifter/">Shifter</a> received a version bump this week from <a href="https://github.com/yui/shifter/compare/v0.4.1...v0.4.2">v0.4.1 to v0.4.2</a>, and <a href="https://github.com/yui/yogi/">Yogi</a> from <a href="https://github.com/yui/yogi/compare/v0.1.10...master">v0.1.10 to v0.1.11</a>. Upgrade with <code>npm install -g shifter yogi</code>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://www.slideshare.net/BrendanEich/value-objects">Value objects in JS &ndash; an ES7 work in progress</a></li>
+<li><a href="https://github.com/bower/bower/blob/master/CHANGELOG.md#100---2013-07-23">Bower 1.0.0 released</a></li>
+<li><a href="http://www.objectplayground.com/">Object Playground: The Definitive Guide to Object-Oriented JavaScript</a></li>
+<li><a href="http://www.2ality.com/2013/07/defending-constructors.html">In defense of JavaScript&rsquo;s constructors </a></li>
+<li><a href="http://blog.alexmaccaw.com/how-yield-will-transform-node">How yield will transform Node.js</a></li>
+<li><a href="http://flippinawesome.org/2013/07/22/dom-traversal-and-manipulation-with-voyeur/?">DOM Traversal and Manipulation with Voyeur</a></li>
+<li><a href="http://blog.strongloop.com/announcing-a-new-and-improved-node-js-debugger/">Announcing a New and Improved Node.js Debugger</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/140.html">JavaScript Weekly</a> and <a href="http://developer.yahoo.com/blogs/ydn/css-spheres-tricky-css-selectors-quiz-more-131739647.html">YDN</a></li>
+</ul></li>
+</ul></div>

@@ -1,0 +1,41 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Child marriage is a serious human rights crisis and one of the most pressing development concerns in the world today. Defined as marriage under the age of 18, child marriage disproportionately and negatively affects girls who are more likely to be married as children than boys. &nbsp;Currently over 60 million girls and women are affected by child marriage globally. &nbsp;Child marriage is particularly pervasive across South Asia and Africa, where 50-70 percent of girls in some countries are married before the age of 18.</p>
+<p>This technical note highlights the prevalence of child marriage in South Asia and its adverse social, health and developmental impacts on girls&rsquo; lives. It reviews legislative and other responses in the form of government policies and frameworks as well as programs adopted by different South Asian countries to address child marriage. Additionally it offers a way forward for both policy makers and development practitioners in terms of policy and program recommendations to eliminate child marriage in the region.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Tina Khanna, Ravi Verma and Ellen Weiss        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/ravi-verma">Ravi Verma</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/Child_marriage_paper%20in%20South%20Asia.2013.pdf" type="application/pdf; length=894580">Child_marriage_paper in South Asia.2013.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

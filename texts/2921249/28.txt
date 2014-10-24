@@ -1,0 +1,3 @@
+<div><p>Don´t like the Win95 look? Just open the terminal and type</p>
+<p><code>sudo apt-get install libreoffice-gnome</code></p>
+<p>This may be something really easy but I don´t think new users know about this.</p></div>

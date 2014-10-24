@@ -1,0 +1,3 @@
+<div><p>We are happy to announce a new <a href="https://github.com/yui/yui3/blob/live-docs/CONTRIBUTORS.md#committers">Committer</a> to the YUI project, Ryuichi Okumura (<a href="https://github.com/okuryu">@okuryu</a>).</p>
+<p>Ryuichi has been a developer on the Yahoo! Japan platform group for over 6 years, and hopes to work on both the <a href="http://yuilibrary.com/yui/docs/api/classes/Intl.html">Intl</a> and <a href="http://yuilibrary.com/yui/docs/calendar/">Calendar</a> components.</p>
+<p>Welcome Ryuichi!</p></div>

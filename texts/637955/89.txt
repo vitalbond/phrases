@@ -1,0 +1,40 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>What does it mean to &ldquo;be a man&rdquo; to adolescent boys in the Balkans region? Can it mean keeping the peace instead of perpetrating violence? Having fun without drugs and alcohol? Practicing safe sex?</div><div>&nbsp;</div><div>Join us for a panel discussion where speakers will announce the findings of a new report on engaging men and boys in the Balkans. The report focuses on the lessons from the last seven years of programming with a coalition of local, regional, and international organizations that encourages positive masculine identities under the banner of the &ldquo;Young Men Initiative&rdquo; (YMI). Learn how YMI worked with boys to promote a lifestyle prioritizing good health, nonviolence, and gender equality through educational workshops and community campaigns.</div><div>&nbsp;</div><div><em><strong>Please RSVP to bdeas@care.org or call 202-595-2800 by June 12.</strong></em></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-speakers">
+      <div class="field-label">Speakers:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div><strong style="line-height: 1.5;">Doris Bartel (Moderator)</strong></div><div><div>Senior Director for Gender and Empowerment, CARE</div><div>&nbsp;</div><div><strong style="line-height: 1.5;">John Crownover</strong><br><span style="line-height: 1.5;">Young Men Initiative Program Advisor, CARE International in the Balkans</span></div></div><div>&nbsp;</div><div><strong>Brian Heilman</strong><br><span style="line-height: 1.5;">Gender and Evaluation Specialist, International Center for Research on Women</span></div><div><div>&nbsp;</div><div><strong>Gary Barker</strong></div><div>International Director and Founder, Promundo</div><div>&nbsp;</div><div><div>&nbsp;</div></div></div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-event">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              When:&nbsp;</div>
+                    <span class="date-display-single">Mon, 06/16/2014 - <span class="date-display-start">9:30am</span><span class="date-display-separator"> - </span><span class="date-display-end">11:00am</span></span>        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-location">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Where:&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+          <span class="fn">CARE</span>
+              <div class="street-address">
+        1825 I St. NW                   12th Floor Conference Center, Room 12C              </div>
+              <span class="locality">Washington</span>,               <span class="region">DC</span>
+                  <div class="country-name">United States</div>
+                                      </div>
+      <div class="map-link">
+      <div class="location map-link">See map: <a href="http://maps.google.com/?q=1825+I+St.+NW%2C+Washington%2C+DC%2C+%2C+us">Google Maps</a></div>    </div>
+  </div>
+        </div>
+        </div>
+</div></div>

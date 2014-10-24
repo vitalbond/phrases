@@ -1,0 +1,12 @@
+<div><div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><img alt="" src="http://www.icrw.org/files/resize/images/London_Video_Thumbnail_0-150x86.JPG" style="width: 150px; height: 86px;" width="150" height="86"></p><p>On June 3rd, ICRW co-hosted "Let's Raise Our Voices," an event held in London that brought together leading experts to discuss strategies for preventing violence against women and girls. <a href="http://www.icrw.org/media/news/watch-lets-raise-our-voices">W</a><a href="http://www.icrw.org/media/news/watch-lets-raise-our-voices">atch the video</a>. </p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><iframe allowfullscreen="" frameborder="0" height="281" mozallowfullscreen="" src="http://player.vimeo.com/video/68167624" webkitallowfullscreen="" width="500"></iframe></p><p><span style="line-height: 1.5;">On June 3rd, ICRW co-hosted "Let's Raise Our Voices," an event held in London that brought together leading experts to discuss strategies for preventing violence against women and girls. </span></p><div>Panelists included Mabel van Oranje, advisory committee chair of Girls Not Brides: The Global Partnership to End Child Marriage; Nata Duvvury, co-director of the global women’s studies program at the National University of Ireland Galway; and Ravi Verma, director of the ICRW Asia Regional Office.</div><div> </div><div>Lynne Featherstone, Britain’s Parliamentary Under-Secretary of State for International Development, delivered the keynote address, and Cherie Blair, former first lady of Britain and founder of the Cherie Blair Foundation for Women, provided welcoming remarks.</div><div> </div><div>During the event, ICRW also shared new research findings on gender-based violence in India, which has been in the spotlight globally after the fatal rape of a young woman on a bus last December. ICRW President Sarah Degnan Kambou also gave recommendations for how the global community should invest resources to combat violence against women.</div>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,54 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The project aims to contribute to the formulation of improved programs and policies in the West Nile region of northwestern Uganda by improving the knowledge base on the factors contributing to girls&rsquo; school drop-out. More specifically, the project aims to:</p>
+<p>1. Provide a robust quantitative assessment of the determinants of school dropout among girls of reproductive age, with a focus on pregnancy and other conflict-related determinants; and</p>
+<p>2. Foster a deeper understanding of the social norms and contextual factors that jointly influence both school and pregnancy-related outcomes through qualitative research approaches</p>
+<p>The new evidence generated from this project will elucidate the linkages between educational attainment, early pregnancy, and child marriage and in so doing will inform program and policy needs concerning educational retention and re-entry programs for pregnant girls.&nbsp;&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2015        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    MacArthur Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Federation of African Women Educationalists (FAWE)         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Ann Warner, Kirsten Stoebenau, Jeff Edmeades        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Uganda</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

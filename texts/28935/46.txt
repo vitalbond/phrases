@@ -1,0 +1,8 @@
+<div><p>We are pleased to announce the addition of Juan Dopazo to the YUI Team!</p>
+<p>Here&rsquo;s a little introduction from Juan:</p>
+<blockquote>
+<p>&ldquo;I&rsquo;ve been a total web and JavaScript geek for years. I&rsquo;ve worked at large companies with 20k employees and at 3-person startups. I&rsquo;ve worked on such diverse projects as writing code that delivered ads in websites. Now I&rsquo;m really happy to be working on open source projects. The members of the YUI team have been my long distance mentors and friends, so I&rsquo;m thrilled to join them at Yahoo to take YUI and Mojito to the next level. The same goes for the YUI community! I&rsquo;m very happy to be able to help from the inside now.&rdquo;</p>
+</blockquote>
+<p>Juan&rsquo;s into volleyball, cycling, and is a Bioware fan. Welcome Juan!</p>
+<p>You can reach Juan on <a href="https://twitter.com/juandopazo">twitter</a> and <a href="https://github.com/juandopazo">GitHub</a> as well as on #yui on irc.</p>
+<p>You can also catch Juan next week at <a href="http://yuilibrary.com/yuiconf/2013/">YUIConf</a>.</p></div>

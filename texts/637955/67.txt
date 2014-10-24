@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Mon, 01/27/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Islamist Gate        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Article highlights a recent study, which revealed that one in three marriages in Turkey are child marriages. ICRW&rsquo;s Suzanne Petroni, Senior Director, Gender, Population and Development discusses the causes of child marriage and important elements that ICRW research found to be critical in preventing and eliminating this harmful practice.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Article highlights a recent study, which revealed that one in three marriages in Turkey are child marriages. ICRW&rsquo;s Suzanne Petroni, Senior Director, Gender, Population and Development discusses the causes of child marriage and important elements that ICRW research found to be critical in preventing and eliminating this harmful practice.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.islamistgate.com/330" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

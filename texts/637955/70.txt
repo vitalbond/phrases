@@ -1,0 +1,53 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The largely ignored sexual assault and harassment in public spaces was highlighted in December 2012 with the brutal gang rape and subsequent death of a Delhi woman who was attacked on a moving bus. In fact, a majority of Delhi&rsquo;s women and girls are at risk of sexual violence on a regular basis, as they go about daily routines, leading their everyday lives.</p><p>Sexual violence (SV) encompasses a broad range of unwanted behaviour ranging from verbal and sexual harassment, exhibitionism, touching or groping certain body parts, to rape. Whether experienced on the street or on a bus, in a market or in a park, sexual violence is a gross violation of women&rsquo;s rights to move about safely and participate in public life. Both fear and actual experience of sexual violence in the public realm have a profound effect on women&rsquo;s and girls&rsquo; daily routines, lifestyles, and their emotional and physical health.</p><p>Unfortunately, there is a dearth of empirical data on what drives sexual violence in public spaces, and the extent of the problem. Little is known about how to change attitudes, perceptions and behaviours, as well as how to improve services and infrastructure.</p><p>UN Women launched the &ldquo;Global Programme on Safe Cities Free of Violence against Women and Girls,&rdquo; in 2010 in partnership with UN-Habitat, leading women&rsquo;s organizations, and global and local partners in five pilot cities across the world, including Delhi. The aim was to prevent sexual violence in public spaces. The Safe City Delhi Programme is a collaborative effort by UN Women, UN Habitat, the Government of Delhi and the Indian non-governmental organization, Jagori. The International Center for Research on Women is the evaluation partner.</p><p>The first systematic household survey on sexual violence in public spaces was conducted in October and November 2012 as part of the evaluation of the Safe Cities programme. The programme baseline survey establishes key benchmark indicators of that will be used in assessing progress after the first two-year phase of this pilot programme.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Abhishek Gautam, Nandita Bhatla, Pranita Achyut, Ravi Verma, Sancheeta Ghosh        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/nandita-bhatla">Nandita Bhatla</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/pranita-achyut">Pranita  Achyut</a>        </div>
+              <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/ravi-verma">Ravi Verma</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/sancheeta-ghosh">Sancheeta Ghosh</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="154" alt="" src="http://www.icrw.org/files/images/tn/Safe%20Cities%20pic_0.png?1393607181"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/Baseline%20Research%20of%20Safe%20Cities%20programme%20(1)%5Bsmallpdf.com%5D_0.pdf" type="application/pdf; length=13392750">Baseline Research of Safe Cities programme (1)[smallpdf.com].pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

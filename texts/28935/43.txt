@@ -1,0 +1,24 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>Three weeks until <a href="http://yuilibrary.com/yuiconf/">YUIConf</a>! This week we <a href="http://www.yuiblog.com/blog/2013/10/17/yuiconf-technical-sessions-and-survey/">released a survey</a> containing some of the talk proposals submitted so far. You can help out with the schedule planning by voting on talks that interest you the most. If you have yet to RSVP, you can do so on the <a href="http://yuiconf2013.eventbrite.com/">registration page</a>.</p>
+</li>
+<li>
+<p>With with the conclusion of Sprint 10 and <a href="http://www.yuiblog.com/blog/2013/10/07/yui-3-13-0-released/">YUI 3.13.0 out the door</a>, the project now begins work on the next development cycle. As noted on the <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-11-next-release">Development Schedule wiki</a>, Sprint 11 began October 16th, and will conclude on November 25th. We anticipate a Beta release prior to YUIConf, so if there&rsquo;s anything you&rsquo;d like to get into the library for that release, please submit a pull request soon.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://yuilibrary.com/yuiconf/">YUIConf</a>, a preview of the YUI Dependency Calculator, an update on <a href="http://purecss.io/grids/">Pure Grids</a>, and a review of YUI&rsquo;s <a href="https://github.com/es-analysis/plato">plato</a> <a href="http://derek.io/~/yui/plato/report">report</a>. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=P1tc0kS1AIY">here</a>.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://www.yuiblog.com/blog">Gallery build</a> include: <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaformelement">itsaformelement</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaformmodel">itsaformmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsapanel">itsapanel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaviewmodel">itsaviewmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaviewmodelpanel">itsaviewmodelpanel</a>, and <a href="https://github.com/ekashida/gallery/tree/master/src/gallery-pathogen-encoder">pathogen-encoder</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://copy.sh/v24/">Virtual x86: x86 Emulator Written in JavaScript</a></li>
+<li><a href="https://medium.com/p/ce6da2d324fe">Currying in Javascript</a></li>
+<li><a href="http://ariya.ofilabs.com/2013/10/sorting-networks-using-higher-order-functions-of-javascript-array.html">Sorting Networks using Higher-Order Functions of JavaScript Array</a></li>
+<li><a href="http://blog.alexanderdickson.com/javascript-nes-emulator-part-1">Write a NES Emulator with JavaScript &ndash; Part 1</a></li>
+<li><a href="http://flippinawesome.org/2013/10/14/a-simple-visual-model-for-promises/">A Simple Visual Model for Promises</a></li>
+<li><a href="http://theironcook.github.io/Kojak/">Kojak: A simple JavaScript profiler</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/152.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

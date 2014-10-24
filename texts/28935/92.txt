@@ -1,0 +1,24 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2>Release News</h2>
+<p>We released YUI 3.16.0 Release Candidate 1 yesterday. You can get it off the <a href="http://yui.yahooapis.com/3.16.0-rc-1/build/yui/yui-min.js">CDN here</a>:</p>
+<pre><code>&lt;script src="http://yui.yahooapis.com/3.16.0-rc-1/build/yui/yui-min.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>Find out more about what&rsquo;s changed in this release by viewing the <a href="https://github.com/yui/yui3/wiki/YUI-3.16.0-Change-History-Rollup">change history rollup</a>. Andrew also wrote a <a href="http://www.yuiblog.com/blog/2014/04/03/yui-3-16-0-release-candidate-1/">blog post with more information on the release</a>, so check that out before updating. We really appreciate feedback on RC releases, as they give us a chance to catch any last-minute bugs before the GA release. If you notice any bugs, please <a href="https://github.com/yui/yui3/issues/new">file them on GitHub</a>. Thanks!</p>
+<h2 id="yui-or">YUI Open Roundtable</h2>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/468EeSYmf6Q" frameborder="0" allowfullscreen></iframe></p>
+<p>In his week&rsquo;s <a href="https://www.youtube.com/watch?v=468EeSYmf6Q">YUI Open Roundtable</a>, <a href="http://twitter.com/jorikdelaporik">Jorik Tangelder</a> and I sat down with <a href="https://twitter.com/clarler">Clarence</a> and <a href="http://twitter.com/triptych">Andrew</a> to show the work that&rsquo;s been going on in the Gestures space. We&rsquo;ve been working on getting YUI Gestures to leverage <a href="http://eightmedia.github.io/hammer.js/">Hammer.js</a> under-the-hood so we showed off some code that&rsquo;s in the works for making this happen.</p>
+<p>If you haven&rsquo;t used <a href="http://eightmedia.github.io/hammer.js/">Hammer.js</a> before, it&rsquo;s a great little library for multi-touch gestures. You can check out an example of Hammer in action <a href="http://rawgithub.com/EightMedia/hammer.js/master/examples/events.html">over here</a>. Jorik is the creator of Hammer.js and it was great having him in the Open Roundtable so that we could understand his plans and figure out the best way to leverage it within YUI.</p>
+<h2 id="world-of-js">The World of JavaScript</h2>
+<ul><li>
+<p>Pearl Chen explains how to <a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">debug asynchronous JavaScript using the Chrome DevTools</a>.</p>
+</li>
+<li>
+<p>Toby Ho wrote a <a href="http://flippinawesome.org/2014/03/31/introduction-to-npm/?utm_source=javascriptweekly&amp;utm_medium=email">nice introductory post on npm</a> for those who are new to Node.js.</p>
+</li>
+<li>
+<p>Jake Archibald wants to marry ES7 async functions, and explains why <a href="http://jakearchibald.com/2014/es7-async-functions/">in this post</a>.</p>
+</li>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/windows/dn632015">WinJS was open sourced</a> by Microsoft this week. It&rsquo;s a way to write cross-platform native apps using HTML, CSS, and JS.</p>
+</li>
+</ul><p>That&rsquo;s all for this week. Catch you in 7 days!</p></div>

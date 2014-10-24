@@ -1,0 +1,49 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div><span style="line-height: 1.5;">In India, in addition to having a laws and many large civil society programs to delay early&nbsp;</span><span style="line-height: 1.5;">marriage, the government over the past fifteen years has initiated multiple national&nbsp;</span><span style="line-height: 1.5;">and state sponsored conditional cash transfer3,4 (CCT) programs with the direct or&nbsp;</span><span style="line-height: 1.5;">indirect aim of delaying marriage among girls (Sekher 2010).</span></div><div><div>&nbsp;</div><div><div>The first such program was called Apni Beti Apna Dhan (ABAD), or &ldquo;Our Daughter, Our&nbsp;<span style="line-height: 1.5;">Wealth.&rdquo; Developed by the Government of Haryana in 1994, the scheme aspired to&nbsp;</span><span style="line-height: 1.5;">enhance the value of girls. ABAD, which operated between 1994 to 1998, is one of&nbsp;</span><span style="line-height: 1.5;">the first CCTs targeting girls, implemented systematically by an Indian state. To our&nbsp;</span><span style="line-height: 1.5;">knowledge ABAD is also unique among all large-scale CCT interventions in India, in&nbsp;</span><span style="line-height: 1.5;">that beneficiaries faced a protracted 18-year period before receiving any cash transfer,&nbsp;</span><span style="line-height: 1.5;">as the conditionality was explicitly based on delayed marriage.</span></div><div>&nbsp;</div><div><div>The International Center for Research on Women (ICRW) designed a rigorous&nbsp;<span style="line-height: 1.5;">evaluation of the ABAD program and collected data from beneficiaries and comparable&nbsp;</span><span style="line-height: 1.5;">non-beneficiaries in 2012, just prior to them turning 18. A second round of data will&nbsp;</span><span style="line-height: 1.5;">be collected in 2014, after the older girls have reached 18, to measure the effect on&nbsp;</span><span style="line-height: 1.5;">delayed marriage as well as to understand the cashing out process and how the&nbsp;</span><span style="line-height: 1.5;">benefit has been used. This research brief describes the findings from the first survey&nbsp;</span><span style="line-height: 1.5;">implemented in 2012-2013. The main outcome of interest is the educational attainment&nbsp;</span><span style="line-height: 1.5;">of beneficiary girls versus comparable non-beneficiary girls.</span></div></div></div></div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Priya Nanda, Nitin Datta, Priya Das        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/nitin-datta">Nitin Datta</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/priya-nanda">Priya  Nanda</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="166" alt="" src="http://www.icrw.org/files/images/tn/IMPACCT%20thumbnail.png?1394659310"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/IMPACCT%20Report.pdf" type="application/pdf; length=2246741">IMPACCT Report.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

@@ -1,0 +1,34 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Nairobi, Kenya         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is a global research institute which works to empower women, advance gender equality, and fight poverty in the developing world. ICRW works with partners to conduct empirical research, build capacity, and advocate for evidence-based practical solutions to change policies and programs.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW is seeking interested applicants for a Data Entry Supervisor consultant position to serve as part of the IGE-Tech project team. The consultant will need to design the data entry framework for baseline and monitoring data, train data entry clerks, support supervision of data entry clerks for the baseline survey, conduct quality checks on data entry and deliver a clean, complete baseline data set.&nbsp; The completed data set will include data collected from Agrodealer Baseline Survey, FISL Group Member Survey, FISL Spouse Survey, and FISL Group Leader Surveys.&nbsp; The consultancy will be for a duration of 30 days over 2 months:&nbsp; July &ndash; August 2013.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>We will consider candidates with evaluation expertise in quantitative data cleaning and preparation for analysis.</p><p>More specifically, required skills and experience include:</p><p style="margin-left:.5in;">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At least 5 years experience developing data entry templates, training enumerators, and supervising data entry and coding.&nbsp;</p><p style="margin-left:.5in;">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At least 5 years experience working with large datasets, conducting data cleaning and basic analysis using SPSS, STATA or similar programs.</p><p style="margin-left:.5in;">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Experience working in Kenya</p><p style="margin-left:.5in;">4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fluency in English and Kiswahili</p><p style="margin-left:.5in;">5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Excellent written and oral communication skills</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Candidates interested in a consultancy should submit a letter of interest summarizing their background and interest, curriculum vitae, two writing samples and daily rate in&nbsp;<span style="line-height: 1.5;">USD to</span><a href="mailto:contractors@icrw.org" style="line-height: 1.5;"><strong>contractors@icrw.org</strong></a><span style="line-height: 1.5;">with </span><strong style="line-height: 1.5;">&ldquo;</strong><strong style="line-height: 1.5;">DATA ENTRY SUPERVISOR - Nairobi&rdquo;</strong><span style="line-height: 1.5;"> in the subject line. ICRW is an equal opportunity employer, M/F/D/V.&nbsp;</span></p>        </div>
+        </div>
+</div></div>

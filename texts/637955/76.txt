@@ -1,0 +1,51 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Adolescent girls in Amhara face a number of social, cultural and economic challenges.&nbsp; Social practices, such as early and forced marriage and inequitable gender norms curtail girls&rsquo; health and agency in several important domains, including: educational achievement, decision-making power, sexual and reproductive health empowerment, and resistance to poverty. The region has a long history of arranged and forced child marriage that continues today. According to the 2011 Ethiopia Demographic and Health Survey, almost sixty percent (59.5%) of women aged 20-24 were married before the legal age of 18. Though Ethiopia has made significant progress in improving gender parity in primary education, girls remain far less likely than their male counterparts to successfully transition to secondary education. While the causal linkages between school dropout and marriage are complex, research in a number of contexts has documented the strong link between schooling and delayed marriage.</p><p>In order to address these issues, the <a href="http://www.ada.org.et/index.php?lang=en">Amhara Development Association (ADA)</a>&mdash;with funding from the <a href="http://www.packard.org/what-we-fund/population-reproductive-health/subprograms/sub-saharan-africa/">David &amp; Lucile Packard Foundation</a>&mdash;has been implementing a large-scale, multi-level intervention to promote girls education, delay marriage, and mainstream sexual and reproductive health (SRH) education within the school system. ADA&rsquo;s intervention is based on three interrelated components: 1) Empowering girls with psychosocial life skills and improving their access to quality SRH information and services; 2) Enhancing gender responsiveness within schools; and 3) Fostering community support for girls&rsquo; education and SRH empowerment. The first phase of the project was implemented from June 2010 through July 2013. During this period, ADA reached over 140,000 male and female students, provided direct support to 181 schools, trained 3,490 teachers, and helped establish 170 community groups committed to girls&rsquo; education.</p><p>ICRW is currently conducting a 2 year evaluation of ADA&rsquo;s program in Amhara, with the aim of addressing key gaps in the field&rsquo;s knowledge of effective school-based approaches targeting early marriage. This research is expected to generate evidence-based recommendations for policy makers and programmers working to delay marriage. With support from the Lucile Packard Foundation, ICRW will undertake three main activities:</p><ul><li>Conduct a qualitative assessment to document the implementation process and explore strengths, challenges, achievements and lessons learned in the prior implementation;&nbsp;</li><li><span style="line-height: 1.5;">Provide technical support to ADA to strengthen their research, monitoring and evaluation capabilities; and</span></li><li><span style="line-height: 1.5;">Carryout a rigorous impact evaluation of the current phase of programming on the retention of female students.</span></li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2015        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    David &amp; Lucile Packard Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Amhara Development Association (ADA)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Jeff Edmeades        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Ethiopia</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

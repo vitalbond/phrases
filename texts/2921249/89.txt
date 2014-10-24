@@ -1,0 +1,6 @@
+<div><p>H&auml;r kommer ett litet tips p&aring; hur man kan ladda Firefox med ett annat gtk-tema &auml;n det man vanligtvis anv&auml;nder. Problemet med Firefox och Linux &auml;r att en del element blir m&ouml;rka och andra ljusa. Jag kan exempelvis inte se texten n&auml;r jag skriver i textf&auml;lt f&ouml;r att det &auml;r vitt.</p>
+<p>&Ouml;ppna /usr/share/applications/firefox.desktop med valfritt program med ut&ouml;kade r&auml;ttigheter.</p>
+<p>Leta upp Exec= och modifiera till f&ouml;ljande:<br>
+Exec=bash -c &lsquo;GTK2_RC_FILES=/usr/share/themes/Clearlooks/gtk-2.0/gtkrc firefox %u&rsquo; eller till valfritt tema. Starta om Firefox och du kan se texten igen. <a title="H&Auml;R" href="http://i.imgur.com/Bf60TXV.png" target="_blank">H&Auml;R</a> kan ni se att jag anv&auml;nder ett annat tema.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>

@@ -1,0 +1,49 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Intel&reg; Teach is reshaping the global educational landscape to better prepare teachers and students for success in a 21st century economy. Launched in 2000, the program has trained more than 10 million teachers in over 70 countries to integrate technologies and project-based teaching methods into classrooms.</p><p>Building on more than a decade of investments in education, Intel strives to understand how its educational efforts are helping girls and women reach their full potential. The International Center for Research on Women (ICRW) conducted a qualitative study of the Intel Teach Program&rsquo;s impact on female students and teachers in Chile, India, and Jordan. Researchers strove to understand whether and to what extent the program empowers and advances girls and women inside and outside the classroom.</p><p>ICRW determined that Intel Teach cultivates greater knowledge, skills, and self-confidence among female educators to use technologies in their professional and personal lives. The program also helps them to strengthen opportunities to enhance their career. In the classroom, we found that Intel Teach graduates use technologies to create a more engaging, and interactive environment with lessons that resonate with students&rsquo; lives. This instructional approach elevates girls&rsquo; voice and confidence in school and at home. It also motivates girls to learn, to collaborate with others, and to think critically&mdash;all key characteristics for employment in the 21st century workplace.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Allison M. Glinski, Ellen Weiss and Adithi Shetty, with Gillian Gaynair        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/allison-m-glinski">Allison M. Glinski</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/ellen-weiss">Ellen  Weiss</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="162" alt="" src="http://www.icrw.org/files/images/tn/Pages%20from%20ICRW%20Intel%20Teach%20Report_FINAL_10.29.13.jpg?1383665666"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/ICRW%20Intel%20Teach%20Report_FINAL_11.5.13.pdf" type="application/pdf; length=577828">ICRW Intel Teach Report_FINAL_11.5.13.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

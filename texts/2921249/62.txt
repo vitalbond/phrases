@@ -1,0 +1,164 @@
+<div><p>This article continues a series on creating a Kivy application. At the end of <a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2</a>, we had a basic form for entering Jabber login details. In this part, we&rsquo;ll hook up the login button to actually connect to the jabber server and download a Buddy List.</p>
+<p>Make sure you&rsquo;ve completed the previous two parts, or if you want to start from a clean slate, you can clone the <code>end_part_two tag</code> in my git repo for this project. Remember to do your own changes on a separate branch to avoid conflicts later.</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git # or 'git pull' if you've cloned before and want to update
+git checkout end_part_two
+git checkout -b working_changes
+source venv/bin/activate
+</pre>
+<h4>Table Of Contents</h4>
+<p>Here are links to other parts of this tutorial.</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Interacting with widgets and the user</a></li>
+</ol><h4>Handling Events</h4>
+<p><a href="http://m.dictionary.com/d/?q=event" title="I always use the mobile interface because it's much less cluttered than the web version">Dictionary.com</a> defines an event as &ldquo;something that happens, esp. something important&rdquo;. That&rsquo;s a perfect description of events in Kivy. Kivy is firing events all the time, but we only have to pay attention to those that we consider important (in the upcoming example, clicking/touching the <code>Login</code> button is important). Every graphical toolkit I have ever used has some concept of events. The difference between Kivy and those other toolkits is that in Kivy, event dispatch and handling is sane and uncomplicated.</p>
+<p>If an event is something that happens, then an event handler is something that reacts when an event occurs. Our event handler will eventually log into the server and display the Buddy List, but lets start by printing a quote from a humorous scene in the film <a href="http://www.imdb.com/title/tt0120812/">Rush Hour</a>. We do this by adding a method to the <code>AccountDetailsForm</code> class in <code>__main__.py</code>:</p>
+<p><!--Example 9--></p>
+<pre class="brush:python">
+class AccountDetailsForm(AnchorLayout):
+    def login(self):
+        print("Click the goddamn button")
+</pre>
+<p>Remember in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1</a> I mentioned that object oriented programming allowed us to add functionality to existing classes? That&rsquo;s what we are doing here. The <code>AnchorLayout</code> class has no idea what it might mean to &ldquo;login&rdquo; to something, but it makes sense for <code>AccountDetailsForm</code> to do so. So we add a <em>method</em> to the subclass named <code>login</code>. A method is just a function that is aware of which object it is attached to (that&rsquo;s why it has the parameter <code>self</code>). At this point, we don&rsquo;t care what object we are attached to, but it will become important soon.</p>
+<p>So that method, which we named <code>login</code>, is an event handler. Actually, technically, it&rsquo;s just a method that happens to handle an event, and we will hook it up by calling that method from the true event handler. Let&rsquo;s do that next. We just need to add one property to the login <code>Button</code> in our <code>orkiv.kv</code> file:</p>
+<p><!--Example 10--></p>
+<pre class="brush:python">
+    Button:
+        size_hint_y: None
+        height: "40dp"
+        text: "Login"
+        on_press: root.login()
+</pre>
+<p>Kivy is really really good about making programmers do the minimal amount of work required. If you add this one line of code and run it, you can click the <code>Login</code> button repeatedly, and each time, the movie quote will show up on the terminal.</p>
+<p>The <code>Button</code> widget in Kivy has a <code>press</code> event. The key to signifying an event handler is to add an <code>on_&lt;eventname&gt;</code> property. Now this is where the KV Language gets a little creepy. The code that comes after the event handler property name is standard Python. In fact, you could just use <code>on_press: print("you clicked it")</code> and it would work. Or if you wanted multiple lines of Python, you could put them on the next line, indented, as though the program code was a child widget.</p>
+<p>Don&rsquo;t ever do that. That&rsquo;s my rule: never have two or more lines of python logic in a KV Language file. When you break this rule, make sure you know for certain that you have a good reason to do it and that you thought that reason all the way through. This will aide you in the future if you ever want to change the layout without trying to sift out the business logic that hasn&rsquo;t changed. In my mind, the point of KV Language is to define layout and style. You should not mix logic (program code) with the styling. Instead, put the program code on the class in <code>__main__.py</code> and use one line of logic to call that method.</p>
+<p>There&rsquo;s a small amount of magic going on here. The <code>root</code> variable in a KV Language file always refers to the object that is at the left-most indent in our current block. In this case, it&rsquo;s the <code>&lt;AccountDetailsForm&gt;</code> class, which is the class containing the handy <code>login</code> method. KV Language has two other &ldquo;magic&rdquo; variables that you may find useful: <code>app</code> and <code>self</code>. <code>app</code> can be used anywhere in a KV Language file to refer to the object that inherits from <code>Application</code>; so the <code>Orkiv</code> object. Self refers to the current widget. If we called <code>self.x()</code> in the <code>on_press</code> handler, it would refer to the Login <code>Button</code> object itself.</p>
+<h4>Interacting with widgets</h4>
+<p>Now, let&rsquo;s figure out how to get some values out of the textboxes in the form. To this end, we&rsquo;ll need to refer to objects in the KV Language file from inside the associated class in our <code>__main__.py</code>. This requires a few sets of changes to both files. Let&rsquo;s start with some minor additions to the elements of our form in <code>orkiv.kv</code>. </p>
+<p><!--Example 11--></p>
+<pre class="brush:python">
+    Label:
+        text: "Server"
+    TextInput:
+        id: server_input
+    Label:
+        text: "Username"
+    TextInput:
+        id: username_input
+    Label:
+        text: "Password"
+    TextInput:
+        password: True
+        id: password_input
+</pre>
+<p>We&rsquo;ve simply added an identifier to each of our <code>TextInput</code> boxes so that we can refer to them elsewhere in the code. Note that I gave them all consistent names ending in <code>_input</code>. Consistency is very important in programming. Your memory is not infallible, and it would be silly to overtax it by trying to remember that one box is named <code>password</code> and the other is named <code>UserNameTextInput</code>. After years of programming, this statement seems blatantly obvious to me. However, I am frequently frustrated by non-developers who supply (for example) csv files that use spaces and underscores interchangeably or vary the capitalization of identifiers that I need to sanitize before using in program code. Do yourself and everyone else who works with your code a favor and strive for consistency. One really good way to do this in Python code is to strictly follow the <a href="http://www.python.org/dev/peps/pep-0008/">Python Style Guidelines</a> <em>even if you disagree with some of the rules</em>. I strongly recommend using a pep-8 highlighter in your editor (I personally use <a href="https://github.com/SublimeLinter/SublimeLinter">SublimeLinter</a>) to aid you in this pursuit.</p>
+<p>Ok, back to the code! The key takeaway is that by giving these widgets an <code>id</code>, we can reference them in other parts of the KV Language file. Specifically, we can set them as the values of custom properties on the <code>AccountDetailsForm</code> class rule like so:</p>
+<p><!--Example 12--></p>
+<pre class="brush:python">
+&lt;AccountDetailsForm&gt;:
+    anchor_y: "top"
+    server_box: server_input
+    username_box: username_input
+    password_box: password_input
+    BoxLayout:
+</pre>
+<p>We have defined three custom Kivy properties (named <code>server_box</code>, <code>username_box</code>, and <code>password_box</code>) on the <code>AccountDetailsForm</code> class. Each of these properties is assigned a value of the <code>id</code> of one of the text boxes.</p>
+<p>It is common to name the properties the same as the ids on the boxes they point to (see my diatribe on consistency above!). However, I chose not to do that here for pedagogical reasons; it&rsquo;s clear from this example that a property name is a completely different thing from an identifier.</p>
+<p>This is no different from setting a property that is meaningful to the parent class such as <code>anchor_y</code>.The difference is that the parent class (<code>AnchorLayout</code>) doesn&rsquo;t know about them. Neither does the child class, yet, but we&rsquo;ll now fix that in <code>__main__.py</code>:</p>
+<p><!--Example 13--></p>
+<pre class="brush:python">
+from kivy.properties import ObjectProperty  # at top of file
+
+class AccountDetailsForm(AnchorLayout):
+    server_box = ObjectProperty()
+    username_box = ObjectProperty()
+    password_box = ObjectProperty()
+</pre>
+<p>We added an import statement so we can access Kivy&rsquo;s <code>ObjectProperty</code> class. Then we specified three instances of this fancy property on the <code>AccountDetailsForm</code>. These instances must have the same names as the properties defined in the KV Language file, since they are <em>referring to the same thing</em>. When the class is constructed, these three properties are defined as having values of <code>None</code>. However, as part of the KV Language parsing process, Kivy applies the styling found in <code>orkiv.kv</code> and overwrites those None values with the three values we specified in the previous example.</p>
+<p>So we have widgets that are named by ids in our KV Language file that are being assigned to properties by the same KV Language file that are defined in the <code>__main__.py</code> file. Got that? The upshot of this slightly convoluted pipeline is that we can now access those values inside the login method on our class:</p>
+<p><!--Example 14--></p>
+<pre class="brush:python">
+    def login(self):
+        print(self.server_box.text)
+        print(self.username_box.text)
+        print(self.password_box.text)
+</pre>
+<p>If you run the code now, you should see the contents of the login form boxes displayed on the console when you click the Login button.</p>
+<h4>Choosing client libraries</h4>
+<p>Let&rsquo;s take a break from programming and talk about something that has been overlooked in every programming textbook and tutorial I have ever read: How the hell do you figure out how to do what you need to do?</p>
+<p>The short answer, as with every question asked in the last decade, is &ldquo;Search Google!&rdquo; (or rather, a search engine that doesn&rsquo;t spy on you, such as <a href="http://startpage.com/">Startpage.com</a> or <a href="http://duckduckgo.com/">Duck Duck Go</a>). That always brings out the more salient question, &ldquo;what do I search for?&rdquo;.</p>
+<p>If you&rsquo;ve recently started learning to program, you might be under the impression that programming is mostly about connecting loops, conditionals and data structures into some meaningful representation of an algorithm or design pattern. That&rsquo;s certainly a major part of the job, but often, programming involves reusing existing code and connecting it. Software development is often more like building a lego set where you get to use a variety of prefabricated bricks that do almost exactly what you need, and then using contact cement to glue on some custom-built parts that don&rsquo;t come with the lego set and can&rsquo;t be found on store shelves.</p>
+<p>Anyway, at this point we have a login form that we can enter details in and do something when the button is clicked. But we aren&rsquo;t doing what we want to do, which is to display a buddy list for the given XMPP account. How can we do that?</p>
+<p>Well, one option might be to read through the <a href="http://xmpp.org/xmpp-protocols/rfcs/">Jabber Protocol Specification</a> and implement all the Jabber commands one by one. But that sounds like a lot of work. The absolutely most important attribute in a good programmer is laziness. This means spending hours to automate boring things so you never have to do them again. It also means spending extra time now to write your code in such a way that you or a coworker can reuse it in the future. Finally, it means taking advantage of other people&rsquo;s work so you don&rsquo;t have to redo it.</p>
+<p>Most common tasks have been collected into what are called &ldquo;libraries&rdquo;. Kivy itself is a sort of library, a library for creating kick-ass graphical interfaces. Often when faced with a &ldquo;how do I do this?&rdquo; question, the next question should be &ldquo;Are there any existing client libraries that I can use?&rdquo; Imagine if you had to manually set the value of each pixel on the screen in order to render a button or textbox, and then process individual keypresses directly to find out what was in a text input box!</p>
+<p>Before I started writing this tutorial, I wanted to make sure there was a client library I could use to connect to Jabber. I did a web search and found several options, best summarized by <a href="http://stackoverflow.com/questions/1901828/best-python-xmpp-jabber-client-library">this question on Stack Overflow</a>. Stack overflow is a great place to search for answers; if you can&rsquo;t find what you are looking for, you can even ask the question yourself!</p>
+<p>If a web search yields a nice collection of client libraries that might solve your problem, the next question is, &ldquo;which one do I use?&rdquo; The answer is to visit the home pages for each of the libraries and ask yourself questions like these:</p>
+<ul><li>Is the license compatible with the license I want to use for my application?</li>
+<li>(If not open source) How much does it cost to license the library?</li>
+<li>(If open source) Does the source code for the library look well maintained and easy to read?</li>
+<li>Does the library appear to be actively developed and has there been a recent release?</li>
+<li>Is there an active user community talking about the library?</li>
+<li>Does the library appear to have useful (readable, up-to-date, complete) documentation?</li>
+<li>What avenues of support do I have if I have trouble?</li>
+<li>(If Python) Does it boast Python 3 support?</li>
+</ul><p>After some amount of research, I ended up choosing <a href="http://sleekxmpp.com/">Sleek XMPP</a> as it seems to have a modern, usable application programmer interface, reasonable source code and documentation, and a permissive license.</p>
+<p>At this point, you&rsquo;ll want to install SleekXMPP and it&rsquo;s one dependency. Make sure the virtualenv is active and then issue the following command:</p>
+<pre class="brush:bash">
+pip install sleekxmpp dnspython
+</pre>
+<h4>Figuring out how to use a client library</h4>
+<p>The next step is making yourself familiar with the client library so you know what functions and methods to call to create the desired behavior. This depends entirely on the documentation for the library. I personally like to start coding as soon as possible and see what breaks. Then I refer to the documentation and figure out why it broke and evaluate how it needs to change. In the case of SleekXMPP I started exploring the documentation until I could answer the question, &ldquo;What is the simplest possible command-line application I can use to retrieve a buddy list?&rdquo;. This is it:</p>
+<p><!--Example 15--></p>
+<pre class="brush:python">
+import sleekxmpp, sys
+
+xmpp = sleekxmpp.ClientXMPP(sys.argv[1], sys.argv[2])
+
+xmpp.connect()
+xmpp.process()
+xmpp.send_presence()
+xmpp.get_roster()
+print(xmpp.client_roster.keys())
+xmpp.disconnect()
+</pre>
+<p>This script isn&rsquo;t part of orkiv, it&rsquo;s just some playing around I did before trying to integrate this collection of method calls into Orkiv. It took me about 20 minutes to come up with these few lines of code, mostly because the SleekXMPP documentation is a little rougher around the edges than I anticipated. I first implemented a couple of the tutorials in the <a href="http://sleekxmpp.com/getting_started/echobot.html">Quickstart</a> and got them working. However, the examples seem to use a verbose inheritance structure that seems quite unnecessary to me. So I tried to extract the guts into the procedural example you see above.</p>
+<p>I do my testing inside a running Python shell &mdash; just type <code>python</code> and you can start entering python commands right into the interpreter. I personally use <a href="http://ipython.org/">IPython</a> as much as possible, because its shell is so much nicer to use than the standard one. At first, my call to <code>get_roster()</code> was returning an error; this was because I hadn&rsquo;t noticed, in dissecting the inheritance structure, that I had to call <code>connect()</code> first! However, after my trial and error phase were completed, I came up with the above code, which I saved as <code>sleekxmpp_buddylist.py</code> and tested using <code>python orkiv/sleekxmpp_buddylist.py jabberid@jabber.org password</code>. I tested it with a throw-away Google account and my own personal jabber server. Works like a charm!</p>
+<p>The script itself first imports a couple modules and creates a <code>ClientXMPP</code> object, passing in the username (in the form &ldquo;username@server.tld&rdquo;) and passwords from the command line. Then it calls several methods on this object to do some jabbery stuff. Then I output the value of the roster (&ldquo;buddy list&rdquo;), and disconnect.</p>
+<h4>Printing a buddy list on login button click</h4>
+<p>We could just copy the code above into the <code>login()</code> method and modify it to use the jabber id and password we got from the form. However, that would be rather short-sighted. We know we&rsquo;re going to need to keep this <code>ClientXMPP</code> object around longer than a single button click, and indeed, longer than the lifetime of the login form. So instead, lets add a method to the <code>Orkiv</code> application object itself:</p>
+<p><!--Example 16--></p>
+<pre class="brush:python">
+from sleekxmpp import ClientXMPP  # at the top of the file
+
+class Orkiv(App):
+    def connect_to_jabber(self, jabber_id, password):
+        self.xmpp = sleekxmpp.ClientXMPP(jabber_id, password)
+        self.xmpp.connect()
+        self.xmpp.process()
+        self.xmpp.send_presence()
+        self.xmpp.get_roster()
+</pre>
+<p>That&rsquo;s a pretty simple method that creates an <code>xmpp</code> attribute on the app class and runs the boilerplate code for connecting to jabber, as we discovered in the script above. Of course, this method won&rsquo;t actually do anything if we don&rsquo;t call it from somewhere. The obvious place to do that, of course is when we click the login button. The correct thing to do will be to connect to jabber and then render a buddy list in the window, but we&rsquo;re running out of space, so let&rsquo;s just print it to the console:</p>
+<p><!--Example 17--></p>
+<pre class="brush:python">
+def login(self):
+    jabber_id = self.username_box.text + "@" + self.server_box.text
+    password = self.password_box.text
+
+    app = Orkiv.get_running_app()
+    app.connect_to_jabber(jabber_id, password)
+    print(app.xmpp.client_roster.keys())
+    app.xmpp.disconnect()
+</pre>
+<p>Once again, the method is quite simple. We first grab the jabber id and password from the form box, being careful to concatenate the username and server to generate the jabber id. The next line, where we get the running app may require some explanation. We are calling a function on the <code>Orkiv</code> class itself. Remember, a class describes an object, so we aren&rsquo;t talking to an instance of that object here, just to the class. When a method is meant to be called on a class instead of an instance of that class, it is called a static method. In this case, the static method happens to return an instance of the class: the currently running app. Normally, there is only ever one running app in a Kivy program. In fact, you&rsquo;d have to be both foolish and audacious to get more than one.</p>
+<p>The other slightly tricky thing about this line is that we have not defined any <code>get_running_app</code> method on the <code>Orkiv</code> class. In fact, we only have one method, <code>connect_to_jabber</code>. But remember that <code>Orkiv</code> inherits functionality from the <code>App</code>, and indeed, <code>App</code> has a <a href="http://kivy.org/docs/api-kivy.app.html#kivy.app.App.get_running_app">get_running_app</a> static method. That&rsquo;s what we&rsquo;re calling here.</p>
+<p>Once we have access to the active app object, it&rsquo;s easy to print the roster and disconnect. Obviously, it wouldn&rsquo;t make sense to disconnect immediately after login in a completed jabber client. However, if you don&rsquo;t disconnect and test this, the program won&rsquo;t stop running when you close the window; it leaves the xmpp object hooked up in the background trying to do the kind of stuff that jabber clients do. When I tried it, I had to force kill the process with <code>kill -9</code>.</p>
+<p>It is common, when coding, to do temporary things like this to test the program in its current state. We know we&rsquo;ll remove that line in part 4, but&hellip; well, truth be told, part 4 hasn&rsquo;t been written yet! In part 4, we&rsquo;ll deal with some annoyances with this form, like the fact that we can&rsquo;t tab between input fields, that we have no idea what happens if we provide incorrect login details, and that pesky problem of the jabber staying alive after we closed the window.</p>
+<h4>Monetary feedback</h4>
+<p> If you liked the tutorial and would like to see similar work published in the future, please support me. I hope to one day reduce my working hours at my day job to have more time to devote to open source development and technical writing. If you think this article was valuable enough that you would have paid for it, please consider supporting me in one or more of the following ways:</p>
+<ul><li>Purchase my books: <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a> and <a href="http://hackinghappy.com/">Hacking Happy</a></li>
+<li>Tip me on <a href="https://www.gittip.com/buchuki/">Gittip</a></li>
+<li>E-mail <em>dusty at archlinux dot ca</em> to let me know you would fund a book about Kivy via crowd funding</li>
+</ul><p>I&rsquo;d particularly like to advertise <a href="https://www.gittip.com/buchuki/">Gittip</a>, not for my own financial gain, but for everyone. I think a world where people are able to use gittip for their primary source of income is a world worth striving for. Even if you don&rsquo;t choose to tip me, consider tipping someone, or if you are a producer of knowledge or art, market your own products and services through the generosity system.</p>
+<p>Finally, if you aren&rsquo;t in the mood or financial position to help fund this work, at least share it on your favorite social platforms!</p></div>

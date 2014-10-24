@@ -1,0 +1,53 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="Image Place Holder" src="http://www.icrw.org/files/images/people/Image%20Place-Holder_0.jpg?1372181441"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Sancheeta        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Ghosh        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Technical Specialist         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Sancheeta Ghosh is a Technical Specialist at the International Center for Research on Women (ICRW). In this capacity, she manages several projects, providing technical support and implementing research and program activities. Ghosh conducts literature reviews, manages and analyzes data, synthesizes research findings and develops research publications for a range of audiences. Ghosh has more than six years of experience conducting academic, operations and participatory research, including in monitoring and evaluation, in the areas of health, women&rsquo;s empowerment and gender based violence.</p><p><span style="line-height: 1.5;">Prior to joining ICRW Ghosh worked as a Research Coordinator for KHPT, Bangalore; as a Senior Research Officer at the Institute of Health Management and Research (IHMR), Bangalore; and as a Programme and Training Associate with CINI, West Bengal . She also worked as a Research Officer and Research Investigator at the International Institute for Population Sciences (IIPS), Mumbai. &nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise:&nbsp;</div>
+                    <p>Gender-based Violence and Reproductive Health, Maternal Health, HIV/AIDS, Gender and Masculinity, Development and Population issues&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Bengali (native), English (fluent), Hindi (fluent)</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Ghosh holds a doctorate degree in development studies from the Institute for Social and Economic Change, Bangalore, a master&rsquo;s degree in demography from IIPS and a master&rsquo;s in anthropology from the University of Calcutta, West Bengal. She earned a bachelor&rsquo;s degree from the University of Calcutta in Anthropology.&nbsp;</p>        </div>
+        </div>
+</div></div>

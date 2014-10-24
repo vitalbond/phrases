@@ -1,0 +1,38 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="164" alt="" src="http://www.icrw.org/files/images/people/GINA_2.jpg?1388175529"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Gina        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Alvarado        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Gender and Evaluation Specialist         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="line-height: 1.5;">Gina Alvarado is a Gender and Evaluation Specialist whose research portfolio includes capacity-building projects to improve the monitoring and evaluation practices of nongovernmental organizations in sub-Saharan Africa.</span></p><p><span style="line-height: 1.5;">Alvarado has nearly 10 years of research experience on gender inequality in the access to assets such as housing and land as part of a more general interest on women&rsquo;s well-being. Her current research areas are property rights and women&rsquo;s asset ownership, sexual health education and the links between women&rsquo;s ownership of land, decision-making and vulnerability to violence. Before joining ICRW in 2013, Alvarado conducted research on the implications of remittances for women&rsquo;s ability to accumulate assets in Ecuador. Previously, she worked as a consultant for several international organizations evaluating programs and projects on gender and international development. She also has applied research experience with minority health services, microfinance and rural development.</span></p><p><span style="line-height: 1.5;">Alvarado offers a broad set of competencies, including designing mixed methods and participatory research; working with qualitative and quantitative data, including analyzing large datasets such as Living Standard Measurement Surveys; and analyzing the inclusion of gender approaches to public policy, organizations and development projects. She also has expertise in building nonprofit organizations&rsquo; ability to monitor their activities, evaluate their work and engage in processes of programming led by evidence.</span></p><p>Alvarado sees herself as a public scholar and practitioner, and in that capacity she has taught courses on the intersections of race, class and gender at the University of Florida and project management at the Universidad Nacional Mayor de San Marcos in Peru.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Alvarado earned her Ph.D. in sociology from the University of Florida and holds a masters in the same subject from Pontificia Universidad Cat&oacute;lica del Per&uacute;.</p>        </div>
+        </div>
+</div></div>

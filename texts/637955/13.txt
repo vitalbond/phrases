@@ -1,0 +1,36 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Commonwealth governments made a commitment to end child marriage in 2011. Now, campaign organisations meeting in London call for an action plan to be developed        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Wed, 06/26/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    The Guardian Adolescent Girls Hub        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-byline">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Nazma Kabir        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Plan UK stresses the importance of cooperation to address the issue of child marriage, and cites our partnership with them in Bangladesh as an example of how working together can achieve community-level success. Going further, Plan UK calls on the Commonwealth to put their commitment to end child marriage into a plan of action.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.guardian.co.uk/global-development-professionals-network/2013/jun/26/commonwealth-commitment-end-child-marriage" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

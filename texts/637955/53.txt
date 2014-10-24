@@ -1,0 +1,12 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>The Champions of Change Leadership Award, recognizing influential individuals who are committed to empowering women and girls around the world, was presented to the first U.S. Ambassador for Global Women's Issues, Melanne Verveer. There was also a panel discussion on innovative strategies for advancing women&rsquo;s livelihood &ndash; specifically, strategies that panelists stressed must start during adolescence and continue through adulthood. The panel was moderated by Lois Romano, senior political writer for Politico and included panelists: &nbsp;</div><ul><li>Ann Warner - Senior Gender and Youth Specialist, ICRW&nbsp;</li><li>Dotti Hatcher - Executive Director of Gap Inc.&rsquo;s Personal Advancement &amp; Career Enhancement (P.A.C.E.) Global Initiatives</li><li>J<span style="line-height: 1.5;">ulie T. Katzman - Executive Vice President of the Inter-American Development Bank</span></li><li><span style="line-height: 1.5;">Renee Wittemyer - Director of Social Impact in Intel Corporation&rsquo;s corporate responsibility office</span></li></ul></div>
+        </div>
+</div>
+<div class="field field-type-emvideo field-field-embed-video">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="emvideo emvideo-video emvideo-vimeo"><object type="application/x-shockwave-flash" width="640" height="360" data="http://www.vimeo.com/moogaloop.swf?clip_id=79991671&amp;server=www.vimeo.com&amp;fullscreen=1&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;autoplay=0"><param name="quality" value="best"><param name="wmode" value="transparent"><param name="allowfullscreen" value="true"><param name="scale" value="showAll"><param name="movie" value="http://www.vimeo.com/moogaloop.swf?clip_id=79991671&amp;server=www.vimeo.com&amp;fullscreen=1&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;autoplay=0"></object></div>        </div>
+        </div>
+</div></div>

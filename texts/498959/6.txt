@@ -1,0 +1,49 @@
+<div><p>Hi Friends!</p>
+<p>Just popping in a with a quick recipe to share with you guys. Yes, I realize it&rsquo;s green and the appropriate day to post a green recipe would have been yesterday, or even last week before St. Patrick&rsquo;s Day&hellip;.but you guys know me- always behind!</p>
+<p>So, recently I spent some time going back through all my posts from my first year of blogging. Considering I&rsquo;ve been doing this for almost 4 years&hellip;it&rsquo;s safe to say there are some recipe buried in the archives that many of you have never seen. I picked out some of my favorites and over the next few months, I&rsquo;ve tasked myself with remaking them, taking better pictures and highlighting them for you guys!</p>
+<p>This is the first one- you can <a href="http://www.theleangreenbean.com/black-bean-guacamole/" target="_blank">see the original post here</a>!</p>
+<h3 style="text-align: center;">Black Bean Guacamole</h3>
+<p><img class="aligncenter size-full wp-image-11904" alt="black bean guacamole.jpg {Refreshed} Black Bean Guacamole" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/black-bean-guacamole.jpg.jpg" width="550" height="357" title="{Refreshed} Black Bean Guacamole"></p>
+<p>This is basically your average guacamole, just taken to a new level. I added black beans (which you can&rsquo;t even taste) for protein and fiber and also mixed in some Greek yogurt for a protein boost!</p>
+<p>Here&rsquo;s how you make it:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">{Refreshed} Black Bean Guacamole</div>
+<div class="ERSClear">&nbsp;</div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/black-bean-guacamole.jpg.jpg" width="205" title="{Refreshed} Black Bean Guacamole" alt="black bean guacamole.jpg {Refreshed} Black Bean Guacamole"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&amp;url=http%3A%2F%2Fwww.theleangreenbean.com%2Frefreshed-black-bean-guacamole%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/11697-0/" rel="nofollow" target="_blank">Print</a></span> </div></div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT5M">5 mins</time></div></div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT5M">5 mins</time></div></div>
+<div class="ERSClearLeft">&nbsp;</div></div>
+<div itemprop="description" class="ERSSummary">A twist on traditional guacamole. With added black beans and Greek yogurt, you get a full dose of healthy fats, fiber and protein&hellip;all in one great dip!</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div></div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">2 medium avocados</li>
+<li class="ingredient" itemprop="ingredients">1 c black beans, cooked</li>
+<li class="ingredient" itemprop="ingredients">⅓ c plain Greek yogurt</li>
+<li class="ingredient" itemprop="ingredients">juice from one lemon</li>
+<li class="ingredient" itemprop="ingredients">&frac12; c red onion, diced</li>
+<li class="ingredient" itemprop="ingredients">1 medium tomato, diced</li>
+<li class="ingredient" itemprop="ingredients">1 jalapeno, minced</li>
+<li class="ingredient" itemprop="ingredients">2-4 Tbsp fresh cilantro, minced</li>
+</ul><div class="ERSClear"></div></div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Place the black beans in a small food processor and pulse several times.</li>
+<li class="instruction" itemprop="recipeInstructions">Add one of the avocados and the lemon juice and pulse until well mixed.</li>
+<li class="instruction" itemprop="recipeInstructions">In a small bowl, smash the remaining avocado with a fork.</li>
+<li class="instruction" itemprop="recipeInstructions">Stir in the greek yogurt.</li>
+<li class="instruction" itemprop="recipeInstructions">Add the black bean mixture, along with the onion, tomato, jalapeno and cilantro.</li>
+<li class="instruction" itemprop="recipeInstructions">Mix well and serve with tortilla chips.</li>
+</ol><div class="ERSClear"></div></div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2310</div></div>
+<p>&nbsp;</p>
+<p>Pretty simple, friends!</p>
+<p><img class="aligncenter size-full wp-image-11906" alt="black bean guacamole 1 {Refreshed} Black Bean Guacamole" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/black-bean-guacamole-1.jpg" width="550" height="368" title="{Refreshed} Black Bean Guacamole"></p>
+<p>Enjoy!<br>
+&ndash;Lindsay&ndash;</p></div>

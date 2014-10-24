@@ -1,0 +1,24 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Wed, 05/21/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-byline">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Erin Kelly        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>On the eve of the UK-sponsored&nbsp;<span style="font-size: 10pt; font-family: Tahoma, sans-serif;">Global Summit to End Sexual Violence in Conflict</span><span style="line-height: 1.5;">, ICRW and partners will be discussing concrete ways to prevent and respond to sexual violence in conflict and other fragile settings at the Royal Society in London on June 9</span><span style="line-height: 1.5;">.</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>On the eve of the UK-sponsored&nbsp;<span style="font-size: 10pt; font-family: Tahoma, sans-serif;">Global Summit to End Sexual Violence in Conflict</span><span style="line-height: 1.5;">, ICRW and partners will be discussing concrete ways to prevent and respond to sexual violence in conflict and other fragile settings at the Royal Society in London on June 9</span><sup>th</sup><span style="line-height: 1.5;">.</span></p><p>Moderated by Oxfam International&rsquo;s Executive Director Winnie Byanyima, the panel discussion will provide insight from recent research findings and programs addressing the root causes and consequences of sexual violence in a variety of fragile settings, from the eastern Democratic Republic of Congo and South Sudan and peri-urban communities of Mumbai, India. Panelists will include experts from the International Criminal Court&rsquo;s Trust Fund for Victims, international aid agency Cordaid and the International Center for Research on Women.</p><p>Sexual violence in conflict is widespread and not limited to any region, religion or culture. It directly affects millions of women and girls around the world every day and also greatly impacts men and children. In addition to the physical and psychological trauma suffered by survivors, sexual violence adds to ethnic, sectarian and other divisions, further entrenching conflict and instability.</p><p>Donors, members of the private sector, NGO representatives and UK government officials will join ICRW President Sarah Degnan Kambou for the panel discussion, which will feature the following speakers:</p><ul><li><strong>Baroness Lindsay Northover</strong>(Keynote address), Government Spokesperson for the Department for International Development and Women and Equalities and Government Whip and Spokesperson for the Department for Education and Department for Environment, Food and Rural Affairs in the House of Lords.</li><li><strong style="line-height: 1.5;">Winnie Byanyima,</strong><strong style="line-height: 1.5;">&nbsp;</strong>Oxfam International (moderator)</li><li><strong style="line-height: 1.5;">Kristin Kalla</strong><span style="line-height: 1.5;">, Trust Fund for Victims of the International Criminal Court</span></li><li><strong style="line-height: 1.5;">Ravi Verma, </strong><span style="line-height: 1.5;">International Center for Research on Women; and</span></li><li><strong style="line-height: 1.5;">Akinyi Walendar</strong><span style="line-height: 1.5;">, Cordaid</span></li></ul><p>The Global Summit, taking place from June 10-13 at London&rsquo;s ExCel convention center, will be the largest ever gathering of international experts and government officials to tackle challenges associated with sexual violence in conflict zones.</p><p>ICRW&rsquo;s Royal Society event will help kick off the conversation about how evidence-based solutions should be a main component to preventing and ending gender-based violence around the world.</p><p><strong style="line-height: 1.5;"><em>** Please note this event is closed to the public and is invitation only&nbsp;</em></strong></p>        </div>
+        </div>
+</div></div>

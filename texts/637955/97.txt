@@ -1,0 +1,56 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW's Lyric Thompson will be moderating a panel on which advocacy tacticts work for advancing global women's issues at the national level. She'll be joined by policy and advocacy staff from a wide range of civil society organizations. </p><p>This panel is the first session of <span style="line-height: 1.5;">USNC-UN Women Conference and Annual Meeting, which takes place </span><span style="line-height: 1.5;">June 20-21 in Arlington, Virginia.</span></p><p><a href="http://www.unwomen-usnc.org/2014conference"><span style="line-height: 1.5;">To RSVP or find out more information, visit USNC-UN Women's website.</span></a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-speakers">
+      <div class="field-label">Speakers: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div><strong>Lyric Thompson, Moderator</strong>: Sr. Policy Manager, International Center for Research on Women </div><div> </div><div><strong>Cristina Finch</strong>: Managing Director, Identity &#38; Discrimination Unit, Amnesty International USA</div><div> </div><div><strong>Christopher Miller</strong>: Deputy Programs Director, Free the Slaves</div><div>  </div><div><strong>Beirne Roose-Snyder</strong>: Director of Public Policy, Center for Health and Gender Equity</div><div> </div><div><strong>Annie Toro</strong>: Sr. Advisor for Global Health Policy &#38; Advocacy, International Medical Corps</div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-event">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              When: </div>
+                    <span class="date-display-single">Sat, 06/21/2014 - <span class="date-display-start">9:45am</span><span class="date-display-separator"> - </span><span class="date-display-end">11:00am</span></span>        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-location">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Where: </div>
+                    <div class="location vcard">
+  <div class="adr">
+          <span class="fn">Le Meridien Hotel Arlington</span>
+              <div class="street-address">
+        1121 19th Street North              </div>
+              <span class="locality">Arlington</span>,               <span class="region">VA</span>
+                  <div class="country-name">United States</div>
+                                      </div>
+      <div class="map-link">
+      <div class="location map-link">See map: <a href="http://maps.google.com/?q=1121+19th+Street+North%2C+Arlington%2C+VA%2C+%2C+us">Google Maps</a></div>    </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-host">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Host: </div>
+                    UN Women        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-cost">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Cost: </div>
+                    $100-150        </div>
+        </div>
+</div></div>

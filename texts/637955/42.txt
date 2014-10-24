@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Sun, 10/13/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    The Hindu        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>To celebrate Ada Lovelace, this article discusses the role technology can play in helping women succeed in the economy. The article cites an ICRW report on gender and technology, while highlighting the challenges and opportunities surrounding women and tehcnology.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>In celebrating Ada Lovelace, who is thought to be the first woman computer programmer, this article cites ICRW's 2010 report on bridging the gender divide in technology. Specifically in regard to India, the article points to an ICRW survey that found that only 28% of women owned a mobile phone, in contrast to 40% of men.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.thehindu.com/features/the-yin-thing/ada-lovelace-day/article5229431.ece" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

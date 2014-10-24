@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Tue, 02/18/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    IPS        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>IPS speaks to ICRW&rsquo;s Suzanne Petroni, Senior Director, Gender, Population and Development on measuring progress over the last two decades on issues such as&nbsp;<span style="line-height: 1.5;">universal access to family planning, sexual and reproductive health services and equal access to education for girls.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>IPS speaks to ICRW&rsquo;s Suzanne Petroni, Senior Director, Gender, Population and Development on measuring progress over the last two decades on issues such as&nbsp;<span style="line-height: 1.5;">universal access to family planning, sexual and reproductive health services and equal access to education for girls.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.ipsnews.net/2014/02/growing-inequality-mars-20-years-womens-progress/" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,47 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>For more information, <a href="http://org2.salsalabs.com/o/2741/p/salsa/web/common/public/content?content_item_KEY=12036"><strong>please click here.</strong></a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-event">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              When: </div>
+                    <span class="date-display-single">Thu, 06/26/2014 - <span class="date-display-start">5:30pm</span><span class="date-display-separator"> - </span><span class="date-display-end">10:00pm</span></span>        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-location">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Where: </div>
+                    <div class="location vcard">
+  <div class="adr">
+              <div class="street-address">
+        tbd              </div>
+              <span class="locality">AFLCIO and Greater Washington Area</span>                      <div class="country-name">United States</div>
+                                      </div>
+      <div class="map-link">
+      <div class="location map-link">See map: <a href="http://maps.google.com/?q=tbd%2C+AFLCIO+and+Greater+Washington+Area%2C+%2C+%2C+us">Google Maps</a></div>    </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-host">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Host: </div>
+                    The Women's Information Network        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-cost">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Cost: </div>
+                    $45-50        </div>
+        </div>
+</div></div>

@@ -1,0 +1,12 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><img alt="" src="http://www.icrw.org/files/resize/Screen%20Shot%202014-03-10%20at%209.44.35%20AM-240x139.jpg" style="width: 240px; height: 139px;" width="240" height="139"></p><p>View the full session of ICRW&rsquo;s 2014 Passports to Progress Panel Discussion &ldquo;High Returns: How Investing in Adolescent Girls Today Will Pay Off Tomorrow,&rdquo; held Wednesday, March 5. The panel included speakers from the U.S. Agency for International Development (USAID), Nike Foundation, Council on Foreign Relations and ICRW.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-emvideo field-field-embed-video">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="emvideo emvideo-video emvideo-vimeo"><object type="application/x-shockwave-flash" width="640" height="360" data="http://www.vimeo.com/moogaloop.swf?clip_id=88654572&amp;server=www.vimeo.com&amp;fullscreen=1&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;autoplay=0"><param name="quality" value="best"><param name="wmode" value="transparent"><param name="allowfullscreen" value="true"><param name="scale" value="showAll"><param name="movie" value="http://www.vimeo.com/moogaloop.swf?clip_id=88654572&amp;server=www.vimeo.com&amp;fullscreen=1&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;autoplay=0"></object></div>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,60 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    How Does a Boy Grow Up to Commit Rape?         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>Women and girls around the world experience staggering levels of rape and other forms of sexual violence.This violence devastates lives, unhinges communities, and hampers greater social and economic development. While the severity, frequency, and purpose of this violence can broaden during times of conflict or emergency, its foundations are laid during &ldquo;peacetime,&rdquo; as is underscored by the extreme levels of violence observed consistently across the globe. Yet it is only in recent&nbsp;<span style="line-height: 1.5;">decades that policymakers, researchers, and programmers have begun to pay closer attention to this urgent violation of human rights and barrier to sustainable development.</span></div><div>&nbsp;</div><div>This report presents an overview of the five study sites of the International Men and Gender Equality&nbsp;<span style="line-height: 1.5;">Survey (IMAGES), presents findings related to men&rsquo;s self-reported perpetration of sexual violence, investigates seven domains of possible influences on men&rsquo;s sexual violence perpetration and provides actionable lessons and recommendations.</span></div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Brian Heilman, Luciana Herbert, Nastasia Paul-Gera        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/brian-heilman">Brian Heilman</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="145" height="171" alt="" src="http://www.icrw.org/files/images/tn/Making%20of%20Sexual%20Violence%20thumbanil_0.jpg?1402331965"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/The%20Making%20Of%20Sexual%20Violence%20-%20June%202014%20-%20WEB%20PREVIEW.pdf" type="application/pdf; length=5213328">The Making Of Sexual Violence - June 2014 - WEB PREVIEW.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rights-permissions">
+      <div class="field-label">Rights and Permissions:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="font-size: 12px; font-style: italic; line-height: 17.549999237060547px;">We encourage the use and dissemination of our publications for non-commercial, educational purposes. Portions may be reproduced with acknowledgment to the International Center for Research on Women (ICRW). For questions, please contact</span><a href="mailto:publications@icrw.org" style="margin: 0px; padding: 0px; border: 0px; font-size: 12px; vertical-align: baseline; font-style: italic; line-height: 17.549999237060547px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">publications@icrw.org</a><span style="font-size: 12px; font-style: italic; line-height: 17.549999237060547px;">; or (202) 797-0007.</span></p>        </div>
+        </div>
+</div></div>

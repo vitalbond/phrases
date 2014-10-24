@@ -1,0 +1,34 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Washington, DC        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW), a private, non-profit organization that conducts policy-oriented research focusing on gender and development issues seeks a&nbsp;Grant &amp; Contracts Administrator to provide support and assistance for ICRW&rsquo;s contracts and budgeting functions.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <ol><li>Review proposal budgets and reformat budgets according to donor requirements in assigned portfolio.</li><li>Review new grant and contract agreements and modifications and process internally for review and signature for assigned portfolio.</li><li>Develop and maintain monitoring system database of funder financial and program report requirements and due dates.&nbsp; Notify financial and program staff of reporting deadlines on a monthly basis.</li><li>Maintain complete and accurate files of all contractual and funding agreements.</li><li>Prepare donor financial reports</li><li>Review and process field office accounting entries.</li><li>Perform other duties as assigned.</li></ol></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <ol><li>Bachelor&rsquo;s degree in business with some advanced training in contracts, finance or budgeting.</li><li>Three to five years demonstrated experience in contracts, budgeting and grants management.&nbsp; This experience should include an in-depth understanding of contracts management, ability to organize and manage complex project tracking systems, work plan implementation and budget preparation experience.</li><li>Knowledge of USAID operations and contracting procedures desirable.</li><li>Advanced skills with database, spreadsheet and word processing software applications.</li><li>Excellent communication skills; detail oriented; self-starter; and, ability to work independently.</li></ol></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Interested candidates should submit a cover letter, resume and salary requirements to: Human Resources at <a href="mailto:jobs@icrw.org"><u>jobs@icrw.org</u></a>.&nbsp; Please indicate &ldquo;Budget/Contracts&rdquo; in the subject line of the email</p><p>EOE M/F/D/V</p>        </div>
+        </div>
+</div></div>

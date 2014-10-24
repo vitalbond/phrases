@@ -1,0 +1,16 @@
+<div><p>Hey y&rsquo;all. My apologies for the slight delay in publishing the YUI Weekly this week. I&rsquo;ve been working with Eric on some awesome CSS/JavaScript tools and I forgot to update the blog. (Side note: Find out what we&rsquo;ve been working on at this week&rsquo;s Open Roundtable).</p>
+<p>It&rsquo;s been another solid week of development here at Yahoo. Andrew, our awesome YUI community engineer has also been working hard in getting the YUIConf videos published, so there was plenty to check out this week. Let&rsquo;s begin the round-up!</p>
+<h1 id="releasenews">Release News</h1>
+<p>We&rsquo;re still working on finalizing our development schedule. You can always find the latest schedule information over on the <a href="https://github.com/yui/yui3/wiki/Development-Schedule">YUI Wiki</a>.</p>
+<h1 id="yuiopenroundtable">Open Roundtable</h1>
+<p>In this week&rsquo;s [YUI Open Roundtable][6], <a href="http://twitter.com/itsasbreuk">Marco Asbreuk</a> joined Clarence, Andrew and Juan for the latest episode of &ldquo;YUI In the Wild&rdquo;. Marco stepped through the various modules that he has been building on top of YUI. You can check out the Rountable on <a href="http://www.youtube.com/watch?v=u3w9Eq4W-54">Youtube</a> (as always), and you can find an entire list of Marco&rsquo;s gallery modules <a href="http://gallerydocs.itsasbreuk.nl/">here</a>.</p>
+<p>Next week, join <a href="http://twitter.com/tilomitra">yours truly</a> as we discuss CSS, responsive design and JavaScript tooling. Fun!</p>
+<h1 id="yuiconfvideos">YUIConf Videos</h1>
+<p>We&rsquo;re churning out YUIConf videos like a well-oiled machine now! Here are the ones that were released this week:</p>
+<ul><li><a href="http://www.youtube.com/watch?v=3vZiKThHv4Q">The State of Gestures</a> by yours truly</li>
+<li><a href="http://www.youtube.com/watch?v=nY3K3tTyXn8">YUI in 2013: A Year in Review</a> by our YUI community engineer, Andrew Wooldridge</li>
+<li><a href="http://www.youtube.com/watch?v=gqM01dBw7Fc">Forget everything you know about testing, and start testing</a> by David Gomez</li>
+<li><a href="http://www.youtube.com/watch?v=Kaj0mP4HcMc">Staying DRY with YUI</a> with Jonathan Tsai and William Seo</li>
+</ul><p>We also had an awesome little video clip made that features members of the community speaking up about why they choose YUI to build applications. I figured this one deserved an embed.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/l-OSEf8FL9w" frameborder="0" allowfullscreen></iframe></p>
+<p>That&rsquo;s all for this week! For those in the US, have a great long weekend.</p></div>

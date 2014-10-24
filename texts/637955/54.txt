@@ -1,0 +1,47 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Created in 2002, the International Criminal Court's Trust Fund for Victims (TFV) is the first of its kind&nbsp;to end impunity and promote justice through&nbsp;programs that assist&nbsp;survivors of atrocities&nbsp;return to a dignified&nbsp;and productive life within their communities.</p><p>This report presents findings from an independent ICRW evaluation of ongoing TFV programs in northern Uganda and eastern Democratic Republic of Congo.&nbsp; The evaluation assesses the impact of these programs, identifies ways to strengthen them and provides evidence-based recommendations to inform the design of the next TFV Strategic Plan and finalization of country program strategies.</p><p>The evaluation documents&nbsp;great strides made by&nbsp;TFV-supported programs in physical rehabilitation, psychological rehabilitation and material support. It also notes key achievements in community reconciliation, gender mainstreaming and environmental impact. &nbsp;</p><p>As the TFV puts its new strategic plan into action, it will be important to assess and replicate effective models, and scale them up to reach even more of the many thousands of victims who are still in need of assistance.</p><p>&nbsp;&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Jennifer McCleary-Sills and Stella Mukasa         </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/stella-mukasa">Stella Mukasa</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="181" alt="" src="http://www.icrw.org/files/images/tn/Pages%20from%20ICRW%20TFV%20%20Evaluation%20Report.jpg?1384886883"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/ICRW%20TFV%20%20Evaluation%20Report_0.pdf" type="application/pdf; length=1354185">ICRW TFV  Evaluation Report.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

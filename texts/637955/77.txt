@@ -1,0 +1,47 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>Fertility rates have declined substantially in many lower- and middle-income countries over the last 40 years due to changes in a wide range of social, economic and health factors. On average, individuals and families across the world now desire fewer children and experience greater access to reproductive information and services, including contraception, than in the past.</div><div>&nbsp;</div><div>As a result of these changes, over the course of one or two generations, women in many countries have gone from having on average six or seven children in their lifetime to having only two or three. In addition, these changes have occurred at &nbsp;time when young women in the family- uilding stage of their lives comprise &nbsp;large share of the population in these ountries. Any impact of this drop in fertility on women&rsquo;s ability to work, go to school or make changes in most parts of their lives, are bound to have ripple</div><div>effects throughout a society.</div><div>&nbsp;</div><div>However, while there is evidence on the consequences of fertility decline in developing low and middle-income countries as it relates to health, public policy and economic growth, the implications of having</div><div>fewer children on women&rsquo;s lives, their empowerment and on gender equality have largely been neglected.</div><div>&nbsp;</div><div>Through a synthesis of the case studies conducted by F&amp;E Network researchers, and additional research to ensure comprehensive coverage of the evidence base, ICRW found that the overall well-being of women and girls improves as fertility declines, particularly as it relates to their maternal health, educational attainment and workforce participation. ICRW also found that, in many contexts, fertility&nbsp;<span style="line-height: 1.5;">decline has contributed to the empowerment of women and girls. However, the evidence is less conclusive in demonstrating that fertility decline has led to improved gender relations and gender</span></div><div>equality at the societal level. The following provides highlights of our key findings.</div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Kirsten Stoebenau et al.        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/kirsten-stoebenau">Kirsten  Stoebenau</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="165" height="128" alt="" src="http://www.icrw.org/files/images/tn/FEN_Summary1.jpg?1396968056"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/ICRW_Fertility_Brief_040814.pdf" type="application/pdf; length=2617201">ICRW_Fertility_Brief_040814.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

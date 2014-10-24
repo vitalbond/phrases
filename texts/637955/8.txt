@@ -1,0 +1,64 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Addis Ababa, Ethiopia        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is seeking expressions of interest from organizations, agencies and in exceptional cases, qualified individuals to design and manage a rigorous quantitative and qualitative evaluation of comprehensive sexuality education (CSE) programs with in school and out of school youth in Addis Ababa, Ethiopia. The anticipated time period for the work is July 2013 &ndash; October 2014, with the baseline assessment in September 2013, and the endline assessment in June 2014.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>&lsquo;Keep it Real&rsquo; is a three year project funded by the Government of the Netherlands and implemented by the Save the Children, to scale up evidence-based CSE programs for youth aged 10-24 in Addis Ababa. ICRW is the evaluation partner for the &lsquo;Keep It Real&rsquo; project, and is seeking to contract with a local data collection firm. ICRW will supervise the contracted firm to carry out and directly engage in the evaluation activities in Ethiopia.</p>
+<p>The evaluation will include both quantitative and qualitative data collection components. Data on in-school youth will be collected using self-administered surveys while only qualitative data will be collected from out-of-school youth.</p>
+<p>Specific tasks will include:</p>
+<ol><li>Successful coordination of submission of research protocol to relevant Ethiopian ethical review board</li>
+<li>Collection of quantitative baseline and endline data</li>
+<li>Collection of qualitative baseline and endline data</li>
+<li>Preparation of report describing data collection (numbers interviewed, refusal rates, etc.)</li>
+<li>Delivery of cleaned datasets and transcripts to ICRW for analyses</li></ol><p>&nbsp;<u>Quantitative Component</u>The &lsquo;Keep it Real&rsquo; project involves expansion of tested CSE materials, specifically &lsquo;The World Starts with Me&rsquo; curriculum for youth in secondary school and the &lsquo;My World My Life&rsquo; curriculum with youth in elementary schools. The curricula will take approximately16 weeks to complete and will be implemented via extra-curricular &lsquo;club&rsquo; sessions led by trained teachers who support peer-educators.</p>
+<p>&nbsp;</p>
+<p>The evaluation will be based on a sample drawn from a randomly selected group of schools at each of levels and will involve a matched comparison between intervention and comparison schools. The evaluation will seek to assess the effectiveness of the expanded CSE program, and ascertain if young people are better informed and better able to make healthier choices regarding their sexuality, focusing on the following indicators:&nbsp;</p>
+<ul><li>Percentage using condoms at last high risk sex</li>
+<li>Percentage with comprehensive correct knowledge of HIV/AIDS</li>
+<li>Percentage with age appropriate comprehensive information about their sexuality</li>
+<li>Percentage with gender equitable values and attitudes</li></ul><p>A baseline survey will be conducted before the curriculum is taught, and an endline survey will be conducted 14 to 16 weeks later, after the youth have completed all of the CSE sessions. Data will be collected from 2000 students (1000 in primary schools and 1000 in secondary schools). Potential evaluators should anticipate a survey of approximately 15-20 pages with data collection taking place in the classroom setting and respondents completing the surveys themselves.</p>
+<p><u>Qualitative Component</u></p>
+<p>The assessment of the impact of the &lsquo;Keep it Real&rsquo; project for out-of-school youth will be based on qualitative data. The focus of the qualitative data collection will be to further explore and understand the nuances of the sexual and reproductive health issues among program beneficiaries and how these have been influenced by participation in the program. As appropriate, the evaluation will use proven methodologies (such as focus group discussions or most significant change assessments), but particular efforts will be made to utilize innovative youth-friendly participatory approaches. Youth will be targeted as a part of pre-formed &lsquo;clubs&rsquo; where they will receive CSE training.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The candidate will work under the supervision of ICRW to:</p>
+<ol><li>Assist in design of data collection approach and lead the evaluation of 60-100 youth who are beneficiaries of the &lsquo;Keep it Real&rsquo; project.</li>
+<li>Conduct approximately 5 Focus Group Discussions with out of school youth, incorporating innovative youth-friendly participatory approaches.</li></ol><p>We will consider candidates with evaluation expertise in only quantitative data collection, but would prefer to locate an organization that can effectively manage both quantitative and qualitative data collection and preparation for analysis.</p>
+<p>More specifically, required skills and experience include:</p>
+<p>1. Demonstrated experience with management of large research projects</p>
+<p>2. At least 10 years experience with quantitative data collection and management including: enumeration; administration of questionnaires; administration of qualitative data collection, data entry and cleaning</p>
+<p>3. At least 10 years experience training enumerators and supervising data collection in the field</p>
+<p>4. Demonstrated experience with submitting research protocols for Institutional Review Board (IRB) approval to local ethical review boards</p>
+<p>5. Extensive experience managing qualitative data collection and preparation for analysis including: purposive sampling, skilled interviewing, expert note-taking, high quality transcription and translation</p>
+<p>6. Has adequate qualified personnel and equipment to conduct large scale research effort</p>
+<p>7. Experience in Addis Ababa, Ethiopia</p>
+<p>8. Fluency in English</p>
+<p>9. Excellent written and oral communication skills</p>
+<p>10. Organization/company/firm meets all mandatory tax obligations</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Interested Candidates should contact Laura Brady (from ICRW) at <a href="mailto:lbrady@icrw.org">lbrady@icrw.org</a> and Jeffrey Edmeades <a href="mailto:jedmeades@icrw.org">jedmeades@icrw.org</a> with an Expression of Interest; relevant examples of experience; CVs of proposed leads for the project; and an estimated budget for the completed work as described above.</p>
+<p>Expressions of Interest should be provided no later than <strong>June 28th, 2013.</strong></p>
+<p>Phone interviews with qualified candidates are to take place the week of July 1<sup>st</sup>, 2013.</p>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,202 @@
+<div><p>You know, when I was doing my planning, I expected <a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3</a> of this tutorial to get us all the way to rendering a window containing the buddy list. So it&rsquo;s somewhat amusing that this time, I don&rsquo;t expect to be at that state at the end of this part. Instead, I want to focus on a few problems and annoyances with the existing code. Never fear, though, we&rsquo;ll definitely be back to coding Kivy interfaces in Part 5!</p>
+<p>In this part, we&rsquo;ll focus on fixing a problem with the interface, handling errors on login, and taking care of that need to call &ldquo;disconnect&rdquo; on the xmpp object after displaying the buddy list. Be forewarned however! You may also encounter digressions on version control, debugging, and testing.</p>
+<p>If you&rsquo;ve gotten lost or want to jump in without doing the previous tutorials, you can start from the <a href="https://github.com/buchuki/orkiv">example repository</a> as of the end of part 3:</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_three
+</pre>
+<h4>Table Of Contents</h4>
+<p>Here are links to other parts of this tutorial.</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Handling Events</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4: Code and Interface Improvements</a></li>
+</ol><h4>Handling tab and enter events on text input</h4>
+<p>When I was testing the interface in part 2, I found that I naturally wanted to tab from one textfield to another, a common paradigm for desktop interfaces. Most desktop oriented toolkits have built-in support for what they call &ldquo;tab order&rdquo;; the order in which focus switches from one field to another when the tab key is pressed. Kivy doesn&rsquo;t supply any tools for this. I think this highlights both Kivy&rsquo;s emphasis on keeping a simple API and the fact that a lot of it was designed to work with mobile devices, which typically interact by touch and have neither physical keyboards nor a tab key. However, that doesn&rsquo;t mean we can&rsquo;t tab between our fields, it just means we have to do a bit more legwork.</p>
+<p>Legwork generally starts with a web search. Lately, I wonder if I shouldn&rsquo;t exercise my brain to come up with a solution on my own before turning to a search engine. However, deadlines are always tight, and Stack Overflow so often has <a href="http://stackoverflow.com/questions/12037379/tab-enter-and-other-keystrokes-handling-in-kivys-textinput-widgets">an answer</a>. Now, the code provided there doesn&rsquo;t work quite the way I want it to, but it does tell us how to move forward in solving this task. Let&rsquo;s get our hands dirty. We can start by adding a new class to our <code>__main__.py</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/211b73f2ec4049b13ad3eddc14db9155f0c7b99e">commit</a>)</p>
+<pre class="brush:python">
+from kivy.uix.textinput import TextInput  # At the top
+
+class AccountDetailsTextInput(TextInput):
+    next = ObjectProperty()
+
+    def _keyboard_on_key_down(self, window, keycode, text, modifiers):
+        if keycode[0] == 9:  # 9 is the keycode for 
+            self.next.focus = True
+        elif keycode[0] == 13:  # 13 is the keycode for 
+            self.parent.parent.parent.login()  # this is not future friendly
+        else:
+            super(AccountDetailsTextInput, self)._keyboard_on_key_down(
+                    window, keycode, text, modifiers)
+</pre>
+<p>Yikes! That&rsquo;s a little bit more complex piece of code than we&rsquo;ve seen so far. It&rsquo;s a good thing it&rsquo;s so short! Let&rsquo;s go through each staement. We start by creating a new widget called <code>AccountDetailsTextInput</code> that inherits from <code>TextInput</code>. This means that it looks and behaves exactly like a <code>TextInput</code> object&hellip; because it is one! However, we modify it a bit. First, we give it a <code>next ObjectProperty</code> just like we did to register <code>TextInputs</code> as properties on the <code>AccountDetailsForm</code> class in Part 3. We&rsquo;ll be assigning a value to this <code>next</code> property inside the KV Language file later.</p>
+<p>Then we override the <code>_keyboard_on_key_down</code> method on <code>TextInput</code>. You&rsquo;re probably wondering how I knew that was the method I needed to override. Admittedly, the Stack Overflow answer provided a good hint, but I also read through the <a href="https://github.com/kivy/kivy/blob/master/kivy/uix/textinput.py#L1610">Kivy source code</a> to make sure I knew what I was overriding and how it worked. Reading through other people&rsquo;s source code can be intimidating, but is is the absolute best way to understand how something works. It&rsquo;s also extremely educational, especially if you come across constructs that you don&rsquo;t understand and have to look them up.</p>
+<p>If you&rsquo;re not familiar with Object Oriented Programming, you might want an explanation of what &ldquo;overriding&rdquo; is. Basically, whenever this method is called, we want it to do something different from what would happen if the same method were called on the parent class. Specifically, we want to handle the  and  keypresses in a different way.</p>
+<p>So that&rsquo;s what the conditional inside the method does. It checks the keycode value to see if it is 9 or 13. I didn&rsquo;t know that the keycode was a tuple, but the source code and stack overflow question both indicated that the first value stores the keycode. I do happen to know that 9 and 13 are the keycodes for tab and enter because I&rsquo;ve written similar handlers before. Can you think of a way (other than the aforementioned search engine) to determine what the keycode is for a given keypress?</p>
+<p>Instead of the conditional in the code above, you could simply do a <code>print(keycode[0])</code> inside this method and hook up the appropriate KV language syntax as we&rsquo;ll discuss below. When you run the program, you&rsquo;d be able to see the output on the console when the tab or enter key was pressed. There&rsquo;s the information you need. Run with it!</p>
+<p>The line where we focus the next object property is pretty straightforward; we just set a boolean value on it and let Kivy take care of the details. However, the line for the enter button is a bit tricky. To be honest, I hate this line of code. It&rsquo;s very fragile. It calls <code>self.parent</code> to get the parent of the text input, which is a <code>GridLayout</code>, then calls <code>.parent</code> on that which yelds a <code>BoxLayout</code> (we&rsquo;re navigating up through the <code>orkiv.kv</code> hierarchy here), and calls parent one more time to get the <code>AccountDetailsForm</code>. Then we can finally call the <code>login</code> method on that, to do the same thing as if we had clicked the login button. Thus users can enter their details, tab to the next box, and login without lifting their hands from the keyboard!</p>
+<p>The reason I hate this line of code is that future changes in <code>orkiv.kv</code> could easily break it. If we decide to insert another <code>Layout</code> into the mix, this line will need to have another <code>.parent</code> added. If we decide to remove the surrounding <code>BoxLayout</code> and put the <code>GridLayout</code> as a direct child of <code>AnchorLayout</code>, it will again break. Worse, if we made such a change and ran the program, we might see that the new layout looked exactly as we wanted it to, but totally forget that we needed to test the tab-order widget.</p>
+<p>There are other ways to get access to the <code>AccountDetailsForm</code> and its <code>login</code> method, but I&rsquo;m not too keen on them either. We could call <code>Orkiv.get_running_app().root</code>. Or we could add an <code>ObjectProperty</code> to the <code>AccountDetailsTextInput</code> and set that property to point at the magic root variable. This latter is probably the most extensible, but it means that the Kivy Language file needs to be a bit uglier. I chose to stick with the <code>.parent</code> notation, but to include a comment to remind me that if I look at this section of code in the future, it would be ideal if I had an insight for how to implement it more elegantly.</p>
+<p>Finally, we have the weird <code>else</code> clause which covers any case where the user has presed a key other than tab or enter. In that event, we just want the parent <code>TextInput</code> class to do what it would normally do; display the character in the text field on the screen. So we use the <code>super</code> builtin and pass it first the class we want to get the parent of, and the instance of that class, namely <code>self</code>. This returns basically the same object as <code>self</code> but as if it was an instance of <code>TextInput</code> instead of <code>AccountDetailsTextInput</code>. Then when we call <code>_keyboard_on_key_down</code> on that class, we get the default behavior for the class.</p>
+<p>The rather arcane syntax of super is much simpler in Python 3, where we could just call <code>super._keyboard_on_key_down</code> The two argument syntax is still supported, as it is necessary to support a feature called <em>multiple inheritance</em>. That&rsquo;s something I recommend you don&rsquo;t learn about too early, not because it is a particularly complicated construct, but because it is, in my opinion, much less useful than it appears and you are quite likely to misapply it!</p>
+<p>Oy gevalt, but that was a lot of explanation for not very much code. Luckily, you can probably figure out the changes to the Kivy Language file for yourself:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/e7331deeb62f6c95cecf3178a914836c77fb7900">commit</a>)</p>
+<pre class="brush:python">
+Label:
+    text: "Server"
+AccountDetailsTextInput:
+    id: server_input
+    next: username_input
+Label:
+    text: "Username"
+AccountDetailsTextInput:
+    id: username_input
+    next: password_input
+Label:
+    text: "Password"
+AccountDetailsTextInput:
+    next: server_input
+    password: True
+    id: password_input
+</pre>
+<p>We did two things to each <code>TextInput</code> here. First, we changed it to be an instance of the new <code>AccountDetailsTextInput</code> and second, we added a <code>next</code> attribute to each of them. This <code>next</code> points at the id of whichever input box it makes sense to be the next in the tab order.</p>
+<h4>But what about invalid logins?</h4>
+<p>Have you tried intentionally or accidentally entering invalid account details into this form and submitting it? The application dies outright, which is neither optimal nor friendly. Users are not infallible. In fact, users can be incredibly dedicated to totally breaking your fancy interface! Let&rsquo;s try to anticipate some of their mistakes and supply an error message that makes a little sense instead of just crashing.</p>
+<p>Let me tell you up front, this turned out to be harder than I expected! I don&rsquo;t want to do anything too complicated for the intended audience of this tutorial. I ended up poking around in the sleekxmpp source code quite a bit to come up with <a href="https://github.com/buchuki/orkiv/commit/e71364815a49553af27496998299475015e9b5a3">this solution</a>. I don&rsquo;t like the results, but I saved it for you on a separate git branch. Too many tutorials pretend that the solution they present to you is the obvious one; instead, I want you to see that programming is often all about exploration and backing up and trying again.</p>
+<p>The problem with the code I linked is that it locks up the interface so it&rsquo;s hard to interact with. Since nothing can happen until connection has occurred anyway, I think it will be better to pop up a window that tells the user to wait while we perform the connection.<br>
+Before I show you the code, I want to describe how I was testing it as I developing it. I performed several different tasks and changed the code until all of them were working. This was time consuming (and the reason this tutorial is a little late) and tricky. Each time I changed things, I had to go through all the tasks to make sure that fixing one problem hadn&rsquo;t broken other things. Often it had, which meant I had something else to fix and test. However, at the end of this section, you&rsquo;ll be able to perform all these tasks with expected results:</p>
+<ul><li>Log into my personal jabber server and see the buddy list</li>
+<li>Log into a throw away google account and see the buddy list</li>
+<li>Click the login button without entering any details and get an error message to try again</li>
+<li>Enter credentials for a host that does not exist and get an error message to try again</li>
+<li>Enter invalid credentials for the google account and get an error message to try again</li>
+</ul><p>Let&rsquo;s start by building a <a href="http://kivy.org/docs/api-kivy.uix.modalview.html">Kivy Modal View</a> widget. A <code>ModalView</code> essentially sits in front of the other widgets, by default taking up the whole window, though you can make it look like it&rsquo;s floating on top of the interface by giving it a size. How did I know this was the widget I wanted? I didn&rsquo;t. I had to search through the Kivy API library for what I wanted. I first stumbled across the <a href="http://kivy.org/docs/api-kivy.uix.popup.html">Popup</a> widget, but it has extra features that we don&rsquo;t want. However, I saw that it inherits from <code>ModalView</code> and that&rsquo;s exactly what we need.</p>
+<p>So we&rsquo;re going to create a <code>ModalView</code> object that notifies the user that a connection is being attempted. If the credentials are invalid, it will give them a short message and invite them to return to the login widget and try again. If they are valid, it will print the Buddy List on itself. Let&rsquo;s start adding this new class to the <code>__main__.py</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/8a7362e91e0fcb943892b08616710330e1ce075e">commit</a>)</p>
+<pre class="brush:python">
+from kivy.uix.modalview import ModalView  # At the top of the file
+from kivy.uix.label import Label
+
+class ConnectionModal(ModalView):
+    def __init__(self, jabber_id, password):
+        super(ConnectionModal, self).__init__(auto_dismiss=False,
+            anchor_y="bottom")
+        self.label = Label(text="Connecting to %s..." % jabber_id)
+        self.add_widget(self.label)
+        self.jabber_id = jabber_id
+        self.password = password
+</pre>
+<p>This is similar to what we did for the <code>AccountDetailsForm</code> above. We create a subclass of ModalView and initialize it with a jabber_id and password. We initialize the superclass, passing in a couple of arguments to tweak the behavior. We disable <code>auto_dismiss</code> because we don&rsquo;t want the popup to disappear until we tell it to. Otherwise, it would disappear if the user clicked on it anywhere, even though it&rsquo;s still trying to connect. We also supply <code>anchor_y</code> because <code>ModalView</code> inherits from <code>AnchorLayout</code>. When we add a button later, we&rsquo;ll want it to pop up in front of the <code>Label</code> at the bottom of the screen. Notice how we are constructing a user interface in Python code here and that it&rsquo;s rather bulky compared to the KV Language way of constructing an interface. However, since there&rsquo;s only one widget for now and a second one created dynamically, it doesn&rsquo;t really make sense to style this class in the KV Language.</p>
+<p>We then construct a <code>Label</code> and add it to the Layout using <code>add_widget</code>. We store the reference to label on <code>self</code> so that we can update the text later. We similarly store the <code>jabber_id</code> and <code>password</code>.</p>
+<p>Obviously, we aren&rsquo;t constructing this widget anywhere, so it&rsquo;s not going to be displayed if we run the code. Let&rsquo;s rewrite the <code>login()</code> method to pop up this window instead of trying to connect. Note that if you were developing on your own, you might want to keep a copy of the current <code>login()</code> code in a separate buffer because we&rsquo;ll be needing to adapt it to live in this new class, soon. Or you can just check your git history to see how the login method used to look. <code>git show HEAD^:orkiv/__main__.py</code> will show what it looked like in the previous revision. <code>HEAD^</code> says &ldquo;previous revision&rdquo; to git. Yes it&rsquo;s arcane syntax. You can see dozens of other ways to specify which revision you want to show in the <a href="https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html#_specifying_revisions">git rev-parse</a> manual. </p>
+<p>Anyway, let&rsquo;s display that popup in the <code>login</code> method:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/62a9a88d0abe72f5a5fdfc7437296ac3737bce73">commit</a>)</p>
+<pre class="brush:python">
+def login(self):
+    jabber_id = self.username_box.text + "@" + self.server_box.text
+    modal = ConnectionModal(jabber_id, self.password_box.text)
+    modal.open()
+</pre>
+<p>We kept the one line from the old <code>login()</code> method which constructs the <code>jabber_id</code>. But now instead of connecting, we construct a <code>ConnectionModal</code> widget and instruct it to open itself. If you run this, it will no longer try to connect to jabber at all. Even though the connection code still exists on the <code>Orkiv</code>, that method is not being called. Obviously, calling that is the next step, but lets make tweak that <code>connect_to_jabber</code> method first to make it inform us when it cannot connect.</p>
+<p>I didn&rsquo;t notice the need for this change until later on when I was doing my own testing, but it&rsquo;ll be easier to explain if we do it now. It&rsquo;s common to do this when crafting commits in git (less so in Mercurial, which is an endless source of frustration for me). Instead of committing each piece of poorly thought out code as I go, I figure out what needs to be done and then design the commits so that they tell a coherent story to anyone that reads the history. If you read through the Examples committed on the <a href="https://github.com/buchuki/orkiv/commits/master">github repo</a> you can see each scene in this story as it is played out. It is much easier for you to understand than if I had committed each of my mistaken attempts in whatever crazy order that they occurred. When crafting git history, remember that there will always be a reader of your code and try to make the most elegant story possible.</p>
+<p>Specifically, replace the single <code>self.xmpp.connect()</code> line with the following four lines:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/faba7c72cc84e39aafab48001384755c5f82ef64">commit</a>)</p>
+<pre class="brush:python">
+from sleekxmpp.exceptions import XMPPError  # At the top of the file
+
+self.xmpp.reconnect_max_attempts = 1
+connected = self.xmpp.connect()
+if not connected:
+    raise XMPPError("unable to connect")
+</pre>
+<p>There are actually two fixes here. I had to scour the sleekxmpp documentation to find the <code>reconnect_max_attempts</code> property. Without it, the client keeps trying to connect over and over and never fails. However, if we tell it not to bother trying to reconnect at all, for some reason, it fails to connect to gmail. So we allow it to reconnect once to keep gmail happy, but not indefinitely to keep our users happy.</p>
+<p>Second, the <code>connect()</code> function returns a boolean value indicating whether the connection was successful. If it&rsquo;s not successful, we want to communicate to whatever method called <code>connect_to_jabber</code> that it was unsuccessful. So we raise an exception that, handily enough, sleekxmpp has defined in their code. When we raise an exception, execution immediately stops in this method. However, we can catch the exception in the calling code. Let&rsquo;s add that calling method to the <code>ConnectionModal</code> class now:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/6d67e385ed30fafdeff9a04b66f94878224e485c">commit</a>)</p>
+<pre class="brush:python">
+from sleekxmpp.jid import InvalidJID  # At the top of the file
+
+def connect_to_jabber(self):
+    app = Orkiv.get_running_app()
+    try:
+        app.connect_to_jabber(self.jabber_id, self.password)
+        self.label.text = "\n".join(app.xmpp.client_roster.keys())
+    except (XMPPError, InvalidJID):
+        self.label.text = "Sorry, couldn't connect, check your credentials"
+    finally:
+        if hasattr(app, "xmpp") and app.xmpp:
+            app.xmpp.disconnect()
+</pre>
+<p>Notice that this method is called <code>connect_to_jabber</code> just like the one on the <code>Orkiv</code> class, but this one is attached to <code>ConnectionManager</code>. There is no law against reusing names if it makes sense to do so, as long as they are in a different namespace (the <code>Orkiv</code> namespace is completely independent from the <code>ConnectionModal</code> namespace). In fact, if you recall the consistency rant from Part 3, you will know that it is often desirable to do so.</p>
+<p>We have a <code>connect_to_jabber</code> method on the <code>ConnectionModal</code> class that calls a totally different <code>connect_to_jabber</code> method on the <code>Orkiv</code> class. The latter method might raise either an <code>XMPPError</code> or an <code>InvalidJID</code> error. The former is raised explicitly if <code>connected</code> is False; the latter is actually raised inside the sleekxmpp code. Either way, it gets propagated up to the the <code>ConnectionModal</code>&lsquo;s method, where we catch it using a <code>try...except</code> clause. We also add a <code>finally</code> clause that checks if an <code>xmpp</code> property has been added to the app and, if so, disconnects it to keep it from freezing up the app, as we discussed in Part 3.</p>
+<p>If you would like more information on exceptions, see <a href="http://docs.python.org/2/tutorial/errors.html#handling-exceptions">the Python tutorial. There's also good coverage of Exception handling in my book, </a><a href="http://www.amazon.com/Python-3-Object-Oriented-Programming/dp/1849511268/ref=sr_1_1?ie=UTF8&amp;qid=1372046173&amp;sr=8-1&amp;keywords=python+3+object+oriented+programming">Python 3 Object Oriented Programming</a>.</p>
+<p>It only takes one line of code to have this <code>connect_to_jabber</code> called as soon as the <code>ConnectionModal</code> is opened. <code>ModalView</code> has a <code>open</code> event, so we just have to assign it a callable (any function or method, such as <code>connect_to_jabber</code> is a callable) that is called whenever that event is invoked. So hook this up as the last line of <code>ConnectionModal</code>'s <code>__init__</code> method:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/4e416c0bbba78cbdd3a18ec9754de4ad7da7f21f">commit</a>)</p>
+<pre class="brush:python">
+self.on_open = self.connect_to_jabber
+</pre>
+<p>There's one more thing I want to do. When there is a failure, instead of just showing a message and forcing the user to close the app, it would be much better if they had a way to go back to the login form. Let's add a button that allows them to try again. Clicking this button will hide the modal window and the original login form that was behind it will be visible so the user can edit the details. This can be done by replacing the contents of the <code>except</code> clause with the following code:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/58dd866e2e65ee027612f5e0c273aa97df9d3c66">commit</a>)</p>
+<pre class="brush:python">
+from kivy.uix.button import Button  # At top of file
+
+self.label.text = "Sorry, couldn't connect, check your credentials"
+button = Button(text="Try Again")
+button.size_hint = (1.0, None)
+button.height = "40dp"
+button.bind(on_press=self.dismiss)
+self.add_widget(button)
+</pre>
+<p>Here we're adding more user interface in Python code and once again we see that it's bulky compared to the KV Language. We're still rendering the label, but we're also adding a button to the bottom of the window. We're giving it a 40 display pixel height, remembering to set <code>size_hint</code> to <code>None</code> in the y dimension so the layout knows to check the height. We then bind the <code>on_press</code> event of the button to the <code>dismiss</code> method (a callable, remember?) on <code>ModalView</code>. When the button is clicked, the modal disappears. Now it's much easier to test each of the failure conditions I listed earlier, one after the other.</p>
+<p>Technically, this interface still freezes up when we connect, but it's less invasive since we're rendering a label instead of broken text areas. The correct fix would probably be to connect in another thread and then schedule interface updates using the <a href="http://kivy.org/docs/api-kivy.clock.html">Kivy clock</a>, but that's a bit advanced for this tutorial.</p>
+<h4>Exiting gracefully</h4>
+<p>The last problem I want to address today is the fact that we disconnect as soon as we render the Buddy List. That's not going to be very useful when we get around to actually sending and receiving messages. However, not disconnecting causes the program to hang when we close the window because the <code>xmpp</code> object is sitting there doing it's job: waiting for incoming jabber messages.</p>
+<p>We need to disconnect that object when the window closes. Luckily, Kivy gives us an event on the <code>App</code> class, named <code>stop</code>, that we can hook into to do just that. But let's arrange our code nicely.</p>
+<p>I spend a lot of time rewriting code that I wrote before. Why? To make it more maintainable. I need the code to be readable in the future when I've forgotten what it does. Python is designed to be a very readable language, but that doesn't mean that it's self organizing. It's one thing to write readable sentences in English, but quite another thing to have a coherent and cohesive paragraph.</p>
+<p>Even though it's temporary code, the <code>hasattr</code> call in our exception handler (which checks if the <code>xmpp</code> property has been added to the object or not) is a code smell. It would be better if the <code>xmpp</code> property always exists on the object and to check whether or not it is a valid value. So let's set that property to <code>None</code> by adding an initializer method to the <code>Orkiv</code> class:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/e9a5f8c66cb0d303274f1c2fffc3c174bbbc9e04">commit</a>)</p>
+<pre class="brush:python">
+def __init__(self):
+    super(Orkiv, self).__init__()
+    self.xmpp = None
+</pre>
+<p>Let's also add a <code>disconnect_xmpp</code> method to the <code>Orkiv</code> class that does the necessary cleanup for us. This method will be called both when the app stops and when the login method fails (but not on successful login). It's a bit more involved than the dirty call to <code>xmpp.disconnect()</code> that we were making in our temporary code, because we want to be sure to get it right:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/22017b9e36f703b3ca52c08542128b3bca2ac4d1">commit</a>)</p>
+<pre class="brush:python">
+def disconnect_xmpp(self):
+    if self.xmpp and self.xmpp.state.ensure("connected"):
+        self.xmpp.abort()
+    self.xmpp = None
+</pre>
+<p>The conditional checks too things. First, it checks that <code>self.xmpp</code> is an actual object, and not <code>None</code>. If this check is <code>False</code>, python won't even bother with the second check, which is to see if the <code>ClientXMPP</code> object is connected. I had to actually look through the <code>sleekxmpp</code> source code to figure out how to check if it's connected using that weird <code>state.ensure</code> syntax. If <code>xmpp</code> IS connected, then we call <code>abort()</code>, which calls the <code>disconnect()</code> method we were calling earlier as well as some other cleanup tasks. Finally, regardless of whether it was connected, we set the <code>xmpp</code> property to <code>None</code> which both frees the memory used by sleekxmpp for garbage collection and puts the app in its known initial state in case we want to try to connect again.</p>
+<p>While we're add it, let's hook up the <code>stop</code> event handler on the <code>Orkiv</code>. All it needs to do, for now, is call the method we just added:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/171d003753913d50a5512f58ebbab40df67eb87b">commit</a>)</p>
+<pre class="brush:python">
+def on_stop(self):
+    self.disconnect_xmpp()
+</pre>
+<p>You might be wondering why we have two methods, instead of just putting the <code>disconnect_xmpp</code> method body inside of <code>on_stop</code>.  There are a couple reasons. One is that we're going to be calling <code>disconnect_xmpp</code> from a the exception handler in the next example. Of course, we could just call <code>on_stop</code> instead, but that wouldn't be as readable; the name <code>disconnect_xmpp</code> very clearly describes what the method does. Second, there is every chance that we'll later have to add additional code to the <code>stop</code> event handler to clean up other things when the app closes. By that point, we'll likely have forgotten that <code>on_stop</code> is being called from other places, and we may not want the new cleanup code to be called during the connection/login phase. Instant bug! It is often extremely worthwhile to use longer code if it is more readable than a shorter alternative.</p>
+<p>Let's do that last step now: call the <code>disconnect_xmpp</code> method when login fails. We can remove the <code>finally</code> clause, since we no longer want to disconnect if login is successful.  And we can remove the <code>hasattr</code> call, since that check is now being done more elegantly inside the <code>disconnect_xmpp</code> method itself:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/33950b33e01958c2d2261cf0cb492b52bacbbe6d">commit</a>)</p>
+<pre class="brush:python">
+except (XMPPError, InvalidJID):
+    self.label.text = "Sorry, couldn't connect, check your credentials"
+    button = Button(text="Try Again")
+    button.size_hint = (1.0, None)
+    button.height = "40dp"
+    button.bind(on_press=self.dismiss)
+    self.add_widget(button)
+    app.disconnect_xmpp()
+</pre>
+<h4>More on maintaining history</h4>
+<p>That's it for coding in this part of the tutorial. I'm a bit concerned that the changes introduced in this tutorial were hard to follow, since we were making sweeping changes all over the file, but I wanted to describe them one at a time. If you're having trouble following it, you might have better luck looking at the <a href="https://github.com/buchuki/orkiv/commits/master">individual git commits</a>. If you select a commit, github will highlight the lines that have been added and removed in each change, making it easier to follow. It also allows you to see the entire file (there's a "View File" button) if you're feeling lost. I tried very hard to craft the changes in each commit as well as the commit message so that the history is very easy to follow.</p>
+<p>You should try to do this yourself when you are developing. It is unlikely your history will be quite as readable as this repository (my real life <a href="https://github.com/buchuki?tab=repositories">repos</a> certainly aren't!), because it is generally considered unwise to edit your history after you have pushed it to a public repository that other people have seen (think of trying to edit a published book after somebody buys it.) However, before you have pushed your changes, it is perfectly ok to rewrite and reorganize your commits so that they make the maximum amount of sense.</p>
+<p>Git provides several tools for such work. One of the easiest to understand is the <code>git commit --amend</code> command. This command is like a regular commit, except that instead of creating a new commit with whatever changes you have prepared with <code>git add</code>, it alters the last committed patch to include those changes. It even allows you to edit the commit message! This is very useful if you make a commit and then realize you forgot to change something in that commit. For example, it's a terrific way to exclude useless, cluttering commits with messages like "Conform to pep8", "I forgot to remove a debugging statement", "Update documentation", or the most heinous commit message of all: "Blah".</p>
+<p>Another really handy tool that I used extensively while developing this particular tutorial is <code>git add -p &lt;filename&gt;</code>. Because I didn't actually know exactly how my attempts with the <code>ConnectionModal</code> code were going to work out, I wrote and tested everything before writing the narrative. But then I wanted to commit only specific parts of what I had written in each example, each commit containing a single, coherent collection of changes. <code>git add -p</code> is an extended version of <code>git add</code> (the <code>p</code> is short for <code>--patch</code>) that loops over the changes in the file and allows you to interactively select exactly which hunks you want to go into the next commit. There are quite a few options you can use during each step; press the <code>h</code> to get an overview. Don't forget to call git commit when you're done!</p>
+<h4>Monetary feedback</h4>
+<p> If you liked the tutorial and would like to see similar work published in the future, please support me. I hope to one day reduce the working hours at my day job to have more time to devote to open source development and technical writing. If you think this article was valuable enough that you would have paid for it, please consider supporting me in one or more of the following ways:</p>
+<ul><li>Purchase my books: <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a> and <a href="http://hackinghappy.com/">Hacking Happy</a></li>
+<li>Write a positive review of these books</li>
+<li>Tip me on <a href="https://www.gittip.com/buchuki/">Gittip</a></li>
+<li>E-mail <em>dusty at archlinux dot ca</em> to let me know you would fund a book about Kivy via crowd funding</li>
+</ul><p>Finally, if you aren't in the mood or financial position to help fund this work, you can always do your part to share it on your favorite social platforms.</p></div>

@@ -1,0 +1,14 @@
+<div><p>We finish out our YUIConf 2013 series with our <a href="https://www.youtube.com/watch?v=MPaKarJ52Ic">Lightning Talks session</a>. Anyone who had interesting content to discuss could queue up and give a brief talk. Check out the links below if you would like to jump to a specific speaker.</p>
+<ul><li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=0m10s">Bruno Farache</a> of LifeRay on y3d</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=6m30s">Daniel Stockman</a> of Zillow on &ldquo;Stub Your Way to Unit Test Bliss&rdquo;</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=15m56s">Andrew Dejtonski</a> of Georgia Tech on connecting to systems that aren&rsquo;t obvious</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=24m48s">Carlos Vallejo</a> of Wells Fargo on a spec authoring tool</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=32m30s">Michael Matusak</a> of Yahoo on Yahoo Screen</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=38m57s">Clarence Leung</a> of Yahoo on Code Academy tutorials</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=44m30s">Phil Dokas</a> of Yahoo on Flickr</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=51m5s">Iliyan Peychev</a> of LifeRay on YUI Editor and autodiscovery of required modules</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=1h1m58s">Brian Johnson</a> of Yahoo on debugging markup with CSS</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=1h7m0s">Luke Arduini</a> of Yahoo on client side apps with npm</li>
+<li><a href="https://www.youtube.com/watch?v=MPaKarJ52Ic#t=1h16m50s">Johnathan Tsai</a> of Talentral on their latest features</li>
+</ul><p>You can check out the <a href="http://www.yuiblog.com/blog/2014/03/04/yuiconf-2013-reid-burke-on-testing-yui-everywhere/">previous video</a> here as well as watch all the videos via our <a href="http://www.youtube.com/playlist?list=PLjKP9DUCzZorde6sLWHJ3GNd-6VrGrbqm">YouTube playlist</a>.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/MPaKarJ52Ic" frameborder="0" allowfullscreen></iframe></p></div>

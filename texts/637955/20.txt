@@ -1,0 +1,43 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The purpose of this project is to gain a better understanding of the key barriers to adolescents' sexual and reproductive health (ASRH) in Dhaka, Bangladesh, and how&nbsp;these barriers can be overcome through programmatic and policy interventions. ICRW will use a variety of research methods and strategies, including primary and secondary data analysis, to assess&nbsp;the sexual and reproductive health status, needs and challenges of 10-19 year olds&nbsp;in urban Dhaka. The ultimate goal of the project is to formulate a set of recommendations for programmatic and policy options that the World Bank, and potentially other donors and implementing organizations, can utilize in improving ASRH in urban Bangladesh.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    July 2013 - February 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    World Bank        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Suzanne Petroni        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Bangladesh</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

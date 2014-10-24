@@ -1,0 +1,52 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>In April 2013, ICRW produced a critical review of currently collected indicators to measure adolescent sexual and reproductive health (ASRH).&nbsp; The report from this work provided a summary of the current state of knowledge about ASRH in Guatemala and Honduras and recommended a core set of indicators to capture progress toward improved ASRH in the region.&nbsp; ICRW is now exploring how best to build on our recent work to collectively advance the ASRH agenda in Mesoamerica and beyond.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    Summit Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Jennifer McCleary-Sills        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Guatemala</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Honduras</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

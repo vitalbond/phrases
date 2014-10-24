@@ -1,0 +1,47 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Guidance for Gender Measurement in Agriculture Programs        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Over the past decade there has been growing recognition of the contribution that women make to agricultural production around the world. Despite this attention, many agricultural programs struggle to capture the difference&mdash;or the &lsquo;gender effect&rsquo;&mdash;that gender integration makes on key outputs and outcomes.</p>
+<p>This technical brief, produced for the Tanzania Gender and Agriculture Forum (TaGAF), draws on the experiences of two projects in Mbeya, Tanzania&mdash;Faida Mali&rsquo;s Integrated Soil Fertility Management and TechnoServe&rsquo;s Coffee Initiative&mdash;focusing on the steps they have taken to measure the &lsquo;gender effect&rsquo;.&nbsp; It is a follow-on to an earlier TaGAF brief that presents some of the promising gender responsive practices these project have underway. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Anjala Kanesathasan, Krista Jacobs, Margo Young, Adithi Shetty        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/anjala-kanesathasan">Anjala  Kanesathasan</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/ICRW-TZ%20Gender%20%20Agri%20II%20v6%20-%20FINAL.pdf" type="application/pdf; length=1230074">ICRW-TZ Gender  Agri II v6 - FINAL.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

@@ -1,0 +1,33 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week saw the release of <strong>YUI 3.13.0</strong>. You can find all the details in the <a href="http://www.yuiblog.com/blog/2013/10/07/yui-3-13-0-released/">release announcement</a>. Thanks to the dozens of contributors who have submitted hundreds of commits <a href="https://github.com/yui/yui3/pulse/monthly">over the past month</a>. With Sprint 11 beginning next week, expect an update to the <a href="https://github.com/yui/yui3/wiki/Development-Schedule">development schedule wiki</a> soon.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included an update from Anthony Pipkin (<a href="https://twitter.com/apipkin">@apipkin</a>) on <a href="http://yuilibrary.com/yui/docs/editor">Editor</a> and <a href="http://yuilibrary.com/yui/docs/datatable/">DataTable</a>, <a href="http://www.yuiblog.com/blog/2013/10/07/yui-3-13-0-released/">YUI 3.13.0</a> higlights, and an in-depth review into <a href="https://github.com/yui/yui3/pulls?direction=asc&amp;page=1&amp;sort=updated&amp;state=open">stale pull requests</a>. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=n1I_0NF4Cos">here</a>.</p>
+</li>
+<li>
+<p>Congratulations to JSON, which this week became a formal international data processing standard! <em>&ldquo;JSON is a lightweight, text-based, language-independent data interchange format. It was derived from the ECMAScript programming language, but is programming language independent. JSON defines a small set of structuring rules for the portable representation of structured data.&rdquo;</em> You can find the full ECMA-404 spec <a href="http://www.ecma-international.org/publications/standards/Ecma-404.htm">here</a>.</p>
+</li>
+<li>
+<p>A little-known feature with <a href="http://yuilibrary.com/yui/docs/anim/">Y.Anim</a> is that it can actually be used for non-DOM animations. Here&rsquo;s <a href="https://github.com/yui/yui3/issues/1286#issuecomment-25928588">a comment</a> on a feature request that explains how to use that module and <a href="http://yuilibrary.com/yui/docs/api/files/anim_js_anim-easing.js.html">Y.Easing</a> to calculate step-values for an arbitrary animation.</p>
+</li>
+<li>
+<p><a href="https://speakerdeck.com/tilomitra/building-beautiful-web-apps-using-pure-css">&ldquo;Building Beautiful Web Apps using Pure CSS&rdquo;</a> is a presentation by YUI team member Tilo Mitra (<a href="http://twitter.com/tilomitra">@tilomitra</a>) that was given at the recent <a href="http://yahoodevelopers.tumblr.com/post/62748207228/yahoo-hack-usa-its-a-wrap">Yahoo Hack USA</a> event.  If you haven&rsquo;t yet checked out <a href="http://purecss.io/">Pure</a>, give the slide deck for a nice intro to the CSS library.</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include continued discussion on <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/vFZV2zUMepM">supporting nesting Y.Apps</a> and <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/hwRCA2o5Ks8">improving gesture events in YUI</a>. These on-going discussions so far have resulted in <a href="https://github.com/orionhealth/nested-y-apps-spike">Nested Y.Apps Spike</a> and <a href="https://github.com/yui/yui3/pull/1309">PR #1329</a>.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://www.yuiblog.com/blog">Gallery build</a> include: <a href="http://yuilibrary.com/gallery/show/bulkedit">bulkedit</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsapanel">itsapanel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsapluginpromise">itsapluginpromise</a>, <a href="http://yuilibrary.com/gallery/show/itsaselectlist">itsaselectlist</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaviewmodel">itsaviewmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaviewmodelpanel">itsaviewmodelpanel</a>, and <a href="https://github.com/clarle/gallery/tree/master/src/gallery-view-bind-datastick">view-bind-datastick</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/">Node.js and the new web front-end</a></li>
+<li><a href="http://flippinawesome.org/2013/09/30/rethinking-javascripts-trycatch/">Rethinking JavaScript&rsquo;s Try/Catch</a></li>
+<li><a href="http://flippinawesome.org/2013/10/07/javascript-fundamentals/?">JavaScript Fundamentals</a></li>
+<li><a href="http://strongloop.com/strongblog/how-to-heap-snapshots/">How-to: Heap Snapshots and Handling Node.js Memory Leaks </a></li>
+<li><a href="http://blog.pluralsight.com/2013/10/04/tim-caswell-on-the-development-of-js-git/">Tim Caswell on the development of JS-Git</a></li>
+<li><a href="http://www.youtube.com/watch?v=IXIkTrq3Rgg">Video: Brendan Eich on JS Responsibilities</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/151.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

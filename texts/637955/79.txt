@@ -1,0 +1,33 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>Women&rsquo;s education is associated with positive economic, social, and health outcomes among women and their families, as well as greater opportunities and decision-making power for women within and outside of the household. &nbsp;Improvements in absolute and relative levels of female education are often precipitated and accompanied by broader societal changes that facilitate economic and societal roles for women beyond reproduction. &nbsp;An extensive literature examines the pathways between women&rsquo;s education and social change, namely fertility decline, yet there is minimal exploration of the impact of these social changes on individual women and their families.</div><div>&nbsp;</div><div>We use intergenerational data from a rich longitudinal cohort study in the Philippines to examine the factors associated with mothers&rsquo; aspirations for their children&rsquo;s education, and to predict their child&rsquo;s subsequent educational attainment. Findings from the study indicate that mothers&rsquo; education, household wealth, and a locally-developed measure of women&rsquo;s status (being well-kept) were positively associated with higher educational aspirations for their children regardless of sex, yet other effects on educational aspirations were gender-specific.</div><div>&nbsp;</div><div>A threshold effect was found for fertility, such that after controlling for other background factors, only those mothers with the highest fertility (7 or more) were less likely to desire their children to attend college or higher. &nbsp;In the models predicting children&rsquo;s educational attainment, the effects of these variables persisted and the effect of fertility became more pronounced. &nbsp;Even after controlling for all other background characteristics, however, mothers&rsquo; aspirations independently and significantly predicted their children&rsquo;s educational attainment. &nbsp;The &nbsp;intergenerational influences of &nbsp;high fertility, women&rsquo;s status, and &nbsp;mothers&rsquo; educational aspirations on children&rsquo;s &nbsp;educational attainment highlight the importance of examining how the increased roles and opportunities for Filipino women beyond childbearing may not only positively benefit these women themselves, but also future generations.</div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Jessica D. Gipson, UCLA; Michelle J. Hindin, Johns Hopkins Bloomberg School of Public Health        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/Gipson_ICRW_WPS_2013_FINAL.pdf" type="application/pdf; length=366961">Gipson_ICRW_WPS_2013_FINAL.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

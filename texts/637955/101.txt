@@ -1,0 +1,45 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="" src="http://www.icrw.org/files/images/people/Image%20Place-kadin_1.jpg?1403206009"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Jocelyn         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Lehrer        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Senior Technical Specialist Gender, Violence and Health,         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>As Senior Technical Specialist in Gender, Violence and Health, Dr. Jocelyn Lehrer provides technical leadership and oversight to projects involving qualitative and quantitative research, project implementation, technical assistance and policy advocacy across a range of gender-based violence (GBV) and sexual/reproductive health and rights issues. Jocelyn has 13 years of experience in public health research and practice. Her areas of subject expertise include GBV and HIV/STI prevention and response, the promotion of sexual/reproductive health and healthy masculinities, entertainment-education, social enterprise development, and community organizing/mobilization strategies. Her methods expertise centers on the use of qualitative and quantitative approaches for program design and evaluation as well as for the examination of prevalence, predictors and contexts of public health challenges.</p><p><span style="line-height: 1.5;">Jocelyn brings a broad set of competencies to her work with the ICRW. As a public health researcher, health educator, support group facilitator, social entrepreneur and filmmaker, Jocelyn has worked in diverse settings with youth and adults who are dealing with challenges including poverty, homelessness, partner violence, sexual assault, LGBT stigma, sex work, substance abuse and HIV/AIDS.</span></p><p><span style="line-height: 1.5;">Jocelyn’s work ismission-driven; her efforts stem from a fundamental commitment to the promotion of health, sustainability and justice around the world. She practices an intersectional feminism, with an awareness of how diverse aspects of identity and circumstance can shape life experience. Jocelyn is passionate about conducting applied research to support the development of effective policies and programs, helping to stimulate evidence-based innovation, and helping effective programs scale. She enjoys working with diverse partners and clients in government, nonprofit and corporate sectors. As a Chilean-American raised in multiple cultural contexts, Jocelyn brings cultural sensitivity to her work.</span></p><p><span style="line-height: 1.5;">Jocelyn's research experience includes conducting widely-cited studies with the National Longitudinal Survey of Adolescent Health, initiating and directing the first quantitative studies of partner violence and sexual assault on a college campus in Chile, contributing to the development of an HIV/STI and sexual violence prevention program for the U.S. Army and Marines, and developing a youth sexual/reproductive health program with World Vision in Honduras. Her community-based work includes serving as a support group facilitator for LGBT youth living with HIV/AIDS through Bay Area Young Positives, community educator with San Francisco Women Against Rape, and service-learning educator with the American Jewish World Service.</span></p><p><span style="line-height: 1.5;">Prior to joining ICRW, Jocelyn founded the Men’s Story Project, an ongoing health communication initiative that uses innovative storytelling, media and community mobilization strategies to promote healthy masculinities in diverse contexts. She was also affiliated as Senior Research Associate at the University of California- San Francisco Bixby Center for Global Reproductive Health.</span></p><p><span style="line-height: 1.5;">Contact Jocelyn at jlehrer@icrw.org</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English (native), Spanish (native)</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Jocelyn holds a Doctor of Science (Sc.D.) degree from the Harvard School of Public Health and a Bachelor’s degree in the Biological Basis of Behavior from the University of Pennsylvania. She completed a postdoctoral fellowship at the University of California-San Francisco Center for AIDS Prevention Studies.</p>        </div>
+        </div>
+</div></div>

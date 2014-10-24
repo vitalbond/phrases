@@ -1,0 +1,24 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Gender and women&rsquo;s empowerment a key focus area in Global Development Council policy recommendations         </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Mon, 04/14/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW President Sarah Degnan Kambou sits on President Barack Obama&rsquo;s Global Development Council, which held its first public meeting at the National Press Club in Washington, D.C. this morning.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW President Sarah Degnan Kambou sits on President Barack Obama&rsquo;s <a href="http://www.whitehouse.gov/administration/advisory-boards/global-development-council" target="_blank">Global Development Council</a>, which held its first public meeting at the National Press Club in Washington, D.C. this morning. The purpose of the meeting was to share with the public the first set of Council recommendations to strengthen U.S. foreign assistance, and to solicit public input on key global development issues.</p><p><span style="line-height: 1.5;"><img alt="" src="http://www.icrw.org/files/resize/images/GDC_Sarah2-260x195.jpeg" style="width: 260px; height: 195px; float: left; margin: 5px 10px;" width="260" height="195">&ldquo;It is an honor to be part of the President&rsquo;s Global Development Council. I am pleased by the level of attention paid to gender equality and women&rsquo;s empowerment articulated in the Council&rsquo;s recommendations,&rdquo; said Kambou.</span></p><p><span style="line-height: 1.5;">&ldquo;In our first year of deliberations, I&rsquo;ve worked with the Council to ensure a focused stream of discussion and inquiry with regard to gender and development. Our first memo to the President outlines a number of gender-transformative policy recommendations, from stronger OPIC investment in women-owned enterprises to endorsing a post-2015 development framework that includes a stand-alone goal on gender equality. There is particular depth in the Climate Smart Food Security section, which outlines solutions to help reduce post-harvest waste, increase agricultural productivity with special emphasis on women small holder farmers, strengthen land tenure and stewardship rights of women and increase the efficiency of agricultural water use.&rdquo;</span></p><p><span style="line-height: 1.5;">President Obama created the Global Development Council in 2010 as part of the&nbsp;</span><a href="http://www.whitehouse.gov/the-press-office/2010/09/22/fact-sheet-us-global-development-policy" style="line-height: 1.5;"><strong>Presidential Policy Directive on Global Development</strong></a><span style="line-height: 1.5;">, which holds development as vital to national security and as a strategic, economic and moral imperative for the United States. The Global Development Council provides advice to the President and other senior officials on United States global development policies, practices and emerging issues in the field.</span></p><p><span style="line-height: 1.5;">President Obama appointed Kambou to the President&rsquo;s Global Development Council in December of 2012, where she advises him and key administration leaders on effective practices and policies for U.S. foreign assistance.</span></p><p><span style="line-height: 1.5;">Kambou is one of 12 individuals appointed by the President from a variety of sectors, including, among others, non-profit and philanthropic organizations, institutions of higher education and private industry. The U.S. secretaries of state, treasury and defense as well as the United States Agency for International Development (USAID) administrator and the chief executive office of the Millennium Challenge Corporation serve as non-voting members. The council is administered by USAID.</span></p>        </div>
+        </div>
+</div></div>

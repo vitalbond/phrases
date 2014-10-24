@@ -1,0 +1,18 @@
+<div><div class="field field-type-filefield field-field-home-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_home_image" width="570" height="379" alt="" src="http://www.icrw.org/files/images/home/Kambou_Headshot_Homeslide.jpg?1377543286"></div>
+        </div>
+</div>
+<div class="field field-type-link field-field-link-slide">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/media/news/icrw%E2%80%99s-president-sarah-degnan-kambou-speaks-50th-anniversary-march-washington">Read More &raquo;</a>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-slide-text">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><font face="Helvetica,sans-serif"><span style="font-size: 10pt;">On Aug. 24, ICRW President Sarah Degnan Kambou addressed tens of thousands gathered at the Lincoln Memorial to commemorate the 50th Anniversary of Dr. Martin Luther King Jr.'s historic "I Have a Dream" speech. Kambou stressed the need to promote the rights of women and girls around the globe in order to fulfill King's vision of justice and equality for all people.</span></font><font face="Helvetica,sans-serif"><span style="font-size: 10pt;">&nbsp;</span></font></p>        </div>
+        </div>
+</div></div>

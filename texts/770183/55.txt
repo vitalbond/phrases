@@ -1,0 +1,21 @@
+<div><p><strong>Chui:</strong></p>
+<p>Chui &nbsp;is&nbsp; a new smart device that aims&nbsp; to help you &nbsp;<a href="http://visionwiz.net/2012/10/now-lock-open-your-door-from-smartphone/">monitor your d</a><span style="font-size: 13px;"><a href="http://visionwiz.net/2012/10/now-lock-open-your-door-from-smartphone/">oor</a> while you are away from </span><a style="font-size: 13px;" href="http://visionwiz.net/2013/07/new-virtual-keyaugust-smart-lock-to-lock-your-home/">home</a><span style="font-size: 13px;">.</span></p>
+<p><span style="font-size: 13px;">Through its face recognition technologies you can identify person who is knocking on your door and communicate with him via your mobile apps.</span></p>
+<p><span style="font-size: 13px;">In addition to reading faces Chui can also read QR codes. You can enable QR Code recognition as a second layer of security.</span></p>
+<p><span style="font-size: 13px;">Which would allow you to hold up a code to the device (visible on your phone or on a piece of paper), and Chui will read the code along with your face.</span></p>
+<p><span style="font-size: 13px;">Chui will only return a positive match if both your face and the code match the information on record. </span></p>
+<p><span style="font-size: 13px;">Meaning that even if someone obtains your QR code it is useless without your face. QR codes can be set, requested, and generated from their Web and Mobile applications</span></p>
+<p><a href="http://visionwiz.net/wp-content/uploads/2014/05/smart-doorbell.png"><img class="aligncenter size-full wp-image-35471" title="smart doorbell" src="http://visionwiz.net/wp-content/uploads/2014/05/smart-doorbell.png" alt="" width="151" height="76"></a></p>
+<p><em style="font-size: 13px;"><strong>How It Works:</strong></em></p>
+<p><em><strong> </strong></em></p>
+<p><em>Chui works via Wifi with web and mobile applications. After your Chui is installed for the first time and the power is turned on it will create an </em><em>ad-hoc WiFi hotspot, </em><em>Simply connect to the hotspot and visit a URL in your browser to continue the setup process (you&rsquo;ll find info such as ssid, password, and URL in the box).</em></p>
+<p><em> </em></p>
+<p><em> </em></p>
+<p><strong>Best Part Is:</strong></p>
+<p>Chui can be used as a doorbell as well as a security and monitoring device inside your house.</p>
+<p><em> </em></p>
+<p><em> </em></p>
+<p>Chui can be triggered via Motion Detection and Face Detection. Whereby the presence of a face or motion will prompt it to take a photo and make deliver a notification.</p>
+<p><span style="font-size: 13px;">Chui&rsquo;s motion detection and live feed capabilities enable you to use it inside your house for monitoring and security purposes.</span></p>
+<p><span style="font-size: 13px;"> </span><span style="font-size: 13px;">More at:<a href="https://preorder.getchui.com/the-world-s-most-intelligent-doorbell">Chui</a></span></p>
+<p><a class="a2a_button_facebook" href="http://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Fvisionwiz.net%2F2014%2F05%2Fnew-smart-door-bell-with-face-recoginition-technolgy%2F&amp;linkname=New%20Smart%20Door%20Bell%20With%20Face%20Recoginition%20Technolgy" title="Facebook" rel="nofollow" target="_blank"></a><a class="a2a_button_twitter" href="http://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2Fvisionwiz.net%2F2014%2F05%2Fnew-smart-door-bell-with-face-recoginition-technolgy%2F&amp;linkname=New%20Smart%20Door%20Bell%20With%20Face%20Recoginition%20Technolgy" title="Twitter" rel="nofollow" target="_blank"></a><a class="a2a_button_google_plus" href="http://www.addtoany.com/add_to/google_plus?linkurl=http%3A%2F%2Fvisionwiz.net%2F2014%2F05%2Fnew-smart-door-bell-with-face-recoginition-technolgy%2F&amp;linkname=New%20Smart%20Door%20Bell%20With%20Face%20Recoginition%20Technolgy" title="Google+" rel="nofollow" target="_blank"></a><a class="a2a_dd a2a_target addtoany_share_save" href="http://www.addtoany.com/share_save#url=http%3A%2F%2Fvisionwiz.net%2F2014%2F05%2Fnew-smart-door-bell-with-face-recoginition-technolgy%2F&amp;title=New%20Smart%20Door%20Bell%20With%20Face%20Recoginition%20Technolgy" id="wpa2a_2"></a></p></div>

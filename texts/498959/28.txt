@@ -1,0 +1,42 @@
+<div><p>Hi Friends!</p>
+<p>Today I have a super simple recipe to share with you guys to encourage you to eat your broccoli! And not just the fun little trees at the top. Did you know you can also eat the stems?</p>
+<p><img class="aligncenter size-full wp-image-12072" alt="broccoli slaw 1 Broccoli Slaw with Peanut Sauce" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/broccoli-slaw-1.jpg" width="550" height="368" title="Broccoli Slaw with Peanut Sauce"></p>
+<p>So stop throwing away those broccoli stems and start using them to make this simple slaw! A food processor with a shredding attachment comes in quite handy here. You can use whatever combination of veggies you want- I chose broccoli stems, carrots and red peppers. I also added a simple peanut sauce because everything tastes better with peanut butter&hellip;am I right?</p>
+<p>Here&rsquo;s the recipe:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">Broccoli Slaw with Peanut Sauce</div>
+<div class="ERSClear">&nbsp;</div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/broccoli-slaw-1.jpg" width="205" title="Broccoli Slaw with Peanut Sauce" alt="broccoli slaw 1 Broccoli Slaw with Peanut Sauce"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&amp;url=http%3A%2F%2Fwww.theleangreenbean.com%2Fbroccoli-slaw-with-peanut-sauce%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/12071-0/" rel="nofollow" target="_blank">Print</a></span> </div></div>
+<div itemprop="description" class="ERSSummary">A fun way to use up those broccoli stems instead of throwing them away!</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div></div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">4 broccoli stems</li>
+<li class="ingredient" itemprop="ingredients">2 large carrots, peeled</li>
+<li class="ingredient" itemprop="ingredients">1 red pepper</li>
+<li class="ingredient" itemprop="ingredients">2 Tablespoons peanut butter</li>
+<li class="ingredient" itemprop="ingredients">1 Tablespoon sweet thai chili sauce</li>
+<li class="ingredient" itemprop="ingredients">2 teaspoons rice wine vinegar</li>
+<li class="ingredient" itemprop="ingredients">1 Tablespoon olive oil</li>
+<li class="ingredient" itemprop="ingredients">2-3 Tablespoons water, to thin</li>
+<li class="ingredient" itemprop="ingredients">chopped peanuts, optional</li>
+</ul><div class="ERSClear"></div></div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Shred the broccoli, carrots and red pepper using a food processor or grater.</li>
+<li class="instruction" itemprop="recipeInstructions">Place in a paper towel and squeeze to remove moisture then transfer to a bowl.</li>
+<li class="instruction" itemprop="recipeInstructions">In a small bowl, mix together peanut butter, chili sauce, vinegar and olive oil. Add water as needed until desired consistency is reached. (It&rsquo;s ok if it&rsquo;s still pretty thick.)</li>
+<li class="instruction" itemprop="recipeInstructions">Add sauce to veggies and mix until well combined. *See note</li>
+<li class="instruction" itemprop="recipeInstructions">Sprinkle with chopped peanuts before serving.</li>
+</ol><div class="ERSClear"></div></div>
+<div class="ERSNotesDiv">
+<div class="ERSNotesHeader">Notes</div>
+<div class="ERSNotes">You can start with half the sauce and then add more as you mix depending on how much sauce you like&hellip;or you can plate the veggies plain and serve the sauce on the side so people can add their own.<br>Feel free to use your own combination of veggies.</div>
+<div class="ERSClear"></div></div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2310</div></div>
+<p>&nbsp;</p>
+<p>Like I said in the notes above&hellip;the sauce is thicker than a traditional liquid sauce. Since it&rsquo;s thicker, you may want to start by adding half the sauce and mixing until the veggies are coated and then decide if you want to add more. Or, serve them plate and let everyone top with their own sauce!</p>
+<p><img class="aligncenter size-full wp-image-12073" alt="broccoli slaw 2.jpg Broccoli Slaw with Peanut Sauce" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/broccoli-slaw-2.jpg.jpg" width="550" height="368" title="Broccoli Slaw with Peanut Sauce"></p>
+<p>Enjoy!<br>
+&ndash;Lindsay&ndash;</p></div>

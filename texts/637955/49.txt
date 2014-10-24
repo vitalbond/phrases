@@ -1,0 +1,59 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>In India, gender inequality manifests in many different ways, including a preference for sons over daughters.&nbsp; Girl&rsquo;s lack of value and son preference are key drivers of gender-biased sex selection at birth, which is responsible for skewing India&rsquo;s female to male sex ratio in favor of boys.&nbsp;&nbsp;</p>
+<p>This large-scale study examines men&rsquo;s and women&rsquo;s underlying attitudes and behaviors around son preference, with a particular focus on how they conceptualize manhood and masculinity.&nbsp; The study is being carried out&nbsp;in seven Indian states (Haryana, Madhya Pradesh, Maharashtra, Odisha, Punjab, Rajasthan and Uttar Pradesh) involving more than nine thousand men and three thousand women, ages 18 to&nbsp;49.&nbsp; The study looks at what factors influence men&rsquo;s views about masculinity, as measured by&nbsp;their support for gender equality and control of women&rsquo;s behaviour, and how these views about masculinity&nbsp;impact on their preference for sons and perpetration of intimate partner violence. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    January 2013 - December 2013        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    UNFPA        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    UNFPA        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Priya Nanda        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">India</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-publication">
+      <div class="field-label">Related Publications:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/publications/masculinity-son-preference-intimate-partner-violence">Masculinity, Son Preference &amp; Intimate Partner Violence</a>        </div>
+        </div>
+</div></div>

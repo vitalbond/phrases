@@ -1,0 +1,53 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Empowering women and girls is not only the right and fair thing to do, it also makes economic sense. Countries that invest in promoting the social and economic status of women tend to have lower poverty rates than those that do little to address gender inequality.</p>
+<p>In many countries, harmful practices, such as child marriage, increase the discrimination and stigmatization of women and girls at different stages of their lives, contributing to their marginalization and low social and economic status.</p>
+<p>Working in partnership with UNFPA Nepal, ICRW is documenting and analyzing key harmful practices in the country, and based on this information, formulating strategies to combat them by engaging men and boys, parents and communities.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    UNFPA        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    UNFPA        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Ravi Verma        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Nepal</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

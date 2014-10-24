@@ -1,0 +1,54 @@
+<div><p>Hi Friends!</p>
+<p>Just popping in with a quick, simple recipe for you guys. As you may recall, I’m not much of a cottage cheese eater. It’s a texture thing…like I’m sure it is for a lot of people. However, when I made my <a href="http://www.theleangreenbean.com/sweet-potato-protein-pancakes/" target="_blank"><span style="text-decoration: underline;"><strong>Sweet Potato Protein Pancakes</strong></span></a> last month, I couldn’t help but notice how nicely all the little chunks disappear when you put it it in a blender! Since then I’ve been meaning to try it in a smoothie for a protein boost, but just haven’t gotten around to it.</p>
+<p>Yesterday I needed a quick snack. I’ve been thinking about peaches pretty much non-stop ever since Kylie posted <span style="text-decoration: underline;"><strong><a href="http://immaeatthat.com/2014/06/09/roasted-peach-crumble-bars/" target="_blank">this recipe</a></strong></span> and I got my first peaches of the season at the store the other day, so I decided to put a dessert spin on my smoothie.</p>
+<p><img class="aligncenter size-full wp-image-12629" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/peach-cobbler-smoothie.jpg.jpg" alt="peach cobbler smoothie.jpg Peach Cobbler Smoothie" width="550" height="368" title="Peach Cobbler Smoothie"></p>
+<p>And just like that, the Peach Cobbler Smoothie was born.</p>
+<p>Here’s what you do:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">Peach Cobbler Smoothie</div>
+<div class="ERSClear"> </div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/peach-cobbler-smoothie.jpg.jpg" width="205" title="Peach Cobbler Smoothie" alt="peach cobbler smoothie.jpg Peach Cobbler Smoothie"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&#38;url=http%3A%2F%2Fwww.theleangreenbean.com%2Fpeach-cobbler-smoothie%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/12628-0/" rel="nofollow" target="_blank">Print</a></span> </div>
+</div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT2M">2 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT2M">2 mins</time></div>
+</div>
+<div class="ERSClearLeft"> </div>
+</div>
+<div itemprop="description" class="ERSSummary">A drinkable dessert that’s healthy enough for breakfast or a snack!</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div>
+<div class="ERSServes">Serves: <span itemprop="recipeYield">1</span></div>
+</div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">½ cup cottage cheese</li>
+<li class="ingredient" itemprop="ingredients">1 peach, fresh or frozen</li>
+<li class="ingredient" itemprop="ingredients">2 graham crackers</li>
+<li class="ingredient" itemprop="ingredients">Ice</li>
+</ul><div class="ERSClear"></div>
+</div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Put the ingredients in a blender and run until smoothie. You’ll need more ice if you’re using fresh peaches.</li>
+<li class="instruction" itemprop="recipeInstructions">It’s up to you whether to put both graham crackers in the smoothie or save one to crumble on top.</li>
+</ol><div class="ERSClear"></div>
+</div>
+<div class="ERSNotesDiv">
+<div class="ERSNotesHeader">Notes</div>
+<div class="ERSNotes">You could easily substitute Greek yogurt for cottage cheese. Plain or vanilla should work!</div>
+<div class="ERSClear"></div>
+</div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2704</div>
+</div>
+<p> </p>
+<p>I like to eat my smoothies with a spoon, so I put one graham cracker in the blender and crumbled the other into the smoothie so I could scoop up smoothie and crumbles in every bite.</p>
+<p><img class="aligncenter size-full wp-image-12631" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/peach-cobbler-smoothie-1.jpg.jpg" alt="peach cobbler smoothie 1.jpg Peach Cobbler Smoothie" width="445" height="640" title="Peach Cobbler Smoothie"></p>
+<p>If you’re just not a cottage cheese fan, try this with Greek yogurt! I had this for an afternoon snack, but you could also add it to your breakfast menu or whip one up for dessert!</p>
+<p>Enjoy!<br>
+–Lindsay–</p></div>

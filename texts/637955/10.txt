@@ -1,0 +1,53 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="112" height="154" alt="" src="http://www.icrw.org/files/images/people/Ranajit.jpg?1372182090"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Ranajit        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Sengupta        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Technical Specialist         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Ranajit Senguptais Technical Specialist at the International Center for Research on Women (ICRW). In this role Sengupta closely works with ICRW researchers and partner organizations in the design and evaluation of research projects. &nbsp;Sengupta has particular expertise in maternal and child health, family planning and HIV/AIDS, having worked on more than 10 national and state level research studies in these areas. &nbsp;</p><p><span style="line-height: 1.5;">Prior to joining ICRW Sengupta was the National Research Manager with India&rsquo;s National AIDS Control Organization&rsquo;s Technical Support Group. There he was responsible for conceptualizing and executing research studies and developing the Annual Research Plan and Budget. Sengupta also coordinated the hiring of research agencies for quantitative and qualitative data collection and the dissemination of research findings to stakeholders, including the government, donor and NGO communities.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise:&nbsp;</div>
+                    <p>Maternal and Child Health, Family Planning, HIV/AIDS</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English, Hindi and Bengali</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Sengupta has a master&rsquo;s degree in population studies from the International Institute for Population Sciences (IIPS), Mumbai, and presently is pursuing a doctorate from the Gokhale Institute for Politics and Economics (GIPE), Pune.&nbsp;</p>        </div>
+        </div>
+</div></div>

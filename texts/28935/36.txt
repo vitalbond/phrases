@@ -1,0 +1,25 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week marks the conclusion of <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-10-next-release">Sprint 10</a>&lsquo;s primary development cycle. At the beginning of next week, a release branch will be cut from dev-3.x and <strong>YUI 3.13.0-rc-1</strong> will be released shortly thereafter. After a week of testing and showstopper bug fixing, the release for <strong>YUI 3.13.0</strong> will be targeted for Tuesday, October 8th.</p>
+</li>
+<li>
+<p>There&rsquo;s only 7 weeks until <a href="http://yuilibrary.com/yuiconf/">YUIConf 2013</a>! This week the Call for Speakers deadline was announced, so if you have a talk you&rsquo;d like to propose, email your idea to <em>yui-events (at) yahoo-inc.com</em> by <strong>October 11th</strong>. Check out <a href="http://www.yuiblog.com/blog/2013/09/26/yuiconf-2013-call-for-speakers-deadline/">the announcement</a> for more details.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included installing <a href="http://purecss.io/">Pure</a> via <a href="http://bower.io/">Bower</a>, the <a href="https://github.com/yui/pure-release">pure-release</a> repository, a <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/hwRCA2o5Ks8">gesture event proposal</a>, the <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-10-next-release">Sprint 10 schedule</a>, <a href="http://yahoohackusa2013.pbworks.com/w/page/69118566/Welcome">Y! Hack USA</a>, and a preview of <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/wAlfS8BDn6g">next week&rsquo;s Open Roundtable</a> to discuss <a href="https://gist.github.com/juandopazo/5405383">Y.Storage</a> and <a href="https://github.com/clarle/yui-db">yui-db</a>. You can find a video of this week&rsquo;s Hangout <a href="http://www.youtube.com/watch?v=f6ILSEIpk0U">here</a>.</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include a proposal for <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/0Cy7sm3SHh0">AttributeComputable and BaseComputable</a>, support for <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/vFZV2zUMepM">nesting Y.Apps</a>, a <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/_AND0JVpLOY">formal deprication of YUI 2-in-3</a>, <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/20MGVD2J3GM">importing Pure Base and Grids into YUI</a>, and more.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.09.25-18-29">Gallery build</a> include: <a href="http://yuilibrary.com/gallery/show/checkboxgroups">checkboxgroups</a>, <a href="http://yuilibrary.com/gallery/show/formmgr">formmgr</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaformelement">itsaformelement</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaformmodel">itsaformmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsamodelsyncpromise">itsamodelsyncpromise</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsapanel">itsapanel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsatabkeymanager">itsatabkeymanager</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaviewmodel">itsaviewmodel</a>, <a href="https://github.com/ItsAsbreuk/itsa-gallery/tree/master/src/gallery-itsaviewmodelpanel">itsaviewmodelpanel</a>, and <a href="http://yuilibrary.com/gallery/show/model-sync-socket">model-sync-socket</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://www.youtube.com/playlist?list=PL37ZVnwpeshGLrMTDPV12z7KmjrXsOeHT#rejectjs">8 talks from Reject.JS 2013</a></li>
+<li><a href="http://kripken.github.io/mloc_emscripten_talk/sloop.html?#/">asm.js: Native Speed on the Web</a></li>
+<li><a href="https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md">ServiceWorkers Explained</a></li>
+<li><a href="http://buzzdecafe.github.io/code/2013/09/05/javascript-y-combinator/">Javascript Y Combinator</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/142.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

@@ -1,0 +1,10 @@
+<div><p>Jag testade idag att installera ett program jag gillade mycket n&auml;r jag anv&auml;nde Windows. Det &auml;r foobar2000. Det funkade v&auml;ldigt bra &ouml;ver wine, faktiskt. D&aring; jag anv&auml;nder MATE kan jag anv&auml;nda gamla skripts till Caja. Jag t&auml;nkte dela med mig utav ett guldkorn h&auml;r. Det &auml;r propriet&auml;r programvara, vilket jag i vanliga fall f&ouml;rs&ouml;ker h&aring;lla mig borta. Men jag kommer ge det en chans.</p>
+<p>Installera f&ouml;rst wine, sedan laddar du ner foobar2000 och installerar det. Efter det g&aring;r du in i /home/USERNAME/.config/caja/scripts och skapar en fil, i mitt fall heter filen Add to foobar. Ha f&ouml;ljande inneh&aring;ll i den nyskapande filen:<br>
+#!/bin/bash<br>
+#<br>
+# Enqueue in Foobar<br>
+wine /home/USERNAME/.wine/drive_c/Program\ Files\ \(x86\)/foobar2000/foobar2000.exe /add &ldquo;$@&rdquo;</p>
+<p>Ers&auml;tt USERNAME med ditt anv&auml;ndarnamn.Se till att du kan k&ouml;ra skriptet ocks&aring;. Testad p&aring; 64bit, i annat fall f&aring;r du sj&auml;lv modifiera. Men du f&ouml;rst&aring;r principen.<br>
+Det andra program jag testade var Firefox Nightly. Det var inte j&auml;ttel&auml;tt att f&aring; det att funka p&aring; Fedora d&aring; det mig veterligen inte finns n&aring;gon som bist&aring;r med ett f&ouml;rr&aring;d &ouml;ver programmet. Jag t&auml;nkte inte skriva hur man g&aring;r tillv&auml;ga f&ouml;r att f&aring; det installerat, men om n&aring;gon fr&aring;gar efter hur man g&ouml;r kan jag dela med mig. Annars finns det p&aring; Google. <a title="H&auml;r" href="http://i.imgur.com/pThe5gn.png" target="_blank">H&auml;r</a> finns en bild p&aring; programmen.</p>
+<p>&nbsp;</p>
+<p>God jul!</p></div>

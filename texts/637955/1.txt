@@ -1,0 +1,55 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="147" alt="" src="http://www.icrw.org/files/images/people/Lyric2.jpg?1364411332"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Lyric        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Thompson        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Special Assistant to the President/Policy Advocate        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Lyric Thompson is a policy advocate and special assistant to the president at the International Center for Research on Women (ICRW). In this capacity she provides technical and substantive guidance to the President on various topics relating to gender and development; conducts advocacy on a range of issues, including as co-chair of the Girls Not Brides USA coalition; and has conducted fieldwork on gender-responsive urban development in slum communities of Mumbai, India.</p>
+<p>Thompson brings expertise in policy advocacy and communications on such issues as women, peace and security; violence against women; and women’s economic empowerment, and has advocated for gender-equitable policies at the United Nations, White House, State Department and on Capitol Hill. She is a women’s issues expert and blogger for TrustLaw Women, a project of the Thomson-Reuters Foundation and a primary expert and strategist for Amnesty International USA’s women’s human rights program. In 2012 she served as a leadership and empowerment expert on the selection committee for the Women Deliver Top 50 Innovations and Ideas that Deliver for Women. In 2011, Diplomatic Courier Magazine named her among the Top 99 Under 33 Young Professionals Impacting Foreign Policy.</p>
+<p>Prior to joining ICRW, Thompson served as Senior Policy Analyst and External Relations Officer at Women for Women International, where she advised officials at the White House, State Department and Department of Defense officials in the crafting of the United States’ first-ever National Action Plan on Women, Piece and Security. Prior to this, she worked on USAID-funded conflict mitigation and democratic governance projects in Sudan and Serbia for Development Alternatives, Inc. (DAI), where she conducted fieldwork on post-conflict reconstruction efforts in Sudan.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise: </div>
+                    <p>Adolescents, Economic Empowerment, Violence against Women, Advocacy and Policy Engagement</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English (native); Spanish (proficient)</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Thompson is a Phi Beta Kappa graduate of the University of North Carolina at Chapel Hill, where she graduated with highest honors for her thesis on development and human rights work in Ghana, West Africa. </p>        </div>
+        </div>
+</div></div>

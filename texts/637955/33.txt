@@ -1,0 +1,30 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW will conduct a learning workshop at WRI, with the goal of helping&nbsp;the organization incorporate gender considerations into its work. The workshop will introduce theory and practice to project staff to conduct initial gender analyses, as well as to articulate gender-responsive objectives, activities, indicators, monitoring and evaluation strategies and approaches for follow-up. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    3 Months        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    World Resources Institute (WRI)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Suzanne Petroni        </div>
+        </div>
+</div></div>

@@ -1,0 +1,18 @@
+<div><div class="field field-type-filefield field-field-home-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_home_image" width="504" height="378" alt="" src="http://www.icrw.org/files/images/home/C4C_Homeslide2.jpg?1382466347"></div>
+        </div>
+</div>
+<div class="field field-type-link field-field-link-slide">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="https://icrw.eventbrite.com/">Register Here &gt;&gt;</a>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-slide-text">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>On November 8th, ICRW will host its Champions for Change Awards ceremony&nbsp;honoring the life and work of&nbsp;Melanne Verveer, the first ever Ambassador-at-Large for Global Women's Issues. A high-level&nbsp;panel discussion with speakers from Gap Inc., Intel, the Inter-American Development Bank and Politico&nbsp;will also feature new ICRW research on innovative solutions&nbsp;for advancing adolescent girls and young women.</p>        </div>
+        </div>
+</div></div>

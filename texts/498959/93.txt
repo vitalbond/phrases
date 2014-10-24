@@ -1,0 +1,76 @@
+<div><p>Hi Friends!</p>
+<p>Last week I saw these <a href="http://healthyaperture.com/recipe/mini-tortilla-crust-pizzas" target="_blank"><span style="text-decoration: underline;"><strong>Mini Tortilla Crust Pizzas</strong></span></a> on Healthy Aperture and I absolutely could not get them out of my head. Seriously, I thought about them all weekend…and then finally, yesterday, I decided to make my own version for lunch. Since you guys know we’re crazy about Mexican food around here, I opted for an enchilada version instead. Holy delicious!</p>
+<p><img class="aligncenter wp-image-12680 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/enchilada-cups-.jpg.jpg" alt="enchilada cups .jpg Enchilada Cups" width="550" height="822" title="Enchilada Cups"></p>
+<p>These Enchilada Cups are all the deliciousness of an enchilada, but in miniature form. They’d be a perfect party appetizer because they can be eaten in just a few bites. I’d also venture a guess they’d be a hit with the kiddos.</p>
+<p><img class="aligncenter wp-image-12684 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/enchilada-cups-5.jpg" alt="enchilada cups 5 Enchilada Cups" width="550" height="368" title="Enchilada Cups"></p>
+<p>You have a couple of options here. You can do what I did and bake the filling in the cups. This will result in a softer shell, but they’re fine as long as you eat them right after you make them. If you’re looking for a bit of a crisper shell, you could bake the shells first, then warm the filling separately and just stick them under the broiler for a minute or two to melt the cheese. Totally up to you!</p>
+<p>Here’s what you do:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">Enchilada Cups</div>
+<div class="ERSClear"> </div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/enchilada-cups-4.jpg" width="205" title="Enchilada Cups" alt="enchilada cups 4 Enchilada Cups"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&#38;url=http%3A%2F%2Fwww.theleangreenbean.com%2Fenchilada-cups%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/12677-0/" rel="nofollow" target="_blank">Print</a></span> </div>
+</div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT10M">10 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Cook time</div>
+<div class="ERSTimeItem"> <time itemprop="cookTime" datetime="PT10M">10 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT20M">20 mins</time></div>
+</div>
+<div class="ERSClearLeft"> </div>
+</div>
+<div itemprop="description" class="ERSSummary">A simple appetizer or an easy weeknight meal that the kids will love!</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div>
+<div class="ERSServes">Serves: <span itemprop="recipeYield">2</span></div>
+</div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">2 whole wheat tortillas (8 or 9 inch), storebought or <a href="http://www.theleangreenbean.com/homemade-whole-wheat-tortillas/" target="_blank">make your own</a></li>
+<li class="ingredient" itemprop="ingredients">¼ cup onion, diced</li>
+<li class="ingredient" itemprop="ingredients">¼ cup bell pepper, diced</li>
+<li class="ingredient" itemprop="ingredients">½ cup (heaping) black beans, cooked</li>
+<li class="ingredient" itemprop="ingredients">½ cup (heaping) cooked chicken, diced</li>
+<li class="ingredient" itemprop="ingredients">2 Tablespoons fresh cilantro, minced</li>
+<li class="ingredient" itemprop="ingredients">⅓ cup enchilada sauce</li>
+<li class="ingredient" itemprop="ingredients">¼ cup shredded cheese</li>
+<li class="ingredient" itemprop="ingredients">-optional toppings: avocado, tomato, etc.</li>
+</ul><div class="ERSClear"></div>
+</div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Preheat oven to 400 degrees.</li>
+<li class="instruction" itemprop="recipeInstructions">Place the tortillas on a flat surface.</li>
+<li class="instruction" itemprop="recipeInstructions">Press a pint glass into the tortilla to make a circle imprint, then use the tip of a knife to cut out the circle. Repeat 8 times, 4 per tortilla. (You could also use a cookie cutter)</li>
+<li class="instruction" itemprop="recipeInstructions">Microwave the circles for 7-10 seconds then press into greased muffin tins.</li>
+<li class="instruction" itemprop="recipeInstructions">In a small bowl, combine remaining ingredients.</li>
+<li class="instruction" itemprop="recipeInstructions">Spoon mixture into tortilla cups and top with cheese.</li>
+<li class="instruction" itemprop="recipeInstructions">Bake for 10 minutes.</li>
+<li class="instruction" itemprop="recipeInstructions">Carefully remove from muffin tins and serve warm.</li>
+</ol><div class="ERSClear"></div>
+</div>
+<div class="ERSNotesDiv">
+<div class="ERSNotesHeader">Notes</div>
+<div class="ERSNotes">* I used a pint glass to measure my circles.<br>* Use larger tortillas to get more circles per tortilla.<br>* If you fill the cups full, you may only fill 6-7 cups<br>* You could also press the tortillas into the tins, spray with olive oil and bake them empty. Then warm the filling and add it to the cups, top with cheese and place under the broiler for a minute or two to melt the cheese.</div>
+<div class="ERSClear"></div>
+</div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2708</div>
+</div>
+<p> </p>
+<p>This is a fairly simple recipe. I gave you quantities, but they are not exact. You could easily double or triple the recipe, sub things in and out, etc. The number of cups you make will depend on how full you fill them.</p>
+<p><img class="aligncenter wp-image-12681 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/enchilada-cups-3.jpg" alt="enchilada cups 3 Enchilada Cups" width="550" height="368" title="Enchilada Cups"></p>
+<p>I’m pretty sure I had 8 inch tortillas and I used a pint glass as my circle tracer. If you’re very careful, you can get 4 cups per tortilla. You could also use larger tortillas and obviously get more circles out of each one.</p>
+<p><img class="aligncenter size-full wp-image-12678" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/tortilla.jpg" alt="tortilla Enchilada Cups" width="467" height="496" title="Enchilada Cups"></p>
+<p>To use up the tortilla scraps, I just cut them up and threw them in the empty muffin tins with a little olive oil and bam- tortilla chip type things!</p>
+<p><img class="aligncenter size-full wp-image-12679" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/chips.jpg" alt="chips Enchilada Cups" width="478" height="640" title="Enchilada Cups"></p>
+<p>Feel free to top with avocado, salsa, etc if you desire!</p>
+<p><img class="aligncenter wp-image-12682 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/enchilada-cups-.jpg" alt="enchilada cups  Enchilada Cups" width="550" height="822" title="Enchilada Cups"><img class="aligncenter wp-image-12683 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/enchilada-cups-4.jpg" alt="enchilada cups 4 Enchilada Cups" width="550" height="368" title="Enchilada Cups"></p>
+<p>Enjoy!<br>
+–Lindsay–</p>
+<p> </p></div>

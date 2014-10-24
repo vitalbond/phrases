@@ -1,0 +1,31 @@
+<div><p>Hey everyone! It&rsquo;s Friday again, which means it&rsquo;s time to fire another callback for YUI Weekly! We&rsquo;ve got two weeks of YUI news to catch up on because of the holidays, so this one&rsquo;s going to be packed.</p>
+<h1>Release News</h1>
+<p>We released <strong>YUI 3.14.0</strong> on November 25th, notably containing major improvements to Charts and the work we&rsquo;ve started to do to let developers use ES6 modules with YUI. We also got a lot of great contributions from the community during this release, so a big thank you to everyone who helped to make YUI better.</p>
+<p>It&rsquo;s available for you to use <a href="http://yui.yahooapis.com/3.14.0/build/yui/yui-min.js">directly off our CDN</a>, as a <a href="http://yui.zenfs.com/releases/yui3/yui_3.14.0">zip</a>, or installable through <a href="https://npmjs.org/package/yui">npm</a>.</p>
+<p>You can see the full list of all of the changes in <a href="http://www.yuiblog.com/blog/2013/11/25/yui-3-14-0-released/">our release rollup right here</a>. Please definitely let us know if you come across any bugs by <a href="https://github.com/yui/yui3/issues">filing an issue on GitHub</a>.</p>
+<h1>Open Roundtable</h1>
+<p>This week&rsquo;s <a href="http://www.youtube.com/watch?v=lJPdH8xmOWg">Open Roundtable</a> kicked off <strong>YUI in the Wild</strong>, a new Roundtable series we&rsquo;re starting based on the <a href="http://www.yuiblog.com/blog/category/in-the-wild/">&lsquo;In the Wild&rsquo; blog posts</a> from quite a while back!</p>
+<p>For our first guest, we had <a href="https://twitter.com/FromAnEgg">Jeff Pihach</a> from Canonical come in to talk about building <a href="https://juju.ubuntu.com/">Ubuntu Juju</a>&lsquo;s GUI using YUI. He showed us how the Juju team structured their YUI App Framework application, how they bundled together their modules for a long-running app, and how they extended <code>Y.Router</code> to create URL flags for beta application features. Check out the video for all of that, and a lot more!</p>
+<p>The Juju GUI is open source, so you can go and <a href="https://launchpad.net/juju-gui">check out their source code online</a>!</p>
+<p>If your company or team is interested in being featured on the next <strong>YUI in the Wild</strong>, feel free to contact <a href="https://twitter.com/triptych">Andrew Wooldridge</a>, our Community Engineer, and we can help you set up a time or discuss content!</p>
+<h1>New this Week</h1>
+<ul><li>
+<p><a href="http://www.yuiblog.com/twitter.com/derek">Derek Gathright</a> wrote a <a href="http://derek.io/blog/2013/yui-benchmark/">blog post introducing YUI Benchmark</a>, a tool to make it easier for you to compare the performance of your JavaScript applications across your project&rsquo;s commits, whether they&rsquo;re in the browser or Node. Try it out, and feel free to <a href="https://github.com/derek/yui-benchmark">leave any feedback or feature requests</a>!</p>
+</li>
+<li>
+<p><a href="https://www.wellsfargo.com/">Wells Fargo</a> annnounced their <a href="http://www.americanbanker.com/issues/178_205/wells-fargo-rebuilds-website-mobile-apps-for-corporate-clients-1063089-1.html">pilot of 89 new web and mobile applications</a>, all built using the YUI App Framework. Keep an eye out for the video of their YUIConf 2013 talk coming out soon!</p>
+</li>
+<li>
+<p><a href="http://www.yuiblog.com/twitter.com/caridy">Caridy Pati&ntilde;o</a> added support to the <a href="https://github.com/joefiorini/grunt-es6-module-transpiler">Grunt ES6 Module Transpiler</a> task to output YUI modules. You can now automate building your ES6 code into YUI modules with ease!</p>
+</li>
+</ul><h1>The World of JavaScript</h1>
+<ul><li>
+<p><a href="http://resin.io/happy-18th-birthday-javascript/">Happy 18th birthday to JavaScript</a>! It&rsquo;s been 18 years since JavaScript was first announced by Netscape and Sun, and it&rsquo;s definitely come a long way since then.</p>
+</li>
+<li>
+<p>Check out the latest part in <a href="http://ariya.ofilabs.com/">Ariya Hidayat</a>&lsquo;s <a href="http://ariya.ofilabs.com/tag/kinetic">Kinetic Scrolling series</a> that shows us how exponential decay can help create more natural scrolling! Look out for both of Ariya&rsquo;s YUIConf 2013 talks as well, coming out soon!</p>
+</li>
+<li>
+<p>Want to build your own compile-to-JS language? Take a look at this article by <a href="http://neuromancer.io/">Tristan McNab</a> on joining the <a href="http://neuromancer.io/join-the-compiler-creation-club/">Compiler Creation Club</a>!</p>
+</li>
+</ul></div>

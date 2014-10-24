@@ -1,0 +1,18 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Tue, 04/15/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Yesterday, ICRW President Sarah Degnan Kambou, a member of the President&rsquo;s Global Development Council, met with President Barack Obama. The Council met with the President to share its first set of recommendations to strengthen U.S. global development policies and practices. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Yesterday, ICRW President Sarah Degnan Kambou, a member of the President&rsquo;s Global Development Council, met with President Barack Obama. The Council met with the President to share its first set of recommendations to strengthen U.S. global development policies and practices. &nbsp;</p><p><span style="LINE-HEIGHT: 1.5">The President reiterated his Administration&rsquo;s commitment to promoting development as a vital component of the U.S. approach to national security. Further, he urged the Council to continue developing actionable recommendations on catalyzing private sector investment in development, leveraging American innovation, and increasing agricultural production and food security.</span></p><p><span style="LINE-HEIGHT: 1.5">&ldquo;It is an honor to serve on the President&rsquo;s Global Development Council. As a Council member, my goal is to ensure that gender equality and women&rsquo;s empowerment are systematically considered in the Council&rsquo;s deliberations and integrated effectively into its recommendations,&rdquo; said Kambou.</span></p><p><em style="LINE-HEIGHT: 1.5">For more information, </em><a href="http://www.whitehouse.gov/the-press-office/2014/04/14/readout-president-s-meeting-global-development-council" style="LINE-HEIGHT: 1.5"><em>read the statement released by the White House.</em></a></p>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,43 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>The overall rate of marriage for Indian girls in their late adolescence remains high, despite improved socio-economic conditions and increased legislation encouraging delayed marriage in India. On top of that, within the country, there are significant variations of marriage rates between regions. For example, over 50 percent of women in Rajasthan, Jharkhand and Bihar are married before the age of 18 compared to only 20 percent in Goa, Kerala, Manipur, Himachal Pradesh, Jammu and Kashmir. Part of this regional variation can be explained by differences in cultural marriage practices, but that is not the whole story. While there is a breadth of data available on early marriage in India, there have not been sufficient investigations assessing which geographic areas within India are demonstrating a measurable change in instances of childhood marriage.</div><div> </div><div>This project will aim to map existing quantitative data about childhood marriage in order to illuminate salient methods of reducing it. Without this information, it is difficult to identify geographic areas that are showing rapidly declining trends in early marriage. That makes determining the effectiveness of certain programming challenging because disparate data from various agencies and ministries make it that much more difficult to replicate successful interventions elsewhere.  By connecting and analyzing previous studies, ICRW, in partnership with UNICEF, will provide agencies and ministries with the information necessary to determine how best to approach changing marriage practices in regions throughout India. The goals of this project are to:</div><div> </div><ul><li>Analyze existing quantitative data and compile and review supporting literature in order to map rates of early marriage and identify key correlates of early marriage based on districts in India. </li><li>Facilitate platforms for dialogue, such as think tanks, among experts and agencies so they can share data, strategies and lessons about reducing childhood marriage.  </li><li>Build alliances with key officials from government departments, NGOs, academia and the private sector in order to disseminate findings and encourage mobilization in various sectors.</li><li>Use the input from think tanks and alliances in order to create a strategic model for scaling up early marriage interventions, with an emphasis on incorporating programs and initiatives currently operate in isolation.</li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration: </div>
+                    Until February 2015        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder: </div>
+                    UNICEF        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director: </div>
+                    Ravi Verma        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s): </div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">India</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

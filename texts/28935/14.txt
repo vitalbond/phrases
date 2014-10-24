@@ -1,0 +1,164 @@
+<div><p>
+<style>
+  .entry .imgwrap-right {
+    width:350px;
+    float:right;
+    text-align:center;
+    margin:1em 0 0 1em;
+}
+.entry .imgwrap-left {
+    width:350px;
+    float:left;
+    text-align:center;
+    margin:1em 1em 0 0;
+}
+.entry .slide {
+    text-align:center;
+}
+</style></p>
+<div class="imgwrap-right">
+  <img src="http://farm8.staticflickr.com/7411/9083212144_c916b6f5e1.jpg" alt="Velocity 2013" width="330" class="alignright"><br>(<a href="http://www.flickr.com/photos/oreillyconf/9083212144/sizes/m/">photo credit</a>)
+</div>
+<p>If there&rsquo;s one thing we&rsquo;ve learned in 20+ years of building Web sites, it&rsquo;s that performance matters. Browsers need to fetch, parse, and render pages quicker. JavaScript needs to execute faster, HTTP servers need to generate and serve content more efficiently, and caching layers need to be more pervasive. All in effort to make the browsing experience more enjoyable for the user so they browse, click, engage, and buy more. The effect performance has on the bottom-line has been <a href="http://www.stevesouders.com/blog/2010/05/07/wpo-web-performance-optimization/">very</a> <a href="http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html">well</a> <a href="http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales">documented</a> over the years, and the interest in &ldquo;fast&rdquo; is doing anything but slowing down.</p>
+<p>So every year, the industry&rsquo;s experts on speed gather at the Santa Clara Convention Center for <a href="http://velocityconf.com/">Velocity</a>, a conference all about Web performance and operations. Myself, along with other members of the <a href="http://yuilibrary.com/">YUI</a> and <a href="http://developer.yahoo.com/cocktails/mojito/">Mojito</a> teams were fortunate to be on hand again this year to discuss our experiences and learn from others. It was an insightful and inspirational 3 days, and in this post I&rsquo;ll recap and share some of what we learned with you.</p>
+<hr><h2>Day 0</h2>
+<div class="imgwrap-left">
+  <img src="http://i.imgur.com/mgNjVBZl.jpg" alt="Steve Souders" width="330" class="alignleft"><br>(Steve Souders | <a href="http://www.youtube.com/watch?v=bGYgFYG2Ccw">&ldquo;The Illusion of Speed&rdquo;</a>)
+</div>
+<p>The first day of Velocity-related events consisted of workshops and short <a href="http://igniteshow.com/">Ignite</a> talks, some of which you can find on O&rsquo;Reilly&rsquo;s <a href="http://www.youtube.com/playlist?list=PL055Epbe6d5b1ymaQ6cgUW5q6cmoX-eMM">Ignite Velocity YouTube playlist</a>.</p>
+<p>One particular talk to highlight is <a href="https://twitter.com/souders">Steve Souders</a>&lsquo; <strong>&ldquo;The Illusion of Speed&rdquo;</strong>, which was especially eye-opening on the importance of speed, or rather the importance of <strong>perceived</strong> speed. <em>&ldquo;As much as I love data and metrics, that&rsquo;s the tail wagging the dog. The real thing we&rsquo;re after is to create an experience that people love and they feel is fast. We might be front-end engineers, we might be devs, we might be ops, but what we really are, is perception brokers.&rdquo;</em> In other words, the winner is the experience that makes users the happiest, not necessarily the fastest. Often those are correlated, but not always. Checkout out the <a href="http://www.youtube.com/watch?v=bGYgFYG2Ccw">video of his talk</a> to learn why.</p>
+<div style="width:100%; height: 1em; clear:left;">
+</div>
+<p><span id="more-9570"></span></p>
+<hr><h2>Day 1</h2>
+<h3>Johan Bergstr&ouml;m &ndash; Lund University</h3>
+<div class="imgwrap-right">
+  <img src="http://farm6.staticflickr.com/5492/9089461244_e203a8826d.jpg" alt="Johan Bergstr&ouml;m" width="330" class="alignright"><br>(Johan Bergstr&ouml;m | <a href="http://www.flickr.com/photos/oreillyconf/9089461244/sizes/m/in/photostream/">photo credit</a>)
+</div>
+<p>Velocity Conference 2013 kicked off with <a href="https://twitter.com/bergstrom_johan">Johan Bergstr&ouml;m</a>&lsquo;s <a href="http://prezi.com/m4y8-5e5lvio/what-where-and-when-is-risk-in-system-design/">presentation</a> about risk management. Bergstr&ouml;m is an Associate Professor at Lund University, and while he isn&rsquo;t an expert on anything Web-related, he is an expert in the field of <a href="http://www.journals.elsevier.com/safety-science/">safety science</a>. He was brought to Velocity to enhance and enlighten our understanding of risk factors in linear and relational systems and provide us with tips to minimize incidents that can lead to errors and downtime in our Web applications.</p>
+<p>The main takeaway I got from his 25-minute keynote (which is <a href="http://www.youtube.com/watch?v=Pb_zYs8G6Co">available on YouTube</a>) was that <strong>safety is just an illusion and no systems are actually safe, they are just made less unreliable</strong>. Since risk is never truly gone, you should never ignore its presence and continually discuss it amongst your team.</p>
+<p>I believe that final point is an important one. Often times we don&rsquo;t acknowledge risk until something actually fails, and much more can be done to minimize the damages if more proactive steps are taken to account for inevitable failures. Proactive vs reactive.</p>
+<div style="width:100%; clear:left;">
+</div>
+<h3>Kyle Rush &ndash; Obama for America</h3>
+<div class="imgwrap-right">
+  <img src="http://farm4.staticflickr.com/3688/9087245477_1bf0a2f890.jpg" alt="Kyle Rush" width="330" class="alignright"><br>(Kyle Rush | <a href="http://www.flickr.com/photos/oreillyconf/9087245477/sizes/m/">photo credit</a>)
+</div>
+<p>The opening day keynotes continued with other presentations by industry experts, including <a href="https://twitter.com/kylerush">Kyle Rush</a>&lsquo;s excellent talk <strong>&ldquo;Meet the Obama Campaign&rsquo;s $250 Million Fundraising Platform&rdquo;</strong>. Rush&rsquo;s keynote was based off a <a href="http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/">blog post</a> he wrote last year. It recapped the donation platform his team built during 2011 and 2012 when he served as Director of Front-end Development at Obama for America.</p>
+<p>When Rush joined the campaign he inherited a slow, error-prone Web application. He rebuilt it using a variety of techniques and tools focused on front-end performance, such as serving static sites (built with <a href="http://jekyllrb.com/">Jekyll</a>), <a href="https://www.optimizely.com/">optimize.ly</a>, <a href="http://www.webpagetest.org/">WebPageTest</a>, and utilizing JavaScript to off-load as much as possible to the browser. The result was a 60% faster TTP metric (time to paint), a 49% increase in donation conversion rate, and a platform that was processing up to $3 million dollars an hour.</p>
+<p>You can find a video of Rush&rsquo;s talk <a href="http://www.youtube.com/watch?v=FaygFGhex_4">here</a>. It&rsquo;s a worthwhile viewing that can give you some insight into what a high-scale, high-performance front-end web application can look like. Also, the <a href="https://news.ycombinator.com/item?id=4842510">Hacker News discussion</a> response to his blog post offers some insightful follow-up conversation.</p>
+<div style="width:100%; clear:right;">
+</div>
+<h3>Arvind Jain &ndash; Google</h3>
+<p>Day 1 keynotes concluded with Google&rsquo;s <a href="http://www.linkedin.com/pub/arvind-jain/1/516/593">Arvind Jain</a>, whose talk (<a href="http://www.youtube.com/watch?v=TGuMha46Nh0">video</a>) was an analysis to answer the question of <strong>&ldquo;Is the Web Getting Faster?&rdquo;</strong>. Using data gathered from Akamai, industry studies, browser benchmarks, and the <a href="http://httparchive.org/">HTTP Archive</a>, Jain concluded that no, the Web is not getting faster. While the core infrastructure (networks, browsers, protocols, etc.) are getting faster, the Web is primarily getting richer to take advantage of the extra performance capabilities, which results in a nearly equal slowdown.</p>
+<div class="slide">
+  <img alt="takeaways" src="http://i.imgur.com/5nDJSBj.png" height="300"></div>
+<div style="width:100%; clear:right;">
+</div>
+<h3>Andrew Betts &ndash; Financial Times Labs</h3>
+<p>After a few lightning demos consisting of new products from Akamai, AT&amp;T, and Appurify, the first day&rsquo;s sessions kicked off. The first one I attended was a talk by <a href="https://twitter.com/triblondon">Andrew Betts</a>, a software engineer at <a href="http://labs.ft.com/">Financial Times Labs</a> who spoke on the topic of making Web applications as performant as native apps. In his talk <strong>&ldquo;Escaping the Uncanny Valley&rdquo;</strong>, Betts focused on the challenges his team faced when building the <a href="http://labs.ft.com/2011/06/ft-launches-first-major-html5-mobile-news-app/">Financial Times HTML5 Web app</a> and how to properly avoid the &ldquo;<a href="http://en.wikipedia.org/wiki/Uncanny_valley">uncanny valley</a>&rdquo; (the point where a Web app tries to be too similar to a native app, but falls short and appears as a clunky, cheap imitation).</p>
+<div class="imgwrap-right">
+  <img src="http://farm4.staticflickr.com/3794/9087251919_9559c9aba8.jpg" alt="Andrew Betts" width="330" class="alignright"><br>(Andrew Betts | <a href="http://www.flickr.com/photos/oreillyconf/9087251919/sizes/m/">photo credit</a>)
+</div>
+<p>Some of Betts&rsquo; key points:</p>
+<ul><li>Ensure smooth scrolling with sub-16ms frame rates</li>
+<li>Ensure any UI pauses are sub-100ms</li>
+<li>Intelligently use CSS selectors</li>
+<li>Don&rsquo;t use flexbox!</li>
+<li>Disable hover effects</li>
+<li>Intelligent use of local storage technologies</li>
+<li>Cache, cache, cache</li>
+<li>Text re-encoding (see: <a href="http://labs.ft.com/2012/06/text-re-encoding-for-optimising-storage-capacity-in-the-browser/">FT Labs blog post</a>)</li>
+<li>XHR batching</li>
+<li><a href="http://labs.ft.com/articles/ft-fastclick/">Fast Click</a></li>
+<li>Always provide UI response feedback</li>
+</ul><p>I recommend a review of <a href="https://speakerdeck.com/triblondon/escaping-the-uncanny-valley-velocity-2013">the slides</a> for anyone working on mobile Web applications. In them, you&rsquo;ll find quite a few priceless nuggets of information in there to help save time investigating performance issues, in addition to tips on preventing any bottlenecks.</p>
+<div class="slide">
+  <img alt="data storage technologies" src="http://i.imgur.com/SHupm8e.png" height="300"><br>(An overview of storage options)
+</div>
+<div style="width:100%; clear:right;">
+</div>
+<h3>Stephen Woods &ndash; Yahoo</h3>
+<div class="imgwrap-right">
+  <img src="http://farm4.staticflickr.com/3673/9080889933_3f2b183505.jpg" alt="Stephen Woods" width="330" class="alignright"><br>(Stephen Woods | <a href="http://www.flickr.com/photos/bluesmoon/9080889933/sizes/m/">photo credit</a>)
+</div>
+<p>Following Betts&rsquo; talk was another mobile-centric presentation from Yahoo&rsquo;s <a href="https://twitter.com/ysaw">Stephen Woods</a>. In Woods&rsquo; talk (<a href="https://speakerdeck.com/ysaw/optimizing-javascript-runtime-performance-for-touch-velocity-2013">slides</a>), he echoed some of the same lessons learned while building new Flickr products that Betts did with the Financial Times app, including ensuring that you achieve the magical &lt;16ms frame rate (which equates to 60FPS), and tips for intelligent caching (e.g., <em>&ldquo;cache values, not DOM nodes&rdquo;</em>).</p>
+<p>Main takeaways included:</p>
+<ul><li>Cache data where possible</li>
+<li>Update the UI on user actions, use transforms where possible</li>
+<li>Multitask when you can, with threads and yielding</li>
+</ul><p>
+</p><div style="width:100%; clear:right;">
+</div>
+
+<h3>Colt McAnlis &ndash; Google</h3>
+<div class="imgwrap-right">
+  <img src="http://i.imgur.com/v9ZW9OI.jpg" alt="Stephen Woods" width="330" class="alignright"><br>(Colt McAnlis | <a href="http://seorushnow.com/report-from-velocity-day-2/">photo credit</a>)
+</div>
+<p>A little later in the day was an insightful talk from Google&rsquo;s <a href="https://twitter.com/duhroach">Colt McAnlis</a> in which he described the inner-workings of Chrome&rsquo;s rendering engine, harnessing the power of 3D acceleration, and the tools available in Chrome that can help you create more efficient applications.</p>
+<p>The takeaway from this talk was to understand how the rendering process occurs and to design pages with the GPU in mind. As Betts also alluded to in his talk, if you misuse advanced techniques, you can end up in worse shape than where you started. Understand, analyze, then enhance.</p>
+<p>Here&rsquo;s a <a href="http://cdn.oreillystatic.com/en/assets/1/event/94/The%20CSS%20and%20GPU%20Cheatsheet%20Presentation.pdf">pdf of his slides</a>.</p>
+<div style="width:100%; clear:right;">
+</div>
+<h2>Day 2</h2>
+<hr><h3>Dylan Richard &ndash; Obama for America</h3>
+<div class="imgwrap-right">
+  <img alt="Dylan Richards" src="http://i.imgur.com/RL1SJh4.png" width="330" class="alignright"><br>(Dylan Richards | <a href="http://www.youtube.com/watch?v=LCZT_Q3z520">photo credit</a>)
+</div>
+<p>Day 2 of Velocity kicked off with an insightful keynote from <a href="https://twitter.com/dylanr">Dylan Richard</a>, who recently spent 18 months as Director of Engineering at Obama for America. In his devops-centric talk, Richard shared some of his experiences and insights during the time when he was tasked with rebuilding the organization&rsquo;s technology infrastructure, as well as sharing tips for building resilient systems and teams.</p>
+<p>Richard reminded us that uptime for critical systems is the primary objective, because <em>&ldquo;No feature is cool enough to not have a working app.&rdquo;</em> He is also a strong believer that <em>&ldquo;You can&rsquo;t learn unless you are simulating real things&rdquo;</em>, which of course lead into some discussion of <a href="http://en.wikipedia.org/wiki/Destructive_testing">destructive testing</a>.</p>
+<p>While this talk certainly was more on the operations side of the Velocity spectrum, there are still valuable insights for software engineers of any kind and is worth a viewing. You can find a video of his talk <a href="http://www.youtube.com/watch?v=LCZT_Q3z520">here</a>.</p>
+<h3>Ilya Grigorik &ndash; Google</h3>
+<div class="imgwrap-left">
+  <img alt="Ilya Grigorik" src="http://farm4.staticflickr.com/3674/9087250187_3ea3ec18ac.jpg" width="330" class="alignleft"><br>(Ilya Grigorik | <a href="http://www.flickr.com/photos/oreillyconf/9087250187/sizes/m/">photo credit</a>)
+</div>
+<p>During the Lightning Demos portion of Day 2, Google&rsquo;s <a href="https://twitter.com/igrigorik">Ilya Grigorik</a> introduced some new tools to help you find answers to Web performance-related questions. Grigorik began his talk (<a href="http://www.youtube.com/watch?v=bhUMHKJf3r4">video</a>) with Indira Gandhi&rsquo;s famous quote <em>&ldquo;The power to question is the basis of all human progress&rdquo;</em> to emphasize the role curiosity plays in our success as engineers. Grigorik then proceeded to list off various questions many Web developers have such as <em>&ldquo;Are websites getting faster?&rdquo;</em>, <em>&ldquo;What CSS frameworks are the most popular?&rdquo;</em>, <em>&ldquo;Is Flash adoption on the decline?&rdquo;</em>, and more.</p>
+<p>It turns out, these previously difficult questions to answer are now relatively easy thanks to the availability of the <a href="http://www.yuiblog.com/httparchive.org/">HTTP Archive</a> data in Google&rsquo;s <a href="http://bigquery.cloud.google.com/">Big Query</a>. If you are familiar with SQL, you can now throw together some simple queries and analyze gigabytes of HTTP data scooped up from a crawl of a million websites. Grigorik goes into more details in his <a href="http://www.igvita.com/2013/06/20/http-archive-bigquery-web-performance-answers/">blog post</a>.</p>
+<p>So naturally, I became curious on the version breakdown of YUI usage and realized the HTTP Archive can help answer that question for me. After some data crunching I was able to generate this chart:</p>
+<div class="slide">
+  <img alt="" src="http://i.imgur.com/RH214ck.png" height="300"></div>
+<div style="width:100%; clear:right;">
+</div>
+<h3>Ariya Hidayat &ndash; Sencha</h3>
+<div class="imgwrap-right">
+  <img alt="Ariya Hidayat" src="http://farm3.staticflickr.com/2828/9089643751_8193588ae3.jpg" width="330" class="alignright"><br>(Ariya Hidayat | <a href="http://www.flickr.com/photos/bluesmoon/9089643751/sizes/m/">photo credit</a>) <br><br><hr><p>  <img alt="The unix philosophy" src="http://i.imgur.com/UB9hz71l.png" width="330" class="alignright"><br>(&ldquo;The Unix Philosophy&rdquo;)
+</p></div>
+<p>One of the more educational talks of Velocity 2013 was <a href="https://twitter.com/ariyahidayat">Ariya Hidayat</a>&lsquo;s <strong>&ldquo;Emerging JavaScript Tools to Track JavaScript Quality and Performance&rdquo;</strong>. In this talk (<a href="https://speakerdeck.com/ariya/emerging-language-tools-to-track-javascript-quality-and-performance">slides</a>), Hidayat began with describing composable tools, <em>&ldquo;Write something once that does its job very well&rdquo;</em>, and then presents his favorite JavaScript tools while referencing some topics and tips covered from many of his <a href="http://ariya.ofilabs.com/highlights">blog posts</a>.</p>
+<p>Some of the JavaScript-related tools mentioned:</p>
+<ul><li><a href="http://phantomjs.org/">Phantom.js</a> &ndash; A headless WebKit scriptable with a JavaScript API</li>
+<li><a href="http://esprima.org/">Esprima</a> &ndash; A high performance, standard-compliant ECMAScript parser</li>
+<li><a href="http://int3.github.io/metajs">MetaJS</a> &ndash; A CPS Javascript metacircular interpreter that visualizes script execution</li>
+<li><a href="http://jscomplexity.org/">JSComplexity</a> &ndash; A <a href="http://jscomplexity.org/complexity">complexity analysis</a> for JavaScript projects</li>
+<li><a href="http://ariya.ofilabs.com/2013/01/javascript-code-complexity-visualization.html">Plato</a> &ndash; A code complexity visualization tool</li>
+<li><a href="https://github.com/olov/defs/">Defs.js</a> &ndash; An ES6 <code>const</code> and <code>let</code> transpiler to ES3.</li>
+<li><a href="http://gotwarlost.github.io/istanbul/">Istanbul</a> &ndash; A code coverage tool for JavaScript</li>
+</ul><p>Hidayat closed with the following bits of advice:</p>
+<ul><li><em>&ldquo;Build <strong>composable</strong> tools&rdquo;</em></li>
+<li><em>&ldquo;<strong>Automate</strong> any tedious parts of code review&rdquo;</em></li>
+<li><em>&ldquo;Incorporate <strong>code quality metrics</strong> into dashboards&rdquo;</em></li>
+</ul><div style="width:100%; clear:right;">
+</div>
+<h3>Nicholas Zakas &ndash; Box</h3>
+<div class="imgwrap-right" style="margin-bottom:3em;">
+  <img alt="Nicholas Zakas" src="http://farm8.staticflickr.com/7342/9097359847_800788f5b8.jpg" width="330" class="alignright"><br>(Nicholas Zakas | <a href="http://www.flickr.com/photos/bluesmoon/9097359847/">photo credit</a>)
+</div>
+<p>Velocity&rsquo;s Web Performance track concluded with a talk (<a href="http://www.slideshare.net/nzakas/enough-withthejavascriptalready">slides</a>) from <a href="https://twitter.com/slicknet">Nicholas Zakas</a> on the over-reliance of JavaScript. In <strong>&ldquo;Enough with the JavaScript already&rdquo;</strong>, his point was that as JavaScript developers, we have the tendency to try to do too many things in JavaScript. As an example of this, Zakas cited the plethora of client-MVW frameworks (Model-View-<em>Whatever</em>) and client-side rendering as JavaScript-gone-too-far. This is something <a href="https://blog.twitter.com/2012/improving-performance-twittercom">Twitter</a> and <a href="http://nerds.airbnb.com/weve-launched-our-first-nodejs-app-to-product/">airbnb</a> have realized, which should serve as a reminder to take a step back and rethink things before you try to outsmart a web browser.</p>
+<p>As an example of proper and intelligent use of JavaScript, Zakas pointed to Alex Sexton&rsquo;s wonderful <a href="http://alexsexton.com/blog/2013/03/deploying-javascript-applications/">Deploying JavaScript Applications</a> blog post which mentions the idea of listening for mouse movements to trigger loading JS. Consider the fact that you have two types of scripts you typically run on a page, 1) Render/Functionality-critical scripts, and 2) Supplementary functionality scripts. If a script isn&rsquo;t required for primary functionality of your page, you should defer loading it.</p>
+<p>Speaking of when and where to execute your JavaScript, here&rsquo;s his categorization of the four suggested locations to place your Javascript:</p>
+<div class="slide">
+  <img alt="The 4 JavaScript Load Times" src="http://i.imgur.com/1DjxL6Rl.jpg" height="300"></div>
+<p>Zakas&rsquo; talk concluded with some observations about building and using libraries, arguing that it&rsquo;s an <a href="http://en.wikipedia.org/wiki/Economies_of_scale">economy of scale</a> rule, meaning the cost per component decreases the more components you use. So for example, if you are using YUI for only <a href="https://yuilibrary.com/yui/docs/node/">node</a>, that&rsquo;s really expensive, and maybe not the best investment. But, if you begin using other YUI components as well, the more you use, the cheaper your investment becomes.</p>
+<p>The takeaway here is that bytes are costly in bandwidth, performance, and maintenance, so scrutinize your decisions when selecting libraries to use. Don&rsquo;t just blindly invent or throw a new library at the problem.</p>
+<p>You can find some insightful discussion on these slides over on <a href="https://news.ycombinator.com/item?id=6044356">Hacker News</a>.</p>
+<div style="width:100%; clear:right;">
+</div>
+<hr><h2>Overall Takeaways</h2>
+<p>Here are some common themes observed at Velocity 2013:</p>
+<ul><li>Tracking browser metrics in <a href="https://en.wikipedia.org/wiki/Continuous_integration">CI</a> is becoming popular, both due to availability of <a href="https://developer.mozilla.org/en-US/docs/Navigation_timing">Navigation Timing APIs</a> and greater awareness of <a href="http://addyosmani.com/blog/devtools-visually-re-engineering-css-for-faster-paint-times/">paint timings</a>. As Paul Hammond said in <a href="http://www.youtube.com/watch?v=_hE_MtasB2Q">his Ignite Velocity talk</a>, <em>&ldquo;If it moves, track it.&rdquo;</em></li>
+<li>Your software will make mistakes, but it&rsquo;s difficult to predict what and where. So, focus on making resilient systems that help you detect problems faster to mitigate the damage.</li>
+<li>The point of improving performance is to improve the experience of the end user. They actually don&rsquo;t care that things are metrically faster, they just like the feeling they get from their perception that things are faster.</li>
+<li>Alex Sexton&rsquo;s excellent &ldquo;<a href="http://alexsexton.com/blog/2013/03/deploying-javascript-applications/">Deploying JavaScript Applications</a>&rdquo; blog post, and his follow-up &ldquo;<a href="http://www.smashingmagazine.com/2013/06/11/front-end-ops/">Front-End Ops</a>&rdquo; seemed to be commonly cited among Velocity talks.</li>
+<li>And finally, when you think you are done with performance, you probably aren&rsquo;t.</li>
+</ul><p>As a two-time attendee of Velocity, I&rsquo;m comfortable saying that it continues to be one of the most educational and inspiring events out there today. Tim O&rsquo;Reilly stated in <a href="http://www.youtube.com/watch?v=9Kn-RrAg9FI">his 2011 keynote</a>, <em>&ldquo;You might think you are just helping to run some random site, but you are engaged in an exploration that is central to the future of humanity&rdquo;</em>, and after learning about all the interesting problems being tackled by Velocitians, I completely agree. So, cheers to the Velocity organizers, presenters, and community, for building a better, faster, stronger Web!</p>
+<p>P.S. You can find all my session notes <a href="https://gist.github.com/derek/5835728">here</a>. Also, if you are an O&rsquo;Reilly Safari subscriber, keep an eye out for videos of the 2013 talks. In the meantime, you can view previous years <a href="http://techbus.safaribooksonline.com/video/-/9781449311773">2011</a> and <a href="http://techbus.safaribooksonline.com/video/-/9781449343927">2012</a>, as well as finding select videos from 2013 <a href="http://www.youtube.com/playlist?list=PL055Epbe6d5bdB4KPqssegVpYUDJXSzOp">on YouTube</a>.</p>
+<hr></div>

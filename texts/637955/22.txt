@@ -1,0 +1,34 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Washington, DC        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is a global research institute which works to empower women, advance gender equality, and fight poverty in the developing world. ICRW works with partners to conduct empirical research, build capacity, and advocate for evidence-based practical solutions to change policies and programs.</p><p>This is a 3-month unpaid internship (the exact timeframe may be adjusted if needed based on the individual&rsquo;s availability). The Business Development and Fundraising Intern will work closely with the Manager, Global Business Development, Senior Associate, Development and other members of the Business Development (BD) and Fundraising Team. The intern will be mentored and trained in providing a range of business development and fundraising services as well as assisting in the implementation of various strategic initiatives in support of the Research and Programs (R&amp;P) Department.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Activities will vary depending on need, but are likely to include:</p><p><strong>Prospect Research</strong><br>Tracking and identification of new development opportunities and creating donor profiles for relevant individuals, foundations, corporations, U.S. Government agencies, and multilateral organizations that may be interested in funding various aspects of ICRW&rsquo;s work.</p><p><strong>Proposal/Grant Writing</strong><br>Assist with the development of proposals for new business in response to donor solicitations. Tasks under this responsibility may include: drafting institutional narratives tailored to specific proposals; editing and formatting components of programmatic proposals; participate in planning meetings with and act as a liaison between the BD, Finance and Administration (F&amp;A), and R&amp;P Teams; and supporting the final proposal production process.</p><p><strong>Database Management and Gift Processing</strong><br>Assist with updating donor information in an electronic database, including: entering new constituent records and relationships; correcting and updating mailing list contact information; standardizing address data; coding event attendance; and cross-referencing data to ensure accuracy and non duplication. Work with Senior Development Associate to ensure timely and accurate processing of gifts and acknowledgement letters.</p><p><strong>Events</strong><br>Assist the Senior Development Associate in the execution and promotion of ICRW Fundraising-related events; execute mailings, prepare materials and enter data into appropriate databases.</p><p><strong>Supporting Business Development and Fundraising</strong><br>Support the BD team, Office of the President, Communications team, and other departments within ICRW by undertaking a range of activities that enhance business development and fundraising efforts. These will vary depending on need, but may include: attending and taking notes at external events and internal meetings; providing support at ICRW events; reviewing project materials and summarizing key information for use in institutional documents.<br>&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Excellent writing. Strong analytical and organizational skills required. Computer literacy required to include a proficiency in standard business applications (e.g. in the MS Office Suite). Ability to develop and maintain effective working relationships at all levels. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>We are flexible regarding days/hours, as well as start and end dates. Interested candidates should submit a letter of interest summarizing their background and interest in supporting business development at an international nonprofit organization, as well as a curriculum vitae to internships@icrw.org with &ldquo;BD Intern&rdquo; in the subject line. Please indicate your preferred scheduling and any particular areas of interest or skills that you would like to develop, if offered an internship.&nbsp;</p>        </div>
+        </div>
+</div></div>

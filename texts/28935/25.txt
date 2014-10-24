@@ -1,0 +1,9 @@
+<div><p>We are excited to announce the dates for YUIConf 2013: mark your calendars for November 6th and 7th! We&rsquo;ve been working to find a bigger and better venue this year, and we&rsquo;ve found it at the <a href="http://sanjose.place.hyatt.com/en/hotel/home.html">Hyatt Place in downtown San Jose, California</a>.</p>
+<p>If you have been working with YUI this past year, speaking at YUIConf is an excellent opportunity to share your ideas and show off what you are doing. If you would like to be a speaker this year, please email <strong>yui-events (at) yahoo-inc.com</strong> with the following:</p>
+<ul><li>Title</li>
+<li>Description</li>
+<li>Intended audience</li>
+<li>Your name</li>
+<li>A brief bio (any previous talks?) </li>
+</ul><p>As the date draws closer, we&rsquo;ll provide registration information, as well as hotel and other travel details. So, mark your calendars now and we&rsquo;ll be seeing you in November!</p>
+<p>If you haven&rsquo;t already, get caught up with <a href="http://www.youtube.com/watch?v=ByU2zn9DmAA&amp;list=PLjKP9DUCzZooMmiSJ_nmsLIReOZp0Uomz">last year&rsquo;s talks</a> and let them inspire you to become a speaker yourself this year!</p></div>

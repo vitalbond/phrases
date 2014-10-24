@@ -1,0 +1,20 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release-news">Release News</h2>
+<h3>YUI</h3>
+<p>We&rsquo;re getting closer to releasing the next version of YUI, which will either be 3.16.0, or 3.15.1, depending on what code has landed in the library. The <a href="https://github.com/yui/yui3/wiki/Development-Schedule">code freeze</a> deadline is scheduled for March 28th. If you&rsquo;re contributing any code for this release, you&rsquo;ll want to get your Pull Requests in by March 25th!</p>
+<p>Our next release is slated to go out on April 8th.</p>
+<h2 id="open-roundtable">YUI Open Roundtable</h2>
+<p>In his week&rsquo;s <a href="http://www.youtube.com/watch?v=WiNt_XMGrwA">YUI Open Roundtable</a>, <a href="https://twitter.com/clarler">Clarence</a>, <a href="https://twitter.com/jetfault">Jerry</a> and <a href="http://www.yuiblog.com/twitter.com/triptych">Andrew</a> sat down with Lauren Tsung from Yahoo. Lauren has a CS background but is currently a Design Prototyper at Yahoo who focuses on User Experience. Their conversation focussed on ways that designers and developers can collaborate together to make better products.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/WiNt_XMGrwA?list=UUTHcgWOTU6gPje1g_U29tfQ" frameborder="0" allowfullscreen></iframe></p>
+<h2 id="tech-talks">Tech Talks</h2>
+<p>Oh boy, oh boy! We released a bunch of tech talks this week that I&rsquo;m excited to share with you guys!</p>
+<h3>Server-side rendering for single-page web apps</h3>
+<p>Our very own <a href="https://twitter.com/clarler">Clarence Leung</a> recently gave a lightning talk on <a href="http://www.youtube.com/watch?v=iqyyH0nfg7I">Server-rendering Single Page Applications for Every Framework</a> at <a href="http://www.meetup.com/BayNode/">BayNode</a>. It&rsquo;s a great talk that explains how to use some of the npm components that we&rsquo;ve been working on in Modown in your web apps today to make them even more awesome.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/iqyyH0nfg7I" frameborder="0" allowfullscreen></iframe></p>
+<h3>Polymer</h3>
+<p><a href="https://twitter.com/rob_dodson">Rob Dodson</a> and <a href="https://twitter.com/jkomoros">Alex Komoroske</a> gave <a href="http://www.youtube.com/watch?v=3pYGVB2lG9w">a great talk</a> on <a href="http://www.yuiblog.com/www.polymer-project.org/">Polymer</a>. Add this to your things-to-watch list!</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/3pYGVB2lG9w" frameborder="0" allowfullscreen></iframe></p>
+<h3>React</h3>
+<p><a href="https://twitter.com/floydophone">Pete Hunt</a> from the Instagram team at Facebook dropped by at Yahoo to talk about <a href="http://www.yuiblog.com/reactjs.com">React</a>. If you&rsquo;re a YUI user and you want to learn more about React, <a href="http://www.youtube.com/watch?v=e7A6EUe3XGM">check out this talk</a>, including the Q&amp;A section near the end of it.</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/e7A6EUe3XGM" frameborder="0" allowfullscreen></iframe></p>
+<p>Well, that&rsquo;s a lot of stuff to add to your Youtube playlist! Hope you like it. I&rsquo;ll be back in 7 days.</p></div>

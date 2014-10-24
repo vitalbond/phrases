@@ -1,0 +1,10 @@
+<div><p>This weekend, I updated the four operating systems I have installed on my computer. Well, Arch Linux doesn’t really count, because, you know, it just keeps rolling along.</p>
+<h3>Haiku</h3>
+<p>I started with the nightly Haiku gcc2hybrid4 build, because it’s the easiest. I enjoy updating to the latest nightly. I installed it and looked for any signs of the usual regressions: video driver problems, sound card problems, network problems… When there is a regression, I find the commit that caused it and report it on the Haiku bug tracker, where the kind Haiku developers promptly fix it. It’s fun! But, alas, everything worked great.</p>
+<p>I have a separate partition with the Be File System on it to store all my personal files. It makes installing the nightlies super simple.</p>
+<h3>Linux Mint</h3>
+<p>I installed the latest version of Linux Mint, Linux Mint 15 Cinnamon x86_64. I almost never use it, but when I do it’s for two primary reasons. One, my Arch Linux installation is messed up and I’m in a hurry to get something done (usually related to my stupid webcam). And two, I like to experience Linux distributions that are setup to be visually attractive (unlike Arch Linux), to get ideas of what I can do to beautify my Arch Linux setup.</p>
+<h3>FreeBSD</h3>
+<p>I reinstalled FreeBSD 9.1 x86_64. It’s funny, no matter how many times I try, I just don’t seem to <strong>get</strong> FreeBSD. Well, I decided to give it yet another shot. Video, audio, and networking are all working great. I’ll try compiling and installing some more packages tonight.</p>
+<p>I have one partition split into to UFS slices, one for the operating system and one for my home directory.</p>
+<p>And thus ends my experience updating the all of my operating systems!</p></div>

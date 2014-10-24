@@ -1,0 +1,59 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    A Comprehsensive Evaluation of the Gap Inc. P.A.C.E. Program        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Globally the garment industry is one of the biggest employers of low‐skilled women workers.&nbsp; Despite their large numbers in the workforce, relatively few female garment workers advance to higher-level positions as they have limited opportunities to acquire the skills that would enable their professional and personal growth.&nbsp; In response to this need, Gap Inc. initiated the P.A.C.E. (Personal Advancement &amp; Career Enhancement) workplace education program to teach women the managerial, interpersonal, organizational and other practical skills needed to move forward in work and in life.&nbsp; &nbsp;</p><p>This report summarizes findings from program evaluations conducted by ICRW from 2009 - 2013 at six factory sites where P.A.C.E. is implemented - two in India and one each in Cambodia, Vietnam, Bangladesh and China.</p><p>Research findings from these robust, multi-country evaluations demonstrate that P.A.C.E. is an effective, sustainable and scalable model that yields high returns for women, their families and the businesses where they work.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Priya Nanda. Anurag Mishra, Sunayana Walia, Shubh Sharma, Ellen Weiss and Jennifer Abrahamson        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/anurag-mishra">Anurag Mishra</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/priya-nanda">Priya  Nanda</a>        </div>
+              <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/shubh-sharma">Shubh Sharma</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/sunayana-walia">Sunayana  Walia</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="166" alt="" src="http://www.icrw.org/files/images/tn/Cover_PACE_Report_Thumbnail.jpg?1380652099"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/PACE_Report_0912_singles.pdf" type="application/pdf; length=2966158">PACE_Report_0912_singles.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

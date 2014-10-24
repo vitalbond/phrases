@@ -1,0 +1,46 @@
+<div><p><a href="https://github.com/buchuki/gitifyhg">Gitifyhg</a> is a git client for pushing to and pulling from Mercurial repositories. I described the first implementation, which used hg-git internally, <a href="http://archlinux.me/dusty/2012/12/01/gitifyhg-accessing-mercurial-repos-from-git/">last month</a>. However, I found that it didn’t work as well in practice as my initial tests had indicated, and I morosely reverted to using hg directly.</p>
+<p>While researching ways to improve the app, I stumbled across <a href="https://felipec.wordpress.com/2012/11/13/git-remote-hg-bzr-2/">git-remote-hg</a> by Felipe Contreras. It claimed to be a cure-all to the git-hg bridging problem that “just worked”. So I downloaded and tried it, but it didn’t live up to the author’s hype. While it could handle basic cloning, pushing to and pulling from the default branch, it failed for me when working with named upstream branches, something I have to do regularly in my day job. I submitted several issues and pull requests, most of which were ignored. The more deeply involved I became with the code, the more I felt a complete rewrite was in order.</p>
+<p>I had some free time during the holiday season, and started my version of a git remote as an exercise, with no intent to create anything useful. To my surprise, something useful emerged. In fact, I believe gitifyhg is the most robust and functional git to hg client currently available. More importantly, it is eminently hackable code: well tested and fairly well documented. I hope this will make it easy to contribute to, and that my inbox will soon be full of pull requests.</p>
+<p>This is the real deal. The best part is that you don’t have to learn any new commands. It’s just basic git with mercurial as a remote. The <strong>only</strong> command that has changed from normal git usage is <code>clone</code>:</p>
+<pre class="brush:bash">
+pip install gitifyhg
+git clone gitifyhg::http://selenic.com/hg
+cd hg
+</pre>
+<p>By adding <code>gitifyhg::</code> before the mercurial url, you can git clone most mercurial repositories. If you can’t, it’s a bug. Other complex repositories I have successfully cloned include <a href="http://pytest.org/">py.test</a> and <a></a>pypy.</p>
+<p>You can easily use gitifyhg in the fashion of <a href="https://www.kernel.org/pub/software/scm/git/docs/git-svn.html">git-svn</a>. All named branches are available as remote branches. <code>default</code> maps to <code>master</code>. Other branches map to <code>branches/<branchname></code>.</p>
+<p>If you want to commit to the master branch, I suggest a workflow like this:</p>
+<pre class="brush:bash">
+git clone gitifyhg::<any mercurial url>
+cd repo_name
+git checkout -b working  # make a local branch so master stays prestine
+# hack and commit, hack and commit
+git checkout master
+git pull  # Any new commits that other people have added to upstream mercurial are now on master
+git rebase master working  # rebase the working branch onto the end of master
+git checkout master
+git push
+</pre>
+<p>Working on a named mercurial branch, for example <code>feature1</code>, is easy:</p>
+<pre class="brush:bash">
+git checkout --track origin/branches/feature1
+git checkout -b working  # make a local branch so feature1 stays prestine for easy pulling and rebasing
+# hack and commit, hack and commit
+git checkout branches/feature1
+git pull  # New commits from upstream on the feature1 branch
+git rebase branches/feature1 working  # rebase the working branch onto the end of feature1
+git checkout master
+git push  #push your changes back to the upstream feature1 branch
+</pre>
+<p>It is even possible to create new named branches (assuming <code>my_new_branch</code> doesn’t exist yet in Mercurial):</p>
+<pre class="brush:bash">
+git checkout -b "branches/my_new_branch"
+# hack add commit
+git push --set_upstream origin branches/my_new_branch
+</pre>
+<p>These basic workflows have been working flawlessly for me all week. In contrast to my previous attempts to use git to hg bridges, I have found it easier to use gitifyhg than to work in the mercurial commands that I have become expert with, but not used to, in the past year.</p>
+<p>Gitify hg is not yet perfect. There are a few issues that still need to be ironed out. There are failing tests for most of these in the gitifyhg test suite if you would like to contribute with some low-hanging fruit:</p>
+<ul><li>Anonymous branches are dropped when cloned. Only the tip of a named branch is kept.</li>
+<li>Tags can be cloned and pulled, but not pushed.</li>
+<li>Bookmarks can be cloned and pushed, but not pulled reliably. I suspect this is related to the anonymous branch issue.</li>
+</ul><p>So give it a shot. Gitifyhg is just one <a href="http://pypi.python.org/pypi/gitifyhg/0.6.1">easy_install gitifyhg</a> away.</p></div>

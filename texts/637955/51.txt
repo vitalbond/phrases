@@ -1,0 +1,43 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Over the past thirty years, financial service interventions have featured prominently in efforts to advance women economically. They include informal savings groups, the integration of women into formal banking, and financial intermediaries that bridge the divide between them.</p>
+<p>Although these financial interventions have been extensively studied, using a range of evaluation techniques in different contexts, they have not often been examined comprehensively in the context of empowering women economically. Nor is much information available about the contexts in which particular approaches succeed and where they do not, or what products are more suitable or better meet particular demands.&nbsp;</p>
+<p>This report examines the available evidence on the extent to and ways in which financial services have (or have not) contributed to women&rsquo;s economic empowerment. It seeks to highlight the research gaps and identify priorities for research and practice as guidance for how to effectively invest in creating economic opportunities for women in the financial services sector.&nbsp;</p>
+<p>The report is part of a larger initiative entitled &ldquo;The Roadmap for Promoting Women&rsquo;s Economic Empowerment,&rdquo;of the United Nations Foundation and ExxonMobil, which aims to close a crucial knowledge gap by identifying the most effective interventions to advance women&rsquo;s economic opportunities.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2012</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Rekha Mehra, Payal Patel, Adithi Shetty and Anne Golla        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/payal-patel">Payal Patel</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/ICRW_Financial%20Services%20and%20WEE.pdf" type="application/pdf; length=348361">ICRW_Financial Services and WEE.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

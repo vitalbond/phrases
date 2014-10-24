@@ -1,0 +1,46 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Summary of the Evidence        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>This policy brief&nbsp;highlights five evidence-based&nbsp;strategies identified by ICRW to delay or prevent child marriage:&nbsp;1) Empower girls with information, skills and support networks; 2) Provide economic support and incentives to girls and their families; 3) Educate and rally parents and community members; 4) Enhance girls' access to a high-quality education; and 5) Encourage supportive laws and policies.&nbsp;In order for the next generation of development programs to make ending child marriage a priority, policymakers must pay attention to these strategies while&nbsp;continuing to test innovative approaches and evaluation techniques.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    ICRW        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="167" alt="" src="http://www.icrw.org/files/images/tn/Solutions_Brief_Thumbnail.jpg?1379961794"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/19967_ICRW-Solutions001%20pdf.pdf" type="application/pdf; length=2522362">19967_ICRW-Solutions001 pdf.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

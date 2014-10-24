@@ -1,0 +1,38 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW is working with the Institute for Reproductive Health (IRH) at Georgetown University, Population Media Center and Save the Children on the USAID-funded <a href="http://explore.georgetown.edu/news/?ID=72398&amp;PageTemplateID=295"><strong>Fertility Awareness for Community Transformation (FACT) Project</strong></a>, which aims to improve fertility awareness and expand family planning access in Sub-Saharan Africa and South Asia through communicating actionable, life-course-appropriate information about fertility,&nbsp;enabling individuals and couples&nbsp;to apply this knowledge to their own circumstances and needs. ICRW will work with the FACT team to integrate gender considerations into all aspects of the project, which will, in part, contribute to a greater understanding of whether and how expanding access to fertility awareness-based methods allows for greater uptake of family planning and reduces unintended pregnancies.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2018        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    USAID        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Institute for Reproductive Health, Population Media Center, Save the Children        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Suzanne Petroni        </div>
+        </div>
+</div></div>

@@ -1,0 +1,1 @@
+<div>YUI Compressor has been a great tool for obfuscating and compressing JavaScript and CSS files for several years, but as the web continues to evolve and change, so do the tools we use to develop it. YUI Compressor will be going through a deprecation process as the YUI team moves to using a custom-wrapped UglifyJS [...]</div>

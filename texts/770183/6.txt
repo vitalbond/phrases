@@ -1,0 +1,12 @@
+<div><p><strong>3 Interesting Startups<br></strong></p>
+<p>1.</p>
+<p><a href="https://www.acorns.com/%3Cbr%20/%3E">Acorns<br></a></p>
+<p>Acorns is a new startup that aims to Invest spare change automatically from everyday<br>
+purchases into a diversified portfolio.</p>
+<p>2.</p>
+<p><a href="https://www.txto.io/%3Cbr%20/%3E">Tx.to<br></a></p>
+<p>Tx.to is a new startup that aims to search, organize and create a memento of your sms rolled up on a wooden tube which allows you to dispense it like tape.<br><a href="http://visionwiz.net/wp-content/uploads/2014/03/interesting-startups-2.jpg"><img src="http://visionwiz.net/wp-content/uploads/2014/03/interesting-startups-2.jpg" alt="" title="interesting startups (2)" width="150" height="112" class="aligncenter size-full wp-image-35320"></a></p>
+<p>3.</p>
+<p><a href="http://artrank.com/%3Cbr%20/%3E">ArtRank<br></a></p>
+<p>ArtRank is a new startup that aims to identify prime artist prospects based on known trajectory profiles. </p>
+<p>Using relevant metrics from over three million historic data points including auction results, web presence, representation, collectors and museums, the ArtRank index provides an unprecedented advantage in art collecting. </p></div>

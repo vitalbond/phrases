@@ -1,0 +1,2 @@
+<div><p>En bild kan säga mer än tusen ord.</p>
+<p><a href="http://archlinux.me/kaptenen/files/2012/12/2012-12-04-161254_1366x768_scrot.png"><img class="alignleft size-medium wp-image-403" src="http://archlinux.me/kaptenen/files/2012/12/2012-12-04-161254_1366x768_scrot-300x168.png" alt="" width="300" height="168"></a></p></div>

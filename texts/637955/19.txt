@@ -1,0 +1,52 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Washington, DC        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is a global research institute which works to empower women, advance gender equality, and fight poverty in the developing world. ICRW works with partners to conduct empirical research, build capacity, and advocate for evidence-based practical solutions to change policies and programs.&nbsp;</p>
+<p>This is a 4 month unpaid internship working with the Stigma, Discrimination and Gender team, under the Global Health portfolio. The intern will be mentored in the content area of HIV-related stigma and discrimination reduction, building knowledge about the subject area, including making new contacts through interactions with the Stigma Action Network (SAN) steering committee members, as well as the broader community of the Stigma Action Network members. The intern will primarily support development and promotion of content for the SAN website and social media. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <ul><li>Strategically update the SAN social media (primarily Facebook, Twitter, and the blog) to promote the features of the SAN website, and to align with relevant HIV and stigma-related advocacy days and current events.</li>
+<li><span face="">Interact with SAN members and external audiences via Facebook, Twitter and the SAN blog to foster interest, discussions, etc. </span></li>
+<li><span face="">Monitor and note the growth and progress of the SAN social media outlets through Sprout Social and Crowdbooster</span>.</li>
+<li><span face="">Design graphics/memes about key HIV stigma-related issues for circulation on social media to raise awareness about the SAN</span>.</li>
+<li><span face="">Create podcasts for audio blog posts when appropriate</span>.</li>
+<li><span face="">Write blogs, briefs, assessments, and grant proposals on behalf of the SAN. </span></li>
+<li><span face="">Gather relevant content (new publications, etc.) for periodic newsletters to </span>provide SAN members with updates related to the SAN website.</li>
+<li><span face="">Add content (recent published/unpublished literature, tools, etc.) to the e-library and other sections of the SAN website, writing summaries/introductions as necessary and noting which could be featured on the homepage</span>.</li>
+<li><span face="">Help to gather photos and appropriate images for use on the site.&nbsp;&nbsp;</span></li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <ul><li>Interest in the intersection between global health issues and social justice</li>
+<li>Strong research and writing skills</li>
+<li>Independent and self-starting</li>
+<li>Proficiency in MS Office</li>
+<li>Ability to plan ahead, strategize and use proficient time management skills to juggle multiple tasks at once</li>
+<li>Expertise in social media and networking, including Facebook, Twitter, blogging, etc.</li>
+<li>Strong graphic design skills and previous knowledge of website design</li>
+<li>Experience with Hootsuite, Crowdbooster, Sprout Social, or other social media tracking and monitoring software (preferred)</li>
+<li>Experience with filmmaking and video editing (preferred)&nbsp;</li>
+<li><span face="">Experience with creating, editing and uploading podcast interviews (preferred</span>)&nbsp;</li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Interested candidates should submit a letter of interest summarizing their background and interest in supporting stigma, discrimination and gender at an international nonprofit organization, as well as a curriculum vitae to <a title="mailto:internships@icrw.org" href="mailto:internships@icrw.org"><strong><u>internships@icrw.org</u></strong></a>with <strong>&ldquo;SDG Intern&rdquo; </strong>in the subject line. Please indicate your preferred scheduling and any particular areas of interest or skills that you would like to develop, if offered an internship.&nbsp;&nbsp;</p>        </div>
+        </div>
+</div></div>

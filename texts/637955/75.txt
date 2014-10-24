@@ -1,0 +1,24 @@
+<div><div class="field field-type-text field-field-byline">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Eissa Saeed        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Reuters covers a bill introduced by the Pakistan's National Assembly that would increase the punishment for guardians, clerics, and spouses involved in child marriages, citing research from ICRW's work on the prevalence of child marriage.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Reuters covers a bill introduced by the Pakistan's National Assembly that would increase the punishment for guardians, clerics, and spouses involved in child marriages, citing research from ICRW's work on the prevalence of child marriage.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.reuters.com/article/2014/03/26/us-pakistan-child-marriage-idUSBREA2P0RC20140326" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

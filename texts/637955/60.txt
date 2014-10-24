@@ -1,0 +1,52 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>This research project aims to strengthen the evidence base on single women&rsquo;s experience of violence and violation of their rights, their use of relevant laws and policies in seeking justice, and the strengths and shortcomings of existing policies and programs to address their needs in India. &nbsp;In the context of this research, single women consist of never married, separated, widowed and divorced women.</p>
+<p>ICRW researchers&nbsp;are collecting&nbsp;quantitative and qualitative data from single women and service providers in three states &ndash; Jharkhand, Himachal Pradesh and Maharashtra.&nbsp; This information&nbsp;will be used to&nbsp;produce a fact sheet and policy brief that describe the situation and lay out policy and program recommendations for government and civil society to better meet the needs of this particularly vulnerable, yet often overloooked,&nbsp;group of women. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    UNDP        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Ekal Nari Shakti Sangathan, Society for Social Uplift Through Social Action, Himachal Pradesh; Samuel Hahnemann Associates &amp; Research Centre (SHARC), Jharkhand; Prakriti, Maharashtra.        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Ravi Verma        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">India</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div></div>

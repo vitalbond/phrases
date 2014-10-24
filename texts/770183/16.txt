@@ -1,0 +1,10 @@
+<div><p><strong>Emu:<br></strong></p>
+<p>Emu is a new mobile messaging app for iPhone that uses artificial intelligence &mdash; machine learning and natural language processing &mdash; to understand messages, then magically adds relevant information to help you schedule a lunch, reserve a table, buy movie tickets, or share your location in real time.</p>
+<p>By using this apps you can schedule lunches, share your location, and set reminders &mdash; as easily as sending a photo. </p>
+<p><strong>How It Works:<br></strong></p>
+<p>When  you receive a message like, &ldquo;Where are you?&rdquo; you&rsquo;ll see a little location button.</p>
+<p>Or, when the message input is empty, you&rsquo;ll see a location-sharing button instead of the usual Send.Tap either of these to send a map  that updates in real time for thirty minutes.<br><a href="http://visionwiz.net/wp-content/uploads/2014/04/mobile-messaging1.png"><img src="http://visionwiz.net/wp-content/uploads/2014/04/mobile-messaging1-300x92.png" alt="" title="mobile messaging" width="300" height="92" class="aligncenter size-medium wp-image-35369"></a><br>
+When you send or receive a message that discusses a date or time, you&rsquo;ll see a snapshot of your calendar, so you can see at a glance whether you&rsquo;re free or busy. Tap the orange button to create the event.</p>
+<p>If a message mentions a restaurant near your home, work, your correspondents&rsquo; home or work, or your current location, you&rsquo;ll see a snippet of information about it &mdash; including OpenTable reservations when available.</p>
+<p><iframe width="640" height="360" src="//www.youtube.com/embed/cJQUksUDpn8?feature=player_embedded" frameborder="0" allowfullscreen></iframe></p>
+<p>More at: <a href="http://emu.is/">http://emu.is/</a></p></div>

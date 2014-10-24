@@ -1,0 +1,34 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Washington, DC        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is a global research institute which works to empower women, advance gender equality, and fight poverty in the developing world. ICRW works with partners to conduct empirical research, build capacity, and advocate for evidence-based practical solutions to change policies and programs.</p><p><span style="line-height: 1.5;">ICRW&rsquo;s Office of the President seeks an intern to assist in the execution of the day-to-day needs of the department.</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>&nbsp;</p><p><strong>Administrative &amp; External Relations Support</strong><br>Support for the President will include assistance with activities such as maintenance of the President&rsquo;s social media platform; daily briefings/documentation for the President&rsquo;s meetings, projects, and reports; the maintenance of standing documents and institutional records; advance work for the President, including preparation of briefing documents for major business travel and supporting event logistics.</p><p>Additionally, the intern will provide support to ICRW&rsquo;s fall Board meeting and will assist in tracking and supporting OTP priority relationships, outreach efforts, communications and development with a specific focus on ICRW&rsquo;s outreach in Europe. This will include current or prospective donors, partners and/or media and PR opportunities. The intern will also serve as a departmental liaison and will attend relevant meetings to keep up-to-date on ongoing ICRW priorities.<br>&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Excellent writing, research and presentation abilities required. Working knowledge of social media, including Twitter, Instagram and Facebook and ability to think strategically about media platform. Strong analytical and organizational skills with the ability to synthesize information for a variety of technical and non-technical audiences. French and/or Spanish fluency preferred. Computer literacy to include a proficiency in standard business applications (e.g. in the MS Office Suite). Ability to develop and maintain effective working relationships at all levels. Discretion and sound judgment are a must. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Interested candidates should submit a letter of interest summarizing their background and interest and curriculum vitae to internships@icrw.org with "OTP External Relations Intern" in the subject line. Please indicate your preferred scheduling and any particular areas of interest for development.</p>        </div>
+        </div>
+</div></div>

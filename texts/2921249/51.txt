@@ -1,0 +1,4 @@
+<div><p>Det finns många snygga teman till Linux, dessvärre finns det snygga gtk2-teman som är något äldre, och därför inte har någon gtk3 alls, eller för en äldre version av gtk3. gtk-candido-engine, jag tittar på dig!</p>
+<p>I alla fall, vad jag har gjort är att skapa en egen mapp i .themes (döp den till vad du vill), sedan lägger du in de teman du vill ha (gtk2 och gtk3). Sedan går du in i inställningar och väljer du det namn du skrev när du skapade mappen. Då borde du ha de teman du valde. I mitt fall valde jag Candido-candy och Zukiwi som gtk3-tema. Helt perfekt, faktiskt. Nu slipper du installera applikationer från AUR som kompilerats med gtk2, enbart för att du valt ett tema som ej har något gtk3-tema. Smidigt, och fint!</p>
+<p> </p>
+<p><a title="Här" href="http://kaptenalex.deviantart.com/art/Breath-of-life-368369021?q=gallery%3Akaptenalex&qo=0" target="_blank">Här</a> kan du se det in action.</p></div>

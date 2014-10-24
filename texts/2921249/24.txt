@@ -1,0 +1,144 @@
+<div><p>One of the many git features that I miss in my day-to-day work using Mercurial is local lightweight branching. That is to say, branches that I don’t push to a public repository until I know they are in a sane state, and that do not take up any room in the public branch namespace.</p>
+<p>Until recently, I thought the only ways to create a local branch that did not get pushed to a remote repository were to use multiple local clones or Mercurial Queues. Turns out there at least four ways to do local lightweight branches in Mercurial.</p>
+<p>This is a bug, not a feature. I’m a Python programmer and a huge proponent of the “There should be one– and preferably only one –obvious way to do it.” rule. In git, the answer to pretty much every question is either, “create a branch” or “step 1: create a branch…”. Git branches are simple and elegant. Mercurial branches are… well, it depends what kind of branch you want. You do know what kind of branch you want, right?</p>
+<p>That said, I’m forced to work in Mercurial, and until <a href="https://github.com/buchuki/gitifyhg">gitifyhg</a> is working well enough for daily use, I’m constantly looking for ways to work around the shackles Mercurial places on me. Ironically, I know more about Mercurial extensions than many of my pro-hg colleagues, simply because as a git user, I know what’s missing and always studying to fill the gaps.</p>
+<p>So, here are four methods of creating a lightweight local branch in Mercurial. I leave it to you to figure out which one is best for your workflow.</p>
+<h3>Local Clones</h3>
+<p>This is the most often suggested method of local branching in Mercurial, which is a shame because it’s ugly and reminiscent of subversion. Essentially, you simply make a new clone of the repository and work in there. If you like your changes, you push them, if not, you delete the directory.</p>
+<p>I’ve experimented with a folder structure like this:</p>
+<pre>
+code/myproject
+    - staging
+    - feature1
+    - bugfix1
+    ...
+</pre>
+<p>Each of the subfolders is a mercurial clone of the project. Staging is a clone of upstream. <code>feature1</code>, <code>bugfix1</code>, and its siblings are clones of staging. I manage my commits from staging, pulling from upstream or from the local clones as needed.</p>
+<p>How to make a “local branch”:</p>
+<pre class="brush:bash">
+cd ..
+hg clone staging featurename
+</pre>
+<p>How to commit changes to your “local branch”:</p>
+<pre class="brush: bash">
+hg commit
+</pre>
+<p>How to delete a “local branch” if you don’t want it to see the light of day:</p>
+<pre class="brush:bash">
+cd ..
+rm -rf featurename
+</pre>
+<p>How to merge a finished feature and push upstream:</p>
+<pre class="brush:bash">
+cd ../staging
+hg pull -u # pull in upstream commits
+hg pull ../featurename
+hg hgview # see what's going on
+hg merge # good luck
+</pre>
+<h3>Queues</h3>
+<p>Most mercurial users I talk to recommend avoiding mercurial queues. I have no idea why, they are one of the most useful tools in the Mercurial toolbox.  It does annoy me to be forced to learn an entirely different set of commands to manage patches before and after they are “made permanent”, but if you’re going to be working regularly in Mercurial, they are vital to maintaining the workflows you are used to from git.</p>
+<p>Mercurial queues are simply a set of patches that have not yet been “commited”, with a collection of tools for managing them. Because the patches have not been committed, they can be reordered and rearranged for the best possible communication effect.</p>
+<p>Steve Losh has written a great <a href="http://stevelosh.com/blog/2010/08/a-git-users-guide-to-mercurial-queues/">introduction to Mercurial Queues</a> for git users. Chapter’s <a href="http://hgbook.red-bean.com/read/managing-change-with-mercurial-queues.html">12</a> and <a href="http://hgbook.red-bean.com/read/advanced-uses-of-mercurial-queues.html">13</a> of <a></a>the hg book are more comprehensive guides, but can be hard to follow.</p>
+<p>It is possible to push and pull queues (they are stored in a separate repository with the main mercurial repository), but if you actually want to share the unfinished code you’ve written, I think it’s better to either create a proper named branch and share it, or temporarily share your local repository with <code>hg serve</code>.</p>
+<p>How to make a “local branch”:</p>
+<pre class="brush:bash">
+hg qqueue --create feature
+</pre>
+<p>How to commit changes to your “local branch”:</p>
+<pre class="brush: bash">
+hg qnew patchname # having to specify a name for each patch is annoying
+hg qrefresh # update the most recent patch with your latest changes
+</pre>
+<p>You can also use hg qrecord instead of qrefresh to add specific changes, but it’s not as robust as <code>git add -p</code> (it doesn’t support splitting or editing hunks).</p>
+<p>How to delete a “local branch” if you don’t want it to see the light of day:</p>
+<pre class="brush:bash">
+hg qpop --all
+hg qqueue patches # switch to the default queue
+hg qqueue --delete feature
+</pre>
+<p>How to merge a finished feature and push upstream:</p>
+<pre class="brush:bash">
+hg qfinish --applied
+</pre>
+<h3>Phases</h3>
+<p>Mercurial users tend to recommend bookmarks when git users ask for lightweight branches. That doesn’t really work because all it does is give a temporary name to an anonymous head instead of a permanent one. If you push to the public repository, your branch will be pushed too, regardless if it was named, bookmarked or anonymous.</p>
+<p>It turns out, Mercurial has a concept called phases, which allow you to mark a changeset as <code>public</code>, <code>draft</code>, or <code>secret</code>. Anything that has been pushed or pulled is considered public. All other local patches are <code>draft</code> by default, which means they will be pushed publicly when you call <code>hg push</code>. But if you set the phase of a patch to <code>secret</code>, that patch is not allowed to be pushed publicly.</p>
+<p>The <a href="http://www.logilab.org/project/hgview">hgview</a> extension is good for indicating what phase various commits are in.</p>
+<p>How to make a “local branch”:</p>
+<pre class="brush:bash">
+hg commit -m "initial commit to the feature"
+hg bookmark feature
+hg phase --force --secret feature
+</pre>
+<p>How to commit changes to your “local branch”:</p>
+<pre class="brush: bash">
+hg commit # it's a normal mercurial commit, but now it's secret
+</pre>
+<p>How to delete a “local branch” if you don’t want it to see the light of day:</p>
+<pre class="brush:bash">
+hg strip -rev "secret() and ancestors(feature)"
+</pre>
+<p>You’ll need the mercurial queue extension to get the strip command. You might want to double check that the revset I wrote is suitable for you; I’m not too clear on <a href="http://www.selenic.com/hg/help/revsets">mercurial revsets</a> yet.</p>
+<p>How to merge a finished feature and push upstream:</p>
+<pre class="brush:bash">
+hg phase --draft feature
+hg push
+</pre>
+<p>Now, the interesting thing is that you can set secret phase on a named branch as well as a bookmark. So you can have locally modified named branches that don’t get pushed until you’re good and ready to push them, or never get pushed at all. Just replace <code>bookmark</code> with <code>branch</code> above.</p>
+<p>I learned about phases today. I haven’t really used them in practice, yet, but I believe they will become my new favourite way to do local changes in Mercurial.</p>
+<h3>push -r</h3>
+<p>It is possible to tell mercurial to only push certain revisions to the upstream repository, thus keeping your other branches local. I wasn’t too keen on this at first because it seemed far too easy to accidentally push stuff I wasn’t ready to push. However, Mercurial does warn you before you push a new branch (anonymous or named), so as long as you have actually created a branch (rather than putting commits on top of the upstream branch), it will be quite safe.</p>
+<p>To do this, simply pass the <code>-r</code> or <code>--rev</code> parameter when you hg push. For example, if you only want to push the default branch, pass <code>--rev default</code> and commits on any other branches will remain local.</p>
+<p>How to make a “local branch”:</p>
+<pre class="brush:bash">
+hg commit -m "initial commit to the feature"
+hg branch feature
+</pre>
+<p>How to commit changes to your “local branch”:</p>
+<pre class="brush: bash">
+hg commit # it's a normal mercurial commit
+</pre>
+<p>How to delete a “local branch” if you don’t want it to see the light of day:</p>
+<pre class="brush:bash">
+hg strip -rev branch(feature)
+</pre>
+<p>How to merge a finished feature and push upstream:</p>
+<pre class="brush:bash">
+hg commit -m "close feature branch" --close-branch
+hg update default
+hg merge feature
+hg push --new-branch
+</pre>
+<p>How to push changes on default without pushing the new branch:</p>
+<pre class="brush:bash">
+hg update default
+hg push --rev default
+</pre>
+<p>You’ll notice that I used a named branch here. It’s possible to do the same thing with bookmarks or anonymous branches, but you would have to specify revision numbers manually and would probably have trouble defining revsets.</p>
+<h3>Bonus: qimport</h3>
+<p>This isn’t strictly to do with local branching, but it addresses another issue git users have with mercurial: rearranging commits on a branch that has never been published.</p>
+<p>Mercurial users point to the <code>rebase</code> extension when we complain about this, but that extension is woefully inadequate compared to the usage we are used to in git. It can also be somewhat dangerous, unlike git’s version of rebase. I believe the rebase extension was written as a proof of concept in Mercurial, but because the documentation says “this is dangerous” nobody ever actually used it or added features to make it actually usable or safe.</p>
+<p>However, there is another option: convert the commits to a mercurial queue and then use the relatively robust mqueue features to craft the changesets the way you want them to look. This is an important tool because it means you don’t have to decide in advance whether you want to use commits or patch queues for a particular feature. Just create a named branch, make your commits, and if you need to convert it to a queue, do so. This isn’t the place to explain the intricacies of Mercurial queues, but here’s a basic example of how to use them to remove patches from a named branch and append (rebase) them to default:</p>
+<pre class="brush:bash">
+hg init .
+hg view &  # Watch the changes in realtime as you type
+echo a >> a
+hg add a
+hg commit -m "a"
+hg branch feature
+echo b > b
+hg add b
+hg commit -m "b"
+echo c >> b
+hg commit -m "c"
+hg update default
+echo a >>a
+hg commit -m "aa"
+hg qqueue --create feature
+hg qimport --rev "branch(feature)"
+hg qpop --all
+hg update default
+hg qpush --all
+hg qfinish --applied
+</pre></div>

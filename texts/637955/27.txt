@@ -1,0 +1,18 @@
+<div><div class="field field-type-filefield field-field-home-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_home_image" width="566" height="355" alt="" src="http://www.icrw.org/files/images/home/Child_Bride_Bangladesh.jpg?1376500374"></div>
+        </div>
+</div>
+<div class="field field-type-link field-field-link-slide">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/media/blog/finding-her-true-value">Read More &raquo;</a>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-slide-text">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW Gender and Population Specialist Kirsten Stoebenau takes a deeper look at an innovative program delaying child marriage in Bangladesh, as part of a follow up study to ICRW&rsquo;s&nbsp;&ldquo;Solutions to End Child Marriage&rdquo;&nbsp;report.</p>        </div>
+        </div>
+</div></div>

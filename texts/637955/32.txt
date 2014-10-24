@@ -1,0 +1,21 @@
+<div><p>I want to add my name to the Turning Point Campaign to show my support for ICRW's work on behalf of adolescent girls worldwide.</p>
+<form action="http://www.icrw.org/form/1500" accept-charset="UTF-8" method="post" id="webform-client-form-1500" class="webform-client-form" enctype="multipart/form-data">
+<div><div class="webform-component-email" id="webform-component-email"><div class="form-item" id="edit-submitted-email-wrapper">
+ <label for="edit-submitted-email">Email: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="128" name="submitted[email]" id="edit-submitted-email" size="60" value="" class="form-text required"></div>
+</div><div class="webform-component-textfield" id="webform-component-first_name"><div class="form-item" id="edit-submitted-first-name-wrapper">
+ <label for="edit-submitted-first-name">First Name: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="128" name="submitted[first_name]" id="edit-submitted-first-name" size="60" value="" class="form-text required"></div>
+</div><div class="webform-component-textfield" id="webform-component-last_name"><div class="form-item" id="edit-submitted-last-name-wrapper">
+ <label for="edit-submitted-last-name">Last Name: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="128" name="submitted[last_name]" id="edit-submitted-last-name" size="60" value="" class="form-text required"></div>
+</div><div class="webform-component-markup" id="webform-component-forward"><p>Your name will be added to our Turning Point campaign board and displayed at select Turning Point events!<br>
+Now, forward to a friend and ask them to join too!</p>
+</div><div class="webform-component-email" id="webform-component-friend_email"><div class="form-item" id="edit-submitted-friend-email-wrapper">
+ <label for="edit-submitted-friend-email">Friend Email: </label>
+ <input type="text" maxlength="128" name="submitted[friend_email]" id="edit-submitted-friend-email" size="60" value="" class="form-text"></div>
+</div><div class="webform-component-markup" id="webform-component-email_text"><p>You are going to e-mail the following message:<br>
+I believe investing in ADOLESCENT GIRLS in the developing world is the most effective weapon we have to women&rsquo;s empowerment, gender equality, and alleviating poverty on the planet. Take Action and Join me.<br>
+Add your name to the Turning Point Campaign here:<br>
+Visit <a href="http://www.icrw.org/turning-point" title="http://www.icrw.org/turning-point">http://www.icrw.org/turning-point</a> and sign up for E-Alerts!</p>
+</div><input type="hidden" name="details[email_subject]" id="edit-details-email-subject" value="default"><input type="hidden" name="details[email_from_name]" id="edit-details-email-from-name" value="default"><input type="hidden" name="details[email_from_address]" id="edit-details-email-from-address" value="default"><input type="hidden" name="form_build_id" id="form-7f844b3aea5245a1bd7aa6d54439a1de" value="form-7f844b3aea5245a1bd7aa6d54439a1de"><input type="hidden" name="form_id" id="edit-webform-client-form-1500" value="webform_client_form_1500"><input type="submit" name="op" id="edit-submit" value="Submit" class="form-submit"></div></form></div>

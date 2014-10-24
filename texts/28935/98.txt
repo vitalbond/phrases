@@ -1,0 +1,20 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community.</em></p>
+<h2 id="release">Release News</h2>
+<h3>YUI</h3>
+<p>We&rsquo;ll be shipping YUI 3.17.0 next week! <a href="https://github.com/yui/yui3/wiki/Development-Schedule">Sprint 14</a> has ended and we&rsquo;ll be doing a last round of checks on Monday before deploying the release branch. If all goes well, YUI 3.17.0 will be out on Tuesday morning!</p>
+<h3>Pure</h3>
+<p>We&rsquo;re planning on shipping Pure 0.5.0 this week as well. We&rsquo;ve had the <a href="http://stage.purecss.io/">Pure 0.5.0 Release Candidate 1</a> out for a while now and haven&rsquo;t noticed any regressions so we&rsquo;ll be going ahead with the 0.5.0 GA release. Stay tuned by following us on the <a href="http://blog.purecss.io/">Pure Blog</a>.</p>
+<h2 id="or">YUI Open Roundtable</h2>
+<p>We didn&rsquo;t have any guests for this week&rsquo;s Open Roundtable, but I wanted to give a shout out to <a href="https://twitter.com/floydophone">Pete Hunt</a>, who joined us on the Open Roundtable last week to talk about <a href="https://reactjs.org/">ReactJS</a>. Check out the video below:</p>
+<p><iframe width="560" height="315" src="//www.youtube.com/embed/ZLfe0i2RDtY" frameborder="0" allowfullscreen></iframe></p>
+<h2 id="world-of-js">The World of JavaScript</h2>
+<ul><li>
+<p>Ben from Facebook and TC39 has <a href="https://www.youtube.com/watch?v=kXY9hIPKuLQ">a great talk on Recast, ES6 generators, and ES7 async/await</a>.</p>
+</li>
+<li>
+<p>Jackson Pauls <a href="http://www.yuiblog.com/blog/2014/05/13/yui-app-framework-in-cordova/">wrote an article on our own blog</a> this week about using the YUI App Framework to create cross-platform apps using Apache Cordova.</p>
+</li>
+<li>
+<p>The Google Developers Youtube channel <a href="https://www.youtube.com/watch?v=8-Zq2KUN6jM">has a new video up</a> introducing the <a href="http://www.polymer-project.org/">Polymer Project</a>.</p>
+</li>
+</ul><p>That&rsquo;s all for this week! See you all back here in a week!</p></div>

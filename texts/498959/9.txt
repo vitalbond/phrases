@@ -1,0 +1,53 @@
+<div><p>Hi Friends!</p>
+<p>Time for another recipe refresher! I first shared these <a href="http://www.theleangreenbean.com/thai-peanut-salmon-burgers/" target="_blank">Thai Peanut Salmon Burgers</a> a couple of years ago after I made them on a whim&hellip;but then I kinda forgot about them.</p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-11926" title="thai peanut salmon burgers" alt="DSC 0648 {Refreshed} Thai Peanut Salmon Burgers" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/DSC_0648.jpg" width="550" height="368"></p>
+<p>Last month I whipped them up again and remembered why I love them. They&rsquo;re great the night you make them&hellip;but they&rsquo;re even better as leftovers. They seem to stick together better once they&rsquo;ve cooled and reheated them.</p>
+<p>I make these with fresh/frozen salmon but canned would also probably work.</p>
+<p>Here&rsquo;s what you need:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">{Refreshed} Thai Peanut Salmon Burgers</div>
+<div class="ERSClear">&nbsp;</div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/DSC_0648.jpg" width="205" title="{Refreshed} Thai Peanut Salmon Burgers" alt="DSC 0648 {Refreshed} Thai Peanut Salmon Burgers"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&amp;url=http%3A%2F%2Fwww.theleangreenbean.com%2Frefreshed-thai-peanut-salmon-burgers%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/11694-0/" rel="nofollow" target="_blank">Print</a></span> </div></div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT30M">30 mins</time></div></div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Cook time</div>
+<div class="ERSTimeItem"> <time itemprop="cookTime" datetime="PT18M">18 mins</time></div></div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT48M">48 mins</time></div></div>
+<div class="ERSClearLeft">&nbsp;</div></div>
+<div itemprop="description" class="ERSSummary">An twist on the traditional burger, packed with delicious asian flavors.</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div>
+<div class="ERSServes">Serves: <span itemprop="recipeYield">4-6</span></div></div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">1 lb fresh salmon</li>
+<li class="ingredient" itemprop="ingredients">&frac12; c sliced green onion</li>
+<li class="ingredient" itemprop="ingredients">2 Tbsp low sodium teryaki or soy sauce</li>
+<li class="ingredient" itemprop="ingredients">2 Tbsp sweet chili sauce</li>
+<li class="ingredient" itemprop="ingredients">1 Tbsp natural peanut butter</li>
+<li class="ingredient" itemprop="ingredients">1 tsp fresh ground ginger</li>
+<li class="ingredient" itemprop="ingredients">&frac14; c plain, non-fat Greek yogurt</li>
+<li class="ingredient" itemprop="ingredients">&frac14; c lightly salted peanuts, roughly chopped</li>
+<li class="ingredient" itemprop="ingredients">&frac12; c panko breadcrumbs</li>
+</ul><div class="ERSClear"></div></div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Cook salmon in a hot pan until cooked through. Flake with a fork and let cool slightly. (You could also used pre-cooked salmon or canned salmon)</li>
+<li class="instruction" itemprop="recipeInstructions">In a medium-sized bowl, combine all ingredients and stir until well-mixed.</li>
+<li class="instruction" itemprop="recipeInstructions">Form into patties, squeezing tightly to form (don&rsquo;t make them too big!) and place in the freezer while the oven preheats to 425 degrees F. (You could also cook these in a pan, but I would still recommend freezing them for at least 15 minutes).</li>
+<li class="instruction" itemprop="recipeInstructions">Place on a well-greased baking sheet (or try a silpat or parchment paper).</li>
+<li class="instruction" itemprop="recipeInstructions">Cook 18 minutes, flipping once.</li>
+</ol><div class="ERSClear"></div></div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2310</div></div>
+<p>&nbsp;</p>
+<p>That&rsquo;s it! I love the flavors and it&rsquo;s fun to change it up from a traditional burger. They&rsquo;re great on buns but also great on a big salad!</p>
+<p><img class="aligncenter size-full wp-image-11927" alt="thai peanut salmon burgers {Refreshed} Thai Peanut Salmon Burgers" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/thai-peanut-salmon-burgers.jpg" width="441" height="640" title="{Refreshed} Thai Peanut Salmon Burgers"></p>
+<p>Happy eating, friends!</p>
+<p><img class="aligncenter size-full wp-image-11928" alt="DSC 0653 {Refreshed} Thai Peanut Salmon Burgers" src="http://www.theleangreenbean.com/wp-content/uploads/2014/03/DSC_0653.jpg" width="550" height="361" title="{Refreshed} Thai Peanut Salmon Burgers"></p>
+<p>Enjoy!<br>
+&ndash;Lindsay&ndash;</p></div>

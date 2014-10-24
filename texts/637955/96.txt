@@ -1,0 +1,19 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Mon, 06/09/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p align="center"><strong>New Report: Engaging Men and Boys Leads to Gender Equality in the Balkans</strong></p><p><strong>Washington, DC, June 10 2014: </strong>What does it mean to “be a man” to adolescent boys in the Balkans region? Can it mean keeping the peace instead of perpetrating violence? Having fun without drugs and alcohol? Practicing safe sex?</p><p>CARE and ICRW are pleased to announce the launch of a new report on engaging men and boys in the Balkans that explores lessons learned from a seven-year long program of  that has been promoting positive masculine identities known as the Young Men Initiative (YMI). Coordinated by CARE International Balkans, implemented by collaborating institutions in four countries, and evaluated by the International Center for Research on Women (ICRW), YMI seeks to promote a lifestyle prioritizing good health, nonviolence, and gender equality through educational workshops and community campaigns. </p><p><strong>What did we learn?</strong></p><p>Investing in young people (including boys and men) does bring tangible results in the development of a more gender equal and human rights based society. Working with boys through school-based activities and off-site retreats to explore their social roles creates change.</p><ul><li style="margin-left: 9pt;">Boys had more equitable attitudes towards women.  They were from 5-15 percentage points less likely to think that a woman’s primary role was to stay at home and cook.</li><li style="margin-left: 9pt;">Boys were less homophobic.  Boys were 3-17 percentage points less likely to think it was acceptable to beat a gay person.</li><li style="margin-left: 9pt;">Boys were less likely to think violence is acceptable—both violence against women and as a general solution to their problems.</li><li style="margin-left: 9pt;">Boys had more open ideas about what it meant to be a man.  There was a 27 percentage point improvement in the number of boys thinking that physical strength was the most important characteristic for a man.</li></ul><p><span style="line-height: 1.5;">For further information, please contact:</span></p><p><strong style="line-height: 1.5;">Emily Janoch</strong><br><span style="line-height: 1.5;">Gender and Empowerment, CARE USA</span><br><span style="line-height: 1.5;">(202) 609-6350</span><br><span style="line-height: 1.5;">ejanoch@care.org</span></p><p><strong>Erin Kelly</strong><br><span style="line-height: 1.5;">Communications Specialist, International Center for Research on Women</span><br><span style="line-height: 1.5;">(</span><span style="line-height: 1.5;">202) 742-1263</span><br><span style="line-height: 1.5;">ekelly@icrw.org</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-mission-statement">
+      <div class="field-label">Mission Statement: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) works to make women in developing countries an integral part of alleviating global poverty. Our research evidence identifies women’s contributions as well as the obstacles that prevent them from being economically strong and able to fully participate in society. ICRW translates these insights into a path of action that honors women’s human rights, ensures gender equality and creates the conditions in which all women can thrive.</p>        </div>
+        </div>
+</div></div>

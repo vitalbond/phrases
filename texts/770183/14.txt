@@ -1,0 +1,10 @@
+<div><p><strong>Get Help From People Who Know You Via Cuff<br></strong></p>
+<p><strong>Cuff:<br></strong></p>
+<p>Cuff is a new smart jewelry device which aims to help women when they are in any emergency situations.</p>
+<p><strong> How It Works:<br></strong></p>
+<p>Each device communicates with your smartphone via the inner CuffLinc component. When you receive your Cuff items, you will download the free Cuff iOS application to your smartphone, pair your Cuff to your smartphone, and set up your protective circle.</p>
+<p><a href="http://visionwiz.net/wp-content/uploads/2014/04/smart-jewelry-device.png"><img src="http://visionwiz.net/wp-content/uploads/2014/04/smart-jewelry-device.png" alt="" title="smart jewelry device" width="143" height="46" class="aligncenter size-full wp-image-35360"></a><br>
+ These are the people in your network who will be alerted when you need them. </p>
+<p>Then, when you need to send an SOS or an alert, simply depress the button on the CuffLinc and they will be notified that you need help. </p>
+<p>They will also receive your location and any additional information, like medical info, that you&rsquo;ve programmed the app to send.</p>
+<p>More at: <a href="http://www.cuff.io/">http://www.cuff.io/</a></p></div>

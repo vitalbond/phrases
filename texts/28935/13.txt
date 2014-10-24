@@ -1,0 +1,30 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<p><em>Note: Due to the July 4th holiday, this post is a combination of the previous two weeks.</em></p>
+<ul><li>
+<p>Now back from vacation, the team and community have been hard at work finishing up the next release of YUI. The release window is targeted to open up July 16th (next Tuesday) and barring any complications, will result in the release of <strong>YUI 3.11.0</strong>. To get a peak at what has changed, here&rsquo;s the <a href="https://github.com/yui/yui3/compare/v3.10.3...dev-3.x">v3.10.3&hellip;dev-3.x compare</a>. To summarize, it includes 551 commits from 19 authors and will include updates to <a href="https://yuilibrary.com/yui/docs/attribute/">Attribute</a>, <a href="https://yuilibrary.com/yui/docs/base">Base</a>, <a href="https://yuilibrary.com/yui/docs/calendar">Calendar</a>, <a href="https://yuilibrary.com/yui/docs/charts">Charts</a>, <a href="https://yuilibrary.com/yui/docs/datatable">Datatable</a>, <a href="https://stage.yuilibrary.com/yui/docs/paginator">Paginator</a>, and more, Thanks to all the contributors and testers who helped make this next release happen!</p>
+</li>
+<li>
+<p>In the <em>&ldquo;Working with Pure CSS Modules&rdquo;</em> series (<a href="http://www.techrepublic.com/blog/webmaster/working-with-pure-css-modules-part-1/2743">part 1</a> and <a href="http://www.techrepublic.com/blog/webmaster/working-with-pure-css-modules-part-2/2751">part 2</a>), Ryan Boudreaux reviews the <a href="http://purecss.io/">Pure CSS library</a> and capabilities of each module.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, YUI summer interns Rashad (<a href="http://twitter.com/rashadrussell">@rashadrussell</a>) and Patrick (<a href="http://twitter.com/patjameson">@patjameson</a>) gave demonstrations of two projects they are working on, we discussed <a href="http://www.webrtc.org/">WebRTC</a>, Jeff demonstrated a new YUI example he&rsquo;s been working on, and we reacted to <a href="http://yuireactions.tumblr.com/">YUI Reactions</a>. Here&rsquo;s <a href="http://www.youtube.com/watch?v=2J0T5MT_G8c">the video</a> from that Hangout session.</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include a discussion to <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/Y-GQGkLbawk">streamline calendar/lang</a>, a <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/Hotg_6I_YDI">request for comments</a> regarding Loader feature requests, and a <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/g19rlHTBU2U">patch to fix</a> back/forward cache.</p>
+</li>
+<li>
+<p>New and updated modules in the <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.07.03-22-52">Gallery</a>: <a href="http://yuilibrary.com/gallery/show/datetime-utils">datetime-utils</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsacalendarmarkeddates">itsacalendarmarkeddates</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsacalendarmodellist">itsacalendarmodellist</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsadialog">itsadialog</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsaerrorreporter">itsaerrorreporter</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsamodellistsyncpromise">itsamodellistsyncpromise</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsamodelsyncpromise">itsamodelsyncpromise</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsawidgetrenderpromise">itsawidgetrenderpromise</a>, and <a href="http://yuilibrary.com/gallery/show/slidecheckbox">slidecheckbox</a>.</p>
+</li>
+<li>
+<p>Links of the week:</p>
+<ul><li><a href="http://reidburke.com/2013/07/03/stream-concat-anti-pattern/">Stream Concat Anti-Pattern</a></li>
+<li><a href="http://www.nczonline.net/blog/2013/07/09/the-case-for-setimmediate/">The Case for setImmediate</a></li>
+<li><a href="http://fromanegg.com/post/54890090207/test-driven-development-the-easy-way">Test driven development &ndash; the easy way!</a></li>
+<li><a href="http://seravo.fi/2013/javascript-the-winning-style">JavaScript, the Winning Style</a></li>
+<li><a href="http://philipwalton.com/articles/how-to-unit-test-private-functions-in-javascript/">How to Unit Test Private Functions</a></li>
+<li><a href="http://tech.pro/blog/1402/five-patterns-to-help-you-tame-asynchronous-javascript">Five Patterns to Help You Tame Asynchronous JavaScript</a></li>
+<li><a href="https://vimeo.com/68085383">Perf the Web Forward</a> (video)</li>
+<li><a href="https://vimeo.com/69255635">Classical Inheritance is Obsolete &ndash; How to Think in Prototypal OO</a> (video)</li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/archive/138.html">JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

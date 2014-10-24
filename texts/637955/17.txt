@@ -1,0 +1,36 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Girls as young as 5 are still being sold into marriage in Pakistan. And no one will stop it.        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Fri, 07/12/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Foreign Policy        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-byline">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Adriana Carranca        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Foreign Policy delves into the issue of child marriage in Pakistan, particularly the tradition of marrying off young girls to resolve family and tribal disputes. In her assessment of the prevalence of child marriage, the author cites ICRW research. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.foreignpolicy.com/articles/2013/07/12/malalas_forgotten_sisters_girls_marriage_pakistan?wp_login_redirect=0" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

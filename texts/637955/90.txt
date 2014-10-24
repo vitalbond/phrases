@@ -1,0 +1,39 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW will be partnering with Girl Rising to co-host a panel, focused on gender-based violence and early marriage, at the UK's Global Summit to End Sexual Violence in Conflict,</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-speakers">
+      <div class="field-label">Speakers:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Tara Abrahams<br><strong>Girl Rising</strong></p><p>Sarah Degnan Kambou,<br><b>International Center for Research on Women</b></p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-event">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              When:&nbsp;</div>
+                    <span class="date-display-single">Tue, 06/10/2014 - <span class="date-display-start">3:30pm</span><span class="date-display-separator"> - </span><span class="date-display-end">4:30pm</span></span>        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-location">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Where:&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+          <span class="fn">ExCel London</span>
+              <div class="street-address">
+        Royal Victoria Dock 1 Western Gateway              </div>
+              <span class="locality">London</span>                      <div class="country-name">United Kingdom</div>
+                                      </div>
+      <div class="map-link">
+      <div class="location map-link">See map: <a href="http://maps.google.co.uk/?q=Royal+Victoria+Dock+1+Western+Gateway%2C+London%2C+%2C+uk">Google Maps</a></div>    </div>
+  </div>
+        </div>
+        </div>
+</div></div>

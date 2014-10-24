@@ -1,0 +1,12 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Tue, 08/06/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Girls Not Brides USA, a branch of the worldwide partnership Girls Not Brides, has released a policy&nbsp;brief&nbsp;- <a href="http://www.icrw.org/files/images/8.12.13%20Ending%20Child%20Marriage%20FINAL.pdf" target="_blank">"Ending Child Marriage: What Will it Take?"</a><span style="line-height: 1.5;">&nbsp;- that outlines&nbsp;the necessary steps&nbsp;that will lead to a&nbsp;reduction in&nbsp;high levels of the harmful global practice.&nbsp;</span><span style="line-height: 1.5;">Among other recommendations, the brief calls on governments, non-profits, and the private sector to come together on this issue in order to more effectively combat it.&nbsp;</span></p><p><span style="line-height: 1.5;">In addition to providing strategic guidance, the brief highlights existing programs that have achieved positive results. The most successful programs have often implemented more than one of the following strategies: working directly with married girls or girls who are at-risk of early marriage; educating and mobilizing parents, religious leaders, and community leaders; enhancing educational opportunities for girls; providing economic support or incentives; and fostering a policy and legal framework for enabling change. &nbsp; &nbsp; &nbsp;</span></p><p><span style="line-height: 1.5;">To learn more about the Girls Not Brides global parternship, click <a href="http://www.girlsnotbrides.org/" target="_blank">here</a>. &nbsp; &nbsp;</span></p>        </div>
+        </div>
+</div></div>

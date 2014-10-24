@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Fri, 04/18/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    IRIN         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Maternal mortality takes a clear physical and emotional toll on families worldwide, but what's the economic cost? ICRW research on the high economic cost of maternal mortality in Kenya is featured in IRIN's article on how important maternal health is to families and economies.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Maternal mortality takes a clear physical and emotional toll on families worldwide, but what's the economic cost? ICRW research on the high economic cost of maternal mortality in Kenya is featured in IRIN's article on how important maternal health is to families and economies.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.irinnews.org/report/99921/a-mother-s-death-costs-the-family-dear-kenyan-study" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

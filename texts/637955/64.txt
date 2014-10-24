@@ -1,0 +1,30 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>With the support of the United Nations Foundation, ICRW is employing its expertise and evidence to educate and mobilize U.S. policymakers to act as global leaders in regard to comprehensive and rights-based sexual and reproductive health programs and policies, as well as to invest and spend more resources more wisely in these programs. ICRW leverages its strong connections with influential leaders in and outside the U.S. government to help shape the discourse and move the conversation forward on these critical issues.&nbsp; Improving access by adolescents and young people to sexual and reproductive health information and services through U.S. government programs and policies is a central component of ICRW&rsquo;s work to ensure that U.S. funds are well spent.&nbsp; The goal of this work is to contribute to a new and more positive conversation on the role of the United States in supporting international reproductive health programs and policies. It will lead to more effective programs that better meet the needs of women, men, adolescents and young people in the developing world to sexual and reproductive health information and services.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    United Nations Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Suzanne Petroni        </div>
+        </div>
+</div></div>

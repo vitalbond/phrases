@@ -1,0 +1,31 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    We examine the phenomenon of child marriage        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Mon, 06/03/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Al Jazeera The Stream        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW's Ann Warner weighs in on an Al Jazeera panel discussion of child marriage. Warner was joined by <span style="line-height: 1.5;">Lakshmi Sundaram of Girls Not Brides; Maria Al Masani of Madbakh Women's Intiative; and Naana Otoo-Oyortey of Forward UK.</span></p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/p6XGVthD3Kw" frameborder="0" allowfullscreen></iframe>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://stream.aljazeera.com/story/201305312300-0022798" target="_blank">Read more »</a>        </div>
+        </div>
+</div></div>

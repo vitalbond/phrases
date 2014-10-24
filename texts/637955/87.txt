@@ -1,0 +1,24 @@
+<div><div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Thomson Reuters Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>In this piece published by Thomson Reuters, ICRW&rsquo;s Director of Gender, Violence and Rights writes about a global epidemic affecting millions of women and girls every year and why it is so important that IVAWA passes.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>In this piece published by Thomson Reuters, ICRW&rsquo;s Director of Gender, Violence and Rights writes about a global epidemic affecting millions of women and girls every year and why it is so important that IVAWA passes.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.trust.org/item/20140512212728-pj0ob/?source=fiBlogs" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,34 @@
+<div><p>So I am working on learning a few things, all at the same time. The coolest thing is <a href="http://golang.org/">Go</a>, the &ldquo;programming environment that makes it easy to build simple, reliable, and efficient software&rdquo; from Google. But I&rsquo;m also playing with <a href="https://github.com/jdarnold">GitHub</a>, as the whole environment can be tightly integrated with it. And so, by extension, I&rsquo;m playing with <a href="http://git-scm.com/">Git</a>. More on all of those at a later, probably over on my <a href="http://linux.amazingdev.com/blog/">Daemon Dancing In The Dark</a> more generalized Linux blog.</p>
+<p>Anyway, I&rsquo;m working on a program I call <a href="https://github.com/jdarnold/iceray">Iceray</a>. It is a command line application that will send MP3 files to an <a href="http://www.icecast.org/">Icecast</a> / <a href="http://www.shoutcast.com/">Shoutcast</a> server, like my <a href="http://amazingdev.com:8000/flame.m3u">Vehement Flame radio station</a>. I wanted something I could run that would just feed the server without me handholding it.</p>
+<p>So I went to work on packaging it up and finally got a <a href="https://wiki.archlinux.org/index.php/Pkgbuild">PKGBUILD</a> to work. I spent way too much time working on it, especially when it turned out the <a href="https://wiki.archlinux.org/index.php/Go_Package_Guidelines">Go Packing Guidelines</a> wiki page is pretty good. The sample PKGBUILDs should have worked better for me, but I got a few of my streams crossed which took me out of my game for a bit.</p>
+<p>The first thing was actually in my Go program. I changed all the package declarations to be &lsquo;package iceray&rsquo;, not realizing that if it isn&rsquo;t &lsquo;package main&rsquo; it will build a library and not an application. And I also had the _gourl in my PKGBUILD wrong, in that I originally created it as a Git package, so I had the git: protocol in there.</p>
+<p>And the page is still a little confusing, in that I needed to use a combination of the sample PKGBUILDs. While iceray in the end boils down to an application, I still found it necessary to use &lsquo;<em>go get</em>&lsquo; in the build() routine, because I don&rsquo;t think &lsquo;<em>go build</em>&lsquo; pulls in the necessary remote libraries (I use <a href="https://github.com/systemfreund/go-libshout">go-libshout</a>, <a href="http://code.google.com/p/gcfg/">gcfg</a>, and <a href="https://github.com/ascherkus/go-id3">go-id3</a>). And the application ones use the path &ldquo;$srcdir/$pkgname-$pkgdir&rdquo;, but &ldquo;$srcdir&rdquo; worked just fine for me. So here&rsquo;s the final PKGBUILD:</p>
+<pre># Contributor: Jonathan Arnold &lt;jdarnold@buddydog.org&gt;
+
+pkgname=iceray
+pkgver=0.2
+pkgrel=2
+pkgdesc="Icecast/Shoutcast commandline client"
+arch=('i686' 'x86_64')
+url="https://github.com/jdarnold/iceray"
+license=('MIT')
+depends=('libshout')
+makedepends=('go')
+conflicts=('iceray')
+provides=('iceray')
+options=('!strip' '!emptydirs')
+_gourl="github.com/jdarnold/iceray"
+install=${pkgname}.install
+
+build() {
+    cd "$srcdir"
+    GOPATH="$srcdir" go get -v -x ${_gourl}/...
+}
+
+package() {
+    install -Dm755 "$srcdir/bin/$pkgname" "$pkgdir/usr/bin/$pkgname"
+    install -Dm644 "$srcdir/src/$_gourl/iceray.gcfg.sample" "$pkgdir/usr/share/$pkgname/iceray.gcfg.sample"
+    #install -D -m644 iceray.1 $(DESTDIR)$(MANPREFIX)/man1/iceray.1
+}</pre>
+<p>So, in the end, the PKGBUILD was pretty simple, despite my flailing about. Hope this helps someone else!</p>
+<p><a href="https://aur.archlinux.org/packages/iceray/">AUR (en) &ndash; iceray</a>.</p></div>

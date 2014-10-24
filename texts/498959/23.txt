@@ -1,0 +1,60 @@
+<div><p>Hi Friends!</p>
+<p>Just popping in with a quick new recipe to share today! As you probably know, I eat oatmeal pretty much every morning for breakfast. Usually I just make it in the microwave, but yesterday I thought it might be fun to change things up and make a baked version.</p>
+<p><img class="aligncenter size-full wp-image-12033" alt="2 Baked Oatmeal" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/2.jpg" width="550" height="380" title="Baked Oatmeal"></p>
+<p>This is a twist on my favorite morning oatmeal combo, with a few adjustments to make it more suitable for baking! Keep in mind that this is not very sweet. It works for me with just the sweetness from the banana and milk and then the fruit and pb drizzle on top. If you like things sweeter, you may want to add a little honey or sugar to yours.</p>
+<p>Here&rsquo;s the recipe:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">Baked Oatmeal</div>
+<div class="ERSClear">&nbsp;</div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/2.jpg" width="205" title="Baked Oatmeal" alt="2 Baked Oatmeal"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&amp;url=http%3A%2F%2Fwww.theleangreenbean.com%2Fbaked-oatmeal%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/12032-0/" rel="nofollow" target="_blank">Print</a></span> </div></div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT5M">5 mins</time></div></div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Cook time</div>
+<div class="ERSTimeItem"> <time itemprop="cookTime" datetime="PT25M">25 mins</time></div></div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT30M">30 mins</time></div></div>
+<div class="ERSClearLeft">&nbsp;</div></div>
+<div itemprop="description" class="ERSSummary">Perfect for a lazy morning breakfast OR double the recipe and make enough for the whole week&hellip;then just reheat in the morning.</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div>
+<div class="ERSServes">Serves: <span itemprop="recipeYield">2</span></div></div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">1 cup rolled oats</li>
+<li class="ingredient" itemprop="ingredients">&frac34; cup milk</li>
+<li class="ingredient" itemprop="ingredients">1 egg</li>
+<li class="ingredient" itemprop="ingredients">&frac14; cup Dark Chocolate Nuttzo (or your favorite nut butter)</li>
+<li class="ingredient" itemprop="ingredients">&frac14; cup mashed banana</li>
+<li class="ingredient" itemprop="ingredients">&frac14; cup raw pumpkin seeds</li>
+<li class="ingredient" itemprop="ingredients">&frac12; teaspoon baking soda</li>
+<li class="ingredient" itemprop="ingredients">1 teaspoon cinnamon</li>
+<li class="ingredient" itemprop="ingredients">Toppings: additional nut butter &amp; fruit</li>
+</ul><div class="ERSClear"></div></div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Mash the banana and Nuttzo (or nut butter) together in a small bowl.</li>
+<li class="instruction" itemprop="recipeInstructions">Add the oats, milk and egg and mix well.</li>
+<li class="instruction" itemprop="recipeInstructions">Stir in the baking soda, cinnamon and pumpkin seeds.</li>
+<li class="instruction" itemprop="recipeInstructions">Pour into large, greased ramekins (or whatever pan you want to use) and bake at 400 degrees for 25 minutes.</li>
+<li class="instruction" itemprop="recipeInstructions">Top with a drizzle of nut butter and some fresh fruit if desired.</li>
+</ol><div class="ERSClear"></div></div>
+<div class="ERSNotesDiv">
+<div class="ERSNotesHeader">Notes</div>
+<div class="ERSNotes">You could double this recipe and bake in a bigger pan.<br>Lining the bottom of the ramekins or pan with parchment paper makes it easy to remove.</div>
+<div class="ERSClear"></div></div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2310</div></div>
+<p>&nbsp;</p>
+<p>I don&rsquo;t know why it took me so many years to discover parchment paper but it really makes getting stuff out of pans a whole heck of a lot easier!</p>
+<p><img class="aligncenter size-full wp-image-12034" alt="3 Baked Oatmeal" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/3.jpg" width="550" height="368" title="Baked Oatmeal"></p>
+<p>Feel free to customize this to your liking. Use your favorite fruit&hellip;use applesauce if you don&rsquo;t like banana&hellip;drizzle with chocolate if you wanna get crazy!</p>
+<p><img class="aligncenter size-full wp-image-12035" alt="baked oatmeal.jpg Baked Oatmeal" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/baked-oatmeal.jpg.jpg" width="550" height="368" title="Baked Oatmeal"></p>
+<p>And don&rsquo;t feel the need to make yours pretty like mine. That was just for the pictures <img src="http://www.theleangreenbean.com/wp-includes/images/smilies/icon_smile.gif" alt="icon smile Baked Oatmeal" class="wp-smiley" title="Baked Oatmeal"></p>
+<p><img class="aligncenter size-full wp-image-12036" alt="4 Baked Oatmeal" src="http://www.theleangreenbean.com/wp-content/uploads/2014/04/4.jpg" width="550" height="394" title="Baked Oatmeal"><br></p><h3>Let&rsquo;s chat:</h3>
+<h3>Are you an oatmeal lover?<br>
+What your favorite oatmeal combo?</h3>
+<p>Enjoy!<br>
+&ndash;Lindsay&ndash;</p></div>

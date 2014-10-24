@@ -1,0 +1,5 @@
+<div><p>I have a software pet peeve. Have you ever seen something like this:</p>
+<blockquote><p>1 update(s)</p></blockquote>
+<p>or, even worse, this?</p>
+<blockquote><p>1 updates</p></blockquote>
+<p>Well, I think this is ridiculous. Do you know why I think this is ridiculous? Because it’s 2012, and programmers have really good “if” statements available to them! <img src="http://archlinux.me/drcouzelis/wp-includes/images/smilies/icon_razz.gif" alt=":P" class="wp-smiley"></p></div>

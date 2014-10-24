@@ -1,0 +1,270 @@
+<div><p>I don&rsquo;t know about you, but I was pretty excited at the end of <a href="http://archlinux.me/dusty/2013/07/24/creating-an-application-in-kivy-part-6/">Part 6</a> when I was able to send a message to myself on another account. It&rsquo;s taken several weeks to get here, but by the end of this part, we&rsquo;ll have a [mostly|barely] working jabber client that can send and receive messages and isn&rsquo;t too annoying to interact with.</p>
+<p>If you haven&rsquo;t been following along or want to start this example at the same point at which I&rsquo;m starting, you can clone the github repository with my examples:</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_six
+</pre>
+<p>Remember to create and activate a virtualenv populated with the appropriate dependencies, as discussed in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">part 1</a>.</p>
+<h4>Table Of Contents</h4>
+<p>If you&rsquo;ve never thought about it before, let me tell you: maintaing a table of contents on WordPress is a royal pain in the ass.</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Handling events</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4: Code and interface improvements</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/16/creating-an-application-in-kivy-part-5/">Part 5: Rendering a buddy list</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/24/creating-an-application-in-kivy-part-6/">Part 6: ListView Interaction</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/31/creating-an-application-in-kivy-part-7/">Part 7: Receiving messages and interface fixes</a></li>
+</ol><h4>Receiving Messages</h4>
+<p>Receiving messages with SleekXMPP isn&rsquo;t quite as simple as sending them, but it&rsquo;s pretty damn simple! SleekXMPP has an event handler, not unlike the one Kivy provides, but don&rsquo;t confuse them! SleekXMPP is running in a separate thread and doesn&rsquo;t know or care that Kivy is running it&rsquo;s own event loop. Further, they use different APIs, which basically means that they use different method names to accomplish similar things, like issuing an event or listening to receive one.</p>
+<p>Thus, in order to not be confused with Kivy Events, we don&rsquo;t call our handler <code>on_message</code> or something in that. Instead, we add a <code>handle_xmpp_message</code> method to the <code>OrkivRoot</code> class:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/ef7c07b1677d2fa2fc6b27392cda6bc2b1a82b4a">commit</a>)</p>
+<pre class="brush:python">
+def handle_xmpp_message(self, message):
+    if message['type'] not in ['normal', 'chat']:
+        return
+    jabber_id = message['from'].bare
+
+    if jabber_id not in self.chat_windows:
+        self.chat_windows[jabber_id] = ChatWindow(jabber_id=jabber_id)
+    self.chat_windows[jabber_id].chat_log_label.text += "(%s) %s: %s\n" % (
+            datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+            jabber_id,
+            message['body'])
+</pre>
+<p>When called by SleekXMPP, this method is passed a message object, which is some kind of <a href="http://sleekxmpp.com/api/xmlstream/stanzabase.html">stanza</a> object. I didn&rsquo;t bother to fully understand how this object is constructed; instead I stole some code from the <a href="http://sleekxmpp.com/getting_started/echobot.html#responding-to-messages">SleekXMPP quickstart</a> and then introspected it by printing stuff to the terminal when the handler is called. It can often be useful to <code>print(dir(message))</code> to see what kind of attributes and methods an unknown object has. <code>print(type(message))</code> can also be useful in that knowing the name of a class can help figure out where to look in the documentation or source code.</p>
+<p>So after a wee bit of trial and error, I came up with the above method. It first checks the type, and gets the <code>bare</code> attribute off the <code>jabber_id</code> (<a href="http://sleekxmpp.com/api/xmlstream/jid.html">the documentation</a> helped here). Then, if the chat window does not exist, we create it, the exact same way we did when the user created the object. Even if the user is not currently looking at the chat, the message will show up in it. We then append the new message to the label using the same format we used when sending messages.</p>
+<p>Now, hook up the event handler at the moment the xmpp object is constructed in the <code>connect_to_jabber</code> method of the <code>Orkiv</code>. It just takes one new line of code at the end of the method:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/f5d824b13ecd9c2bd2650dfba50eef09fa3bb0f4">commit</a>)</p>
+<pre class="brush:python">
+    self.xmpp.add_event_handler('message', self.root.handle_xmpp_message)
+</pre>
+<p>We&rsquo;ll make the label look a bit cleaner shortly, but first: test it! Start chatting with your jabber friends. Tell them how you&rsquo;ve written your own jabber client using Python and Kivy. If they aren&rsquo;t sufficiently impressed, find new friends!</p>
+<h4>Cleaning up duplicate code</h4>
+<p>There&rsquo;s a couple pieces of code in our <code>OrkivRoot</code> and <code>ChatWindow</code> classes that look very similar to each other. First, the code for creating a new chat window only if one doesn&rsquo;t exist is identical. And the code for formatting a new chat message and appending it to the chat log is also congruent.</p>
+<p>It is a good idea to remove pieces of duplicate code as soon as you notice them. Duplicate code is a &ldquo;code smell&rdquo;; it indicates that your design is not good. From a practical point of view, it means maintenance can be difficult if you decide to change something (say the formatting of the date on a chat message) and forget to update multiple places at once. Of course right now you remember it&rsquo;s in two places, but six months from now when these two classes have been refactored into separate files, you might not remember so easily.</p>
+<p>There are a variety of patterns to remove duplicate code, and each situation can be different. The easiest thing to do is to refactor the things that stay the same into a function and pass the things that change in as arguments. Or you might be able to use object oriented programming and inheritance. Python&rsquo;s decorator syntax or context managers can also be extremely useful for reducing duplicate code. The point is, as soon as you&rsquo;ve hit the copy-paste key combination, you should start thinking about the most effective API that can be designed to remove redundancy.</p>
+<p>In this case, we can just add a couple new methods, one to <code>OrkivRoot</code> and one to <code>ChatWindow</code>. Let&rsquo;s start by refactoring the code that creates a chat window only if it doesn&rsquo;t exist:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/d569f3a9203afebb678bb57a539d51827718fb50">commit</a>)</p>
+<pre class="brush:python">
+    def get_chat_window(self, jabber_id):
+        if jabber_id not in self.chat_windows:
+            self.chat_windows[jabber_id] = ChatWindow(jabber_id=jabber_id)
+        return self.chat_windows[jabber_id]
+
+    def show_buddy_chat(self, jabber_id):
+        self.remove_widget(self.buddy_list)
+        self.add_widget(self.get_chat_window(jabber_id))
+
+    def handle_xmpp_message(self, message):
+        if message['type'] not in ['normal', 'chat']:
+            return
+        jabber_id = message['from'].bare
+
+        chat_window = self.get_chat_window(jabber_id)
+        chat_window.chat_log_label.text += "(%s) %s: %s\n" % (
+                datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+                jabber_id,
+                message['body'])
+</pre>
+<p>All we did was add a new method that gets the chat window from the dictionary, creating one if it doesn&rsquo;t exist. Then we simplify the two methods that were previously performing this task to simply call that method. Those methods are now easier to follow. The basic principle is to abstract the complex code into it&rsquo;s own function so that calling code is more readable.</p>
+<p>Now let&rsquo;s do the same thing for message formatting by adding a <code>append_chat_message</code> method to the <code>ChatWindow</code> class:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/2a613cfe6133c043bc89de903fa96b0b507d177f">commit</a>)</p>
+<pre class="brush:python">
+    def send_message(self):
+        app = Orkiv.get_running_app()
+        app.xmpp.send_message(
+            mto=self.jabber_id,
+            mbody=self.send_chat_textinput.text)
+        self.append_chat_message("Me:", self.send_chat_textinput.text)
+        self.send_chat_textinput.text = ''
+
+    def append_chat_message(self, sender, message):
+        self.chat_log_label.text += "(%s) %s: %s\n" % (
+                sender,
+                datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+                message)
+</pre>
+<p>We also make a similar change to the code in <code>OrkivRoot</code> that handles incoming text events:</p>
+<p><!-- same commit --></p>
+<pre class="brush:python">
+def handle_xmpp_message(self, message):
+    if message['type'] not in ['normal', 'chat']:
+        return
+    jabber_id = message['from'].bare
+
+    chat_window = self.get_chat_window(jabber_id)
+    chat_window.append_chat_message(jabber_id, message['body'])
+</pre>
+<h4>Interface Improvements</h4>
+<p>Let&rsquo;s make some improvements to that chat window. Start by modifying the method we just added to include some color to help the reader identify who sent what. The <a href="http://kivy.org/docs/api-kivy.uix.label.html">Label</a> class has a feature that allows you to include markup on the label. Unfortunately, it has it&rsquo;s own microsyntax instead of using any standard markup languages. This is good because it allows the language to target the things that Kivy labels can do, but not so great in that you have yet another markup to learn. (My life would be much easier if I was not constantly switching between ReST, Markdown, Trac wiki syntax, Mediawiki syntax, and HTML! Except for HTML, I&rsquo;ve never really been able to learn or distinguish them, so I have to look up the syntax every time I write it.)</p>
+<p>The Kivy label syntax is reminiscent of bbcode popular on web forums, so if you&rsquo;ve used that, you should be comfortable. I&rsquo;m not going to go into detail of the syntax, since the documentation does a great job of that, but I will show you how to use colors and bold text to make our <code>ChatWindow</code> label much more eye-pleasing:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/316bc4127f8ce1efb7a6a3365a2e03aae77641bb">commit</a>)</p>
+<pre class="brush:python">
+    from kivy.utils import escape_markup  # At top of file
+
+    def send_message(self):
+        app = Orkiv.get_running_app()
+        app.xmpp.send_message(
+            mto=self.jabber_id,
+            mbody=self.send_chat_textinput.text)
+        self.append_chat_message("Me", self.send_chat_textinput.text, color="aaffbb")
+        self.send_chat_textinput.text = ''
+
+    def append_chat_message(self, sender, message, color):
+        self.chat_log_label.text += "[b](%s) [color=%s]%s[/color][/b]: %s\n" % (
+                datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                color,
+                escape_markup(sender),
+                escape_markup(message))
+</pre>
+<p>We added a color parameter to <code>append_chat_message</code>. It needs to be a hextet like <a href="http://www.w3schools.com/html/html_colors.asp">HTML colors</a>. Then we used the markup syntax to make the usernames colored and the dates and usernames bold. We also escape the message and sender strings so that users don&rsquo;t get confused if they accidentally include Kivy formatting tags.</p>
+<p>Remember to add the color parameter when calling this function from the <code>handle_xmpp_message</code> method on <code>OrkivRoot</code>:</p>
+<p><!-- same commit --></p>
+<pre class="brush:python">
+    chat_window.append_chat_message(jabber_id, message['body'], color="aaaaff")
+</pre>
+<p>Finally, this won&rsquo;t actually render as markup until we tell the label that we want markup rendered. This can be done easily by setting the <code>markup</code> property on the label in the KV Language file:</p>
+<p><!--same commit, still--></p>
+<pre class="brush:python">
+    Label:
+        markup: True
+        id: chat_log_label
+</pre>
+<p>Now if you run the program and chat with someone, you can easily distinguish who said what! However, if your chat gets too long, it gets truncated, both horizontally and vertically. Let&rsquo;s make it scroll using a Kivy <code>ScrollView</code>. This can be done entirely in <code>orkiv.kv</code>, though it&rsquo;s not trivial to get it right:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/a71d871f1c6deed44b4d83dbdc516fcbbfc70a5f">commit</a>)</p>
+<pre class="brush:python">
+    ScrollView:
+        Label:
+            size_hint_y: None
+            text_size: (root.width, None)
+            size: self.texture_size
+            markup: True
+            id: chat_log_label
+</pre>
+<p>In addition to wrapping the label in a scroll view, we also had to set a few sizing properties on the label. The <code>size_hint_y</code> is set to <code>None</code> or else the label would always be exactly the same size as the <code>ScrollView</code>. We want it to be <em>bigger</em> than the scroll view, or else there wouldn&rsquo;t be anything to scroll!. In fact, we want it to be exactly the same size as the <code>texture_size</code>, which gets updated whenever lines get added to the <code>Label</code>. Finally, to make the lines wrap (because we don&rsquo;t want to do ugly horizontal scrolling), we set the <code>text_size</code> to have the same width as the parent.</p>
+<p>This can be a bit confusing, so let me explain, hopefully correctly (I&rsquo;m a bit confused, myself, to be honest). First, we have a <code>ScrollView</code> which does not have an explicit size, so it&rsquo;s size is set for us by the parent <code>BoxLayout</code>. The <code>ScrollView</code> contains a <code>Label</code>, which contains a <code>Texture</code>. The height of the label is set to be the height of the texture, which is calculated from the number of lines being displayed, and updated dynamically. Further, the width of the text rendered on the texture is constrained to be the width of the root widget, which forces the text to wrap. When the text wraps, the texture size gets bigger, and the label gets bigger because it&rsquo;s bound to the texture size. and the size of the label can be as big as it wants since it&rsquo;s scrollable.</p>
+<p>These changes have the side effect of left-aligning chat, which I was expecting to have to do manually. Go Kivy! One more thing I want to do is scroll the window to the bottom if there&rsquo;s any new text. This is easily done by adding a single line to the <code>append_chat_message</code> method:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/1357e9a2f18d1a608e6dfc95c076d3498956fcc5">commit</a>)</p>
+<pre class="brush:python">
+    def append_chat_message(self, sender, message, color):
+        self.chat_log_label.text += "[b](%s) [color=%s]%s[/color][/b]: %s\n" % (
+                datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                color,
+                escape_markup(sender),
+                escape_markup(message))
+        self.chat_log_label.parent.scroll_y = 0.0
+</pre>
+<p>The <code>scroll_y</code> attribute on <code>ScrollView</code> is basically a percentage. it returns the current scroll position if you get it, and if you set it, it will scroll the window; 0 is the bottom, 1 is the top, and anything in between is&hellip; well, anything in between.</p>
+<p>Now I&rsquo;d like to have the form send a message on an enter keypress, not just when I click the button. This has been annoying me in testing this app and annoyances should be addressed. We can use the same technique we used in part 4. However, instead of hard-coding a call when the enter key is pressed, let&rsquo;s create a new reusable widget that fires an event when enter is pressed. We&rsquo;ve had quite a bit of experience binding functions to events, but we haven&rsquo;t yet tried creating an event of our own.</p>
+<p>We&rsquo;ll call the new widget <code>EnterTextInput</code>. Binding and dispatching events is actually surprisingly simple, so our new class is pretty short:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/34487fde37c26c8c6964d2f6a44a34c1b1d590d9">commit</a>)</p>
+<pre class="brush:python">
+class EnterTextInput(TextInput):
+    def __init__(self, **kwargs):
+        self.register_event_type("on_enter_key")
+        super(EnterTextInput, self).__init__(**kwargs)
+
+    def _keyboard_on_key_down(self, window, keycode, text, modifiers):
+        if keycode[0] == 13:  # 13 is the keycode for &lt;enter&gt;
+            self.dispatch("on_enter_key")
+        else:
+            super(EnterTextInput, self)._keyboard_on_key_down(
+                    window, keycode, text, modifiers)
+
+
+    def on_enter_key(self):
+        pass
+</pre>
+<p>We explicitly register the new event type with the <code>EventDispatcher</code>, which is a superclass of <code>Widget</code> (and therefore, a superclass of <code>TextInput</code>) and provides the methods associated with dispatching events. Then we use a <code>super()</code> call to do the parent initialization.</p>
+<p>Next, we override <code>_keyboard_on_key_down</code>, just as we did in the <code>AccountDetailsTextInput</code> class. If the user pressed enter, we <code>dispatch</code> our custom event; otherwise we just let the superclass do it&rsquo;s thing.</p>
+<p>Now we have to hook up that event. I want to do that on the <code>ChatWindow</code> text entry, but first, let&rsquo;s remove some more code duplication. You might not have noticed, but when I created the <code>_keyboard_on_key_down</code> method above, I copy-pasted some code from the <code>AccountDetailsTextInput</code>. It turns out we can make our <code>AccountDetailsTextInput</code> class extend the new code to reduce code duplication. That means if we make any improvements to the <code>EnterTextInput</code> class in the future, the subclass will get them for free. Here&rsquo;s the new version of <code>AccountDetailsTextInput</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/17794ee58441eae12b09fafd7194dcd48df8260a">commit</a>)</p>
+<pre class="brush:python">
+    class AccountDetailsTextInput(EnterTextInput):
+        next = ObjectProperty()
+
+        def _keyboard_on_key_down(self, window, keycode, text, modifiers):
+            if keycode[0] == 9:  # 9 is the keycode for &lt;tab&gt;
+                self.next.focus = True
+            else:
+                super(AccountDetailsTextInput, self)._keyboard_on_key_down(
+                        window, keycode, text, modifiers)
+
+        def on_enter_key(self):
+            self.parent.parent.parent.login()  # this is not future friendly
+</pre>
+<p>Basically, we just removed the code for dealing with the enter key and add an event handler that does the same thing when the enter key is pressed. It&rsquo;s a simple refactor, and arguably isn&rsquo;t terribly more readable than the original version. However, it is more maintainable. For example, if in the future we discover that an enter key can generate different keycodes in different countries, we only have to fix it in one place.</p>
+<p>Now let&rsquo;s also hook up the new event on our <code>ChatWindow</code> in the KV language file. Change the <code>TextInput</code> to a <code>EnterTextInput</code> and hook up the new event:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/1c9976f5560a368448888a08bc8b9fe106a3eb65">commit</a>)</p>
+<pre class="brush:python">
+    EnterTextInput:
+        id: send_chat_textinput
+        on_enter_key: root.send_message()
+</pre>
+<p>That&rsquo;s much better! However, there&rsquo;s still a bit to be desired in terms of notifications. Let&rsquo;s make Kivy play a sound whenever a message comes in! I grabbed a creative commons <a href="http://www.freesound.org/people/TwistedLemon/sounds/2054/">sound</a> (attributed to User TwistedLemon) from <a href="http://www.freesound.org/">Free sound</a> and saved it as <code>orkiv/sounds/in.wav</code>. You can also steal a sound from your favourite IM program or record something yourself. Playing the sound is as easy as loading it in the <code>OrkivRoot</code> initializer:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/3569f09fbda77e2f85fb4937571ca272af5a2d6a">commit</a>)</p>
+<pre class="brush:python">
+from kivy.core.audio import SoundLoader  # At top of file
+
+    self.in_sound = SoundLoader.load("orkiv/sounds/in.wav")
+</pre>
+<p>And playing it in the <code>handle_xmpp_message</code> method:</p>
+<p><!-- same commit --></p>
+<pre class="brush:python">
+    self.in_sound.play()
+</pre>
+<p>We&rsquo;re running a bit short on space for this week, but there&rsquo;s one more thing I&rsquo;d like to do. Right now, when we receive a notification, it&rsquo;s impossible to know who sent the message, unless we currently have that chat window open. Let&rsquo;s make our <code>BuddyList</code> highlight those users who have new messages.</p>
+<p>The plan I have for this is not the best plan, as it doesn&rsquo;t clearly separate data from display. We&rsquo;re adding a new piece of data for each jabber_id (whether or not it has new messages), but instead of creating a proper data model, I&rsquo;m just going to store that data in a set. Remember, the args_converter is drawing data from the xmpp presence and other locations, and the attribute of whether something is selected is stored in the state of the <code>BuddyListItem</code>, so in some ways, the args_converter IS a data model.</p>
+<p>It&rsquo;s not elegant. However, making it elegant requires both that the <code>ListView</code> API be properly designed, and that we stop abusing it to take only the parts we want. So let&rsquo;s go with simple for now!</p>
+<p>Start by adding an attribute to the <code>BuddyList.__init__</code> method. It will be a set object, and will contain only jabber_ids that have new messages:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/de6e02f0745ce04c8e9ff0350030c58695b08982">commit</a>)</p>
+<pre class="brush:python">
+    def __init__(self):
+        super(BuddyList, self).__init__()
+        self.app = Orkiv.get_running_app()
+        self.list_view.adapter.data = sorted(self.app.xmpp.client_roster.keys())
+        self.new_messages = set()
+</pre>
+<p>We use a <code>set</code> instead of a <code>list</code> because sets are more efficient when we want to ask the question &ldquo;is this object in the set&rdquo;. We aren&rsquo;t going to be doing that millions of times and the size of the set isn&rsquo;t going to be tens of thousands of objects, so it&rsquo;s not a really important distinction for this code. However, it&rsquo;s good to get in the habit of using and knowing which data structures to use for which tasks. At some point in your programming career, you will want to study up on &ldquo;Algorithms Analysis&rdquo; and &ldquo;Data Structures&rdquo; to help you make these decisions. For now, just remember that any time you are keeping a collection of objects so you can repeatedly use the <code>in</code> keyword on it, use a set. Any time you need to know the order of objects, use a list.</p>
+<p>Before we start adding messages to this set, let&rsquo;s create a method on <code>BuddyList</code> that forces the listview to redraw itself. This method shouldn&rsquo;t really be required if we were using the ListView API properly and it was working properly, but we aren&rsquo;t and it&rsquo;s not:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/92410d41f1f2cd36bf78c0aa11eda424590a61dd">commit</a>)</p>
+<pre class="brush:python">
+    def force_list_view_update(self):
+        self.list_view.adapter.update_for_new_data()
+        self.list_view._trigger_reset_populate()
+</pre>
+<p>Now we need to add users to the set whenever we get a new message in <code>handle_xmpp_message</code>, telling the <code>BuddyList</code> to redraw itself as we do so:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/d92f80b17ea18409e76cb84c6915eef59aa6c1d2">commit</a>)</p>
+<pre class="brush:python">
+    if chat_window not in self.children:
+        self.buddy_list.new_messages.add(jabber_id)
+        self.buddy_list.force_list_view_update()
+</pre>
+<p>We only add the &ldquo;new message&rdquo; notification if the chat window is not the currently displayed one. If it is, then the new message shows up on the screen immediately, so it&rsquo;s not unread.</p>
+<p>Similarly, when the user selects a new buddy from the buddy list, we need to clear the new message status for that user:</p>
+<p><!-- same commit --></p>
+<pre class="brush:python">
+    def show_buddy_chat(self, jabber_id):
+        self.remove_widget(self.buddy_list)
+        self.add_widget(self.get_chat_window(jabber_id))
+        self.buddy_list.new_messages.discard(jabber_id)
+        self.buddy_list.force_list_view_update()
+</pre>
+<p>The <code>discard</code> method, unlike <code>remove</code> does not raise an exception if the item is not in the set.</p>
+<p>Of course, running this code won&rsquo;t actually highlight anything. Knowing that the jabber_id has a new message doesn&rsquo;t help us unless we do something with that knowledge. Let&rsquo;s replace the background color if statement in <code>BuddyList.roster_converter</code> with the following:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/2e8fa6b7c6e4fba20fcb18d3e0221c1eac3a41bc">commit</a>)</p>
+<pre class="brush:python">
+   if jabberid in self.new_messages:
+       result['background_color'] = (0.6, 0.4, 0.6, 1)
+   else:
+       result['background_color'] = (0, 0, 0, 1)
+
+   if index % 2:
+       result['background_color'] = (x + .3 for x in result['background_color']) 
+</pre>
+<p>Basically, if it&rsquo;s a new message, we give it a new color. But then, to maintain the alternating colors of list items, we add 0.3 to the colors in every other row. Overall, the interface is working pretty well.</p>
+<p>Next time, we&rsquo;ll see if we can get it to render the chat window beside the buddy list, if the window is wide enough! However, please note that it&rsquo;s going to be a couple weeks before I can publish that article; I&rsquo;m on vacation this weekend and the following weekend I&rsquo;ll be at <a href="https://2013.pycon.ca/">Pycon Canada</a> (look me up if you&rsquo;re there!).</p>
+<h4>Monetary feedback</h4>
+<p>While, in previous parts of this tutorial, I&rsquo;ve been soliciting funds to support my continued involvement in writing and open source projects, this week, I&rsquo;m going to ask you to fund <a href="https://www.gittip.com/tito/">Mathieu Virbel</a> instead. Mathieu is the inventor and (utterly brilliant) lead developer of Kivy. The more time he can spend developing Kivy, the better it is for all of us (including me)!</p>
+<p>Of course, you&rsquo;re also welcome to <a href="https://www.gittip.com/buchuki/">tip me</a> instead, or any of the other wonderful members of the <a href="http://kivy.org/#aboutus">Kivy team</a>.</p>
+<p>Or just promote Kivy and my articles on your favourite social media platforms. Spread the word, it&rsquo;s always appreciated!</p></div>

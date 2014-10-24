@@ -1,0 +1,4 @@
+<div><p>Nu var det ett tag sedan jag skrev n&aring;got. S&aring; h&auml;r kommer ett litet tips fr&aring;n mig, till dig.</p>
+<p>1. F&ouml;rst, installera&nbsp;slingshot-launcher-bzr fr&aring;n AUR<br>
+2. H&ouml;gerklicka p&aring; panelen -&gt; L&auml;gg till nya objekt -&gt; Programstartare -&gt; H&ouml;gerklicka p&aring; ikonen som nu dykt upp p&aring; din panel -&gt; Egenskaper -&gt; L&auml;gg till ett nytt tomt objekt -&gt; Det viktigaste nu &auml;r att du skriver slingshot-launcher under kommando, v&auml;lj sedan en snygg ikon.<br>
+3. Klart!</p></div>

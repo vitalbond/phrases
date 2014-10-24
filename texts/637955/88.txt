@@ -1,0 +1,49 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>The International Center&nbsp;<span style="line-height: 1.5;">for Research on Women (ICRW) and&nbsp;</span><span style="line-height: 1.5;">Family Care International (FCI) will provide information</span><span style="line-height: 1.5;">&nbsp;on new research findings from&nbsp;</span><span style="line-height: 1.5;">four African countries documenting the</span><span style="line-height: 1.5;">dramatic economic and social impact&nbsp;</span><span style="line-height: 1.5;">of a woman&rsquo;s death during pregnancy </span><span style="line-height: 1.5;">or childbirth.</span></div><div>&nbsp;</div><div><div><strong>This brief will include presentations on:</strong></div><div>&nbsp;</div><div><strong style="line-height: 1.5;">A Price Too High to Bear</strong><span style="line-height: 1.5;">: <strong>Research by ICRW, FCI, and the KEMRI/CDC Research&nbsp;</strong></span><strong><span style="line-height: 1.5;">and Public Health Collaboration</span></strong></div><ul><li><span style="line-height: 1.5;">Economic costs, household disruption and other impacts of maternal death:</span><span style="line-height: 1.5;">Results from Kenya</span></li></ul><div><strong>Impacts of Maternal Deaths on Living Children Study: research by the FXB Center</strong></div><div><strong>for Health and Human Rights, Harvard University School of Public Health</strong></div><ul><li>Impact of a woman&rsquo;s death on her children&rsquo;s health, education, and economic status:<span style="line-height: 1.5;">New findings from Tanzania, Ethiopia and Malawi</span></li></ul><div><strong>Interconnections between Maternal and Newborn Health: research by Aga Khan</strong></div><div><strong>University and FCI</strong></div><ul><li>Healthy mother, healthy newborn: Evidence-based interventions beneficial to both&nbsp;<span style="line-height: 1.5;">women and newborns</span></li></ul><div><strong>From Evidence to Action: Research as an advocacy tool</strong></div><ul><li>Making the case for investing in maternal and newborn health</li></ul><p>&nbsp;</p><p><em style="line-height: 1.5;">RSVP by COB Wednesday, May 28th to Nikita Blanes: nblanes@icrw.org</em></p></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-speakers">
+      <div class="field-label">Speakers:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Family Care International</p><p>Kemri/CDC</p><p>International Center for Research on Women</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-event">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              When:&nbsp;</div>
+                    <span class="date-display-single">Fri, 05/30/2014 - <span class="date-display-start">9:00am</span><span class="date-display-separator"> - </span><span class="date-display-end">11:45am</span></span>        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-location">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Where:&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+          <span class="fn">The International Center for Research on Women</span>
+              <div class="street-address">
+        1120 20th St. NW                   Suite 500N              </div>
+              <span class="locality">Washington</span>,               <span class="region">DC</span>
+              <span class="postal-code">20036</span>
+              <div class="country-name">United States</div>
+                                      </div>
+      <div class="map-link">
+      <div class="location map-link">See map: <a href="http://maps.google.com/?q=1120+20th+St.+NW%2C+Washington%2C+DC%2C+20036%2C+us">Google Maps</a></div>    </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-host">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Host:&nbsp;</div>
+                    ICRW        </div>
+        </div>
+</div></div>

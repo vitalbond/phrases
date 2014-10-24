@@ -1,0 +1,77 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW and Partners for Prevention will conduct a randomized controlled trial of school-based, violence prevention interventions for young adolescents across three countries in Asia: Vietnam, India and Bangladesh.&nbsp; The intervention in each site is based on the Gender Equity Movement in Schools (GEMS) program that ICRW and partners developed and tested in Mumbai, India, from 2008-2010.&nbsp; That study demonstrated the feasibility and importance of intervening early to shift attitudes and norms around gender equality and gender-based violence.&nbsp;</p>
+<p>The current study will make a significant contribution to the evidence base of what works in developing gender-equitable and non-violent attitudes and behaviors&nbsp;among boys and girls through rigorous, mixed-method evaluations across three sites in the region. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2015        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    Department for International Development (DFID)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Partners for Prevention        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Ravi Verma        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Vietnam</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">India</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Bangladesh</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-publication">
+      <div class="field-label">Related Publications:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/publications/building-support-gender-equality-among-young-adolescents-school">Building Support for Gender Equality Among Young Adolescents in School</a>        </div>
+        </div>
+</div></div>

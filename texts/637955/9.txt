@@ -1,0 +1,53 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="Image Place Holder" src="http://www.icrw.org/files/images/people/Image%20Place-Holder.jpg?1372179826"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Shubh        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Sharma        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Technical Specialist         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Shubh Sharma is a Technical Specialist at the International Center for Research on Women (ICRW). In this capacity, she provides management and research support to ICRW&rsquo;s evaluation of Gap Inc.&rsquo;s Personal Advancement and Career Enhancement (P.A.C.E) Program for women factory workers across seven countries in Asia. Prior to joining ICRW, Sharma worked on several evaluations of women&rsquo;s and adolescent girls&rsquo; programs as well as on policy research concerning women&rsquo;s work and education. She has also been in involved in training and networking around feminist evaluation in India.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise:&nbsp;</div>
+                    <p>Measurement and Evaluation, Advocacy and Policy Engagement, Economic Empowerment, Adolescents&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English (fluent), Hindi (native), Spanish (intermediate)</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Sharma&rsquo;s post graduate studies were in social work at the Delhi School of Social Work, and in public health under the Erasmus Mundus Scholarship Programme of the European Commission. Her undergraduate education was in sociology at Hindu College, University of Delhi.</p>        </div>
+        </div>
+</div></div>

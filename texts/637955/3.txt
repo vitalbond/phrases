@@ -1,0 +1,69 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Through our past research ICRW has identified the causes and harmful effects of child marriage. Additionally, we have identified key program approaches that show potential for delaying and reducing child marriage. While this general understanding has been established, there is a demonstrated need for more specific guidance on programs and policies that will allow adolescent girls in the world's poorest countries to know, understand, and claim their rights and improve their lives. </p>
+<p>The primary objectives of this project are to: 1) illuminate potential "pathways to empowerment" for adolescent girls and women by conducting a deeper assessment of programs that have successfully delayed marriage and childbearing, and 2) mobilize funding, commitment, and action on girls' education, empowerment, and reproductive health through targeted research and advocacy. Currently ICRW is conducting case studies of several programs that are addressing child marriage in diverse settings, including India, Bangladesh and Egypt. We will release a major report in 2014 that will highlight the key findings from these case studies, providing guidance to donors, practitioners and policymakers on how best to address child marriage in the developing world.  </p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration: </div>
+                    2012 - 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder: </div>
+                    Packard Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director: </div>
+                    Ann Warner        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s): </div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">India</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                      <div class="field-label-inline">
+              Location(s): </div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Bangladesh</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                      <div class="field-label-inline">
+              Location(s): </div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Egypt</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-publication">
+      <div class="field-label">Related Publications: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/publications/solutions-end-child-marriage">Solutions to End Child Marriage</a>        </div>
+        </div>
+</div></div>

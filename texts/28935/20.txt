@@ -1,0 +1,24 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week marked the last full week of development before Sprint 9&prime;s pull request deadline on Aug 11th. So if you have any new features to introduce for the next release, you only have a few days left to submit your pull request. As a reminder, you can always stay up to date with the latest <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-9-next-release">development schedule</a> over on the YUI wiki.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/NroWMOr-51g">Button improvements</a>, <a href="https://gist.github.com/juandopazo/295cf2f00953e061d49b">an update</a> on <a href="http://yuilibrary.com/yui/docs/promise/">Y.Promise</a>, and <a href="http://brunofarache.github.io/y3d/">y3d</a>. You can catch a video of the Hangout <a href="http://www.youtube.com/watch?v=I2VjPlgenOU">over on YouTube</a>.</p>
+</li>
+<li>
+<p><a href="http://brunofarache.github.io/y3d/">y3d</a> is a WebGL library built with YUI written by <a href="http://github.com/brunofarache">Bruno Farache</a>. Neat stuff!</p>
+</li>
+<li>
+<p>Recent threads on the <a href="https://groups.google.com/forum/?fromgroups=#!forum/yui-contrib">contributor mailing list</a> include a discussion about <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/68XyipCOqSo">&ldquo;Smart&rdquo; Model Lists</a> and a <a href="https://groups.google.com/forum/?fromgroups=#!topic/yui-contrib/NroWMOr-51g">request for feedback on button improvements</a>.</p>
+</li>
+<li>
+<p><a href="http://purecss.io/">Pure</a> crossed 5000 stars on <a href="http://github.com/yui/pure/">GitHub</a> this week. Hurrah!</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://www.sencha.com/blog/5-myths-about-mobile-web-performance/">5 myths about mobile web performance</a></li>
+<li><a href="https://developer.amazon.com/sdk/webapps.html">The Amazon App Store now accepts web apps</a></li>
+<li><a href="https://github.com/creationix/js-git">JS-Git: A JavaScript implementation of Git</a></li>
+<li>&hellip; and more over at <a href="http://javascriptweekly.com/">JavaScript Weekly</a> and <a href="http://developer.yahoo.com/blogs/ydn/">YDN</a></li>
+</ul></li>
+</ul></div>

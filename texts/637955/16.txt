@@ -1,0 +1,34 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Urban Dhaka, Bangladesh        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="font-size: 12pt; font-family: Calibri;">The <placename st="on"><personname st="on">International</personname><placetype st="on">Center</placetype> for Research on Women</placename> (ICRW) is seeking proposals from Organizations<personname st="on">,</personname> Institutions or Agencies to design<personname st="on">,</personname> manage<personname st="on">,</personname> administer and process a quantitative and qualitative examination of the determinants of adolescent sexual and reproductive health in slum communities in <place st="on">Dhaka</place>. The anticipated time period for the work is September<personname st="on">,</personname> 2013 - January<personname st="on">,</personname> 2014.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>&nbsp;</p><p>. More specifically, the Candidate will work under the supervision of ICRW to:</p><p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identify and summarize recent research on barriers to adolescent sexual and reproductive health (ASRH) in urban Dhaka by local organizations and research institutions.</p><p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assist in design of data collection approach and lead the administration of a household-based survey of approximately 300 married girls &lt; 19 years of age to provide robust evidence on barriers to sexual and reproductive health access to services in two urban slum communities in Dhaka.</p><p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assist in the study design and development of field guides and conduct a series of qualitative research methods (at least 1 community mapping; 2 focus group discussions; and 30 in-depth interviews) in one urban slum community to assess the: a) healthcare service options and barriers for adolescent girls; and b) emerging ASRH challenges for both married and unmarried adolescent girls ages 15-19.</p><p>We will consider candidates with expertise in only either quantitative or qualitative data collection, but would prefer to identify an organization that can effectively manage both quantitative and qualitative data collection and preparation of data for analysis.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demonstrated experience with management of large research projects;</p><p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At least 10 years experience with quantitative data collection and management including: developing sampling frame; determining necessary sample size; enumeration; administration of questionnaire; data entry and cleaning;</p><p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At least 10 years experience training enumerators and supervising data collection in the field;</p><p>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demonstrated experience in submitting research protocols for Institutional Review Board (IRB) approval with an appropriate institution in Bangladesh;</p><p>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At least 10 years experience managing qualitative data collection and preparation for analysis including: purposive sampling, skilled interviewing, expert note-taking, high quality transcription and translation;</p><p>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demonstration of adequate qualified personnel and equipment to conduct a research effort of this size;</p><p>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Extensive experience and demonstrated knowledge of adolescent sexual and reproductive health in Bangladesh, preferably in urban communities;</p><p>8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (preferred) Experience with data collection in slum communities;</p><p>9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fluency in English; and</p><p>10.&nbsp; Excellent written and oral communication skills.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Interested Candidates should submit an expression of interest; relevant examples of work conducted; CVs of proposed leads for the project; and budget summaries for similar work to: <a href="mailto:spetroni@icrw.org">spetroni@icrw.org</a>and <a href="mailto:msexton@icrw.org">msexton@icrw.org</a>no later than <strong>July 23, 2013</strong>. Successful applicants will be notified of their selection to submit a full proposal by July 26, 2013. If selected, proposals will be due by August 7, 2013.&nbsp; Work is anticipated to begin in late August.</p><p>&nbsp;</p><p><em>*Note that this position is contingent upon funding and ICRW is under no obligation to select any applicant.&nbsp;</em></p>        </div>
+        </div>
+</div></div>

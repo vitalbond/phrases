@@ -1,0 +1,3 @@
+<div><p>Först och främst, se till att du har dconf-editor installerat.<br>
+Sedan:</p>
+<p>->com->canonical->indicator->datetime. Sedan väljer du de alternativ du är intresserad av.</p></div>

@@ -1,0 +1,69 @@
+<div><p><em>This post is sponsored by Pompeian. I was compensated for my time. All thoughts and opinions are my own. </em></p>
+<p>Hi Friends!</p>
+<p>As you guys know, I’m part of the Pompeian Insider Program and am creating some recipes using their products (like this <a href="http://www.theleangreenbean.com/strawberry-balsamic-dressing/" target="_blank"><span style="text-decoration: underline;"><strong>Strawberry Balsamic Dressing</strong></span></a>!) This month, as part of the program, we got to do something kinda cool – we attended a virtual olive oil tasting and then we got to choose one of the oils to use in our next recipe.</p>
+<p><img class="aligncenter size-full wp-image-12708" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/sweet-potato-wedges-1.jpg.jpg" alt="sweet potato wedges 1.jpg Sweet and Spicy Sweet Potato Wedges" width="550" height="822" title="Sweet and Spicy Sweet Potato Wedges"></p>
+<p>Pompeian sent us this little tasting kit…which I took some nice pictures of and then accidentally deleted. But I borrowed one from Christine so you can get the idea:</p>
+<p><a href="http://www.cookthestory.com/2014/06/12/olive-oil-mashed-potatoes/" target="_blank"> <img class="aligncenter size-full wp-image-12707" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/Olive-Oil-Tasting-2-edit-tall-600px-e1403115084738.jpg" alt="Olive Oil Tasting 2 edit tall 600px e1403115084738 Sweet and Spicy Sweet Potato Wedges" width="550" height="825" title="Sweet and Spicy Sweet Potato Wedges"></a></p>
+<p style="text-align: center;">{<a href="http://www.cookthestory.com/2014/06/12/olive-oil-mashed-potatoes/" target="_blank">Photo Source</a>}</p>
+<p style="text-align: left;">For the tasting itself, we Google Hangout/webcast with <span style="color: #222222;">Dr. Luisito Cercaci. He took us through each of the six different oils and taught us a little bit about what makes them unique, what they’re best used for and how to taste them/what we should be tasting for. Basically, we poured a little bit into a tasting cup and then swirled the cup around in our hands to help warm the oil a little bit and activate the flavor compounds. Then we smelled it and then tasted it, before spitting it back out. </span></p>
+<p style="text-align: left;">Olive oil has to undergo rigorous chemical tests for quality and flavor…and did you know that the color of the oil is fairly insignificant? That’s why they gave us blue cups…because color should impact judgement.</p>
+<p style="text-align: left;">First we tried 3 more traditional varieties and then 3 Extra Virgin Premium Varieties. It was interesting to taste the differences between them. Some were very mild, typically used in more delicate dishes that include vegetables or fish…and some were more pungent and are better used with meats and in sauces where a stronger flavor is desired.</p>
+<p style="text-align: left;">I decided to use the Arbequina variety, which was very mild, sweet and fresh. It wasn’t super bitter or pungent and even had a bit of a green almond flavor. I decided I wanted my recipe to be vegetable based so I thought this would be perfect because it would allow other flavors to come through and not be overpowering.</p>
+<p style="text-align: left;"><img class="aligncenter size-full wp-image-12709" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/sweet-potato-wedges-3.jpg" alt="sweet potato wedges 3 Sweet and Spicy Sweet Potato Wedges" width="550" height="368" title="Sweet and Spicy Sweet Potato Wedges"></p>
+<p style="text-align: left;">I’m typically a french fry kinda girl and I tend to stay away from wedges, but these were SO good. Plus, cutting them into wedges is much easier and quicker than cutting into small little fries. I keep hearing about how people toss their sweet potato fries in cornstarch to get them crispier. I did that with the first batch of these and honestly didn’t like it. It left a bit of a weird coating on the outside, so for batch #2 I juste used the seasonings themselves and they tasted great!</p>
+<p style="text-align: left;">These wedges are not crispy, but you get the nice roasted outside to give you a little crunch and then a perfectly soft inside!</p>
+<p style="text-align: left;">Here’s how you make them:</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">Sweet and Spicy Sweet Potato Wedges</div>
+<div class="ERSClear"> </div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/sweet-potato-wedges-1.jpg.jpg" width="205" title="Sweet and Spicy Sweet Potato Wedges" alt="sweet potato wedges 1.jpg Sweet and Spicy Sweet Potato Wedges"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&#38;url=http%3A%2F%2Fwww.theleangreenbean.com%2Fsweet-spicy-sweet-potato-wedges%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/12706-0/" rel="nofollow" target="_blank">Print</a></span> </div>
+</div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT5M">5 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Cook time</div>
+<div class="ERSTimeItem"> <time itemprop="cookTime" datetime="PT40M">40 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT45M">45 mins</time></div>
+</div>
+<div class="ERSClearLeft"> </div>
+</div>
+<div itemprop="description" class="ERSSummary">The perfect balance of sweet and spicy, these wedges make a great dinner side dish!</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div>
+<div class="ERSServes">Serves: <span itemprop="recipeYield">4</span></div>
+</div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">1 pound sweet potatoes (approximately 2 medium)</li>
+<li class="ingredient" itemprop="ingredients">1 Tablespoon Pompeian Arbequina Olive Oil</li>
+<li class="ingredient" itemprop="ingredients">1 teaspoon cinnamon</li>
+<li class="ingredient" itemprop="ingredients">1 teaspoon sugar (more if desired)</li>
+<li class="ingredient" itemprop="ingredients">¼ – ½ teaspoon cayenne pepper</li>
+</ul><div class="ERSClear"></div>
+</div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Preheat oven to 425 degrees F.</li>
+<li class="instruction" itemprop="recipeInstructions">Cut each sweet potato in half crosswise and lengthwise.</li>
+<li class="instruction" itemprop="recipeInstructions">Cut each section into 4-5 wedges.</li>
+<li class="instruction" itemprop="recipeInstructions">Place wedges in a large bowl, add oil and toss to coat.</li>
+<li class="instruction" itemprop="recipeInstructions">Mix cinnamon, sugar and pepper together in a small bowl.</li>
+<li class="instruction" itemprop="recipeInstructions">Add half the spice mixture to the potatoes and toss to coat.</li>
+<li class="instruction" itemprop="recipeInstructions">Add remaining spice mixture and toss again.</li>
+<li class="instruction" itemprop="recipeInstructions">Place wedges on a baking sheet and bake for 35-40 minutes, flipping every 10 minutes.</li>
+</ol><div class="ERSClear"></div>
+</div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2708</div>
+</div>
+<p style="text-align: left;">Feel free to adjust the spices to your liking, making them spicier or sweeter if you want to. The sugar starts to caramelize a little bit, which is delicious and then you get hit with a hint of spice. So good.</p>
+<p style="text-align: left;"><img class="aligncenter wp-image-12710 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/sweet-potato-wedges-2.jpg" alt="sweet potato wedges 2 Sweet and Spicy Sweet Potato Wedges" width="550" height="822" title="Sweet and Spicy Sweet Potato Wedges"></p>
+<p style="text-align: left;">Serve these plain, or with ketchup (or your favorite dipping sauce!).</p>
+<p style="text-align: left;"><img class="aligncenter size-full wp-image-12711" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/sweet-potato-wedges.jpg" alt="sweet potato wedges Sweet and Spicy Sweet Potato Wedges" width="550" height="368" title="Sweet and Spicy Sweet Potato Wedges"></p>
+<p style="text-align: left;">Enjoy!<br>
+–Lindsay–</p></div>

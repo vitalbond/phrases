@@ -1,0 +1,51 @@
+<div><div class="field field-type-text field-field-job-location">
+      <div class="field-label">Job Location:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Washington, D.C. (with travel to Dhaka, Bangladesh)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is a private, nonprofit organization founded in 1976, and headquartered in Washington, DC with a mission to empower women, advance gender equality and fight poverty in the developing world.&nbsp;&nbsp;&nbsp;</p>
+<p>ICRW has an immediate need for a professional with strong qualitative and quantitative research skills and experience in adolescent sexual and reproductive health, specifically in South Asia, for the position of Research Coordinator on a study of the key barriers to adolescent sexual and reproductive health (ASRH) in urban Dhaka.&nbsp; This research project will fill critical knowledge gaps and improve the understanding of the key barriers and gendered normative influences that impact ASRH in urban Dhaka, focused mainly on the urban poor residing in low-income, informal residence communities. &nbsp;&nbsp;</p>
+<p>The position will be based in Washington, D.C., with one or two trips to Dhaka, Bangladesh.&nbsp; It reports to the Senior Director of Gender, Population and Development, who also serves as the Project Director. &nbsp;</p>
+<p>This is a part-time, temporary position (25-35% level of effort). Depending on need and availability of funding, there may be opportunities for additional research projects (potentially covering different thematic areas and/or regions) to increase the total LOE over time.</p>
+<p><strong><em>Due to the urgency, please submit applications as soon as possible, and no later than August 28, 2013.&nbsp;</em></strong></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <ul><li>Assist Project Director in completing a desk review on adolescent sexual and reproductive health (ASRH) in urban Dhaka, including a summary of policies, recent research, a mapping of donor engagement and service provision, and an identification of gaps.&nbsp;</li>
+<li>Work with local data collection firm and ICRW researchers to develop quantitative and qualitative research design, approach, tools, methods and study instruments.</li>
+<li>Lead a research team in the design of data collection approach and oversee the administration of a household-based survey of approximately 300 married girls &nbsp;&lt;19 years of age to provide robust evidence on barriers to sexual and reproductive health access to services in two urban slum communities in Dhaka.</li>
+<li>Lead a research team in conducting qualitative research (community mapping; focus group discussions; and in-depth interviews) in an urban slum community to assess the: a) healthcare service options and barriers for adolescent girls; and b) emerging ASRH challenges for both married and unmarried adolescent girls ages 15-19.</li>
+<li>Lead a research team in the analysis of both quantitative and qualitative research findings.</li>
+<li>Contribute significantly to the writing of the final report&nbsp;</li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <ul><li>Relevant graduate degree (PhD, MPH, MS) or equivalent experience in public health, demography, epidemiology, statistics, sociology</li>
+<li>In-depth knowledge of international development issues with particular focus on adolescent reproductive health</li>
+<li>Excellent qualitative and quantitative research skills, with at least 6 years&rsquo; experience in research</li>
+<li>Excellent qualitative and quantitative analysis skills, with expert knowledge of SAS, STATA or other related package for quantitative data and knowledge of Atlas/ti; NVivo; Nudist or other similar package for qualitative data</li>
+<li>Experience in preparing materials for IRB approval</li>
+<li>Experience leading or co-leading research studies on sexual and reproductive health</li>
+<li>Knowledge of SRH and/or youth issues in South Asia</li>
+<li>Excellent interpersonal, oral and written and communication skills</li>
+<li>Ability to work efficiently and quickly in a fast paced environment and with team member in different time zones&nbsp;</li></ul></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Interested individuals should submit a cover letter, CV, salary history and requirements, and names and contact information of 3 references to <u>jobs@icrw.org</u> with &ldquo;Research Coordinator &ndash; ASRH&rdquo; in the subject line <strong>by no later than August 28, 2013.</strong> &nbsp;&nbsp;</p>        </div>
+        </div>
+</div></div>

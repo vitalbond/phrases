@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Fri, 12/20/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Mint        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="line-height: 1.5;">Ravi Verma, regional Director of ICRW&rsquo;s Asia Regional Office discusses the importance of engaging men and challenging their notions masculinity in order to address sexual violence against women.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="line-height: 1.5;">Ravi Verma, regional Director of ICRW&rsquo;s Asia Regional Office discusses the importance of engaging men and challenging their notions masculinity in order to address sexual violence against women.&nbsp;</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.livemint.com/Opinion/HGQH5ky25pIAJgaXSfgwWN/Being-man-enough-Rape-and-our-ideas-of-masculinity.html" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,64 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Findings and Lessons from Seven Years of CARE International Balkans’ Young Men Initiative        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>What does it mean to “be a man” to adolescent <span style="line-height: 1.5;">boys in the Balkans region? Can it mean keeping </span><span style="line-height: 1.5;">the peace instead of perpetrating violence? Having </span><span style="line-height: 1.5;">fun without drugs and alcohol? Practicing safe sex?</span></div><div> </div><div>For the past seven years, a coalition of local, regional,<span style="line-height: 1.5;">and international organizations has been </span><span style="line-height: 1.5;">promoting these positive masculine identities under </span><span style="line-height: 1.5;">the banner of the “Young Men Initiative” (YMI). </span><span style="line-height: 1.5;">Coordinated by CARE International Balkans, implemented </span><span style="line-height: 1.5;">by collaborating institutions in four countries, </span><span style="line-height: 1.5;">and evaluated by the International Center for </span><span style="line-height: 1.5;">Research on Women (ICRW), YMI seeks to promote </span><span style="line-height: 1.5;">a lifestyle that prioritizes good health, nonviolence, </span><span style="line-height: 1.5;">and gender equality through a combination of educational </span><span style="line-height: 1.5;">workshops and community campaigns. </span><span style="line-height: 1.5;">This synthesis report provides an overview of the </span><span style="line-height: 1.5;">program’s rationale, design, and evaluation results </span><span style="line-height: 1.5;">from YMI’s implementation in vocational high</span></div><div>schools.</div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s): </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Sophie Namy, Brian Heilman, Shawna Stich &#38; Jeffrey Edmeades.        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/brian-heilman">Brian Heilman</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/jeffrey-edmeades">Jeffrey  Edmeades</a>        </div>
+              <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/sophie-namy">Sophie  Namy</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="185" height="260" alt="" src="http://www.icrw.org/files/images/tn/YMI_cover.jpg?1402347311"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/YMI_ExecutiveSummary_2013-WEB-PREVIEW.pdf" type="application/pdf; length=1807551">YMI_ExecutiveSummary_2013-WEB-PREVIEW.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rights-permissions">
+      <div class="field-label">Rights and Permissions: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><span style="font-size: 12px; font-style: italic; line-height: 17.549999237060547px;">We encourage the use and dissemination of our publications for non-commercial, educational purposes. Portions may be reproduced with acknowledgment to the International Center for Research on Women (ICRW). For questions, please contact</span><a href="mailto:publications@icrw.org" style="margin: 0px; padding: 0px; border: 0px; font-size: 12px; vertical-align: baseline; font-style: italic; line-height: 17.549999237060547px; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">publications@icrw.org</a><span style="font-size: 12px; font-style: italic; line-height: 17.549999237060547px;">; or (202) 797-0007.</span></p>        </div>
+        </div>
+</div></div>

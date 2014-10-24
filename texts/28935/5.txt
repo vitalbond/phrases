@@ -1,0 +1,1 @@
+<div>We are happy to announce the release of YUI 3.10.2! You can find it now on the Yahoo! CDN, download it directly, or pull it in via npm. We’ve also updated the YUI Library website with the latest documentation. Since we’ve had a number of larger releases lately, this release represents an effort to do [...]</div>

@@ -1,0 +1,132 @@
+<div><p>This is the first in what I expect to be a series of tutorials on creating user interfaces in <a href="http://kivy.org/">Kivy</a>. Kivy is a cross platform user interface framework that allows us to write applications in Python that run on various desktop operating systems, Android, and IOS.</p>
+<p>I’ve wanted to write a tutorial on Kivy since hacking on Python 3 support during the dev sprints at <a href="https://us.pycon.org/2013/">Pycon 2013</a>. My goal is to create a useful application that runs on multiple devices and highlights use of the <a href="http://kivy.org/docs/guide/lang.html">KV Language</a> to design user interfaces. I also want this multi-part series to describe end-to-end how to develop, maintain, and deploy a Kivy application. I intend it to be a model for newcomers to Kivy and even Python to develop their own cross platform or mobile applications in Python. Thus, it doesn’t just include code, but also deployment instructions and information on how to use the git version control system for basic history management.</p>
+<p>Therefore, this tutorial series is written at a more basic level than a lot of my technical articles. My intended audience is new programmers who have some basic Python experience; perhaps having read <a href="http://docs.python.org/2/tutorial/">The Python Tutorial</a> and <a href="http://learnpythonthehardway.org/book/">Learn Python The Hard Way</a>, but possibly not the beginner-intermediate topics covered in my book, <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a>.</p>
+<p>Having decided to write a tutorial, I needed to decide what kind of application to develop. This actually took quite a bit of thought. I decided on a Jabber client, as it has a user interface with reasonable complexity, and I am hoping that most of the difficult bits can be abstracted away into the <a href="https://github.com/fritzy/SleekXMPP/">SleekXMPP</a> library.  Finally, I had to settle on a name for the app; I chose Orkiv. I do not know why.</p>
+<h4>Table Of Contents</h4>
+<p>A blog isn’t the best platform for publishing a multi-part tutorial. I’ll include a <em>Table Of Contents</em> section in each part with references to all the other parts. Hopefully I’ll even keep it up to date!</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+</ol><h4>Prerequisites</h4>
+<p>Start by installing the following pre-requisites using standard operating system tools.</p>
+<ul><li><a href="http://python.org/">python2</a> (2.7 preferred)</li>
+<li><a href="http://git-scm.com/">git</a></li>
+<li><a href="http://www.virtualenv.org/">virtualenv</a></li>
+<li><a href="http://www.pip-installer.org/">pip</a></li>
+</ul><p>Python is the programming language and interpreter that Kivy programs are written in. Git is a version control system that we will use to track changes to our code. Virtualenv is a tool for creating isolated Python environments. Pip is an installer for installing python packages, in this case into the isolated virtualenv.</p>
+<p><strong>Note:</strong> Use of git is optional if you are more interested in learning to code than learning to manage a project. You are also welcome to use another version control system of your choice. At the level we will be working, the commands are virtually interchangeable.</p>
+<h4>Setting up the environment</h4>
+<p>Run the following commands in a terminal. (Note this tutorial was written using Arch Linux, and will probably work flawlessly on MacOS and other Linux distributions. However, you may need to do some experimenting to make Windows cooperate).</p>
+<pre class="brush:bash">
+mkdir orkiv
+cd orkiv
+git init
+virtualenv -p python2.7 venv
+echo venv >> .gitignore
+echo "*.pyc" >> .gitignore
+git add .gitignore
+git commit -m "Create .gitignore file. Ignores compiled python files and venv."
+source venv/bin/activate
+</pre>
+<p>We’re creating a directory to hold our project and then initialize a git repository in there. We next create a virtualenv in a folder named <code>venv</code>. This folder will hold the isolated python files so that you can interact with Kivy without adding cruft to your system Python. I highly recommend creating a separate virtualenv for every project you work on.</p>
+<p>Next, we set up a <code>.gitignore</code> file that tells git not to track certain files in our repository; in this instance all compiled python files, which end in <code>.pyc</code>, and the virtualenv directory we just created. We commit the changes to this file as our first commit in the git repository.</p>
+<p>Finally, we “turn on” the virtualenv by sourcing its activate script. This essentially tells our shell to “use the isolated python for this project instead of system python”. When you are done working on this project, you should enter the command <code>deactivate</code>. When you come back to the project in the future, reenter the <code>source venv/bin/activate</code> command to turn on the isolated environment.</p>
+<p><strong>Note:</strong> If you maintain a lot of virtualenvs in a lot of different projects, as I do, you may be interested in <a href="http://archlinux.me/dusty/2012/03/20/easily-changing-virtualenvs/">a small script</a> I wrote to facilitate switching between them.</p>
+<h4>Kivy Dependencies</h4>
+<p>Kivy depends on several Python libraries. Unfortunately, it does not have a setuptools-enabled setup.py to automatically install these dependencies into our virtualenv, so we have to do a little work ourselves. This takes a while, but if you copy paste these commands into your terminal, you should get lucky.</p>
+<pre class="brush:bash">
+pip install cython
+pip install pygments
+pip install sphinx
+pip install pyglet
+pip install pillow # Because PIL is utter crap
+pip install pygame
+</pre>
+<p>Sadly, on Arch Linux, the last command, for pygame fails. I suspect it works fine on less bleeding edge operating systems, however, if you encounter an error about <code>linux/videodev.h</code> not existing, applying the Arch Linux patch to pygame may get you to the next step.</p>
+<pre class="brush:bash">
+wget http://www.pygame.org/ftp/pygame-1.9.1release.tar.gz
+wget https://projects.archlinux.org/svntogit/packages.git/plain/trunk/pygame-v4l.patch?h=packages/python-pygame -O pygame-v4l.patch
+tar xf pygame-1.9.1release.tar.gz
+cd pygame-1.9.1release/
+patch -Np1 -i ../pygame-v4l.patch
+python setup.py install
+cd ..
+rm pygame* -r
+</pre>
+<p>And now, you should finally be ready to install Kivy itself: This will take a while, so grab a smoothie while it runs:</p>
+<pre class="brush:bash">
+pip install kivy
+python -c 'import kivy'
+</pre>
+<p>The latter command should output the kivy version (I’m working with 1.7.1). If it exits without failure, then you have successfully installed Kivy!</p>
+<h3>Now let’s create a basic Kivy app</h3>
+<p>Create a directory to hold the application code:</p>
+<pre class="brush:bash">
+mkdir orkiv
+</pre>
+<p>This directory will contain your Python and Kivy source files. Our goal is to be able to always create a zipfile from this directory and be able to run it using python <code>orkiv.zip</code>. As long as the required dependencies are installed on the target system (as described above), the program should run. It will therefore be nice and self-contained.</p>
+<p>There is a relatively unknown feature of recent versions of Python to support this. If a directory or zipfile contains a <code>__main__.py</code>, that module will be executed if python is called with that directory or zipfile as an argument. First, create a file inside the new orkiv directory named <code>__main__.py</code>. Create a simple “hello world” in this file to test that<br>
+it’s working:</p>
+<p><!--Example 1--></p>
+<pre class="brush:python">
+print("hello world!")
+</pre>
+<p>Now from the parent directory, run the command <code>python orkiv</code>. If you want to test it with a zipfile, try this:</p>
+<pre class="brush:bash">
+cd orkiv
+zip ../orkiv.zip *
+cd ..
+python orkiv.zip
+</pre>
+<p>It is possible to code Kivy applications in pure Python, but in my opinion, it is much better to use the amazing <a href="http://kivy.org/docs/guide/lang.html">KV Language</a> to do layouts. The basic approach is to have a Python file (in our case <code>__main__.py</code> above) that contains the logic for the application, and a KV Language file that contains the layout information. The KV Language is very similar to Python and you can learn it as you go.</p>
+<p>Lets start by removing the <code>print</code> statement from our <code>__main__.py</code> and replacing it with the most basic possible Kivy application:</p>
+<p><!--Example 2--></p>
+<pre class="brush:python">
+from kivy.app import App
+
+
+class Orkiv(App):
+    pass
+
+Orkiv().run()
+</pre>
+<p>This simply imports a Kivy <code>App</code> class and creates a subclass of it using Python’s notoriously simple inheritance syntax. Inheritance is a useful feature of Object Oriented Programming that basically means that a class can be defined that has all the functionality of the parent class. In this case, since we didn’t add anything to the subclass, that’s ALL it has.  However, the true beauty of inheritance is that we can add new properties and methods (functions attached to objects) to the subclass or even change the functionality that comes with the parent class (<code>App</code>). The best part is, we don’t really have to know what is going on inside the <code>App</code>, and can assume the Kivy devs know what they are doing.</p>
+<p>It doesn’t even add anything to the subclass! Then it instantiates an instance of that subclass and calls the <code>run()</code> method on the newly created object.</p>
+<p>If you run <code>python kivy</code> with the new code saved, you’ll see an empty window pop up.</p>
+<p>As far as boilerplate goes, that’s pretty damn concise, don’t you think? The amazing thing is that we can start laying out KV Language widgets in a separate file without touching this boilerplate at all! Don’t believe me? Try saving the following as <code>orkiv/orkiv.kv</code>:</p>
+<p><!--Example 3--></p>
+<pre class="brush:yaml">
+Label:
+    text: "hello world"
+</pre>
+<p>Now if you run <code>python orkiv</code>, you should see the “hello world” label centered in the window that pops up. It’s almost like magic, and if you’re like me, you’re probably wondering how that’s even possible.</p>
+<p>When you create a subclass of a <code>kivy.app.App</code>, it introspects the name of the new class (we named it <code>Orkiv</code>). Then it looks for a file in the same directory that follows these rules:</p>
+<ol><li>Ends with the <code>.kv</code> extension</li>
+<li>Starts with the name of the class converted to lowercase and with any<br>
+trailing App stripped.</li>
+</ol><p>The Kivy documentation would have named the class <code>OrkivApp</code> and still used the <code>orkiv.kv</code> filename. Personally, I don’t see the redundant need to add <code>App</code> to the class name, since the inheritance structure clearly indicates that <code>Orkiv</code> <em>is a</em> <code>App</code>.</p>
+<p>We’ll be working with the Kivy Language a lot as we proceed through each part of this tutorial. You’ll soon see that it’s possible to do more, a lot more, than add a label to a window!</p>
+<h4>A note on version control</h4>
+<p>At this point, you’ve created a logical related set of changes that are in a working state. I want to encourage you to experiment with these files, maybe change the contents of the label, try a different application and KV Language filename, or see if you can figure out how to group two labels into a single layout. But before doing that, you should record this known state that your repository is currently in so it’s easy to get back to. That way, you can be free to explore without fear of getting completely lost; you’ll always have a path straight back to your current state. You can do that from the command line using git:</p>
+<pre class="brush:bash">
+git add orkiv/
+git commit -m "A basic Kivy boiler plate"
+</pre>
+<p>You just made a commit on the <code>master</code> branch in git. First you listed the changes you wanted to include in the commit (the entirety of every file in the new orkiv directory), then you told git to record the current state of those files forever. It is generally recommended that you only save consistent, known-to-be-working state on the <code>master</code> branch. For the purposes of this tutorial, I suggest that you only save the code you copied from the tutorial to the <code>master</code> branch, and do your other development on other branches.</p>
+<p>Are you confused by what a branch is, exactly? Think of it like walking down a forest path in a national park. You are following signs for a marked trail; that’s this tutorial. As you walk, you see things that you want to remember, so you take a photo. That’s like making a commit on the master branch. However, you also see side paths that you would like to explore on your own. You can go down that path as far as you want, or even take other random paths without fear of getting lost. You can even take photos on those paths, knowing they won’t get mixed in with the photos from the main trail. Then when you want to return to the point where you left the main trail, you can magically teleport back to it (or indeed, to any of the other branches you walked down in your exploration).</p>
+<p>You probably won’t be doing it for this tutorial, but the most import aspect of version control is that if you are in unmarked forest rather than a national park, you can walk down all the paths and decide which one you’re going to choose as the main path. You can even merge paths back into each other so that the photos (code commits) taken on each of them end up in the same final presentation.</p>
+<p>Enough digressing! For your purposes, the first thing you should do is create a new branch in git:</p>
+<pre class="brush:bash">
+git checkout -b my_exploration
+</pre>
+<p>You are now on a new branch named <code>my_exploration</code> (you can call each branch whatever you want, of course) that is exactly the same as the master branch as you last saw it. But you can make changes on that branch to your heart’s content; you can add and commit them as above if you want to remember them for later. When you’re ready to come back to the tutorial, you can use this command to return to the current state of the master branch:</p>
+<pre class="brush:bash">
+git checkout master
+</pre>
+<p>From there, you could continue with the next part of the tutorial, or you could create a new branch and explore in a different direction.</p>
+<h4>Browsing the examples</h4>
+<p>I am maintaining my own version of the code developed in this tutorial at <a href="https://github.com/buchuki/orkiv/">https://github.com/buchuki/orkiv/</a>. However, it’s not likely to be the same as your repository, since I’m not making commits at the same time that I’m suggesting you make commits. Instead, my master branch contains a separate commit for each example in the tutorial. I also create git tags for each part of the tutorial so it’s fairly easy to see from commit history what was covered in each part. If you browse the <a href="https://github.com/buchuki/orkiv/commits/master">Commit History</a> you can see each example and how it evolved from top to bottom. You can view the list of tags <a href="https://github.com/buchuki/orkiv/tags">here</a>.</p>
+<h4>Monetary feedback</h4>
+<p>I don’t expect the collected parts of this tutorial to be big enough to publish as a book, so I’m hosting them for free here on my blog. If you like the tutorial and would like to see similar work published in the future, please support me. I hope to one day reduce my working hours at my day job to have more time to devote to open source development and technical writing. If you think this article was valuable enough that you would have paid for it, please consider thanking me in one or more of the following ways:</p>
+<ul><li>Purchase my books: <a href="http://www.packtpub.com/python-3-object-oriented-programming/book">Python 3 Object Oriented Programming</a> and <a href="http://hackinghappy.com/">Hacking Happy</a></li>
+<li>Tip me on <a href="https://www.gittip.com/buchuki/">Gittip</a></li>
+<li>E-mail <em>dusty at archlinux dot ca</em> to let me know you would fund a book about Kivy via crowd funding</li>
+</ul><p>If you aren’t in the mood or financial position to help fund this work, at least share it on your favorite social platforms!</p></div>

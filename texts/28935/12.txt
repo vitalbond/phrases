@@ -1,0 +1,30 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p><a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-8-current">Sprint 8</a> continues this week as we approach Sunday&rsquo;s pull request deadline for the upcoming 3.11 release. Thanks for all the testing and feedback following last week&rsquo;s <a href="http://www.yuiblog.com/blog/2013/06/19/3-11pr1-released/">3.11pr1 release</a>, especially all the discussion in <a href="https://github.com/yui/yui3/pull/917">Pull #917</a>. Next up in this dev cycle is a pull request deadline on July 9th before the 3.11 release window opens up on July 16th.</p>
+</li>
+<li>
+<p>We&rsquo;d like to extend a warm YUI welcome to Clarence Leung, who joined the team this week. You might remember Clarence from his <strong>awesome work</strong> last summer as an intern, and we enjoyed having him around so much we decided to bring him on full-time! He joins us from Montreal, Canada where he graduated from McGill University with degrees in Computer Science and Biology, and you can find him on Twitter as <a href="http://twitter.com/clarler">@clarler</a>, Github as <a href="http://github.com/clarle">@clarle</a>, and IRC as &ldquo;clarle&rdquo;.</p>
+</li>
+<li>
+<p>While YUI contributors have been using <a href="http://benchmarkjs.com/">Benchmark.js</a> as a performance testing tool for some time, it was never included in the source tree and available locally for use within tests. Well that changed this week when it was <a href="https://github.com/yui/yui3/pull/918">pulled in</a>, and a huge thanks to Juan Dopazo (<a href="https://twitter.com/juandopazo">@juandopazo</a>) for the <a href="http://yuilibrary.com/yui/docs/promise/">Y.Promise</a> performance tests <a href="https://github.com/yui/yui3/pull/926">he contributed</a>. If you are interested in helping YUI get faster by contributing tests, check out the <a href="http://benchmarkjs.com/docs">Benchmark.js documentation</a> and <a href="https://github.com/yui/yui3/tree/master/src/promise/tests/performance">some examples</a> of <a href="https://github.com/yui/yui3/tree/master/src/app/tests/performance">perf tests</a> currently in the library.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://benchmarkjs.com/">Benchmark.js</a>, <a href="http://msopentech.com/blog/2013/06/17/w3c-pointer-events-gains-further-web-momentum-with-patch-for-mozilla-firefox/">W3C Pointer Events</a>, the <a href="http://velocityconf.com/">Velocity Conference</a>, and tickets that are <a href="https://github.com/yui/yui3/issues?direction=desc&amp;labels=up+for+grabs&amp;page=1&amp;sort=created&amp;state=open">up for grabs</a>. You can catch video of the Hangout over on <a href="http://www.youtube.com/watch?v=iMPh2RenXtg">YouTube</a>.</p>
+</li>
+<li>
+<p>This week&rsquo;s discussions on the contributor mailing list include a proposal to <a href="https://groups.google.com/forum/?fromgroups#!topic/yui-contrib/Y-GQGkLbawk">streamline calendar/lang</a>, a request for feedback on <a href="https://groups.google.com/forum/?fromgroups#!topic/yui-contrib/cJX5CFNpHBQ">a Loader idea</a>, continued discussion about <a href="https://groups.google.com/forum/?fromgroups#!topic/yui-contrib/RQC3rTsG_xY">Y.Lang.sub</a>, and <a href="https://groups.google.com/forum/?fromgroups#!forum/yui-contrib">more</a>.</p>
+</li>
+<li>
+<p>New and updated modules in this week&rsquo;s <a href="http://yuilibrary.com/gallery/buildtag/gallery-2013.06.26-23-09">Gallery build</a> include: <a href="https://github.com/jafl/yui-modules/tree/master/src/gallery-datetime">datetime</a>, <a href="https://github.com/jafl/yui-modules/tree/master/src/gallery-datetime-utils">datetime-utils</a>, <a href="http://yuilibrary.com/gallery/show/input-calendar-sync">input-calendar-sync</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsadatetimepicker">itsadatetimepicker</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsadialogbox">itsadialogbox</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsaerrorreporter">itsaerrorreporter</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsamodellistsyncpromise">itsamodellistsyncpromise</a>, <a href="https://github.com/ItsAsbreuk/yui3-gallery/tree/master/src/gallery-itsamodelsyncpromise">itsamodelsyncpromise</a>, and <a href="http://yuilibrary.com/gallery/show/notify">notify</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://www.henderson.cc/wp/using-yui-compressor-to-compress-css-files/">Using YUI Compressor to compress your website CSS and JS files</a></li>
+<li><a href="https://vimeo.com/68716827">An Overview of ECMAScript 6</a></li>
+<li><a href="http://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/">eval() Isn&rsquo;t Evil, Just Misunderstood</a></li>
+<li><a href="http://thenittygritty.co/ffos-apps">Building Apps For Firefox OS, Chrome OS And The Web</a></li>
+<li><a href="http://flippinawesome.org/2013/06/24/what-are-generators/">What are Generators?</a></li>
+<li><a href="http://int3.github.io/metajs/">Meta.js</a></li>
+<li><a href="http://javascriptweekly.com/archive/136.html">&hellip; and more over at JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

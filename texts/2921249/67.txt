@@ -1,0 +1,210 @@
+<div><p>Welcome back, or if you&rsquo;ve just stumbled across this tutorial, welcome to the middle of something! You might want to jump back to <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">the beginning</a> if that&rsquo;s the case. Don&rsquo;t worry, we&rsquo;ll wait for you to catch up.</p>
+<p>We&rsquo;re learning Kivy by developing a simple chat application together on the XMPP protocol. So far we&rsquo;re able to display a Buddy List that doesn&rsquo;t look too shabby, but we haven&rsquo;t even tried chatting with anyone yet. Given the complexities of the sleekxmpp library, I&rsquo;m only hoping that it won&rsquo;t be too difficult!</p>
+<p>If you want to start this part with a clean slate, in exactly the state that I&rsquo;m starting it, you can clone my public repository:</p>
+<pre class="brush:bash">
+git clone https://github.com/buchuki/orkiv.git
+git checkout end_part_five
+</pre>
+<p>Remember to create and activate a virtualenv populated with the appropriate dependencies, as discussed in <a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">part 1</a>.</p>
+<h4>Table Of Contents</h4>
+<p>Here&rsquo;s some lovely navigation for you:</p>
+<ol><li><a href="http://archlinux.me/dusty/2013/06/13/creating-an-application-in-kivy-part-1/">Part 1: Introduction to Kivy</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/19/creating-an-application-in-kivy-part-2/">Part 2: A basic KV Language interface</a></li>
+<li><a href="http://archlinux.me/dusty/2013/06/29/creating-an-application-in-kivy-part-3/">Part 3: Handling events</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/07/creating-an-application-in-kivy-part-4/">Part 4: Code and interface improvements</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/16/creating-an-application-in-kivy-part-5/">Part 5: Rendering a buddy list</a></li>
+<li><a href="http://archlinux.me/dusty/2013/07/24/creating-an-application-in-kivy-part-6/">Part 6: ListView Interaction</a></li>
+</ol><h4>About The Current Kivy ListView API</h4>
+<p>I&rsquo;m afraid this article&rsquo;s going to be going up a little late because I&rsquo;ve spent a great deal of time trying to understand the <code>ListView</code> API for interacting with the user. I&rsquo;ve read through all the documentation, I&rsquo;ve read through all the examples included with Kivy, and I&rsquo;ve read through the source code for all the views, adapters, and widgets. I&rsquo;ve come to the conclusion that, unlike the elegance in most of Kivy, the <code>ListView</code> API simply sucks. I think my favorite aspect of the documentation was the statement, &ldquo;Warning: This code is still experimental, and its API is subject to change in a future version.&rdquo;</p>
+<p>I did discover that Kivy&rsquo;s <code>ListView</code> API provides all the tools to do what we want, but it&rsquo;s mixed in with a whole bunch of tools that don&rsquo;t work at all, don&rsquo;t work the way you would expect, or are far more complicated than necessary. Figuring out which of those tools to use and how to use them was a perfect chance to practice <a href="http://www.hackinghappy.com/">skills</a> for dealing with frustration.</p>
+<p>The good news is that when I complained about the <code>ListView</code> API on the #kivy IRC channel I was told that the developers are already actively working on improving it!</p>
+<p>I have tried, in these tutorials, to explain not only how to do things, but also  how to figure out how to do things. I&rsquo;m not going to do that for this part for a few reasons. First, there is no clear explanation on the web for &ldquo;how to effectively use Kivy&rsquo;s ListView API&rdquo;, so I&rsquo;d like this tutorial to fill that niche. Second, with the API redesign in the works, I don&rsquo;t want to spend a lot of time writing outdated content. Third, the approach I used to understand the API was basic brute force, and not educational in any way. Read all the documentation, read all the sources, and write tons of test code. By trial and error and a bit of good judgment, I think you&rsquo;ll come to the same conclusions I did. Finally, I spent so much time doing that brute force work that I can&rsquo;t easily summarize the steps I followed or all the paths I explored.</p>
+<h4>How to Ignore Most of The Bad Bits</h4>
+<p>I&rsquo;m sure you&rsquo;re aching to see some code, but let&rsquo;s discuss exactly what we want the interface to look like, first. While our <code>BuddyListItem</code> widget contains several other widgets, we want it to highlight the entire widget with a different background color when it is touched. Essentially, even though multiple items are being displayed on the widget, we want the whole widget to behave like a button. Later, we&rsquo;ll want to pop up a chat window when the selection event happens.</p>
+<p>That &ldquo;behave like a button&rdquo; line is the key. The <code>Button</code> class inherits from label and adds some things for button state and touch events. Then Kivy extends that with a <code>ListItemButton</code> class that manages the state of multiple buttons in a <code>ListView</code>. As the Kivy examples show, using this class as the <code>cls</code> argument to a <code>ListView</code> works flawlessly. You touch a button, it gets highlighted. Unfortunately, adding widgets to a button doesn&rsquo;t work so well because <code>Button</code> is not a layout. If only we could make our <code>BuddyListItem</code> a button AND a layout. Hmmm:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/3b41931d8a1a3fb482f6c26db43809e56963ef03">commit</a>)</p>
+<pre class="brush:python">
+from kivy.uix.listview import ListItemButton  # At top of file
+
+class BuddyListItem(BoxLayout, ListItemButton):
+    jabberid = StringProperty()
+    full_name = StringProperty()
+    status_message = StringProperty()
+    online_status = StringProperty()
+    background = ObjectProperty()
+</pre>
+<p>This is multiple inheritance; <code>BuddyListItem</code> is inheriting from both the <code>BoxLayout</code> and <code>ListItemButton</code> superclasses. I honestly did not expect this to work with widgets, since the inheritance graph is a weird diamond. However, the Kivy devs have been careful to support multiple inheritance (by always passing <code>**kwargs</code> to <code>super</code> calls). When I ran this code and saw selectable buttons in my <code>ListView</code>, I said to myself, &ldquo;Holy shit! It works!&rdquo; Then I giggled softly and promptly forgave the Kivy team for the confusing API faux pas.</p>
+<p>Now we get to do one of my favorite activities: Deleting code. One of the nice things we inherit from the <code>Button</code> class is a <code>background_color</code> property. This means we can take the entire <code>canvas.before</code> section out of <code>orkiv.kv</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/27e2c89f5815b285c41f65e8d02d33db3ce85e39">commit</a>)</p>
+<pre class="brush:python">
+&lt;BuddyListItem&gt;:
+    size_hint_y: None
+    height: "75dp"
+
+    BoxLayout:
+        size_hint_x: 3
+        orientation: 'vertical'
+        Label:
+            text: root.jabberid
+            font_size: "25dp"
+            size_hint_y: 0.7
+        Label:
+            text: root.status_message
+            color: (0.5, 0.5, 0.5, 1.0)
+            font_size: "15dp"
+            size_hint_y: 0.3
+    Label:
+        text: root.full_name
+    Image:
+        source: "orkiv/icons/" + root.online_status + ".png"
+</pre>
+<p>Nothing new here at all, it&rsquo;s just shorter! You can also remove the <code>background</code> property from <code>__main__.py</code>. Now, just change the <code>arg_converter</code> to set <code>background_color</code> instead of <code>background</code> and the button will look less buttony and more listitemy:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/0a30ca9074b412003eb54c81ff1a3869bb691581">commit</a>)</p>
+<pre class="brush:python">
+if index % 2:
+    result['background_color'] = (0, 0, 0, 1)
+else:
+    result['background_color'] = (0.05, 0.05, 0.07, 1)
+</pre>
+<p>Finally, I&rsquo;m not too keen on the default red color for the selected item, so let&rsquo;s change the <code>selected_color</code> (this is a property available on <code>ListItemButton</code>) in the Kivy file:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/d51283bff9c95f8ee160c6c2520ed97d9b2da3ac">commit</a>)</p>
+<pre class="brush:python">
+&lt;BuddyListItem&gt;:
+    size_hint_y: None
+    height: "75dp"
+    selected_color: (0.2, 0.1, 0.2, 1.0)
+</pre>
+<p>Run this code and you should be able to touch any list item and see it highlighted. Now that&rsquo;s what I call an easy way to display selected items on a <code>ListView</code>! Don&rsquo;t take these as gospel, since your needs may differ, but here&rsquo;s some ideas that I came up with while puzzling through the documentation and code for this API:</p>
+<ul><li>Don&rsquo;t use <code>DictAdapter</code>. As far as I can tell, you can more easily use <code>ListAdapter</code> on the keys and reference the underlying dictionary directly from <code>args_coverter</code>, rather than trying to maintain the <code>sorted_keys</code> parameter.</li>
+<li>As I mentioned in <a href="http://archlinux.me/dusty/2013/07/16/creating-an-application-in-kivy-part-5/">Part 5</a> don&rsquo;t use the <code>template</code> argument to <code>ListAdapter</code>, as that functionality has been deprecated.</li>
+<li>Pretend that <code>CompositeListItem</code> does not exist, never did exist, and could not possibly exist.</li>
+<li><code>ListItemLabel</code> is not interactive and is for display only, not selection.</li>
+<li>While the documentation suggests that you can create your own item class, if you need selection, use <code>ListItemButton</code>. You can either extend it and add widgets as we did here, or put individual buttons inside another view, depending on your requirements.
+</li><li>If you don't use <code>ListItemButton</code> and you need selection, you need to make sure your object provides a <code>on_release</code> event, since that is what <code>ListView</code> is hardcoded to trigger selection on.</li>
+<li><code>propagate_selection_to_data</code> and <code>SelectableDataItem</code> add a lot of complexity and are only worth it if you really know they are worth it. Don't "avoid them at all costs", but make sure you really need them before trying.</li>
+</ul><h4>Designing a Chat window</h4>
+<p>I have an exercise for you that I don't think you'll have any trouble with if you've followed the previous parts of this series. Of course, I'll provide examples and explanations shortly if you get stuck.</p>
+<p>Here's the exercise: Create an empty new <code>ChatWindow</code> class that extends <code>BoxLayout</code>. Style the class in the KV language so that it contains a vertical box layout holding a label identifying the user you are chatting with, a second label containing the text of the conversation, and a horizontal box layout containing a <code>Button</code> to return to the buddy list, a <code>TextInput</code> and a second <code>Button</code> to send chat text. Try to figure out which of these widgets need to have an <code>id</code> in the KV Language file hooked up to an <code>ObjectProperty</code> in the python file. Finally, ensure the widgets have appropriate <code>size</code> and <code>size_hint</code> properties to look reasonable.</p>
+<p>Here's how my <code>ChatWindow</code> code turned out:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/7dfd023e38651e694b47529ab68158fd1f56c8a0">commit</a>)</p>
+<pre class="brush:python">
+class ChatWindow(BoxLayout):
+    jabber_id = StringProperty()
+    chat_log_label = ObjectProperty()
+    send_chat_textinput = ObjectProperty()    
+</pre>
+<p>And here's my first attempt at styling. It's a compliment to Kivy's simplicity and elegance that when I actually hooked up the events to display this code, it looked exactly like I expected it to:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/3572d568235754ff3ddc307618d116c5a510f22b">commit</a>)</p>
+<pre class="brush:python">
+    &lt;ChatWindow&gt;:
+        orientation: "vertical"
+        chat_log_label: chat_log_label
+        send_chat_textinput: send_chat_textinput
+        Label:
+            text: "chatting with " + root.jabber_id
+            size_hint_y: None
+            height: "40dp"
+        Label:
+            id: chat_log_label
+        BoxLayout:
+            size_hint_y: None
+            height: "50dp"
+            Button:
+                size_hint_x: None
+                width: "70dp"
+                text: "Buddies"
+            TextInput:
+                id: send_chat_textinput
+            Button:
+                size_hint_x: None
+                width: "70dp"
+                text: "Send"
+</pre>
+<p>Now we need an event to display a <code>ChatWindow</code> when a user makes a selection. Kivy's <code>ListView</code> API has the ability to propagate selection events to the adapter and even the model behind the adapter. However, it's rather involved and I suggest avoiding it unless you actually have a reason to store the advanced selection stuff. Unfortunately, this means you can't listen to the adapter's <code>on_selection_change</code> event.</p>
+<p>However, for our use case, all we really want to do is show the chat window if the user touches an item in the list. Hence, we just need to listen for a touch event on the <code>BuddyListItem</code> (which extends <code>Button</code> and therefore has all of <code>Button</code>'s events) and react to that.</p>
+<p>The reaction will be to display a new <code>ChatWindow</code> object on the root. This means adding a new method to <code>OrkivRoot</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/767a56e163641a011137f55972e0589a0a923f3d">commit</a>)</p>
+<pre class="brush:python">
+def show_buddy_chat(self, jabber_id):
+    self.remove_widget(self.buddy_list)
+    chat_window = ChatWindow(jabber_id=jabber_id)
+    self.add_widget(chat_window)
+</pre>
+<p>When called, this code will simply clear the window and display a new, empty chat window in it's place. One thing I may not have mentioned before is how <code>ChatWindow</code> accepts <code>jabber_id</code> as a keyword argument, even though there is no <code>__init__</code> method that sets the argument. This is because Kivy automatically maps keyword arguments to <code>Property</code> objects on the class or any parent classes, whether we defined those properties in our code or they were defined by the Kivy widget itself.</p>
+<p>Now all we have to do is hook up the <code>on_release</code> event on the <code>BuddyListItem</code> in the KV Language file. Note that if you are doing more complicated selection, you may want to hook up an <code>on_state</code> handler instead. It will be called whenever the state property changes (for selection or deselection).</p>
+<p>While we're at it, we can also add a similar event to render the buddy list again when the <code>Buddies</code> button is clicked inside the <code>ChatWindow</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/401f2b5b3214e2f1194a1382fd7e691d08199e71">commit</a>)</p>
+<pre class="brush:python">
+&lt;BuddyListItem&gt;:
+    size_hint_y: None
+    height: "75dp"
+    selected_color: (0.2, 0.1, 0.2, 1.0)
+    on_release: app.root.show_buddy_chat(self.jabberid)
+</pre>
+<p>and</p>
+<pre class="brush:python">
+    Button:
+        size_hint_x: None
+        width: "70dp"
+        text: "Buddies"
+        on_release: app.root.show_buddy_list()
+</pre>
+<p>Now, if we run the app, we can switch between the buddy list and a chat view whenever we want. This will be useful for a phone-sized layout, and in a later tutorial we'll make it possible to switch to a side-by side view for tablets and desktops.</p>
+<p>However, this isn't an optimal code design. First, it's wasteful of resources; each time, we go back to the Buddy List view, the list is constructed afresh, from scratch. Worse, new chat windows are also constructed each time we go back to a jabberid, meaning that any previous conversation would be lost. Let's fix both these things in the <code>OrkivRoot</code> class:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/4393a01832e496cd0e8073c611970b579778075d">commit</a>)</p>
+<pre class="brush:python">
+class OrkivRoot(BoxLayout):
+    def __init__(self):
+        super(OrkivRoot, self).__init__()
+        self.buddy_list = None
+        self.chat_windows = {}
+
+    def show_buddy_list(self):
+        self.clear_widgets()
+        if not self.buddy_list:
+            self.buddy_list = BuddyList()
+        for buddy_list_item in self.buddy_list.list_view.adapter.selection:
+            buddy_list_item.deselect()
+        self.add_widget(self.buddy_list)
+
+    def show_buddy_chat(self, jabber_id):
+        self.remove_widget(self.buddy_list)
+        if jabber_id not in self.chat_windows:
+            self.chat_windows[jabber_id] = ChatWindow(jabber_id=jabber_id)
+        self.add_widget(self.chat_windows[jabber_id])
+</pre>
+<p>We added an initializer that sets a couple variables for us. In the <code>show_buddy_list</code> method, we now instantiate the <code>BuddyList</code> only if it has not been previously created. However, this means that selection is kept between calls, so we have to loop over the selected items and deselect them.</p>
+<p>This might need some explaining. The <code>ListView</code> doesn't know anything about selection; that is kept track of in the <code>ListAdapter</code>. The <code>selection</code> property is a list containing all <code>BuddyListItem</code> objects that are currently selected. Because <code>BuddyListItem</code> is a <code>ListItemButton</code>, which provides the <code>SelectableView</code>, interface, it has a <code>deselect</code> method that we can use to disable selection of that item.</p>
+<p>The <code>chat_windows</code> dictionary maps <code>jabber_id</code> keys to individual <code>ChatWindow</code> objects, any of which can be displayed when the associated user is touched in the buddy list.</p>
+<h4>Sending a Message</h4>
+<p>Ok, now that our chat text box is looking pretty sweet and we can switch between buddies at will, let's try actually sending a message! Add a new method, <code>send_message</code> to the <code>ChatWindow</code> widget in <code>__main__.py</code>:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/982ba0aebff577a6a35fecee5f659a3213d979b0">commit</a>)</p>
+<pre class="brush:python">
+    import datetime  # At top of file
+
+    def send_message(self):
+        app = Orkiv.get_running_app()
+        app.xmpp.send_message(
+            mto=self.jabber_id,
+            mbody=self.send_chat_textinput.text)
+        self.chat_log_label.text += "(%s) Me: %s\n" % (
+                datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+                self.send_chat_textinput.text)
+        self.send_chat_textinput.text = ''
+</pre>
+<p>This is actually fairly simple code considering how exciting it is to send a message and have it show up on a different account when we run it. First we get the <code>app</code> and instruct the <code>xmpp</code> object to send a message. I got this code from the <a href="http://sleekxmpp.com/getting_started/sendlogout.html">SleekXMPP</a> documentation. Then, while that message is finding it's way to our other chat client, we update the <code>chat_log_label</code> text so that it contains a new line with the current date and the text we sent. Finally, we update the <code>send_chat_textinput</code> to be empty so we can send another value right away.</p>
+<p>Now we just need to invoke this method whenever the send button is clicked. I'm sure you can figure out how to do that by yourself. It's just one line of code in the Kv Language file:</p>
+<p>(<a href="https://github.com/buchuki/orkiv/commit/312eb3e4320228d79869890d5787a296cbb03929">commit</a>)</p>
+<pre class="brush:python">
+    Button:
+        size_hint_x: None
+        width: "70dp"
+        text: "Send"
+        on_release: root.send_message()
+</pre>
+<p>Now for the fun part. If you have two different jabber accounts, connect your normal instant messenger to one of them, and then log into Orkiv with the other one. Send a message to the "normal" messenger and giggle manically when it arrives. This is why we program: the success is so tangible!</p>
+<p>And I'll leave you with that success for today. In the next part, we'll hook up the message receiving side of things and make several interface improvements to make the app much more usable.</p>
+<h4>Monetary feedback</h4>
+<p>In previous parts of this tutorial, I've asked users to support me financially if they'd like to see more of it. I'm trying to gauge whether it is feasible for me to consider switching from full time work to being supported entirely by open source development, writing, and education in the (far) future.</p>
+<p>Instead, today, I'd like to take some time to thank those of you who have answered my call. It's impossible to tell how many book sales come from readers if these essays, or how many <a href="https://www.gittip.com/buchuki/">Gittip</a>s were prompted by this work rather than my various other open source projects, but as both have increased in the weeks that I've been publishing this series, it's clear that some of you support my work. I would like to thank you from the bottom of my heart. I truly believe that an economy based on paying what the buyer, rather than the seller, thinks something is worth, will one day lead to a happier, more peaceful world.</p>
+<p>I'd also like to thank all of you who have tweeted, commented, blogged, or otherwise spread the word about these articles. I think they are one of the best available resources for new Kivy developers outside of the excellent Kivy documentation itself. I am exhilarated to know that so many of you agree!</p></div>

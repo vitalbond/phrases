@@ -1,0 +1,30 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Mon, 02/17/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-source">
+    <div class="field-items">
+            <div class="field-item odd">
+                    TheStar.com        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>TheStar.com interviews ICRW's Nandita Bhatla, a senior technical specialist, about the domestic violence women face from their in-laws. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>TheStar.com interviews ICRW's Nandita Bhatla, a senior technical specialist, about the domestic violence women face from their in-laws in India.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.thestar.com/news/world/2014/02/17/why_tensions_are_soaring_in_mother_inlaw_india.html" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

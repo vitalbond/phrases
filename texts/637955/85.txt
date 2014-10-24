@@ -1,0 +1,53 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="" src="http://www.icrw.org/files/images/people/Place-Holder4_4_1.jpg?1398288822"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Nizamuddin        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Khan        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Technical Specialist         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>As a Technical Specialist in the International Center for Research on Women&rsquo;s (ICRW) Asia Regional Office, Dr. Nizamuddin Khan leads the design and implementation of research projects on reproductive health that address gender inequality and violence against women. He has nearly 16 years of experience as a social science researcher, with expertise in designing research studies, conducting large-scale quantitative surveys, and monitoring and evaluating public health projects.</p><p><span style="line-height: 1.5;">With a background in statistics and demography, Nizamuddin has a wide range of research competencies, including conducting gender analyses of field programs, carrying out both quantitative and qualitative participatory studies, leading randomized controlled trials and translating research evidence into practical guidance for program practitioners and policymakers.</span></p><p><span style="line-height: 1.5;">Nizamuddin is passionate about grounding his work in public health in a broader framework that takes into account gender disparities, gender-based violence and human rights. At ICRW, he has been involved in several projects in South Asian countries.</span></p><p><span style="line-height: 1.5;">Nizamuddin has extensive experience working with a wide range of donors and partners, including United States government agencies such as the U.S. Agency for International Development, Bill &amp; Melinda Gates Foundation, national nongovernmental organizations and research institutions, including the International Institute for Population Sciences (IIPS) in Mumbai, Tribhuan University in Nepal and the University of Indonesia.&nbsp;</span></p><p><span style="line-height: 1.5;">Prior to joining ICRW in 2013, Nizamuddin was a Senior Program Officer at Population Council. He has also worked as an Operations Research Manager for Futures Group International, as a consultant for the World Bank in New Delhi, and as a Senior Research Officer at IIPS where he primarily was involved in large-scale sample surveys.</span></p><p><span style="line-height: 1.5;">Contact Nizamuddin at </span><a href="mailto:nkhan@icrw.org" style="line-height: 1.5;">nkhan@icrw.org</a></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise:&nbsp;</div>
+                    <p>Population and Reproductive Health, Violence Against Women, Research and Analysis, Monitoring and Evaluation</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Hindi (fluent) and English (fluent)</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Nizamuddin holds a doctorate in population studies and a master&rsquo;s in population studies from IIPS in Mumbai as well as a master&rsquo;s in Statistics with Computer Programming from the Bundelkhand University, India.&nbsp;</p>        </div>
+        </div>
+</div></div>

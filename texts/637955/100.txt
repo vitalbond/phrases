@@ -1,0 +1,45 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="" src="http://www.icrw.org/files/images/people/Image%20Place-kadin_0.jpg?1403204379"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Erin        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Kelly        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Communications Specialist        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>As a Communications Specialist at the International Center for Research on Women (ICRW), Erin Kelly streamlines messaging, assists with media relations and outreach, and maintains the organization’s global digital presence through ICRW’s website and social media profiles. Erin has more than five years of experience with digital communications and advocacy for organizations focusing on international development, gender and health.</p><p><span style="line-height: 1.5;">Erin brings expertise in growing the digital footprint of organizations through social media, blogs, website updates and media monitoring. She has experience with nonprofits committed to engaging grassroots audiences to advocate for a variety of issues and to amplifying the voices of marginalized populations in the global development dialogue.</span></p><p><span style="line-height: 1.5;">Erin is particularly passionate about using her online communications skills and expertise to advance the interests of women and girls around the world. She’s eager to apply new technologies to educate researchers, donors and humanitarians about issues affecting women and girls, such as gender-based violence and child marriage. And she routinely seeks innovative approaches to communicate solutions and opportunities to tackle these and other global problems.</span></p><p><span style="line-height: 1.5;">At ICRW, Erin collaborates with researchers, development and advocacy staff, as well as the Office of the President to ensure that ICRW’s web and media presence reflect the mission of the organization and its powerful research contributions from the field. Erin also works closely with ICRW’s Asia Regional Office, based in New Delhi, India, to see to it that research and programs managed from India are well represented in the digital sphere and in the media.</span></p><p><span style="line-height: 1.5;">Prior to joining ICRW in 2014, Erin was a communications and outreach manager at Women Thrive Worldwide, a leading policy and advocacy nonprofit that supports disenfranchised women globally. She also worked as a senior online advocacy specialist for Families USA, a domestic health care advocacy organization, where she helped lead efforts to engage grassroots audiences on health reform and managed the organization’s microsite, Stand Up for Health Care. Erin also has served on a variety of coalitions, including the International Family Planning Coalition and the Coalition to End Violence Against Women and Girls Globally, to streamline messaging and bring issues affecting women and girls to American and global audiences.</span></p><p><span style="line-height: 1.5;">Contact Erin at </span><a href="mailto:ekelly@icrw.org" style="line-height: 1.5;">ekelly@icrw.org</a><span style="line-height: 1.5;">and follow her on Twitter at @Erin_inDC</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English (native), Spanish (intermediate)</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education: </div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Erin holds a master’s in global affairs from George Mason University and a bachelor’s degree in print/magazine journalism from Boston University.</p>        </div>
+        </div>
+</div></div>

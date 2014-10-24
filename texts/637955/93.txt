@@ -1,0 +1,30 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Panelists will address root causes and consequences of sexual violence        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Wed, 05/28/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-byline">
+    <div class="field-items">
+            <div class="field-item odd">
+                    By Gillian Gaynair        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>ICRW on June 10 in London will host a panel discussion on the root causes and consequences of sexual violence in conflict during the largest-ever global summit on the topic. The panel will be followed by a workshop focused on ICRW&rsquo;s GEMS program.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) on June 10 will host a discussion and workshop to showcase efforts that aim to shift gender norms and attitudes that underlie sexual violence in conflict and post-conflict areas.</p><p><span style="line-height: 1.5;">The event is part of the&nbsp;</span><a href="https://www.gov.uk/government/topical-events/sexual-violence-in-conflict" style="line-height: 1.5;">Global Summit to End Sexual Violence in Conflict</a><span style="line-height: 1.5;">, the largest such gathering on the topic, to be held June 10-13 in London. Sponsored by the British Foreign and Commonwealth Office, the event will convene a diverse international audience from policy makers and donors to practitioners and advocates. Building on the work of the wider international community, in recent years Britain has sought to encourage increased attention to the issue which has affected women, girls, families and whole communities in nearly every corner of the globe where conflicts take place.</span></p><p><span style="line-height: 1.5;">ICRW&rsquo;s panel,&nbsp;</span><a href="https://www.eventbrite.com/e/we-can-solve-this-tackling-the-roots-and-repercussions-of-sexual-violence-registration-10338166735" style="line-height: 1.5;">&ldquo;We Can Solve This: Tackling the Roots and Repercussions of Sexual Violence,&rdquo;</a>&nbsp;<span style="line-height: 1.5;">endeavors to share evidence with policy makers, donors and others in an effort to further investments to replicate or scale promising efforts that address the root causes of sexual violence.</span></p><p><span style="line-height: 1.5;">The discussion will focus on new research on prevention and rehabiliation efforts in eastern Democratic Republic of Congo, northern Uganda and the Balkans.&nbsp;</span><span style="line-height: 1.5;">Speakers will include John Crownover, program advisor for the Young Men Initiative with CARE International-Balkans, and Kristin Kalla, senior program officer at the Trust Fund for Victims, which supports the International Criminal Court. </span><a href="http://www.icrw.org/who-we-are/expert/stella-mukasa" style="line-height: 1.5;">Stella Mukasa</a><span style="line-height: 1.5;">, director of gender, violence and rights research at ICRW, will serve as the discussant, and&nbsp;</span><span style="line-height: 1.5;"><a href="http://www.trust.org/people/?id=003D000001BINI9IAP">Monique Villa</a>, chief executive officer of the <a href="http://www.trust.org/womens-rights/">Thomson Reuters Foundation</a>, will moderate.</span></p><p><span style="line-height: 1.5;">The panel will be followed by a hands-on workshop focused on ICRW&rsquo;s </span><a href="http://www.icrw.org/where-we-work/gender-equity-movement-schools-gems" style="line-height: 1.5;">Gender Equity Movement in School (GEMS)</a><span style="line-height: 1.5;"> program. The workshop will be led by </span><a href="http://www.icrw.org/who-we-are/expert/nandita-bhatla" style="line-height: 1.5;">Nandita Bhatla</a><span style="line-height: 1.5;">, a senior technical specialist in gender and development at ICRW&rsquo;s Asia Regional Office in New Delhi.</span></p><p><strong style="line-height: 1.5;"><a href="https://www.eventbrite.com/e/we-can-solve-this-tackling-the-roots-and-repercussions-of-sexual-violence-registration-10338166735">Register to attend this event</a></strong></p>        </div>
+        </div>
+</div></div>

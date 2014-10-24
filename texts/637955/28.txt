@@ -1,0 +1,35 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>This is a 4-month unpaid internship from September to December (the exact timeframe may be adjusted if needed based on the individual&rsquo;s schedule and availability). The Fundraising Campaigns and Events Intern will work closely with the Senior Manager, Development and other members of the Fundraising Team. The intern will be mentored and trained in providing a range of fundraising and event planning services as well as assisting in the implementation of various strategic initiatives in support of the organization&rsquo;s fundraising goals.&nbsp;&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-duties">
+      <div class="field-label">Primary Duties:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Activities will vary depending on need, but are likely to include:</p>
+<p><strong>Fundraising for the Turning Point Campaign</strong></p>
+<p>Receive mentorship and guidance with developing content and strategies to drive traffic to the Turning Point micro site and ICRW donation forms.&nbsp; In addition, the intern will learn about managing the production process for direct mail and e-appeals.</p>
+<p>&nbsp;<strong>Database Management and Gift Processing</strong></p>
+<p>The intern will receive mentorship and learn about updating donor information in an online database, including: entering new constituent records and relationships; correcting and updating mailing list contact information; standardizing address data; coding event attendance; and cross-referencing data to ensure accuracy and non duplication. Will work closely with the Senior Development Manager to ensure timely and accurate processing of gifts and acknowledgement letters.</p>
+<p>&nbsp;<strong>Events Planning Support</strong></p>
+<p>The intern will receive guidance in assisting in the execution and promotion of ICRW Fundraising-related events; execute e-mails/mailings, prepare materials, enter data into appropriate databases, help with on-site registration, and assist with other logistics, as needed.&nbsp;</p>
+<p>&nbsp;<strong>Supporting other Fundraising Activities as needed</strong></p>
+<p>The intern will receive guidance in supporting the Development team, Office of the President, Communications team, and other departments within ICRW by undertaking a range of activities that enhance fundraising efforts. These will vary depending on need, but may include: attending and taking notes at external events and internal meetings; providing support at ICRW events; reviewing project materials and summarizing key information for use in institutional documents&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-skills">
+      <div class="field-label">Required Skills:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Excellent writing. Strong analytical and organizational skills required. Computer literacy required to include a proficiency in standard business applications (e.g. in the MS Office Suite). Ability to develop and maintain effective working relationships at all levels. &nbsp;&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-how-to-apply">
+      <div class="field-label">How To Apply:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>We are flexible regarding days/hours, as well as start and end dates.&nbsp; (we can determine availability through the phone screen process). Interested candidates should submit a cover letter summarizing their background and interest in supporting fundraising and development at an international nonprofit organization, as well as a curriculum vitae to <a href="mailto:internships@icrw.org"><u>internships@icrw.org</u></a>&nbsp;with <strong>&ldquo;Fundraising Intern&rdquo; </strong>in the subject line. Please indicate your preferred scheduling and any particular areas of interest or skills that you would like to develop, if offered an internship. &nbsp;</p>        </div>
+        </div>
+</div></div>

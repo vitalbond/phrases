@@ -1,0 +1,24 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Mon, 04/21/2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Aside from the emotional and physical consequences of maternal death worldwide, a new report by ICRW and others finds that the economic burden of maternal mortality can be debilitating for families and often pushes them into poverty.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Aside from the emotional and physical consequences of maternal death worldwide, a new report by ICRW and others finds that the economic burden of maternal mortality can be debilitating for families and often pushes them into poverty.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-link field-field-url">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.chronicle.co.zw/maternal-deaths-fuel-poverty/" target="_blank">Read more &raquo;</a>        </div>
+        </div>
+</div></div>

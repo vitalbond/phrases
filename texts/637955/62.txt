@@ -1,0 +1,30 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>A grant from the Summit Foundation is enabling ICRW&rsquo;s Gender, Population and Development portfolio to undertake, leverage and disseminate cutting-edge research on the issues of sexual and reproductive health and rights, adolescent girls and adolescent health.&nbsp; It undergirds ICRW&rsquo;s ability to provide technical assistance to partner organizations, government agencies, UN agencies and others, resulting in more effective policies and programs across a range of areas of issues.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    Summit Foundation        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Suzanne Petroni        </div>
+        </div>
+</div></div>

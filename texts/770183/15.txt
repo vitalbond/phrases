@@ -1,0 +1,11 @@
+<div><p><strong>3 Upcoming Startups<br></strong></p>
+<p>1.</p>
+<p><a href="https://www.athlete-trax.com/%3Cbr%20/%3E">AthleteTrax</a></p>
+<p>AthleteTrax is  a new startup that aims to coordinate player&rsquo;s schedules, contacting players with reminders, and help to raise funds.</p>
+<p>2.</p>
+<p><a href="https://www.tailoredfit.co/%3Cbr%20/%3E">TailoredFit<br></a></p>
+<p>TailoredFit is a new startup that aims to help you find perfect cloths which fits your style and likes.<br><a href="http://visionwiz.net/wp-content/uploads/2014/04/upcoming-startup.jpg"><img src="http://visionwiz.net/wp-content/uploads/2014/04/upcoming-startup.jpg" alt="" title="upcoming startup" width="150" height="105" class="aligncenter size-full wp-image-35364"></a><br>
+3.</p>
+<p><a href="http://diamondkinetics.com/%3Cbr%20/%3E">Diamond Kinetics<br></a></p>
+<p>Diamond Kinetics is a new startup that aims to help baseball and softball players to improve their performance.</p>
+<p>Its motion sensors will help players and coaches analyze data, change practice habits and improve skills.</p></div>

@@ -1,0 +1,71 @@
+<div><p><em>This post is sponsored by the Wild Blueberry Association of North America. I was compensated for my time. All thoughts and opinions are my own.</em></p>
+<p>Hi Friends!</p>
+<p>Happy Thursday. Today I’m excited to announce that I’m teaming up with the <a href="http://www.wildblueberries.com/" target="_blank"><span style="text-decoration: underline;"><strong>Wild Blueberry Association of North America</strong></span></a> this summer as an ambassador to bring you some delicious recipes using Wild Blueberries!</p>
+<p><img class="aligncenter wp-image-12641 size-full" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/wild-blueberry-turkey-burgers.jpg-e1402535269968.jpg" alt="wild blueberry turkey burgers.jpg e1402535269968 Wild Blueberry Turkey Burgers" width="550" height="822" title="Wild Blueberry Turkey Burgers"></p>
+<p>Let’s chat a little bit about Wild Blueberries shall we? Did you know that they’re different from regular blueberries? You can easily identify them by their smaller size and if you haven’t tried them yet, you should definitely look for them in the freezer section of your local grocery store!</p>
+<p>Here are some things you should know about them:</p>
+<ul><li>They’re antioxidant superstars! Wild Blueberries have twice the antioxidants of regular blueberries.</li>
+<li>They’re frozen right after picking to lock in important nutrients and phytochemicals.</li>
+<li>They grow naturally in fields in Maine, eastern Canada and Quebec.</li>
+<li>They’re Mother Nature’s original blueberry. They haven’t been modified to increase size or make them easier to ship.</li>
+<li>Compared to regular blueberries, they have a more intense taste and color and they contain less water so they freeze better and are great for baking!</li>
+<li>They’re packed with antioxidants include anthocyanin which has anti-inflammatory properties.</li>
+<li>Research has shown potential benefits to humans in the areas of brain health, anti-aging, heart health, diabetes prevention, preventing UTIs and eye health.</li>
+</ul><p>Over the next few months I’m going to share several recipes with you that use Wild Blueberries. This month we’re kicking things off with a recipe that’s perfect for the grill! I shared this recipe on the <a href="http://www.wildblueberryhealthblog.com/2014/06/give-dad-something-wild-this-fathers.html" target="_blank"><span style="text-decoration: underline;"><strong>Wild Blueberry Association blog</strong></span></a> yesterday, and now I’m excited to share it with you guys!</p>
+<p><img class="aligncenter size-full wp-image-12642" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/DSC_0228.jpg" alt="DSC 0228 Wild Blueberry Turkey Burgers" width="550" height="368" title="Wild Blueberry Turkey Burgers"></p>
+<p>It’s been a long winter, but summer is finally here and in my family, warm weather means grilling season. Our summers are filled with lots of family gatherings, outdoor activities and delicious food.</p>
+<p>Aside from Memorial Day, which tends to always be a little iffy weather-wise here in Ohio, Father’s Day is typically the first holiday where families can get together and celebrate both the wonderful men in their lives AND the start of summer weather!</p>
+<p>I don’t know about you guys, but when we get together as a family, we almost always light up the grill! Plain old burgers and brats are cookout staples, but in my opinion they can get a little boring. So, I’m always looking for fun ways to jazz things up on the grill.</p>
+<p>These turkey burgers are far from boring. They’re moist and juicy thanks to the spinach and the sweet Wild Blueberries perfectly complement the salty bacon and feta, while also adding a dose of powerful antioxidants!</p>
+<p>So this Father’s Day, give your dad a break. Let him sit back and relax while you take over the grill and make him a burger he’ll never forget!</p>
+<div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+<div itemprop="name" class="ERSName">Wild Blueberry Turkey Burgers</div>
+<div class="ERSClear"> </div>
+<div class="ERSTopRight"> <img itemprop="image" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/wild-blueberry-turkey-burgers.jpg-e1402535269968.jpg" width="205" title="Wild Blueberry Turkey Burgers" alt="wild blueberry turkey burgers.jpg e1402535269968 Wild Blueberry Turkey Burgers"><div class="ERSSavePrint"> <span class="ERSSaveBtnSpan"><script type="text/javascript" src="http://www.ziplist.com/javascripts/wk.js"></script><a class="ziplist-button add-recipe large ERSSaveBtn" href="http://www.ziplist.com/webkitchen/button/add_recipe?as_partner=theleangreenbean&#38;url=http%3A%2F%2Fwww.theleangreenbean.com%2Fwild-blueberry-turkey-burgers%2F" target="_blank">Save</a></span> <span class="ERSPrintBtnSpan"><a class="ERSPrintBtn" href="http://www.theleangreenbean.com/easyrecipe-print/12410-0/" rel="nofollow" target="_blank">Print</a></span> </div>
+</div>
+<div class="ERSTimes">
+<div class="ERSTime">
+<div class="ERSTimeHeading">Prep time</div>
+<div class="ERSTimeItem"> <time itemprop="prepTime" datetime="PT10M">10 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Cook time</div>
+<div class="ERSTimeItem"> <time itemprop="cookTime" datetime="PT10M">10 mins</time></div>
+</div>
+<div class="ERSTime ERSTimeRight">
+<div class="ERSTimeHeading">Total time</div>
+<div class="ERSTimeItem"> <time itemprop="totalTime" datetime="PT20M">20 mins</time></div>
+</div>
+<div class="ERSClearLeft"> </div>
+</div>
+<div itemprop="description" class="ERSSummary">A healthy, juicy burger that’s the perfect combination of sweet and salty!</div>
+<div class="divERSHeadItems">
+<div class="ERSAuthor">Author: <span itemprop="author">Lindsay L</span></div>
+<div class="ERSServes">Serves: <span itemprop="recipeYield">4</span></div>
+</div>
+<div class="ERSIngredients">
+<div class="ERSIngredientsHeader ERSHeading">Ingredients</div>
+<ul><li class="ingredient" itemprop="ingredients">1 pound ground turkey</li>
+<li class="ingredient" itemprop="ingredients">2 cloves garlic, minced</li>
+<li class="ingredient" itemprop="ingredients">½ cup Wild Blueberries (frozen is fine)</li>
+<li class="ingredient" itemprop="ingredients">5 ounces frozen, chopped spinach (defrosted and squeezed to remove water)</li>
+<li class="ingredient" itemprop="ingredients">2 strips bacon, cooked and chopped</li>
+<li class="ingredient" itemprop="ingredients">¼ cup crumbled feta cheese, optional (can omit &#38; top with cheese)</li>
+<li class="ingredient" itemprop="ingredients">freshly ground black pepper, to taste</li>
+</ul><div class="ERSClear"></div>
+</div>
+<div class="ERSInstructions">
+<div class="ERSInstructionsHeader ERSHeading">Instructions</div>
+<ol><li class="instruction" itemprop="recipeInstructions">Combine all ingredients in a large bowl, mixing with your hands until combined.</li>
+<li class="instruction" itemprop="recipeInstructions">Form into 4 patties, making sure to form an indent in the top with your thumbs.</li>
+<li class="instruction" itemprop="recipeInstructions">Cook in a hot pan or on a grill until internal temperature reaches 165 degrees, flipping occasionally.</li>
+<li class="instruction" itemprop="recipeInstructions">Top with lettuce, tomato, cheese, mustard or other toppings as desired.</li>
+</ol><div class="ERSClear"></div>
+</div>
+<div class="endeasyrecipe" title="style002" style="display: none">3.2.2704</div>
+</div>
+<p>Aren’t they pretty? I didn’t have feta when I made these so I topped them with fresh mozzarella…but next time I make them, I’m definitely adding the feta.</p>
+<p><img class="aligncenter size-full wp-image-12643" src="http://www.theleangreenbean.com/wp-content/uploads/2014/06/DSC_0226.jpg" alt="DSC 0226 Wild Blueberry Turkey Burgers" width="550" height="804" title="Wild Blueberry Turkey Burgers"></p>
+<p>For more Wild Blueberry love and recipes, you can follow them on:<br><a href="https://www.facebook.com/wildblueberries" target="_blank"><span style="text-decoration: underline;"><strong>Facebook</strong></span></a><br><span style="text-decoration: underline;"><strong><a href="https://twitter.com/#WildBBerries4U" target="_blank">Twitter<br></a></strong><strong><a href="http://www.pinterest.com/wbeditor/" target="_blank">Pinterest</a></strong></span></p>
+<p>Enjoy!</p>
+<p>–Lindsay–</p></div>

@@ -1,0 +1,43 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>A preference for sons over daughters has a detrimental impact on women's and girls' health and well being.&nbsp; It also affects society by&nbsp;driving gender-biased, sex selection resulting in a skewed ratio&nbsp;of females&nbsp;to males at birth in favor of males.</p>
+<p>This report presents the findings of a large-scale study that examines men&rsquo;s and women&rsquo;s underlying attitudes and behaviors around son preference, with a particular focus on how they conceptualize manhood and masculinity.&nbsp; The study was&nbsp;conducted in seven Indian states (Haryana, Madhya Pradesh, Maharashtra, Odisha, Punjab, Rajasthan and Uttar Pradesh) involving more than nine thousand men and three thousand women, aged 18-49.&nbsp; The study&nbsp;identified key&nbsp;factors that influence men&rsquo;s views about masculinity, as measured by their&nbsp;support for gender equality and control of women&rsquo;s behaviour, and how these views impact on their preference for sons and perpetration of intimate partner violence. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Priya Nanda, Abishek Gautam, Ravi Verma, Sanjay Kumar and Dhanashri Brahme        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/priya-nanda">Priya  Nanda</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/who-we-are/expert/ravi-verma">Ravi Verma</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/Masculinity%20Study_WEB%20Version.pdf" type="application/pdf; length=716859">Masculinity Study_WEB Version.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

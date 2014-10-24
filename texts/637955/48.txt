@@ -1,0 +1,33 @@
+<div><div class="field field-type-date field-field-date-publication">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">Wed, 11/06/2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>The International Center for Research on Women (ICRW) is honoring&nbsp;<strong>Melanne Verveer</strong>, who in 2009 was appointed by <strong>President Obama</strong> to be the first ever U.S. Ambassador-at-Large for Global Women&rsquo;s Issues, with its annual Champions for Change Leadership Award for her lifetime of contributions to women and girls globally.&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p align="center"><strong><u>Media Advisory:</u></strong></p><p><strong style="line-height: 1.5;">What: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong><span style="line-height: 1.5;">The International Center for Research on Women (ICRW) is honoring&nbsp;</span><strong style="line-height: 1.5;">Melanne Verveer,&nbsp;</strong><span style="line-height: 1.5;">who in 2009 was appointed by </span><strong style="line-height: 1.5;">President Obama</strong><span style="line-height: 1.5;"> to be the first ever U.S.&nbsp;</span><span style="line-height: 1.5;">Ambassador-</span><span style="line-height: 1.5;">at-Large for Global Women&rsquo;s Issues, with its annual Champions for Change Leadership&nbsp;</span><span style="line-height: 1.5;">Award for her lifetime of contributions to women and girls globally.&nbsp;</span><span style="line-height: 1.5;">The award&nbsp;</span><span style="line-height: 1.5;">ceremony&nbsp;</span><span style="line-height: 1.5;">will feature a conversation with the former ambassador and a </span><strong style="line-height: 1.5;">high-level&nbsp;</strong><strong style="line-height: 1.5;">panel </strong><strong style="line-height: 1.5;">discussion</strong><span style="line-height: 1.5;"> on new strategies for advancing women and girls. &nbsp;</span></p><p><strong style="line-height: 1.5;">Who: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong style="line-height: 1.5;">Melanne Verveer</strong><span style="line-height: 1.5;">, Executive Director for the Georgetown Institute for Women, Peace &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;and Security</span><strong style="line-height: 1.5;">&nbsp; &nbsp;</strong></p><p><strong style="line-height: 1.5;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Lois Romano</strong><span style="line-height: 1.5;">, Senior Political Correspondent, Politico</span></p><p><strong style="line-height: 1.5;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Sarah Degnan Kambou</strong><span style="line-height: 1.5;">, ICRW President</span></p><p style="margin-left:.5in;"><strong style="line-height: 1.5;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dotti Hatcher</strong><span style="line-height: 1.5;">, Executive Director, Gap Inc.&rsquo;s P.A.C.E. program for advancing women &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="line-height: 1.5;">workers&nbsp;</span></p><p style="margin-left:.5in;"><strong style="line-height: 1.5;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Renee Wittemyer</strong><span style="line-height: 1.5;">, Intel Corporation&rsquo;s Director of Social Impact</span></p><p style="margin-left:.5in;"><strong style="line-height: 1.5;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Julie Katzman</strong><span style="line-height: 1.5;">, Executive VP, the Inter-American Development Bank&nbsp;</span></p><p style="margin-left:.5in;"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ann Warner</strong>, ICRW Senior Gender &amp; Youth Specialist</p><p><strong>When:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Friday, November 8, 2013, 12:30 - 2 pm</p><p><strong>Where:</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;National Press Club, Ballroom</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-media-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Media Contact:&nbsp;</div>
+                    Iba Dervishaj, International Center for Research on Women, 202.742.1252        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-mission-statement">
+      <div class="field-label">Mission Statement:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><em style="line-height: 1.5;">For nearly 40 years, ICRW has been the premier applied research institute focused on women and girls. Headquartered in Washington, D.C., and with regional offices in South Asia and Africa, ICRW provides evidence-based research to inform programs and policies that help alleviate poverty, promote gender equality and protect the rights of women and girls. Learn more at&nbsp;</em><a href="http://www.icrw.org/" style="line-height: 1.5;"><em>www.icrw.org</em></a></p>        </div>
+        </div>
+</div></div>

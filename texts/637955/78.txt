@@ -1,0 +1,47 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div>In this paper we summarize work to date addressing the following research question and gap in the literature: Whether and to what extent have fertility declines experienced in lower and middle income countries in the last forty years benefitted women in those countries? We argue fertility decline should be expected to benefit women&rsquo;s lives through two demographic processes : increased lifespan and increased time spent outside of childbearing; as well as accompanying socio-cultural processes, namely shifts in the value placed on large families and therefore on controlling women&rsquo;s reproduction. &nbsp;Such shifts would be expected to trigger changes to the roles that women play in their families, societies and communities. &nbsp;We conceptualize three levels of benefits to women&rsquo;s lives that may result from fertility decline: improvements to women and girls&rsquo; well-being; increases in women&rsquo;s empowerment; and ultimately, to gender transformation at the community and societal level. &nbsp;</div><div>&nbsp;</div><div>We find evidence for improvements in women&rsquo;s lives within four key domains: health and survival; education; labor force participation or employment; and the role and value of daughters in the household. &nbsp;This evidence suggests that the overall well-being of women and girls improves as fertility declines, particularly as it relates to their maternal health, educational attainment and workforce participation.&nbsp;</div><div>&nbsp;</div><div>The findings also suggest that in many contexts fertility decline has contributed to the empowerment of women and girls. However, the evidence is less conclusive in demonstrating that fertility decline has led to improved gender relations and gender equality at the societal level indicative of any transformation to gender systems. &nbsp;The evidence also points to more rapid improvements to women&rsquo;s lives in the public sphere than the private or domestic sphere. &nbsp;While the growing body of evidence points to an important role played by fertility decline in the improvement of women&rsquo;s lives, we caution that benefits to women&rsquo;s lives may continue to be constrained unless policies can catalyze changes in gender norms and systems both outside of and within the domestic sphere. &nbsp;</div>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Kirsten Stoebenau, ICRW;  RohiniPande, Consultant;  Anju Malhotra, UNICEF        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-person">
+      <div class="field-label">Author Links:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/who-we-are/expert/kirsten-stoebenau">Kirsten  Stoebenau</a>        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/ICRW_FEN_WPS_2013_FINAL.pdf" type="application/pdf; length=765488">ICRW_FEN_WPS_2013_FINAL.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-rights-permissions">
+      <div class="field-label">Rights and Permissions:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><em>We encourage the use and dissemination of our publications for non-commercial, educational purposes. Portions may be reproduced with acknowledgment to the International Center for Research on Women (ICRW). For questions, please contact publications@icrw.org; or (202) 797-0007</em>.</p>        </div>
+        </div>
+</div></div>

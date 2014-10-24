@@ -1,0 +1,1 @@
+<div>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you’d like to share, feel free to leave a comment below. This week at CSSConf the YUI team released Pure, a set of small, responsive CSS modules that you can [...]</div>

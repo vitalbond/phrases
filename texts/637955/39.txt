@@ -1,0 +1,46 @@
+<div><div class="field field-type-text field-field-subtitle">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Girls Insights Report        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>In 2009, ICRW published <em>Girls Speak: A New Voice in Global Development </em>as the fourth report of the <em>Girls Count </em>report series. Four years later, researchers supported by the Nike Foundation asked more than 500 girls from 14 countries to share their insights and perspectives with global decision-makers. This report synthesizes girls&rsquo; voices from around the world and argues that girls&rsquo; insights are crucial to designing effective global development policies. &nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2013</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    A Warner, G Hollingworth, L Thompson, S Petroni, M Sexton, J Song, J Khada, K Jennings         </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="129" height="167" alt="" src="http://www.icrw.org/files/images/tn/Insights_Thumbnail.jpg?1381439289"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/9.10.2013%20Girl%20Insights%20Report%20final%5B1%5D.pdf" type="application/pdf; length=14904865">9.10.2013 Girl Insights Report final[1].pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

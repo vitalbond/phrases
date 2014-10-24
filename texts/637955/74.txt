@@ -1,0 +1,40 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Across the developing world, a woman dies every two minutes from complications of pregnancy and childbirth. Improving maternal health is widely acknowledged as a global public health priority and an urgent social justice and human rights issue. However, Kenya and other developing countries, continue to have a high maternal mortality ratio despite commitment from the government to address the issue.</p><p>This new study, undertaken in three sub-counties in Western Kenya, documents the emotional as well as the financial costs of maternal mortality to households in poor remote communities and explores the impact of these costs on family well-being.&nbsp;<span style="line-height: 1.5;">The study clearly demonstrates the devastating impact of these needless deaths on the well-being of families, the survival of newborns, the health and opportunities of surviving children, and the economic productivity of communities.</span></p><p><span style="line-height: 1.5;">The findings show that when a woman dies from pregnancy or childbirth-related causes, her illness and death begin a chain of loss that harms her children&rsquo;s health, education, and future opportunities; deepens household poverty; disrupts the life of her family; and devastates her loved ones with grief. The economic and human costs of maternal death are truly a price too high to bear.</span></p><p><span style="line-height: 1.5;">This study aims to catalyze renewed and strengthened efforts to ensure universal access to reproductive, maternal, newborn, and child health care; improve the quality of health services, including emergency obstetric care; strengthen referral services; and improve the financial and support for women and families facing maternal health crises.</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-date field-field-date-year">
+      <div class="field-label">Publication Year:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <span class="date-display-single">2014</span>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-author-text">
+      <div class="field-label">Author(s):&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    Family Care International (FCI), International Center for Research on Women (ICRW), and the KEMRI/CDC Research and Public Health Collaboration        </div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-image-publication">
+      <div class="field-label">Thumbnail:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_image_publication" width="145" height="206" alt="" src="http://www.icrw.org/files/images/tn/Screen%20Shot%202014-03-13_FINAL.png?1394738422"></div>
+        </div>
+</div>
+<div class="field field-type-filefield field-field-file-publication">
+      <div class="field-label">PDF File Name:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <div class="filefield-file"><img class="filefield-icon field-icon-application-pdf" alt="application/pdf icon" src="http://www.icrw.org/sites/all/modules/filefield/icons/application-pdf.png"><a href="http://www.icrw.org/files/publications/TB_Price_v3.pdf" type="application/pdf; length=483324">TB_Price_v3.pdf</a></div>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-require-webform">
+    <div class="field-items">
+            <div class="field-item odd">
+                    No        </div>
+        </div>
+</div></div>

@@ -1,0 +1,53 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="" src="http://www.icrw.org/files/images/people/Place-Holder4_4_0.jpg?1398287689"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Abhishek         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Gautam         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Technical Specialist         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>As a Technical Specialist in the International Center for Research on Women&rsquo;s (ICRW) Asia Regional Office, Abhishek Gautam provides technical support across ICRW research teams in designing research studies, managing projects, developing monitoring tools, supervising data collection processes, and supporting data evaluation and analysis. He has more than eight years of research experience in the field of monitoring and evaluation, specifically in the areas of HIV, reproductive, maternal and child health, adolescent health, violence against women, water and sanitation and gender.</p><p><span style="line-height: 1.5;">A statistician by education, and demographer by profession, Abhishek brings expertise in managing large scale datasets, carrying out advanced level statistical analysis, preparing reports, presentations and publications of research and project findings. He also has hands-on experience in training and building partners&rsquo; capacity in data management, analysis and presentation.</span></p><p><span style="line-height: 1.5;">Through his work at ICRW, Abhishek aims to illustrate issues that need immediate policy and programmatic efforts in order to promote gender equality and reduce gender-based violence. Recently, he carried out studies on masculinity, gender based-violence and son preference in Nepal, Vietnam and India, in which he demonstrated key links between masculinity, men&rsquo;s attitudes towards gender equality, childhood experiences and intimate partner violence. Abhishek also has conducted quantitative evaluations for a variety of research projects, including one that assessed safe public spaces in New Delhi and another that focused on water, sanitation and hygiene in Uttar Pradesh.</span></p><p><span style="line-height: 1.5;">Prior to joining ICRW in 2011, Abhishek worked in the monitoring and evaluation unit of FHI360 in New Delhi, where he managed the Integrated Behavioral and Biological Assessment of the Avahan program in the state of Maharashtra, and provided technical assistance to the partner, the Indian Council of Medical Research. He was also responsible for the overall data management and analysis of the evaluation study, which was carried out in five states of India. It was one of the largest HIV programs implemented at such a scale.&nbsp;</span></p><p><span style="line-height: 1.5;">Abhishek has worked with a diversity of international donors throughout his career, including United Nations Population Fund, the Bill &amp; Melinda Gates Foundation and UN Women, as well as local partners such as Rajiv Gandhi Mahila Vikas Pariyojna, Shramik Bharti and Jagori.</span></p><p><span style="line-height: 1.5;">Contact Abhishek at&nbsp;</span><a href="mailto:agautam@icrw.org" style="line-height: 1.5;">agautam@icrw.org</a><span style="line-height: 1.5;">or on Twitter at @abhishekgautam</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise:&nbsp;</div>
+                    <p>Engaging Men and Boys,Violence Against Women, Population and Reproductive Health, Measurement and Evaluation, Research and Analysis</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English (fluent), Hindi (fluent), Bengali (basic), Marathi (basic).&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Abhishek is currently pursuing a doctorate in statistics from Banaras Hindu University (BHU) in Varanasi, India. He holds a master&rsquo;s in philosophy degree in population studies from the International Institute for Population Sciences in Mumbai, India, and has a master&rsquo;s and bachelor&rsquo;s degree in statistics from BHU.&nbsp;</p>        </div>
+        </div>
+</div></div>

@@ -1,0 +1,87 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Plan International is supporting ICRW to facilitate a workshop and redevelop a program model and program document for <strong><em>18+: Ending Child Marriages in Southern Africa</em></strong>, Plan&rsquo;s sub-regional program that aims to reduce child marriages in four participating countries of Southern Africa, namely Malawi, Mozambique, Zambia and Zimbabwe. ICRW will draw on its experience in both child marriage and gender-transformative research and programming, as well as program evaluation, to advise Plan and facilitate the development of a four-country program to prevent child marriage and mitigate harmful effects of the practice on individuals, families and communities. &nbsp;Workshop participants will include experts from the field of child marriage programming, Plan staff from the global office and all four country teams, and key stakeholders representing&nbsp;research, programs or policies that are relevant to the contexts in the four target countries.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2014        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    Plan International        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Plan International        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Ann Warner        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Malawi</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Mozambique</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Zambia</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Zimbabwe</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-publication">
+      <div class="field-label">Related Publications:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/publications/new-insights-preventing-child-marriage">New Insights on Preventing Child Marriage</a>        </div>
+              <div class="field-item even">
+                    <a href="http://www.icrw.org/publications/solutions-end-child-marriage">Solutions to End Child Marriage</a>        </div>
+        </div>
+</div></div>

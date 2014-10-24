@@ -1,0 +1,77 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Women&rsquo;s property rights are critical for achieving poverty reduction and gender equality, yet efforts to secure them are often compromised by many challenges, including a lack of data for identifying programming gaps and progress.&nbsp; Few organizations that aim to secure women&rsquo;s property rights collect the necessary information to understand the context in which they are working, how effectively they execute their activities, who their program is reaching and what impacts they are having on participants and the community.</p>
+<p>ICRW aims to strengthen women&rsquo;s property rights in three East African countries through improved capacity of NGOs to systematically monitor, evaluate, and ultimately improve the effectiveness of their property rights programming. Through workshops, site visits and off-site technical assistance, ICRW is helping 11 NGOs in the region develop and implement strong, gender responsive M&amp;E systems for collecting and using information in order to track activities, monitor progress, and enhance their programs. Our NGO partners consist of three in Kenya, three in Uganda and five in Tanzania.&nbsp;&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2011 - 2014         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    Anonymous        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-partners">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Partners:&nbsp;</div>
+                    Kenya Land Alliance (KLA), Federation of Women Lawyers Kenya (FIDA-K), Kenya Legal and Ethical Issues Network on HIV &amp; AIDS (KELIN), Land and Equity Movement in Uganda (LEMU), Uganda Community Based Association for Women and Children Welfare (UCOBAC), Uganda Land Alliance (ULA), Environmental, Human Rights Care and Gender Organization (Envirocare), Tanzanian Women&rsquo;s Lawyers Association (TAWLA), Women&rsquo;s Legal Aid Centre (WLAC), Pastoral Women&rsquo;s Council (PWC) and Ujamaa Community Resource Team (UCRT)        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Aslihan Khan and Gina Alvarado        </div>
+        </div>
+</div>
+<div class="field field-type-location field-field-country">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Uganda</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item even">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Kenya</div>
+                                      </div>
+  </div>
+        </div>
+              <div class="field-item odd">
+                      <div class="field-label-inline">
+              Location(s):&nbsp;</div>
+                    <div class="location vcard">
+  <div class="adr">
+                              <div class="country-name">Tanzania</div>
+                                      </div>
+  </div>
+        </div>
+        </div>
+</div>
+<div class="field field-type-nodereference field-field-ref-publication">
+      <div class="field-label">Related Publications:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <a href="http://www.icrw.org/publications/property-rights-and-gender-training-toolkit">Property Rights and Gender: A Training Toolkit</a>        </div>
+        </div>
+</div></div>

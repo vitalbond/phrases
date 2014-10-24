@@ -1,0 +1,1 @@
+<div>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you’d like to share, feel free to leave a comment below. Today we reach the Sprint 7 Feature Complete milestone, which is just fancy terminology for the last day that [...]</div>

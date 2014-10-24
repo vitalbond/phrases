@@ -1,0 +1,14 @@
+<div><p>Varf&ouml;r installera ett till&auml;gg till Firefox n&auml;r lite CSS kan fixa biffen?</p>
+<p>#personal-bookmarks .toolbarbutton-icon {<br>
+display: none !important;<br>
+}<br>
+F&ouml;r Windows:<br>
+Skriv %appdata% under K&ouml;r (Windowsknappen och r, om det inte har f&ouml;r&auml;ndrats sedan jag &ouml;vergav Windows) -&gt;leta efter Mozilla-mappen -&gt; hitta &lt;n&aring;got&gt;.default -&gt; skapa mappen chrome -&gt; skapa filen UserChrome.css. Se till s&aring; inte .txt blir fil&auml;ndelsen bara, Windows gillar nog att skapa den. <img src="http://archlinux.me/kaptenen/wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley">  Eller s&aring; installerar ni bara till&auml;gget Stylish, d&aring; skapar ni en ny style och klistrar in stilmallen ovan.</p>
+<p>F&ouml;r Linux:<br>
+~/.mozilla/&lt;user&gt;.default -&gt; chrome -&gt; userChrome.css</p>
+<p>F&ouml;r Mac:<br>
+~/Library/Application Support/</p>
+<p>Detta tar bort favicons vid bokm&auml;rkesraden. N&aring;got som g&ouml;r Firefox lite finare, enligt mig. Firefox kommer vid version 28 eller 29 anv&auml;nda sig utav &ldquo;Australis&rdquo;, nya designen f&ouml;r Firefox. Dessv&auml;rre ser det inget vidare ut utan p&aring;minner om Chrome f&ouml;r mycket. Dessutom tar nya designen s&ouml;nder alla teman till Firefox (f&ouml;rutom s&aring; kallade Personas), och m&ouml;jligheterna att skapa teman f&ouml;r den nya designen &auml;r sv&aring;r. Tragiskt, n&auml;r det finns fina teman till Firefox.</p>
+<p>Jag har testat Safari lite p&aring; min Mac, och den minimalistiska designen &auml;r underbar. ^ &auml;r inspiration fr&aring;n Safari, detta och att v&auml;lja sm&aring; ikoner g&ouml;r Firefox n&aring;got mer likt Safari. Att g&aring; in i about:config och v&auml;lja browser.snapshots.limit 5 (eller n&aring;got annat &auml;n 0) g&ouml;r att effekterna n&auml;r man g&aring;r bak&aring;t eller fram&aring;t med touchpaden &auml;r densamma mellan dessa webbl&auml;sare. Just det, browser.tabs.onTop ska vara false ocks&aring;.</p>
+<p>Ytterligare en sak, installera Omnibar till Firefox, d&aring; blir det &auml;nnu mer likt Safari.</p>
+<p>Jag vet inte riktigt vad jag kommer att g&ouml;ra n&auml;r den nya designen kommer. Eventuellt kommer jag att stanna kvar, eller b&ouml;rja anv&auml;ndare Safari, eller helt enkelt acceptera att l&auml;get &auml;r som det &auml;r. P&aring; mina Linuxdatorer kommer jag att acceptera l&auml;get, skulle jag tro.</p></div>

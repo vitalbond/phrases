@@ -1,0 +1,53 @@
+<div><div class="field field-type-filefield field-field-person-image">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <img class="imagefield imagefield-field_person_image" width="120" height="180" alt="" src="http://www.icrw.org/files/images/people/Image%20Place-kadin.jpg?1399403675"></div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-first">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Priti        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-name-last">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Prabhughate        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-person-title">
+    <div class="field-items">
+            <div class="field-item odd">
+                    Technical Specialist, Gender and HIV        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-bio">
+      <div class="field-label">Bio:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Dr. Priti Prabhughate is a Senior Technical Specialist at the International Center for Research on Women&rsquo;s (ICRW), Asia Regional Office. In this role, she functions as a thematic lead on HIV-related research, by designing studies on HIV and parallel topics such as stigma and discrimination. She also provides technical support across teams in managing projects, developing tools, and supporting data evaluation and analysis.&nbsp;&nbsp;</p><p><span style="line-height: 1.5;">Priti has more than seven years of research experience in the fields of HIV/AIDS, sexuality, stigma and discrimination, gender-based violence and sexual health &ndash; with a special focus on working with sexual minority communities in India. She has experience in building capacity, designing and conducting research with community researchers using participatory learning tools, and using evidence to conduct advocacy with stakeholders, such as health providers and law enforcement.</span></p><p><span style="line-height: 1.5;">Priti also brings extensive training in psychology and social work, which equips her with a psychosocial perspective in understanding various phenomena. Her training in human behavior and application of its various theories to research helps her conceptualize research topics in a broad ecological framework. It is this aspect of her work that she is most enthusiastic about since it allows her to conceptualize, plan and analyze all of her research activities at multiple levels from the individual to the community level to the structural level.</span></p><p><span style="line-height: 1.5;">ICRW&rsquo;s approach to women&rsquo;s empowerment is particularly resonant for Priti as a researcher. Her various research projects on HIV and on stigma in particular, have framed gender as a structural factor that disempowers women and discriminates against women at multiple levels.</span></p><p><span style="line-height: 1.5;">Prior to joining ICRW in 2011, Priti worked with the Mumbai community-based organization Humsafar Trust, a male sexual health agency that seeks to prevent HIV among the gay, bisexual and transgender population. She functioned in multiple roles during her professional career at Humsafar, from counselor to ultimately leading the research unit at Humsafar Trust, where she played a pivotal role in guiding setting up IRB at the organization and developing proposals to international donors for research on sexual minority communities.</span></p><p><span style="line-height: 1.5;">During her career, Priti has worked with international donors such as the National Institutes of Mental Health and United Nations Development Program as well as Indian government departments such as the National AIDS Control Organization and local partners, including Humsafar Trust, Swasti and St. Xavier&rsquo;s College.</span></p><p><span style="line-height: 1.5;">Contact Priti at </span><a href="mailto:pprabhughate@icrw.org" style="line-height: 1.5;">pprabhughate@icrw.org</a><span style="line-height: 1.5;">and follow her on Twitter @pritiprabhughate</span></p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-expertise">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Expertise:&nbsp;</div>
+                    <p>HIV and AIDS, Violence Against Women, Advocacy and Policy Engagement</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-languages">
+      <div class="field-label">Languages Spoken:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>English (fluent), Hindi (fluent), Marathi (fluent), Konkani (fluent). Kannada (proficient), Gujarati (proficient) and German (proficient).&nbsp;</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-education">
+      <div class="field-label">Education:&nbsp;</div>
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Priti holds a doctorate in social work from the University of Illinois-Chicago and a master&rsquo;s in social work from Tata Institute of Social Sciences in Mumbai. She also holds a master&rsquo;s in psychiatric social work from the National Institute of Mental Health and Neuro-Sciences in Bangalore, and a bachelor&rsquo;s in psychology from Mumbai University.</p>        </div>
+        </div>
+</div></div>

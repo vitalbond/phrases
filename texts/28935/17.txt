@@ -1,0 +1,37 @@
+<div><p><em>Welcome to YUI Weekly, the weekly roundup of news and announcements from the YUI team and community. If you have any interesting demos or links you&rsquo;d like to share, feel free to leave a comment below.</em></p>
+<ul><li>
+<p>This week saw the release of <strong>YUI 3.11</strong> and conclusion of <a href="https://github.com/yui/yui3/wiki/Development-Schedule#sprint-8-3110">Sprint 8</a>. In this release, performance improvements to <a href="https://yuilibrary.com/yui/docs/attribute">Attribute</a> and <a href="https://yuilibrary.com/yui/docs/base">Base</a> continue, where we&rsquo;re now seeing a 500% speed improvement in some <a href="https://github.com/yui/yui3/tree/master/src/base/tests/perf/">Base performance tests</a>! In addition to performance enhancements, this release saw the introduction of <a href="http://yuilibrary.com/yui/docs/paginator/">Paginator</a>, <a href="http://yuilibrary.com/yui/docs/api/classes/DataTable.Paginator.html">DataTable Paginator</a>, as well as other enhancements and bug fixes. You can find all the details for this release in the <a href="http://www.yuiblog.com/blog/2013/07/16/yui-3-11-0-released/">YUI 3.11 release announcement</a> for more details.</p>
+</li>
+<li>
+<p>The team also released <strong>Pure 0.2.1</strong>. While there are no new features in this patch release, Pure&rsquo;s contributors have been hard at work closing <a href="https://github.com/yui/pure/issues?milestone=5&amp;page=1&amp;state=closed">16 issues</a> and providing additional enhancements to the library. For more details on this release, check out the <a href="https://github.com/yui/pure/releases/tag/v0.2.1">Pure v0.2.1 announcement</a>.</p>
+</li>
+<li>
+<p>To conclude what appears to have been &ldquo;Release Week&rdquo; for the YUI community, <strong>Yeti 0.2.24</strong> landed earlier today. Yeti is the tool that drives all of YUI&rsquo;s automated testing, and this release introduced official support for IE 6 &amp; 7, improvements to browser launching, added integration with other testing tools, and quite a bit more. Check out the <a href="http://www.yuiblog.com/blog/2013/07/19/yeti-0-2-24-released/">release announcement</a> for a full recap.</p>
+</li>
+<li>
+<p>Blog posts this week featured a <a href="http://www.yuiblog.com/blog/2013/07/16/velocity-2013-building-a-faster-and-stronger-web/">recap</a> of <a href="http://velocityconf.com/">Velocity Conference 2013</a>. If you are a developer interested in high-performance &amp; high-scale web applications, you&rsquo;ll definitely want to check out the post, watch some of the videos linked to, and take a peek at some of the slide decks. Incredibly valuable information was shared at an all-around great conference.</p>
+</li>
+<li>
+<p>At this week&rsquo;s <a href="https://github.com/yui/yui3/wiki/Open-Roundtable">Open Roundtable</a>, discussion topics included <a href="http://www.yuiblog.com/blog/2013/07/16/yui-3-11-0-released/">YUI 3.11</a>, <a href="http://www.yuiblog.com/blog/2013/07/18/pure-0-2-1-released/">Pure 0.2.1</a>, Github&rsquo;s <a href="https://github.com/blog/1547-release-your-software">Releases feature</a>, highlights from Velocity, and an update on <a href="http://twitter.com/patjameson">@patjameson</a>&lsquo;s <a href="http://www.webrtc.org/">WebRTC</a> project. You can find a video of that Hangout <a href="http://www.youtube.com/watch?v=6GZPLhoupAk">here</a>. At next week&rsquo;s Roundtable, Anthony Pipkin (<a href="https://twitter.com/apipkin">@apipkin</a>) will be talking about the recently released <a href="http://yuilibrary.com/yui/docs/paginator/">Paginator</a> component.</p>
+</li>
+<li>
+<p>Congrats to Clarence Leung (<a href="http://twitter.com/clarler">@clarler</a>) on becoming the latest addition to YUI&rsquo;s <a href="https://github.com/yui/yui3/blob/master/CONTRIBUTORS.md#committers">team of Committers</a>!</p>
+</li>
+<li>
+<p>Version bumps this week for the following YUI devtools: <a href="https://github.com/yui/grover/">Grover</a> and <a href="https://github.com/yui/yuidoc/commits/master/">YUIDoc</a>. Upgrade with <code>npm install -g grover yuidocjs</code>.</p>
+</li>
+<li>
+<p>No new <a href="http://yuilibrary.com/gallery/">Gallery</a> updates this week. <a href="http://25.media.tumblr.com/05178b10412f3b539d2b0982fe1a2478/tumblr_mgq8bmNx7v1rh2uuxo1_500.gif">Cookie Monster is anxiously waiting</a> your <a href="http://yui.github.io/yogi/cdn/">CDN request</a>.</p>
+</li>
+<li>
+<p>Links of the Week</p>
+<ul><li><a href="http://infrequently.org/2013/07/why-javascript/">Why JavaScript?</a></li>
+<li><a href="http://www.nczonline.net/blog/2013/07/16/introducing-eslint/">Introducing ESLint</a></li>
+<li><a href="http://seravo.fi/2013/javascript-the-winning-style">JavaScript, the winning style</a></li>
+<li><a href="http://ryanflorence.com/2013/es6-modules-and-browser-app-delivery/">ES6 Modules, Build Tools and Browser App Delivery</a></li>
+<li><a href="http://ariya.ofilabs.com/2013/07/es6-and-proxy.html">ECMAScript 6 and Proxy</a></li>
+<li><a href="http://philipwalton.com/articles/why-i-test-private-functions-in-javascript/">Why I Test Private Functions In JavaScript </a></li>
+<li><a href="http://www.itworld.com/cloud-computing/364194/wait-maybe-javascript-top-programming-language">Wait &ndash; maybe JavaScript IS the top programming language</a></li>
+<li><a href="http://javascriptweekly.com/archive/139.html">&hellip; and more over at JavaScript Weekly</a></li>
+</ul></li>
+</ul></div>

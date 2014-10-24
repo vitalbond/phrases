@@ -1,0 +1,30 @@
+<div><div class="field field-type-text field-field-body">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>Program support from the William &amp; Flora Hewlett Foundation is allowing ICRW&rsquo;s Gender, Population and Development program to undertake, leverage and disseminate cutting-edge research on the issues of reproductive health and rights, women and girls&rsquo; empowerment and population dynamics, with the ultimate goal of improving the reproductive health and rights, life options, and overall well-being and empowerment of women, girls and adolescents residing in the developing world. &nbsp;The grant supports ICRW&rsquo;s work to provide technical assistance to partner organizations, resulting in more effective program designs, and more effective monitoring and evaluation.</p>        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-project-duration">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Duration:&nbsp;</div>
+                    2013 - 2016        </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-funder">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Funder:&nbsp;</div>
+                    William &amp; Flora Hewlett Foundation         </div>
+        </div>
+</div>
+<div class="field field-type-text field-field-contact">
+    <div class="field-items">
+            <div class="field-item odd">
+                      <div class="field-label-inline-first">
+              Project Director:&nbsp;</div>
+                    Suzanne Petroni        </div>
+        </div>
+</div></div>
