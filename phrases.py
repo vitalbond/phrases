@@ -25,15 +25,22 @@ def is_punct(w):
 _english_stopwords = set(nltk.corpus.stopwords.words('english'))
 _non_english_stopwords = set(nltk.corpus.stopwords.words())-_english_stopwords
 def is_stopword(w):
-    return is_punct(w) or w.lower() in _english_stopwords
+    return is_punct(w) or is_quote_token(w) or w.lower() in _english_stopwords
+
+
+_quote_token_re = re.compile(r"^('[sS]|'[mM]|'[dD]|'ll|'LL|'re|'RE|'ve|'VE|n't|N'T')$")
+def is_quote_token(w):
+    return _quote_token_re.match(w)
 
 
 def get_corpus_words_fd():
-    fd = FreqDist()
-    for text in nltk.corpus.gutenberg.fileids():
-        for word in nltk.corpus.gutenberg.words(text):
-            fd[word] += 1
-    return fd
+    corpus = nltk.corpus.gutenberg
+    tokens = []
+    for text in corpus.fileids():
+        tokens+=[w.lower() for w in corpus.words(text)]
+        # w in nltk.word_tokenize(corpus.raw(text))
+
+    return FreqDist(tokens)
 
 
 def get_words_fd(documents):
@@ -59,6 +66,17 @@ def word_freq_ratio(w):
 
     _wfr_cache[w] = a/b
     return _wfr_cache[w]
+
+
+def phrase_output(words):
+    if not len(words):
+        return ''
+    phrase = words[0]
+    for w in words[1:]:
+        if not _quote_token_re.match(w):
+            phrase+=' '
+        phrase+=w
+    return phrase
 
 
 def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
@@ -137,7 +155,7 @@ tokens_set = set()
 for f in os.listdir(dir):
     file = os.path.join(dir, f)
     if os.path.isfile(file):
-        str = strip_tags(open(file, 'r').read()).decode('utf-8')
+        str = strip_tags(open(file, 'r').read().decode('utf-8'))
         tokens = nltk.word_tokenize(str)
         tokens = [w.lower() for w in tokens]
         tokens_set = tokens_set.union(tokens)
@@ -161,7 +179,7 @@ time_end = time.time()
 print "\n"
 
 for x in phrases:
-    print ' '.join(x[0])
+    print phrase_output(x[0])
 
 print "\n"
 print "Load corpus: %0.2f sec" % time_corpus
