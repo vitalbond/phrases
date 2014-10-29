@@ -117,16 +117,32 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
             if phrase_value<15:
                 continue
 
-            phrases.append((ngram_counter[ng][2], ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
+            phrases.append((ngram_counter[ng][2], ngram_counter[ng][0], N, ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
 
-    max_freq = max([x[1] for x in phrases])
-    max_freq_docs = max([x[2] for x in phrases])
-    max_value = max([x[3] for x in phrases])
+    phrases_filtered = []
+    for i in xrange(0, len(phrases)):
+        ok = True
+        for j in xrange(i+1, len(phrases)):
+            if phrases[i][1]==phrases[j][1] and phrases[i][2]<phrases[j][2]:
+                for k in xrange(0, phrases[j][2]-phrases[i][2]+1):
+                    if (phrases[i][0]==phrases[j][0][k:k+phrases[i][2]]):
+                        ok = True
+                        break
+        if ok:
+            phrases_filtered.append(phrases[i])
+        else:
+            print phrases[i][0]
+
+    phrases = phrases_filtered
+
+    max_freq = max([x[3] for x in phrases])
+    max_freq_docs = max([x[4] for x in phrases])
+    max_value = max([x[5] for x in phrases])
 
     #rank
-    phrases_ranked = [(x[0], 0.5*x[2]/max_freq_docs+0.3*x[1]/max_freq+0.2*x[3]/max_value) for x in phrases]
+    phrases_ranked = [(x[0], 0.5*x[4]/max_freq_docs+0.3*x[3]/max_freq+0.2*x[5]/max_value, x[4], x[3], x[5]) for x in phrases]
 
-    #sort
+    #sort & limit
     phrases_sorted = sorted(phrases_ranked, key=lambda t: -t[1])[:count]
 
     return phrases_sorted
@@ -179,7 +195,7 @@ time_end = time.time()
 print "\n"
 
 for x in phrases:
-    print phrase_output(x[0])
+    print phrase_output(x[0]) #+ ' %0.2f (%0.2f, %0.2f, %0.2f)' % (x[1], x[2], x[3], x[4])
 
 print "\n"
 print "Load corpus: %0.2f sec" % time_corpus
