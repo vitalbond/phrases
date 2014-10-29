@@ -14,7 +14,7 @@ def strip_tags(html):
     parser.handle_data = result.append
     parser.feed(html)
     parser.close()
-    return ''.join(result)
+    return ' '.join(result)
 
 
 _re_non_punct = re.compile(r'[^\W\d]', re.UNICODE)
@@ -47,7 +47,7 @@ def get_words_fd(documents):
     fd = FreqDist()
     for document in documents:
         for word in document:
-            fd[word] += 1
+            fd[word.lower()] += 1
     return fd
 
 
@@ -89,15 +89,15 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
         for document in documents:
             ngrams_in_document = {}
             for ng in nltk.ngrams(document, N):
-                if not is_stopword(ng[0]) and not  is_stopword(ng[-1]) and not any(is_punct(w) for w in ng):
-                    if not ng in ngram_counter:
-                        ngram_counter[ng] = [0, 0]
-                    ngram_counter[ng][0] += 1
-                    ngrams_in_document[ng] = 1
+                ng_lower = tuple([w.lower() for w in ng])
+                if not is_stopword(ng_lower[0]) and not  is_stopword(ng_lower[-1]) and not any(is_punct(w) for w in ng_lower):
+                    if not ng_lower in ngram_counter:
+                        ngram_counter[ng_lower] = [0, 0, ng]
+                    ngram_counter[ng_lower][0] += 1
+                    ngrams_in_document[ng_lower] = 1
 
             for ng in ngrams_in_document.keys():
                 ngram_counter[ng][1] += 1
-
 
 
         for ng in ngram_counter:
@@ -117,7 +117,7 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
             if phrase_value<15:
                 continue
 
-            phrases.append((ng, ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
+            phrases.append((ngram_counter[ng][2], ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
 
     max_freq = max([x[1] for x in phrases])
     max_freq_docs = max([x[2] for x in phrases])
@@ -157,7 +157,7 @@ for f in os.listdir(dir):
     if os.path.isfile(file):
         str = strip_tags(open(file, 'r').read().decode('utf-8'))
         tokens = nltk.word_tokenize(str)
-        tokens = [w.lower() for w in tokens]
+        tokens = [w for w in tokens]
         tokens_set = tokens_set.union(tokens)
         documents.append(tokens)
 
