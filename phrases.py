@@ -79,7 +79,7 @@ def phrase_output(words):
     return phrase
 
 
-def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
+def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
     documents_count = len(documents)
     phrases = []
 
@@ -119,11 +119,14 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.04):
 
             phrases.append((ngram_counter[ng][2], ngram_counter[ng][0], N, ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
 
+    if not phrases:
+        return []
+
     phrases_filtered = []
     for i in xrange(0, len(phrases)):
         ok = True
         for j in xrange(i+1, len(phrases)):
-            if phrases[i][1]==phrases[j][1] and phrases[i][2]<phrases[j][2]:
+            if phrases[i][1]*0.9<=phrases[j][1] and phrases[i][2]<phrases[j][2]:
                 for k in xrange(0, phrases[j][2]-phrases[i][2]+1):
                     if (phrases[i][0]==phrases[j][0][k:k+phrases[i][2]]):
                         ok = False
