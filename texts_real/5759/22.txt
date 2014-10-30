@@ -1,0 +1,1 @@
+<div>The third release candidate for WordPress 3.5 is now available. We’ve made a number of changes over the last week since RC2 that we can’t wait to get into your hands. Hope you’re ready to do some testing! Final UI improvements for the new media manager, based on lots of great feedback. Show more information about [...]</div>

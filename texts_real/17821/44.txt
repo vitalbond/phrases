@@ -1,0 +1,1 @@
+PloneFormGen, a widely used response-form-creation add-on for the Plone Content Management System, has been discovered to have a serious vulnerability that allows an anonymous attacker to execute arbitrary code with the privileges of the system user running the server.

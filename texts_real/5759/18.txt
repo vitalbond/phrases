@@ -1,0 +1,1 @@
+<div>Two weeks after the first beta, WordPress 3.5 Beta 2 is now available for download and testing. This is software still in development, so we don’t recommend that you run it on a production site. Set up a test site to play with the new version. To test WordPress 3.5, try the WordPress Beta Tester plugin (you’ll want “bleeding [...]</div>

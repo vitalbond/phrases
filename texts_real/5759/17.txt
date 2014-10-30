@@ -1,0 +1,1 @@
+<div>I’m excited to announce the availability of WordPress 3.5 Beta 1. This is software still in development and we really don’t recommend that you run it on a production site — set up a test site just to play with the new version. To test WordPress 3.5, try the WordPress Beta Tester plugin (you’ll want “bleeding edge nightlies”). Or you can download [...]</div>

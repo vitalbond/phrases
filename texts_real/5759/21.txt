@@ -1,0 +1,1 @@
+<div>The second release candidate for WordPress 3.5 is now available for download and testing. We’re still working on about a dozen remaining issues, but we hope to deliver WordPress 3.5 to your hands as early as next week. If you’d like to know what to test, visit the About page ( → About in the toolbar) and check out [...]</div>

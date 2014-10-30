@@ -1,0 +1,11 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/10/addthis-new-dashboard-mobile-oct2014.png" alt="addthis-new-dashboard-mobile-oct2014" width="100%" class="aligncenter size-full wp-image-9657"></p>
+<p>As we continue to make moves towards a <strong>more awesome experience</strong> for our users, we’re excited to roll out the new and improved reporting dashboard which is <strong>100% mobile-friendly!</strong> Find out how your site’s performing, make changes to your tools, and manage your account while you’re on-the-go. <span id="more-9653"></span></p>
+<p>Once you’re logged into your account you’ll notice a few changes.</p>
+<ul><li><strong>Faster loading—</strong>Data and analytics load faster than before, cutting down the time you spend accessing your site’s information</li>
+<li><strong>Analytics all in one screen—</strong>See how your site’s performing with different filtering options</li>
+<li><strong>Track conversions—</strong>New! Get clear stats on how your site tools are bringing you conversions</li>
+<li><strong>Mobile-responsive—</strong>Access a summary or dig deep into your analytics on your tablet or smartphone. You can even take action by activating tools or promoting content</li>
+<li><strong>Easy-access Settings—</strong>Click on your gravatar to toggle between profiles or access your billing information </li>
+</ul><p>Become familiar with the new dashboard with this handy video tour:</p>
+<p><iframe width="100%" height="480" src="//www.youtube.com/embed/k6oYO3ru1EU?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Or better yet, familiarize yourself by <a href="https://www.addthis.com/dashboard" target="_blank">signing into your account</a>!</p></div>

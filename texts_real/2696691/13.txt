@@ -1,0 +1,75 @@
+<div>
+            <p>
+          The 0.8.5 release of the markup validator is a feature and bugfix
+          release. Changes include:
+        </p>
+            <ul><li>
+            UI fix: many of our users were confused by the behaviour of the
+            "More options" arrow. A small UI change should make the user
+            experience less confusing.
+          </li>
+               <li>
+            New Feature: fuzzy matching used to suggest corrected markup.
+            Analysis of many invalid pages shows that the most common error
+            comes from invalid (typo or non standard) elements and attributes
+            used. The
+            <a href="http://www.w3.org/blog/systeam/2009/02/16/validator_fuzzy_match" title="blog post on the validator's fuzzy matching" shape="rect">new
+              feature</a> will help by suggesting possible (valid)
+            alternatives.
+          </li>
+               <li>
+            Bug Fix: <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=6524" shape="rect">issues with SVG</a>
+            were creating very large log output when validating SVG documents.
+            The validator code has been amended to limit this log flood.
+          </li>
+               <li>
+            Bug Fix: the HTML5 validator integration broke some of the
+            validator's &ldquo;document type override&rdquo; functionalities in version
+            0.8.4. This is fixed in 0.8.5.
+          </li>
+               <li>
+            New: the validator icon code, which one can add to web pages, now
+            <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=65252" shape="rect">includes XHTML+RDFa</a>
+            when applicable.
+          </li>
+               <li>
+            Bug Fix / New: implementing
+            <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=6329" shape="rect">XML::LibXML Structured Errors</a>.
+            The validator uses libxml2 and the XML::LibXML for well-formedness
+            check. Recent versions of the Perl library had bugs that made in
+            backward incompatible, causing the validator to not output all
+            well-formedness errors reliably. Some code was added to the
+            validator to work with all future versions of that library, but
+            we recommend not using XML::LibXML between versions 1.67 and 1.69
+            inclusive
+            (<a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=6329#c15" shape="rect">see how</a>).
+          </li>
+               <li>
+            Experimental: validation of SVG documents is now passed to the
+            validator.nu engine. At the time of this release, neither
+            validator.nu nor the DTD engine previously used are perfect for the
+            validation of SVG, but the technologies used in the validator.nu
+            engine (nvdl and relaxNG) makes it more promising.
+          </li>
+               <li>
+            UI Fix: accessibility improvements for screen readers.
+          </li>
+               <li>
+            Documentation: updated the
+            <a href="http://validator.w3.org/docs/why.html" shape="rect">Why Validate?</a> document.
+          </li>
+               <li>
+            Usability: the way in which the validator has to handle
+            <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=6259" shape="rect">direct
+              input and character encodings</a> has long been confusing to
+            many. Improvements have been made that explain in clearer ways what
+            the validator does.
+          </li>
+               <li>
+            New: the validator now recommends to declare character encoding in
+            the document itself, especially if there is a chance that the
+            document will be read from or saved to disk, CD, etc - in
+            accordance with
+            <a href="http://www.w3.org/International/tutorials/tutorial-char-enc/#declaring" shape="rect">internationalization recommendations</a>.
+          </li>
+            </ul></div>

@@ -1,0 +1,6 @@
+<div><p>The second release candidate for WordPress 3.6 is now available for download and testing.</p>
+<p>We&rsquo;re down to only a few remaining issues, and the final release should be available in a matter of days. In RC2, we&rsquo;ve tightened up some aspects of revisions, autosave, and the media player, and fixed some bugs that were spotted in RC1. Please test this release candidate as much as you can, so we can deliver a smooth final release!</p>
+<p><strong>Think you&rsquo;ve found a bug?</strong>&nbsp;Please post to the&nbsp;<a href="http://wordpress.org/support/forum/alphabeta/">Alpha/Beta area in the support forums</a>.</p>
+<p><strong>Developers,</strong>&nbsp;please continue to test your plugins and themes, so that if there is a compatibility issue, we can figure it out before the final release.&nbsp;You can find our&nbsp;<a href="http://core.trac.wordpress.org/report/6">list of known issues here</a>.</p>
+<p>To test WordPress 3.6, try the&nbsp;<a href="http://wordpress.org/extend/plugins/wordpress-beta-tester/">WordPress Beta Tester</a>&nbsp;plugin (you&rsquo;ll want &ldquo;bleeding edge nightlies&rdquo;). Or you can&nbsp;<a href="http://wordpress.org/wordpress-3.6-RC2.zip">download the release candidate here (zip)</a>.</p>
+<p><em>Revisions so smooth</em><br><em>We autosave your changes</em><br><em>Data loss begone!</em></p></div>

@@ -1,0 +1,1 @@
+<div>WordPress 3.5.1 is now available. Version 3.5.1 is the first maintenance release of 3.5, fixing 37 bugs. It is also a security release for all previous WordPress versions. For a full list of changes, consult the list of tickets and the changelog, which include: Editor: Prevent certain HTML elements from being unexpectedly removed or modified in rare [...]</div>

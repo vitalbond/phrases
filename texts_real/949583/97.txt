@@ -1,0 +1,4 @@
+<div><p>The <a href="http://www.w3.org/2008/webapps/">Web Applications Working Group</a> has published two Working Drafts today:</p>
+<ul class="show_items"><li><a href="http://www.w3.org/TR/2014/WD-streams-api-20141023/">Streams API</a>. WHATWG Streams API spec provides an API for representing and handling a stream of data in JavaScript. This W3C spec is intended to extend the WHATWG spec to meet requirements specific to the browser environment.</li>
+<li><a href="http://www.w3.org/TR/2014/WD-screen-orientation-20141023/">The Screen Orientation API</a>. The Screen Orientation API provides the ability to read the screen orientation type and angle, to be informed when the screen </li>
+</ul><p>Learn more about the <a href="http://www.w3.org/2006/rwc/">Rich Web Client Activity</a>.</p></div>

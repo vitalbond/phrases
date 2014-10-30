@@ -1,0 +1,1 @@
+<p>Less bugs, more polish, the same beta disclaimers. <a href="http://wordpress.org/wordpress-3.4-beta4.zip">Download</a>, test, report bugs. Thanks much. /ryan #thewholebrevitything</p>

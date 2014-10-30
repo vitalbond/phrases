@@ -1,0 +1,2 @@
+<div><p>The <a href="http://www.w3.org/2011/webappsec/">Web Application Security Working Group</a> has published a First Public Working Draft of <a href="http://www.w3.org/TR/2014/WD-referrer-policy-20140807/">Referrer Policy</a>. This document describes how an author can set a referrer policy for documents they create, and the impact of such a policy on the <code>referer</code> HTTP header for outgoing requests and navigations.
+ Learn more about the <a href="http://www.w3.org/Security/">Security Activity</a>.</p></div>

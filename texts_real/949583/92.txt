@@ -1,0 +1,13 @@
+<div><p>W3C announced today a new <a href="http://www.w3.org/Payments/">Web Payments
+Initiative</a> to integrate payments seamlessly into the Open Web
+Platform. W3C calls upon all industry stakeholders –banks,
+credit card companies, governments, mobile network operators, payment
+solution providers, technology companies, retailers, and content
+creators– to join the <a href="http://www.w3.org/Payments/IG/">new Payments Interest Group</a>
+and leverage the unique ability of the Web to bridge ecosystem
+diversity and reach users everywhere, on any device. The result will
+be new business opportunities, an improved user experience for online
+transactions, reduced fraud, and increased interoperability among
+traditional solutions and future payment innovations.  Read the <a href="http://www.w3.org/2014/10/payments.html.en">full press release</a> and <a href="http://www.w3.org/2014/10/payments.html.en#testimonials">testimonials from W3C
+Members</a>, including Bloomberg, Gemalto, GRIN Technologies, 
+Ingenico Group, NACS, Rabobank, and Yandex.</p></div>

@@ -1,0 +1,7 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/07/addthis-vote-up-widget.png" alt="addthis-vote-up-widget" width="100%" class="aligncenter size-full wp-image-9006"></p>
+<p>Want to help decide which tools we build next for your website? Now you can <a href="https://www.addthis.com/dashboard#gallery" target="_blank">vote for new tools in your AddThis Dashboard</a>!<span id="more-9003"></span></p>
+<p>We recently surveyed some of our users on what kinds of things we should build. We wanted to know whether you want more sharing, following, and content recommendation tools or whether we should build new tools to help you grow your website.</p>
+<p>What we heard was really exciting! Our community voted that they like our current tools so much that they want new and different tools from AddThis. In fact, some people said they love our tools so much that they want to replace as many plugins as possible with tools from AddThis.</p>
+<p>Have a say in the tools we build next. Sign into your dashboard, and visit the Tool Gallery to see which widgets are up for a vote. Some of these came from ideas we heard from users like you! </p>
+<p>Is there something else you’d like to see in the gallery? Tell us about it in the comments below!</p>
+<p><a href="https://www.addthis.com/dashboard#gallery" target="_blank">Vote for New Tools</a></p></div>

@@ -1,0 +1,10 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/07/addthis-vote-up-widget.png" alt="addthis-vote-up-widget" width="100%" class="aligncenter size-full wp-image-9006"></p>
+<p>Several new widget ideas are in the works but we want to make sure you tell us which ones to work on first. Case your vote in your <a href="http://www.addthis.com/dashboard#gallery" target="_blank">AddThis dashboard</a>! <span id="more-9650"></span></p>
+<p>Here are some of the contenders:</p>
+<ul><li><strong>Follow Badge—</strong>Show your Twitter button and profile.</li>
+<li><strong>Spark Line—</strong>Add a line that shows activity intensity for your pages.</li>
+<li><strong>Hero Recommended Unit—</strong>Show your content recommendations in a large image rotator.</li>
+<li><strong>Pinterest or Instagram Feed—</strong>Display your most recent pins or photos on your site.</li>
+<li><strong>Product Recommendations—</strong>Show related products with their price on your ecommerce site.</li>
+<li><strong>Ad-Supported Pro—</strong>Get access to Pro in exchange for ads in the widgets.</li>
+</ul><p><a href="http://www.addthis.com/dashboard#gallery" target="_blank">Cast your vote today!</a></p></div>

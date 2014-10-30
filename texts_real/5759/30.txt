@@ -1,0 +1,1 @@
+<div>WordPress 3.6 Beta 2 is now available! This is software still in development and we really don’t recommend that you run it on a production site — set up a test site just to play with the new version. To test WordPress 3.6, try the WordPress Beta Tester plugin (you’ll want “bleeding edge nightlies”). Or you can download the beta here (zip). The [...]</div>

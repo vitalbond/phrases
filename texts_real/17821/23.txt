@@ -1,0 +1,1 @@
+Patches to Zope and Plone for a variety of issues, including arbitrary code execution and privilege escalation.

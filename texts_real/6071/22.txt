@@ -1,0 +1,14 @@
+<div><p>We now offer a number of content recommendation widgets in the <a href="https://www.addthis.com/dashboard" target="_blank">dashboard</a>, which can be configured within minutes. Once you’ve enabled the widgets within the dashboard, there are a couple things you should know so that you can optimize how the recommendations display on your site. We use <a href="http://ogp.me/" target="_blank">Open Graph</a> meta tags to have the correct URL, title, and image displayed within each cell.<br><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/07/addthis-open-graph-tags.png" alt="addthis-open-graph-tags" width="100%" class="aligncenter size-full wp-image-8962"><br><span id="more-8922"></span></p>
+<h3>Open Graph Tags</h3>
+<p>For those of you who don’t know, Open Graph is a standard supported by most social networks and services that determines, say, the summarized information, image, and title that shows up when you share a link to Facebook. OG Tags are a type of <a href="http://searchenginewatch.com/article/2067564/How-To-Use-HTML-Meta-Tags" target="_blank">meta tag</a> that are prefixed with <code>og:</code>, then add a more specific property to be set.</p>
+<p>The minimum recommended tags for proper display are <code>og:title</code> (for the title), <code>og:image</code> (for the thumbnail image), and <code>og:url</code> (canonical/permanent url of the page).</p>
+<p>You’ll want to place these tags in the <code>&#60;head&#62;</code> of your web page. If any of these tags are not present, the user experience may be suboptimal, and will degrade to available information; for example, it won’t show the image, and may show an undesirable title.</p>
+<p>Here’s an example of how to use these tags. Remember to replace the content from the example with the desired text and URLs from your site.</p>
+<pre class="prettyprint lang-html"><code>&#60;meta property="og:title" content="AddThis Smart Layers: Personalizing the Web" /&#62;
+&#60;meta property="og:image" content="http://farm6.staticflickr.com/5486/9262576856_3e294841e2_o.png" /&#62; 
+&#60;meta property="og:description" content="Introducing the next generation of web tools: AddThis Smart Layers." /&#62;  
+&#60;meta property="og:url" content="http://www.addthis.com/blog/2013/07/11/addthis-smart-layers" /&#62;
+</code></pre>
+<p>For more information about the protocol and additional Open Graph tags that can be added to your site, check out <a href="http://ogp.me/">The Open Graph protocol</a>.</p>
+<p>Keep in mind that these updates take a little while to appear within the content recommendation widgets. Give it 24-48 hours for this analysis, but if the site doesn’t get a lot of traffic, it may take a bit longer to gather enough data to determine what to recommend.</p>
+<p>If you are making changes to the Open Graph tags across your site, <a href="mailto:help@addthis.com">let us know</a>. Our support team can refresh the tags we have stored for your site.</p></div>

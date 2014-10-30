@@ -1,0 +1,1 @@
+<div>The first release candidate for WordPress 3.5 is now available. We hope to ship WordPress 3.5 in two weeks. But to do that, we need your help! If you haven’t tested 3.5 yet, there’s no time like the present. (The oft-repeated warning: Please, not on a live site, unless you’re adventurous.) Think you’ve found a [...]</div>

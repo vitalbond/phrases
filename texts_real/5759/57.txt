@@ -1,0 +1,11 @@
+<div><p>WordPress 3.8.3 is now available to fix a small but unfortunate bug in the <a title="WordPress 3.8.2 Security Release" href="http://wordpress.org/news/2014/04/wordpress-3-8-2/">WordPress 3.8.2 security release</a>.</p>
+<p>The “Quick Draft” tool on the dashboard screen was broken in the 3.8.2 update. If you tried to use it, your draft would disappear and it wouldn’t save. While we doubt anyone was writing a novella using this tool, <em>any</em> loss of content is unacceptable to us.</p>
+<p>We recognize how much trust you place in us to safeguard your content, and we take this responsibility very seriously. We’re sorry we let you down.</p>
+<p>We’ve all lost words we’ve written before, like an email thanks to a cat on the keyboard or a term paper to a blue screen of death. Over the last few WordPress releases, we’ve made a number of improvements to features like autosaves and revisions. With revisions, an old edit can always be restored. We’re trying our hardest to save your content somewhere even if your power goes out or your browser crashes. We even monitor your internet connection and prevent you from hitting that “Publish” button at the exact moment the coffee shop Wi-Fi has a hiccup.</p>
+<p>It’s <em>possible</em> that the quick draft you lost last week is still in the database, and just hidden from view. As an added complication, these “discarded drafts” normally get deleted after seven days, and it’s already been six days since the release. If we were able to rescue your draft, you’ll see it on the “All Posts” screen after you update to 3.8.3. (We’ll also be pushing 3.8.3 out as a background update, so you may just see a draft appear.)</p>
+<p>So, if you tried to jot down a quick idea last week, I hope WordPress has recovered it for you. Maybe it’ll turn into that novella.</p>
+<p><a href="http://wordpress.org/download/">Download WordPress 3.8.3</a> or click “Update Now” on Dashboard → Updates.</p>
+<p><em>This affected version 3.7.2 as well, so we’re pushing a 3.7.3 to these installs, but we’d encourage you to update to the latest and greatest.</em></p>
+<hr><p><em>Now for some good news:<br>
+WordPress 3.9 is near.<br>
+Expect it this week</em></p></div>

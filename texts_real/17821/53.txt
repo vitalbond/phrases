@@ -1,0 +1,1 @@
+Several critical projects were addressed as part of this sprint: plone.app.toolbar, Mockup, plone.app.widget, TinyMCE 4, Plone.org/.com strategy and Plone Marketing/ Marcom plan.&lt;img src=&quot;http://feeds.feedburner.com/~r/plonenews/~4/kSjjY4aWi6k&quot; height=&quot;1&quot; width=&quot;1&quot;/&gt;

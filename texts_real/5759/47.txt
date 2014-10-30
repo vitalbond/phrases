@@ -1,0 +1,10 @@
+<div><p>The first beta of the 3.8 is now available, and the next dates to watch out for are code freeze on December 5th and a final release on December 12th.</p>
+<p>3.8 brings together <a href="http://make.wordpress.org/core/features-as-plugins/">several of the features as plugins projects</a> and while this isn&rsquo;t our first rodeo, expect this to be more beta than usual. The headline things to test out in this release are:</p>
+<ul><li>The new admin design, especially the responsive aspect of it. Try it out on different devices and browsers, see how it goes, especially the more complex pages like widgets or seldom-looked-at-places like Press This. Color schemes, which you can change on your profile, have also been spruced up.</li>
+<li>The dashboard homepage has been refreshed, poke and prod it.</li>
+<li>Choosing themes under Appearance is completely different, try to break it however possible.</li>
+<li>There&rsquo;s a new default theme, Twenty Fourteen.</li>
+<li>Over 250 issues closed already.</li>
+</ul><p>Given how many things in the admin have changed it&rsquo;s extra super duper important to test as many plugins and themes with admin pages against the new stuff. Also if you&rsquo;re a developer consider how you can make your admin interface fit the MP6 aesthetic better.</p>
+<p>As always, if you think you&rsquo;ve found a bug, you can post to the&nbsp;<a href="http://wordpress.org/support/forum/alphabeta">Alpha/Beta area</a>&nbsp;in the support forums. Or, if you&rsquo;re comfortable writing a reproducible bug report,&nbsp;<a href="http://core.trac.wordpress.org/">file one on the WordPress Trac</a>. There, you can also find&nbsp;<a href="http://core.trac.wordpress.org/report/5">a list of known bugs</a>&nbsp;and&nbsp;<a href="http://core.trac.wordpress.org/query?status=closed&amp;group=component&amp;milestone=3.8">everything we&rsquo;ve fixed</a>&nbsp;so far.</p>
+<p><em>Alphabet soup of</em><br><em>Plugins as features galore</em><br><em>The future is here</em></p></div>

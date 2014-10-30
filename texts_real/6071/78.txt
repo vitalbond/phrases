@@ -1,0 +1,7 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/09/IMG_0872345.jpg" width="100%" class="alignnone size-full wp-image-9557"></p>
+<p>Today is the first official day of autumn, which is as good a day to rollout a new blog theme as any in my book… and it really is a beautiful one here today at the AddThis HQ here in Virginia. <span id="more-9558"></span></p>
+<p><strong>So why a new theme?</strong></p>
+<p>The main reason behind sitting down and designing/coding up a new addthis blog theme is that we really wanted our blog to be a little more cohesive with our main site design—namely, the main site navigation that slides in on the right when you click on the “hamburger” menu icon.</p>
+<p>A few other things we’ve either been asked about online or around the office was how Search was a little hidden on the previous design, as well as the blog categories… so we added the side-rail, and brought the more blog standard practice of displaying the search/categories back.</p>
+<p><strong>So what’s next?</strong></p>
+<p>Well, funny you should ask… we’ve been hard at work for the last couple weeks on an updated dashboard design, which addresses quite a few design related issues and we’re working hard on getting it released in the next couple weeks—so stay tuned!</p></div>

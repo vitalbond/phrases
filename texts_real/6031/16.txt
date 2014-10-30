@@ -1,0 +1,16 @@
+<div><p><a class="imageLink" href="http://www.w3.org/20/"><img src="http://www.w3.org/20/img/w3c20_small.png" alt="W3C20 logo"></a> W3C today <a href="http://www.w3.org/2014/06/w3c20.html.en">announced</a> the <a href="http://www.w3.org/20/Overview.html#program">program</a> and opened <a href="http://regonline.com/w3c20">registration</a> for <strong><a href="http://www.w3.org/20/">W3C20 Anniversary Symposium: The Future of the Web</a></strong>, which takes place 29 October in Santa Clara, California.</p>
+<p>Confirmed <a href="http://www.w3.org/20/Overview.html#speakers">speakers</a> are:</p>
+<ul class="show_items"><li>Tim Berners-Lee, Inventor of the Web and W3C Director</li>
+<li>Vinton Cerf, Vice President and Chief Internet Evangelist at Google</li>
+<li>Fadi Chehadé, Chief Executive Officer of ICANN</li>
+<li>David-Michel Davies, Executive Director, The Webby Awards &#38; the International Academy of Digital Arts &#38; Sciences</li>
+<li>Di-Ann Eisnor, Head of Platforms and Partnerships, Community Geographer at Waze</li>
+<li>Sue Gardner, Executive Director of the Wikimedia Foundation</li>
+<li>Alberto Ibargüen, President and CEO, Knight Foundation</li>
+<li>Jun Murai, Dean and Professor at Keio University</li>
+<li>Sandy Pentland, Professor of Media Arts and Sciences at MIT</li>
+<li>Lee Rainie, Director of the Pew Research Center’s Internet &#38; American Life Project</li>
+<li>Anders Wahlquist, CEO and Founding Partner of B-Reel</li>
+</ul><p>Please join Tim Berners-Lee and other global strategists, business leaders and developers for an exciting afternoon of insights and discussion about how to keep the Web strong, followed by a gala dinner. W3C will also live stream the Symposium.</p>
+<p>W3C20 is made possible by the generosity of <a href="http://www.w3.org/Consortium/sponsor/org">sponsors</a> Intel (Platinum), ICANN (Silver), and the John S. and James L. Knight Foundation (Silver).</p>
+<p><a href="http://regonline.com/w3c20">Registration</a> is open to the public for a limited number of seats. Read the full <a href="http://www.w3.org/2014/06/w3c20.html.en">media advisory</a> and follow us in social media with #W3C20.</p></div>

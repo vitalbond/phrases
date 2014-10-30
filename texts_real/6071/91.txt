@@ -1,0 +1,7 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/10/addthis-power-conversions-webinar.png" alt="addthis-power-conversions-webinar" width="100%" class="aligncenter size-full wp-image-9806"></p>
+<p>You have a website. A blog, an ecommerce site, a site nonetheless. But as you know, the ultimate goal isn’t just to have a site; it’s to drive conversions. And conversions are powerful. In yesterday’s webinar, our product evangelist Justin Thorp went through the steps it takes to gain that powerful conversion and turn them into the brand advocates that will help you reach your goals. Check out what he said. <span id="more-9803"></span></p>
+<h3>Video</h3>
+<p><iframe width="100%" height="480" src="//www.youtube.com/embed/ujN2zDeLVIA" frameborder="0" allowfullscreen></iframe></p>
+<h3>Slides</h3>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/40314458" width="100%" height="480" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+</p><div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/addthiscom/power-of-conversion" title="Power of Conversion" target="_blank">Power of Conversion</a> </strong> from <strong><a href="http://www.slideshare.net/addthiscom" target="_blank">addthiscom</a></strong> </div></div>

@@ -1,0 +1,29 @@
+<div><p><a href="http://blog.addthiscdn.com/wp-content/uploads/2014/05/addthis-graduation-image.png"><img class="alignnone size-full wp-image-8776" alt="addthis-graduation-image" src="http://blog.addthiscdn.com/wp-content/uploads/2014/05/addthis-graduation-image.png" width="100%"></a></p>
+<p>For the past few weekends, you must&rsquo;ve been seeing your Instagram, Facebook, and Twitter feeds overflowing with photos of recent graduates. It IS a huge accomplishment, and one worth sharing with your social network. But it got us thinking about how people are sharing the big news. So we checked out how three groups of schools were sharing content about commencement ceremonies.</p>
+<p><span id="more-8762"></span></p>
+<p>We looked at our data from April 27 to May 27 to see where and how content about&nbsp;<a title="Ivy League" href="http://www.businessinsider.com/the-ivy-league-schools-ranked-2013-9" target="_blank">Ivy League</a>, <a title="SEC" href="http://www.seccollegetour.org/" target="_blank">SEC</a>, and <a title="Big Ten" href="http://www.bigten.org/school-bio/big10-school-bio.html" target="_blank">Big Ten</a> graduations where shared.</p>
+<table class="data-table"><thead><tr><th></th>
+<th>Ivy League</th>
+<th>SEC</th>
+<th>Big Ten</th>
+</tr></thead><tbody><tr><td><strong>Top Services</strong></td>
+<td>Twitter (26%)</td>
+<td>Facebook (33%)</td>
+<td>Email (39%)</td>
+</tr><tr><td><strong>Top Browsers</strong></td>
+<td>Chrome</td>
+<td>Chrome</td>
+<td>Firefox</td>
+</tr><tr><td><strong>Top Devices</strong></td>
+<td>Desktop (68%)</td>
+<td>Desktop (61%)</td>
+<td>Desktop (73%)</td>
+</tr><tr><td><strong>Android vs. iOS</strong></td>
+<td>iOS (2X more likely)</td>
+<td>iOS &amp; Android equal</td>
+<td>Android (1.5X more likely)</td>
+</tr></tbody></table><p>It&rsquo;s really neat to see how the services vary between the types of schools. Ivy leaguers use Twitter, Facebook, and Email while SEC and Big Ten schools use Facebook, Email, and Print.</p>
+<p><img alt="grad services" src="https://farm6.staticflickr.com/5238/14291013962_2d20e04f63_z.jpg" width="100%"></p>
+<p>And although we know sharing from mobile devices is increasingly popular, <strong>over 60% of shared graduation content came from a desktop device.</strong> (This doesn&rsquo;t support not going mobile, though.)</p>
+<p>When mobile was used, it was <strong>2X more likely to be an iOS device for Ivy League Schools</strong> and <strong>1.5X more likely to be an Android device for Big Ten schools</strong>. SEC graduation content was equally shared from Android and iOS devices. Interesting, huh?</p>
+<p>Graduations are a milestone signifying a move into a new stage in life, and this might just be the crowd you&rsquo;re looking for. <a title="We can help!" href="http://www.addthis.com/contact" target="_blank">Reach out to us</a> and learn about how we can help you engage with this audience!</p></div>

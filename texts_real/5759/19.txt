@@ -1,0 +1,1 @@
+<div>The third beta release of WordPress 3.5 is now available for download and testing. Hey, developers! We expect to WordPress 3.5 to be ready in just a few short weeks. Please, please test your plugins and themes against beta 3. Media management has been rewritten, and we’ve taken great pains to ensure most plugins will work the [...]</div>

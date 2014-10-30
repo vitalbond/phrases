@@ -1,0 +1,14 @@
+<p>WordPress 3.4.1 is now available for download. WordPress 3.4 has been a very smooth release, and copies are flying off the shelf &#8212; 3 million downloads in two weeks! This maintenance release addresses <a href="http://core.trac.wordpress.org/query?status=closed&amp;resolution=fixed&amp;milestone=3.4.1&amp;group=resolution&amp;order=severity&amp;desc=1">18 bugs</a> with version 3.4, including:</p>
+<ul>
+<li>Fixes an issue where a theme&#8217;s page templates were sometimes not detected.</li>
+<li>Addresses problems with some category permalink structures.</li>
+<li>Better handling for plugins or themes loading JavaScript incorrectly.</li>
+<li>Adds early support for uploading images on iOS 6 devices.</li>
+<li>Allows for a technique commonly used by plugins to detect a network-wide activation.</li>
+<li>Better compatibility with servers running certain versions of PHP (5.2.4, 5.4) or with uncommon setups (safe mode, open_basedir), which had caused warnings or in some cases prevented emails from being sent.</li>
+</ul>
+<p>Version 3.4.1 also fixes a few security issues and contains some security hardening. The vulnerabilities included potential information disclosure as well as an bug that affects multisite installs with untrusted users. These issues were discovered and fixed by the WordPress security team.</p>
+<p><strong><a href="http://wordpress.org/download/">Download 3.4.1</a> now or visit Dashboard → Updates in your site admin to update now.</strong></p>
+<p><em>Green was a bit green<br />
+We have hardened it up some<br />
+Update WordPress now</em></p>

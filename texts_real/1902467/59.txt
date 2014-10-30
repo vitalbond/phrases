@@ -1,0 +1,8 @@
+<div><p>The <a href="http://www.w3.org/XML/EXI">EXI Working Group</a> published the 
+<a href="http://www.w3.org/TR/2014/REC-exi-profile-20140909/">
+Efficient XML Interchange (EXI) Profile for limiting usage of dynamic memory</a> as W3C Recommendation. EXI 1.0 is a very efficient format to represent an XML Information Set. It is highly customizable to fit the need of diverse use cases, ranging from B2B applications down to embedded-systems use. It satisfies compactness and processing efficiency requirements, while preserving all the information contained in the XML InfoSet. As a representation of XML, it is by design naturally extensible. </p>
+<p>EXI is able to handle deviation or extensions from the Schema in use very efficiently thanks to its self-augmenting grammar system. However, This sometimes poses a challenge for low-memory systems, such as sensors and microcontrollers, embedded in power grids, vehicles, or other small devices.</p>
+<p>This EXI Profile addresses this issue by permitting applications to define profiles that are interoperable and best suit systems memory constraints, while maintaining its full extensibility.</p>
+<p>Read <a href="http://www.w3.org/2014/07/exi-profile-testimonials.html">Member
+Testimonials</a>.</p>
+<p>Learn about the <a href="http://www.w3.org/XML/">XML Activity</a>.</p></div>

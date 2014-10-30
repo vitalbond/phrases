@@ -1,0 +1,13 @@
+<div><p><img class="aligncenter size-full wp-image-9229" alt="addthis-new-services-august-2014" src="http://blog.addthiscdn.com/wp-content/uploads/2014/08/addthis-new-services-august-2014.png" width="100%"></p>
+<p>We’re excited to announce a plethora of new services being added to the AddThis menu including WhatsApp—the extremely popular mobile messaging app.<span id="more-9227"></span></p>
+<p>This release includes:</p>
+<h3>Follow Tools:</h3>
+<ul><li>Etsy—a marketplace where users and vendors can easily buy and sell unique, one of a kind products</li>
+<li>Behance—a great place to showcase your creative work and now an easier way for people to find your portfolio</li>
+<li>Disqus—a community within a community, this service helps you connect and engage with other active readers and commenters</li>
+</ul><h3>Share Tools:</h3>
+<ul><li>WhatsApp—easily share content on this increasingly popular cross-platform mobile messaging application</li>
+<li>Tapiture—a rapidly growing social sharing site where you can share and buy related products in your network</li>
+<li>Internet Archive: Wayback Machine—go back a decade, or more, with this service which allows you to search and view archived internet articles shared by users</li>
+</ul><p>We’re really excited with the launch of the WhatsApp sharing tool supported on iOS devices, and the benefits it lends to our users, especially our international friends. With over 500 million active users (that’s a lot), adding this share option will certainly help increase both traffic to your site and content engagement.</p>
+<p>We know that people use all kinds of platforms to engage, share and browse which is why we’re always on the look out for popular and up and coming services to add to our toolbox. If you have any suggestions for additional services, <a href="http://www.addthis.com/contact" target="_blank">let us know</a>, and if you haven’t activated our tools yet, what are you waiting for? <a href="https://www.addthis.com/dashboard#gallery/tools/" target="_blank">Check ‘em out now!</a></p></div>

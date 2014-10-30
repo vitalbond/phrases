@@ -1,0 +1,42 @@
+<div>
+            <p>
+          The 0.8.3 release of the W3C Markup Validator is a bug fix release,
+          with a few small additional features. Changes include:
+        </p>
+            <ul><li>
+            Bug Fix: in version 0.8.2, revalidation of an uploaded file was
+            broken (missing markup in the HTML form).
+          </li>
+               <li>
+            Updates: Added support for XHTML Basic 1.1, XHTML Mobile Profiles
+            (1.0, 1.1 and 1.2) and the historical HTML i18n.
+          </li>
+               <li>
+            Bug Fix: the validator won't override a given document type with
+            itself.
+          </li>
+               <li>
+            Conformance: The validator now warns about inconsistent
+            public/system identifiers combinations.
+          </li>
+               <li>
+            API: The <a href="http://validator.w3.org/docs/api.html#http_headers" shape="rect">custom HTTP headers
+              in validator responses</a> now also include the number of
+            warnings.
+          </li>
+               <li>
+            Experimental Feature: added the new option to send specific
+            <code>Accept-Charset</code> and <code>User-Agent</code> headers,
+	    in addition to <code>Accept</code> and <code>Accept-Language</code>
+            in version <a href="http://validator.w3.org/whatsnew.html#t2007-10-11" shape="rect">0.8.2</a>.
+          </li>
+               <li>
+            Experimental Feature: the validator can output its
+            <a href="http://validator.w3.org/docs/users.html#Output" shape="rect">results as JSON</a>.
+          </li>
+               <li>
+            Documentation: Some documentation updates.</li>
+               <li>
+            Development: New automated support and regression test suite.
+          </li>
+            </ul></div>

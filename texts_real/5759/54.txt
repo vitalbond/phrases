@@ -1,0 +1,13 @@
+<div><p>The third (and maybe last) beta of WordPress 3.9 is now available for download.</p>
+<p>Beta 3 includes more than 200 <a href="https://core.trac.wordpress.org/log?rev=27850&#38;stop_rev=27639&#38;limit=300">changes</a>, including:</p>
+<ul><li>New features like live widget previews and the new theme installer are now more ready for prime time, so check ‘em out.</li>
+<li>UI refinements when editing images and when working with media in the editor. We’ve also brought back some of the advanced display settings for images.</li>
+<li>If you want to test out audio and video playlists, the links will appear in the media manager once you’ve uploaded an audio or video file.</li>
+<li>For theme developers, we’ve added HTML5 caption support (<a class="reopened ticket" title="task (blessed): HTML5 captions (reopened)" href="https://core.trac.wordpress.org/ticket/26642">#26642</a>) to match the new gallery support (<a class="closed ticket" title="enhancement: HTML5 Galleries (closed: fixed)" href="https://core.trac.wordpress.org/ticket/26697">#26697</a>).</li>
+<li>The formatting function that turns straight quotes into smart quotes (among other things) underwent some changes to drastically speed it up, so let us know if you see anything weird.</li>
+</ul><p><strong>We need your help</strong>. We’re still aiming for an April release, which means the next week will be critical for identifying and squashing bugs. If you’re just joining us, please see <a href="https://wordpress.org/news/2014/03/wordpress-3-9-beta-1/">the Beta 1 announcement post</a> for what to look out for.</p>
+<p><strong>If you think you’ve found a bug</strong>, you can post to the <a href="http://wordpress.org/support/forum/alphabeta">Alpha/Beta area</a> in the support forums, where friendly moderators are standing by. <b>Plugin developers</b><strong>,</strong> if you haven’t tested WordPress 3.9 yet, now is the time — and be sure to update the “tested up to” version for your plugins so they’re listed as compatible with 3.9.</p>
+<p><strong>This software is still in development,</strong> so we don’t recommend you run it on a production site. Consider setting up a test site just to play with the new version. To test WordPress 3.9, try the <a href="http://wordpress.org/extend/plugins/wordpress-beta-tester/">WordPress Beta Tester</a> plugin (you’ll want “bleeding edge nightlies”). Or you can <a href="http://wordpress.org/wordpress-3.9-beta3.zip">download the beta here</a> (zip).</p>
+<p><em>WordPress 3.9<br>
+Let’s make the date official<br>
+It’s April 16</em></p></div>

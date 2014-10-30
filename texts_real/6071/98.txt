@@ -1,0 +1,20 @@
+<div><p><img class="alignnone size-full wp-image-9861" src="http://blog.addthiscdn.com/wp-content/uploads/2014/10/Design-Strategies.png" alt="addthis-designstrategies" width="100%">Thinking about designing a new website, or even redesigning a site you already have? Here are some basic design strategies to keep in mind for higher engagement and usability. <span id="more-9827"></span></p>
+<h3>1. Keep it Simple</h3>
+<p>Whether you’re thinking about your home page, navigation, or content, <strong>keep it simple</strong>. Don’t make it hard to your visitors to find what they’re looking for. If you want visitors to press a button or fill out a form, don’t make them <strong>scroll</strong> to find it. Make it easy to find, and use your site’s navigation.</p>
+<p>If you have a particular goal in mind, you can even <a href="https://www.addthis.com/get/conversions" target="_blank">invite visitors</a> to do something, right when they arrive at your site. Now that’s simple!</p>
+<h3>2. Keep it Concise</h3>
+<p>Shorter content is easier to read, and will get your point across more quickly. See?</p>
+<h3>3. Header Hierarchy</h3>
+<p>Be sure to use a consistent hierarchy of headers. In HTML, these look like H1, H2, H3, and so forth. These headers convey the structure of your content, helping readers understand how your content is organized. Think about this structure when choosing font sizes and weights, so that an H3 doesn’t look more visually prominent than its parent H2.</p>
+<h3>4. White Space is Your Friend</h3>
+<p>Provide some room between lines of text and set up borders on the sides of your pages to keep content from becoming too wide and hard to read. Allow some space around pictures. These strategies allow visitors’ eyes to visually organize and scan your content more easily.</p>
+<h3>5. Speaking of Colors . . .</h3>
+<p>Use restraint—your visitors will thank you. Pick a primary color that will provide the foundation of your design, then pick a contrasting accent color for important buttons and other interface elements. Use tools like <a href="https://color.adobe.com/" target="_blank">Adobe Color</a> to explore different combinations of colors that look great together.</p>
+<h3>6. Make it Easy to Stay</h3>
+<p>Sometimes visitors arrive at your home page, but often search results or other links bring them to some other page in your site. Be sure to provide links in your content, and offer content recommendations to suggest other pages to read next. This invites visitors to stay longer and view more of what your site has to offer.</p>
+<h3>7. Make it Easy to Share</h3>
+<p>While <a href="https://www.addthis.com/get/recommended" target="_blank">content recommendations</a> keep your current visitors around longer, sharing will invite new visitors to come to your site. Think about how <a href="https://www.addthis.com/get/sharing" target="_blank">sharing tools</a> fit into your new design. They can float on the side your pages (remember those borders you created?) or can appear within your content, at the beginning or end of an article. Check out these <a href="http://www.addthis.com/blog/2014/10/14/best-practices-for-using-addthis-website-tools/" target="_blank">best practices</a> for more suggestions.</p>
+<h3>8. Make it Easy to Follow</h3>
+<p>Don’t forget to <a href="https://www.addthis.com/get/follow" target="_blank">invite visitors to follow</a> you on Facebook, Twitter and other social networks. This helps bring visitors back, and is a great way to know who your most loyal audience is—which, as our data shows, is <a href="http://www.addthis.com/blog/2014/09/16/the-value-of-a-follower-for-your-site/" target="_blank">very valuable</a>.</p>
+<p>There are many resources available online to help you with your new design. Visit sites you enjoy, think about how their designs help you use them more easily, and experiment with those ideas on your own site.</p>
+<p><strong>We’d love to hear how your design turned out, and how you used AddThis tools with your new creation. Good luck!</strong></p></div>

@@ -1,0 +1,4 @@
+<div><p>The <a href="http://www.w3.org/Social/WG">Social Web Working Group</a> has published two First Public Working Drafts today:</p>
+<ul class="show_items"><li><a href="http://www.w3.org/TR/2014/WD-activitystreams-core-20141023/">Activity Streams 2.0</a>. This specification details a model for representing potential and completed activities using the JSON format.</li>
+<li><a href="http://www.w3.org/TR/2014/WD-activitystreams-vocabulary-20141023/">Activity Vocabulary</a>. This specification describes the Activity vocabulary.</li>
+</ul><p>Learn more about the <a href="http://www.w3.org/Social/">Social Activity</a>.</p></div>

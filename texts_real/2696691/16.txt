@@ -1,0 +1,31 @@
+<div>
+            <p>
+          The 1.1 release of the markup validator is an enhancement and
+          bug fix release. Changes include:
+        </p>
+            <ul><li>
+            Enhancement: XML wellformedness check is now run only if other
+            stages of the validation process report no errors.  This is to
+            further mitigate a
+            <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=9899" shape="rect">performance
+              issue</a> related to the XML wellformedness check.
+          </li>
+               <li>
+            Enhancement: improved error output performance.
+          </li>
+               <li>
+            Enhancement: error/warning location information now
+            <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=9933" shape="rect">makes
+              it clearer</a> whether the error occurred in the validated
+            document or an external resource related to it.
+          </li>
+               <li>
+            Enhancement: improved
+            <a href="http://search.cpan.org/dist/URI/URI/Heuristic.pm" shape="rect">heuristics</a>
+            for incomplete input URLs.
+          </li>
+               <li>
+            &hellip; and as usual, assorted minor spelling, code cleanup, link and the
+            like fixes.
+          </li>
+            </ul></div>

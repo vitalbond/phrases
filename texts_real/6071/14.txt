@@ -1,0 +1,47 @@
+<div><p>With the new AddThis dashboard it’s easy to change the look and feel of your AddThis tools without making code changes. So the next question is: how do you know which tools perform the best? The modern way of figuring this out is to do A/B testing.</p>
+<p><a href="http://blog.addthiscdn.com/wp-content/uploads/2014/06/Share_Sidebar_900px.gif"><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/06/Share_Sidebar_900px.gif" alt="addthis-sharing-sidebar-button-dashboard" width="100%" class="aligncenter size-full wp-image-8874"></a><br><span id="more-8811"></span></p>
+<p>A/B testing means showing showing different users two different versions of the site while measuring performance. This gives you hard numbers to back up a design decision, rather than just hunches. Here are steps to help you through your first A/B test using your new dashboard.</p>
+<h3>Step 1: Create a Profile</h3>
+<p>The first thing you’ll need to do to start A/B testing with AddThis is to create two profiles. To do this, go to <a href="http://www.addthis.com/settings/publisher" target="_blank">your settings</a> and click the “Add Profile” button, and create another profile.</p>
+<p><img src="http://i.imgur.com/6FKhC4D.png" alt="Creating a Profile" title="" class="size-full"></p>
+<h3>Step 2: Switch Profiles for Users</h3>
+<p>Now that you’ve got two profiles, you’ll need to switch the profiles for users who visit your site, which you could do with JavaScript. You could randomly select which profile on every page load, but that could be confusing for users who travel around your site. But with the <a href="http://diveintohtml5.info/storage.html" target="_blank">localStorage option</a> in modern browsers, settings from one page can persist, and users will see the same tools on each page load giving you better data to make a decision.</p>
+<p>Here’s a snippet of code to add to your page to randomly choose a profile ID and store that in localStorage, then set it for the AddThis tools:</p>
+<pre class="prettyprint"><code>&#60;script type="text/javascript"&#62;
+var abtestname = document.location.hostname + "_addthis_test";
+if (localStorage.getItem(abtestname) === null) {
+  // Replace these values with the IDs of the profiles you'd like to test
+  // You can get those from http://www.addthis.com/settings/publisher
+  var pubID1 = 'ra-42fed1e187bae420';
+  var pubID2 = 'ra-187bae42042fed1e';
+
+  if (Math.floor(10*Math.random())%2 == 0) {
+    localStorage.setItem(abtestname, pubID1);
+  } else {
+    localStorage.setItem(abtestname, pubID2);
+  }
+}
+
+// Read the value from localStorage and set the profile ID
+var addthis_config = addthis_config||{};
+addthis_config.pubid = localStorage.getItem(abtestname);
+&#60;/script&#62;
+</code></pre>
+<h3>Step 3: Watch the Results Roll In</h3>
+<p>Let the the test run for a period of time, generally a week to a month depending on how much traffic you have, and then examine the results. See which one has the most shares and follows. Maybe the other has more recirculation based on content recommendations. Figure out what worked best and adjust the settings in your dashboard to the best fit.</p>
+<h3>Step 4: Clean Up</h3>
+<p>Once you’re done with the test and have chosen your preferred design, replace the code above with this:</p>
+<pre class="prettyprint"><code>&#60;script type="text/javascript"&#62;
+// This will clear the localStorage value for the test
+var abtestname = document.location.hostname + "_addthis_test";
+if (localStorage.getItem(abtestname) !== null) {
+   localStorage.removeItem(abtestname);
+}
+
+// Read the value from localStorage and set the profile ID
+var addthis_config = addthis_config||{};
+addthis_config.pubid = 'ra-42fed1e187bae420'; // Replace this with the ID of the profile you've chosen
+&#60;/script&#62;
+</code></pre>
+<p>That’s it! Now you know for certain the AddThis tools you chose for your page are the ones that will get the most traffic based on your content and visitors. It’s good to run this sort of test every year or so to make sure you’re getting the most out of our tools. <a href="mailto:help@addthis.com">Email us</a> if you have any questions.</p>
+<p><strong>Have you conducted any A/B tests like this before?</strong> Tell us in the comments!</p></div>

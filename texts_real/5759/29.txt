@@ -1,0 +1,1 @@
+<div>As an open source, free software project, WordPress depends on the contributions of hundreds of people from around the globe — contributions in areas like core code, documentation, answering questions in the support forums, translation, and all the other things it takes to make WordPress the best publishing platform it can be, with the most [...]</div>

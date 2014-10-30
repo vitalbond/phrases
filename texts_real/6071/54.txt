@@ -1,0 +1,15 @@
+<div><p><img class="aligncenter size-full wp-image-9330" alt="addthis-vote-for-new-tools" src="http://blog.addthiscdn.com/wp-content/uploads/2014/08/vote_tool_test.png" width="100%"></p>
+<p>We rolled out a list of new widgets we want to hear your opinion on. We’ve put some serious thought into whether or not these should make the AddThis cut, but it’s up to you, our esteemed users, to make your voice heard and let us know which of these would help you achieve your business or individual goals. <span id="more-9327"></span></p>
+<h3>Follow Badge</h3>
+<p>This badge would pull in your Twitter profile and enable viewers to follow your handle, helping you to grow your Twitter audience. <a href="https://www.addthis.com/dashboard#gallery/vote/follow-badge" target="_blank">Vote for the Follow Badge</a></p>
+<h3>Spark Line</h3>
+<p>This widget has the same colorful spark line that Mashable offers, showing shares and highlighting what’s popular and trending for each post. <a href="https://www.addthis.com/dashboard#gallery/vote/spark-line" target="_blank">Vote for the Spark Line</a></p>
+<h3>Hero Recommended Widget</h3>
+<p>This recommendation widget appears front and center of a page so that none of your visitors run the risk of missing content based on what’s trending and relevant. <a href="https://www.addthis.com/dashboard#gallery/vote/hero-recommended-widget" target="_blank">Vote for the Hero Recommended Widget</a></p>
+<h3>Pinterest or Instagram Feed</h3>
+<p>Showcase your style with a feed of your Pinterest pins or your Instagram photos that could be placed on select pages of your site. <a href="https://www.addthis.com/dashboard#gallery/vote/pinterest-or-instagram-feed" target="_blank">Vote for the Pinterest or Instagram Feed</a></p>
+<h3>Product Price Recommendation</h3>
+<p>This e-commerce focused tool would show related products along with a price to help you increase conversions. <a href="https://www.addthis.com/dashboard#gallery/vote/product-recommendations" target="_blank">Vote for the Product Price Recommendation</a></p>
+<h3>Ad Support Recommended Widgets</h3>
+<p>Access Pro for free. In exchange, adding this widget would show advertisements along with your recommended content. <a href="https://www.addthis.com/dashboard#gallery/vote/ad-supported-pro" target="_blank">Vote for this tool</a></p>
+<p>You can vote for as many as you want and we’ll let you know the results in the next few weeks. Now, <a href="https://www.addthis.com/dashboard#gallery/vote" target="_blank">go get voting</a>!</p></div>

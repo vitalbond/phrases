@@ -1,0 +1,4 @@
+<div><p>The <a href="http://www.w3.org/2009/dap/">Device APIs Working Group</a> invites implementation of two Candidate Recommendations:</p>
+<ul class="show_items"><li><a href="http://www.w3.org/TR/2014/CR-vibration-20140909/">Vibration API</a>. This specification defines an API that provides access to the vibration mechanism of the hosting device. Vibration is a form of tactile feedback.</li>
+<li><a href="http://www.w3.org/TR/2014/CR-html-media-capture-20140909/">HTML Media Capture</a>. This specification defines an HTML form extension that facilitates user access to a device’s media capture mechanism, such as a camera, or microphone, from within a file upload control.</li>
+</ul><p>Learn more about the <a href="http://www.w3.org/2007/uwa/">Ubiquitous Web Applications Activity</a>.</p></div>

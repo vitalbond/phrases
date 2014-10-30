@@ -1,0 +1,10 @@
+<div><p>The fourth and likely final beta for WordPress 4.0 is now available. We’ve made <a href="https://core.trac.wordpress.org/log?rev=29496&#38;stop_rev=29229&#38;limit=300">more than 250 changes</a> in the past month, including:</p>
+<ul><li>Further improvements to the editor scrolling experience, especially when it comes to the second column of boxes.</li>
+<li>Better handling of small screens in the media library modals.</li>
+<li>A separate bulk selection mode for the media library grid view.</li>
+<li>Improvements to the installation language selector.</li>
+<li>Visual tweaks to plugin details and customizer panels.</li>
+</ul><p><strong>We need your help</strong>. We’re still aiming for a release this month, which means the next week will be critical for identifying and squashing bugs. If you’re just joining us, please see <a href="http://wordpress.org/news/2014/07/wordpress-4-0-beta-1/">the Beta 1 announcement post</a> for what to look out for.</p>
+<p><strong>If you think you’ve found a bug</strong>, you can post to the <a href="http://wordpress.org/support/forum/alphabeta">Alpha/Beta area</a> in the support forums, where friendly moderators are standing by. <b>Plugin developers</b><strong>,</strong> if you haven’t tested WordPress 4.0 yet, now is the time — and be sure to update the “tested up to” version for your plugins so they’re listed as compatible with 4.0.</p>
+<p><strong>This software is still in development,</strong> so we don’t recommend you run it on a production site. Consider setting up a test site just to play with the new version. To test WordPress 4.0, try the <a href="http://wordpress.org/extend/plugins/wordpress-beta-tester/">WordPress Beta Tester</a> plugin (you’ll want “bleeding edge nightlies”). Or you can <a href="http://wordpress.org/wordpress-4.0-beta4.zip">download the beta here</a> (zip).</p>
+<p><em>We are working hard</em><br><em>To finish up 4.0<br></em><em>Will you help us too?</em></p></div>

@@ -1,0 +1,1 @@
+Users of Plone 4.3, Plone 4.2, Plone 4.1, Plone 4, Plone 3, Plone 2.5 and Plone 2.1 should immediately apply this hotfix.<img src="http://feeds.feedburner.com/~r/plonenews/~4/K7z_tQ3sa-k" height="1" width="1"/>

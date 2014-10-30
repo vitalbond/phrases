@@ -1,0 +1,6 @@
+<p>The third release candidate for WordPress 3.4 is now available. Since RC2, we&#8217;ve fixed a few lingering issues with the new live preview feature, as well as with custom headers and backgrounds.</p>
+<p>There are no remaining issues, and we plan to release 3.4 in the coming days. But if you think you&#8217;ve found a bug, you can post to the <a href="http://wordpress.org/support/forum/alphabeta">Alpha/Beta area</a> in the support forums, or file a bug report on <a href="http://core.trac.wordpress.org/">WordPress Trac</a>.</p>
+<p>To test WordPress 3.4, try the <a href="http://wordpress.org/extend/plugins/wordpress-beta-tester/">WordPress Beta Tester</a> plugin (you’ll want &#8220;bleeding edge nightlies&#8221;). Or you can <a href="http://wordpress.org/wordpress-3.4-RC3.zip">download the release candidate here</a> (zip). Be sure to visit <strong><img style="vertical-align: text-top" src="http://wordpress.org/wp-content/themes/twentyten/images/wordpress.png" alt="" /> → About</strong> for an updated list of features and under-the-hood changes. As a reminder: We’ve published some resources on the <a href="http://wpdevel.wordpress.com/2012/06/07/wordpress-3-4-field-guide-for-developers/">development blog</a> to help plugin and theme developers prepare.</p>
+<p><em>The new live preview<br />
+Nearing perfection, and yet?<br />
+Not yet. RC3</em></p>

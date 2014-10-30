@@ -1,0 +1,8 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/09/facebook-ios-sharing-anchor.png" alt="facebook-ios-sharing-anchor" width="100%" class="aligncenter size-full wp-image-9434"></p>
+<p>Over the weekend we heard from several of you about issues sharing with the Facebook iOS app and URLs with anchors, which AddThis uses for click and <a href="http://www.addthis.com/blog/2013/10/17/url-cut-paste-a-big-part-of-content-engagement-you-might-be-missing/#.VA3TXWSwJyg" target="_blank">address bar tracking</a>. Facebook seems to be using a kind of URL forwarder in the iOS app that isn’t correctly decoding the <code>%23</code> in the URL into a <code>#</code>. This is causing URLs to 404 because the resource they’re looking for doesn’t have that name. We’ve reached out to Facebook about this issue. <span id="more-9432"></span></p>
+<p>The problem occurs if you are trying to share a URL with a <code>#</code> in the string. For example, say you share this URL:</p>
+<pre>http://www.example.com/index.html#abc123</pre>
+<p>The Facebook app will cause it to look like this:</p>
+<pre>http://www.example.com/index.html%23abc123</pre>
+<p>Because web servers consider the <code>%23</code> to be part of the filename instead of the hash or anchor, it looks for a resource with a name ending in <code>%23abc123</code>. And because there probably isn’t one, this will result in a 404 error.</p>
+<p>We’re in touch with Facebook now and are working with them to get this resolved as soon as possible. Check back later today for updates to this issue.</p></div>

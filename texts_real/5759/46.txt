@@ -1,0 +1,12 @@
+<div><p>WordPress 3.7.1 is now available! This maintenance release addresses 11 bugs in WordPress 3.7, including:</p>
+<ul><li>Images with captions no longer appear broken in the visual editor.</li>
+<li>Allow some sites running on old or poorly configured servers to continue to check for updates from WordPress.org.</li>
+<li>Avoid fatal errors with certain plugins that were incorrectly calling some WordPress functions too early.</li>
+<li>Fix hierarchical sorting in get_pages(), exclusions in wp_list_categories(), and in_category() when called with empty values.</li>
+<li>Fix a warning that may occur in certain setups while performing a search, and a few other notices.</li>
+</ul><p>For a full list of changes, consult the <a href="http://core.trac.wordpress.org/query?milestone=3.7.1">list of tickets</a> and <a href="http://core.trac.wordpress.org/log/branches/3.7?stop_rev=25914&amp;rev=25986">the changelog</a>.</p>
+<p>If you are one of the <a href="http://wordpress.org/download/counter/">nearly two million</a> already running WordPress 3.7, we will start rolling out the all-new <a href="http://wordpress.org/news/2013/10/basie/">automatic background updates</a> for WordPress 3.7.1 in the next few hours. For sites <a href="http://wordpress.org/plugins/background-update-tester/">that support them</a>, of course.</p>
+<p><a href="http://wordpress.org/download/">Download WordPress 3.7.1</a> or venture over to <strong>Dashboard &rarr; Updates</strong> and simply click &ldquo;Update Now.&rdquo;</p>
+<p><em>Just a few fixes<br>
+Your new update attitude:<br>
+Zero clicks given</em></p></div>

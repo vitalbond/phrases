@@ -1,0 +1,11 @@
+<div><p>WordPress 3.9.2 is now available as a security release for all previous versions. We strongly encourage you to update your sites immediately.</p>
+<p>This release fixes a possible denial of service issue in PHP’s XML processing, reported by <a href="https://twitter.com/nirgoldshlager">Nir Goldshlager</a> of the Salesforce.com Product Security Team. It  was fixed by Michael Adams and Andrew Nacin of the WordPress security team and David Rothstein of the <a href="https://www.drupal.org/SA-CORE-2014-004">Drupal security team</a>. This is the first time our two projects have coordinated joint security releases.</p>
+<p>WordPress 3.9.2 also contains other security changes:</p>
+<ul><li>Fixes a possible but unlikely code execution when processing widgets (WordPress is not affected by default), discovered by <a href="http://www.buayacorp.com/">Alex Concha</a> of the WordPress security team.</li>
+<li>Prevents information disclosure via XML entity attacks in the external GetID3 library, reported by <a href="http://onsec.ru/en/">Ivan Novikov</a> of ONSec.</li>
+<li>Adds protections against brute attacks against CSRF tokens, reported by <a href="http://systemoverlord.com/">David Tomaschik</a> of the Google Security Team.</li>
+<li>Contains some additional security hardening, like preventing cross-site scripting that could be triggered only by administrators.</li>
+</ul><p>We appreciated responsible disclosure of these issues directly to our security team. For more information, see the <a href="http://codex.wordpress.org/Version_3.9.2">release notes</a> or consult the <a href="https://core.trac.wordpress.org/log/branches/3.9?stop_rev=29383&#38;rev=29411">list of changes</a>.</p>
+<p><a href="https://wordpress.org/download/">Download WordPress 3.9.2</a> or venture over to <strong>Dashboard → Updates</strong> and simply click “Update Now”.</p>
+<p>Sites that support automatic background updates will be updated to WordPress 3.9.2 within 12 hours. (If you are still on WordPress 3.8.3 or 3.7.3, you will also be updated to 3.8.4 or 3.7.4. We don’t support older versions, so please update to 3.9.2 for the latest and greatest.)</p>
+<p>Already testing WordPress 4.0? The third beta is <a href="https://wordpress.org/wordpress-4.0-beta3.zip">now available</a> (zip) and it contains these security fixes.</p></div>

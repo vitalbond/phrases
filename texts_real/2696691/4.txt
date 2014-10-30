@@ -1,0 +1,39 @@
+<div>
+            <p>
+          The 1.0 release of the markup validator is an enhancement and
+          bug fix release. Changes include:
+        </p>
+            <ul><li>
+            Enhancement: when passing its internal transcoded document to
+            external validators, validator now reflects the transcoding
+            by modifying character encoding information included in the
+            passed document.
+          </li>
+               <li>
+            Enhancement: updates to validator's internal DTD library.
+          </li>
+               <li>
+            Enhancement: XML wellformedness check now supports external
+            entities instead of just suppressing error messages about them
+            internally. As a side effect, this should work around a specific
+            case of a certain
+            <a href="http://www.w3.org/Bugs/Public/show_bug.cgi?id=9899" shape="rect">performance
+              problem with XML::LibXML 1.70</a>.
+          </li>
+               <li>
+            Bug fix: doctype override could place a malformed comment
+            in the modified document.
+          </li>
+               <li>
+            Bug fix: error messages were not properly HTML escaped when
+            "show source" was selected.
+          </li>
+               <li>
+            Dependency changes: new minimum required versions: HTML-Parser
+            3.60, XML-LibXML 1.70.
+          </li>
+               <li>
+            … and a whole slew of minor spelling, code cleanup, link and the
+            like fixes here and there.
+          </li>
+            </ul></div>

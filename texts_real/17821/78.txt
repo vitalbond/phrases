@@ -1,0 +1,1 @@
+The plone.org website is safe from the Heartbleed bug and, as such, plone.org  passwords have not been disclosed.&lt;img src=&quot;http://feeds.feedburner.com/~r/plonenews/~4/8ta2n2boAjU&quot; height=&quot;1&quot; width=&quot;1&quot;/&gt;

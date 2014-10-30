@@ -1,0 +1,21 @@
+<p><a href="http://wordpress.org/download/">WordPress 3.3.2</a> is available now and is a security update for all previous versions.</p>
+<p>Three external libraries included in WordPress received security updates:</p>
+<ul>
+<li>Plupload (version 1.5.4), which WordPress uses for uploading media.</li>
+<li>SWFUpload, which WordPress previously used for uploading media, and may still be in use by plugins.</li>
+<li>SWFObject, which WordPress previously used to embed Flash content, and may still be in use by plugins and themes.</li>
+</ul>
+<p>Thanks to <a href="https://nealpoole.com/blog/">Neal Poole</a> and <a href="http://greywhind.wordpress.com/">Nathan Partlan</a> for <a href="http://codex.wordpress.org/FAQ_Security">responsibly disclosing</a> the bugs in Plupload and SWFUpload, and <a href="http://mars.iti.pk.edu.pl/~grucha/">Szymon Gruszecki</a> for a separate bug in SWFUpload.</p>
+<p>WordPress 3.3.2 also addresses:</p>
+<ul>
+<li>Limited privilege escalation where a site administrator could deactivate network-wide plugins when running a WordPress network under particular circumstances, disclosed by <a href="http://joncave.co.uk/">Jon Cave</a> of our WordPress core security team, and <a href="http://sixohthree.com/">Adam Backstrom</a>.</li>
+<li>Cross-site scripting vulnerability when making URLs clickable, by Jon Cave.</li>
+<li>Cross-site scripting vulnerabilities in redirects after posting comments in older browsers, and when filtering URLs. Thanks to <a href="http://www.sneaked.net/">Mauro Gentile</a> for responsibly disclosing these issues to the security team.</li>
+</ul>
+<p>These issues were fixed by the WordPress core security team. Five other bugs were also fixed in version 3.3.2. Consult the <a href="http://core.trac.wordpress.org/log/branches/3.3?rev=20552&amp;stop_rev=20087">change log</a> for more details.</p>
+<p><a href="http://wordpress.org/download/">Download WordPress 3.3.2</a> or update now from the Dashboard → Updates menu in your site&#8217;s admin area.</p>
+<hr />
+<h3>WordPress 3.4 Beta 3 also available</h3>
+<p>Our development of WordPress 3.4 development continues. Today we are proud to release Beta 3 for testing. <a href="http://core.trac.wordpress.org/log/trunk?rev=20552&amp;stop_rev=20450">Nearly 90 changes</a> have been made since Beta 2, released 9 days ago. (We are aiming for a beta every week.)</p>
+<p>This is still beta software, so <strong>we don&#8217;t recommend that you use it on production sites</strong>. But if you&#8217;re a plugin developer, a theme developer, or a site administrator, <strong>you should be running this on your test environments</strong> and <a href="http://codex.wordpress.org/Reporting_Bugs">reporting any bugs</a> you find. (See the <a href="http://core.trac.wordpress.org/report/5">known issues here</a>.) If you&#8217;re a WordPress user who wants to open your presents early, take advantage of WordPress&#8217;s famous 5-minute install and spin up a secondary test site. <a href="http://wordpress.org/support/forum/alphabeta">Let us know what you think</a>!</p>
+<p>Version 3.4 Beta 3 includes all of the fixes included in version 3.3.2. <a href="http://wordpress.org/wordpress-3.4-beta3.zip">Download WordPress 3.4 Beta 3</a> or use the <a href="http://wordpress.org/extend/plugins/wordpress-beta-tester/">WordPress Beta Tester</a> plugin.</p>

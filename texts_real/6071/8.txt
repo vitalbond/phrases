@@ -1,0 +1,20 @@
+<div><p><a href="http://blog.addthiscdn.com/wp-content/uploads/2014/06/addthis-content-recommendation-drawer-900.png"><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/06/addthis-content-recommendation-drawer-900.png" alt="addthis-content-recommendation-drawer-900" width="100%" class="alignnone size-full wp-image-8794"></a></p>
+<p>Website owners are always looking for ways to bring in new visitors, keep them on their website, and turn them into fans or followers. That&rsquo;s why AddThis designs tools to help publishers reach those goals.</p>
+<p><span id="more-8792"></span></p>
+<p>For the last year, we&rsquo;ve been digging deep into the science of making great content recommendation widgets. Now we want to pull back the curtain on how we find the right content to recommend and how they can help you meet your goals.</p>
+<p>There are a lot of ways to approach content recommendations. Here&rsquo;s how these tools have developed over time and how ours are different.</p>
+<h3>1. Most Popular Content</h3>
+<p>The first widgets for content recommendations mostly showed the most popular content. They determined what was interesting based on which articles were most viewed, had the most comments, or were the most shared.</p>
+<p>This was a good start, but the most popular content on a website might not change very much from day to day, which isn&rsquo;t great for returning visitors. These recommendations also might not have anything to do with the current article, so the visitor might not be interested in that topic.</p>
+<h3>2. Adding Context</h3>
+<p>The next wave of content recommendation tools added contextual information. That means they started looking into the content of the articles to make a recommendation that&rsquo;s similar to the page that you&rsquo;re currently viewing.</p>
+<p>Combining contextual information with popularity starts to make for more interesting  content recommendations, but they still aren&rsquo;t likely to change very much. In addition, they are likely to keep recommending the same content, even if people don&rsquo;t click on it very much.</p>
+<h3>3. Understanding Behavior</h3>
+<p>More recently, some content recommendation tools are starting to learn from what people click on. This allows the recommendations to learn which articles are working and which pages they should be displayed on.</p>
+<p>This is a major leap forward for content recommendations that makes them much smarter. However these still aren&rsquo;t tailored to specific visitors, and so they aren&rsquo;t as relevant as they could be.</p>
+<h3>4. Personalized Recommendations</h3>
+<p>The best way to recommend content for a particular visitor is to personalize content for them based on their interests or the interests of people like them. We do this by using all of these methods and sharing data from across our publisher network and continuously learning about what content recommendations work and for whom.</p>
+<p>Another huge advantage of these tools is that they can personalize your content recommendations on the first view, without having to learn about your patterns on that particular website. This allows us to show visitors more relevant content sooner, and make your site look even smarter!</p>
+<p>Traditionally, personalization technology this advanced would be reserved for only the biggest websites like Facebook or Yahoo. Now we&rsquo;ve made personalization technology available to every website owner through <a href="http://www.addthis.com/" target="_blank">AddThis Pro</a> for just $12 a month.</p>
+<p>We&rsquo;ve already seen these <a href="http://www.addthis.com/blog/2014/04/30/6-ways-addthis-content-recommendations-drive-engagement/" target="_blank">content recommendations outperform other techniques</a>, increasing the <strong>click-through rate on these tools by 50% or more</strong>. And there&rsquo;s more to come as we continue to learn and refine our personalization engine.</p>
+<p>Get access to this smart widgets and start personalizing your site. <a href="http://wwww.addthis.com/dashboard" target="_blank">Sign into your AddThis dashboard</a> to get going!</p></div>

@@ -1,0 +1,22 @@
+<p>WordPress 3.4 is ready for beta testers!</p>
+<p>As always, this is software still in development and <strong>we don’t recommend that you run it on a production site</strong> — set up a test site just to play with the new version. If you break it (find a bug), please report it, and if you’re a developer, try to help us fix it.</p>
+<p>If all goes well, we hope to release WordPress 3.4 in May. The more help we get with testing and fixing bugs, the sooner we will be able to release the final version. If you want to be a beta tester, you should check out the Codex article on <a title="Reporting Bugs for WordPress" href="http://codex.wordpress.org/Reporting_Bugs">how to report bugs</a>.</p>
+<p>Here’s some of what’s new:</p>
+<ul>
+<li>Theme Customizer with Previewer</li>
+<li>Flexible Custom Header Sizes</li>
+<li>Selecting Custom Header and Background Images from Media Library</li>
+<li>Better experience searching for and choosing a theme</li>
+</ul>
+<p>And some of the under-the-hood changes:</p>
+<ul>
+<li>New XML-RPC API for external and mobile applications</li>
+<li>New API for registering theme support for custom headers and backgrounds</li>
+<li>Performance improvements to WP_Query by splitting the query (Please test!)</li>
+<li>Internationalization improvements (improved performance and locale support)</li>
+<li>Performance and API improvements when working with lists of installed themes</li>
+<li>Support for installing child themes from the WordPress Themes Directory</li>
+</ul>
+<p>Remember, if you find something you think is a bug, report it! You can bring it up in the <a title="Alpha/Beta Support Forum" href="http://wordpress.org/support/forum/alphabeta">alpha/beta forum</a>, you can email it to the <a title="WP-testers mailing list info page" href="http://lists.automattic.com/mailman/listinfo/wp-testers">wp-testers list</a>, or if you’ve confirmed that other people are experiencing the same bug, you can report it on the <a title="WordPress Core Trac" href="http://core.trac.wordpress.org/">WordPress Core Trac</a>. (We recommend starting in the forum or on the mailing list.)</p>
+<p>Theme and plugin authors, if you haven’t been following the 3.4 development cycle, <strong>please start now</strong> so that you can update your themes and plugins to be compatible with the newest version of WordPress.</p>
+<p><a title="Download WordPress 3.4 Beta 1" href="http://wordpress.org/wordpress-3.4-beta1.zip">Download WordPress 3.4 Beta 1</a></p>

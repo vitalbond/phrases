@@ -1,0 +1,11 @@
+<div><p>WordPress 3.8.2 is now available. This is an important security release for all previous versions and we strongly encourage you to update your sites immediately.</p>
+<p>This releases fixes a weakness that could let an attacker force their way into your site by forging authentication cookies. This was discovered and fixed by <a href="http://joncave.co.uk/">Jon Cave</a> of the WordPress security team.</p>
+<p>It also contains a fix to prevent a user with the Contributor role from improperly publishing posts. Reported by <a href="http://edik.ch/">edik</a>.</p>
+<p>This release also fixes nine bugs and contains three other security hardening changes:</p>
+<ul><li>Pass along additional information when processing pingbacks to help hosts identify potentially abusive requests.</li>
+<li>Fix a low-impact SQL injection by trusted users. Reported by <a href="http://www.dxw.com/">Tom Adams</a> of dxw.</li>
+<li>Prevent possible cross-domain scripting through Plupload, the third-party library WordPress uses for uploading files. Reported by <a href="http://szgru.website.pl/">Szymon Gruszecki</a>.</li>
+</ul><p>We appreciated <a href="http://codex.wordpress.org/FAQ_Security">responsible disclosure</a> of these security issues directly to our security team. For more information on all of the changes, see the <a href="http://codex.wordpress.org/Version_3.8.2">release notes</a> or consult <a href="https://core.trac.wordpress.org/log/branches/3.8?rev=28057&#38;stop_rev=27024">the list of changes</a>.</p>
+<p><a href="http://wordpress.org/download/">Download WordPress 3.8.2</a> or venture over to <strong>Dashboard → Updates</strong> and simply click “Update Now.”</p>
+<p>Sites that support automatic background updates will be updated to WordPress 3.8.2 within 12 hours. If you are still on WordPress 3.7.1, you will be updated to 3.7.2, which contains the same security fixes as 3.8.2. We don’t support older versions, so please update to 3.8.2 for the latest and greatest.</p>
+<p>Already testing WordPress 3.9? The first release candidate is <a href="https://wordpress.org/wordpress-3.9-RC1.zip">now available</a> (zip) and it contains these security fixes. Look for a full announcement later today; we expect to release 3.9 next week.</p></div>

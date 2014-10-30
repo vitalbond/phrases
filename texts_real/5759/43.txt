@@ -1,0 +1,23 @@
+<div><p><a href="http://central.wordcamp.org/">WordCamps</a> are casual, locally-organized conferences that celebrate everything related to WordPress, and&nbsp;are a great opportunity to meet other WordPress users and professionals in your community. This has been a great year for WordCamps &mdash; there have been 56 so far in more than 20 countries, and there another 15 on the calendar before the year&rsquo;s over. If there&rsquo;s one near you, check it out! In addition to getting to know your local WordPress community, most WordCamps attract some traveling visitors a well, giving you the chance to meet contributors to the WordPress open source project and <a href="http://make.wordpress.org/">get involved</a> yourself.</p>
+<p>Here are the WordCamps on the schedule for the rest of this year.</p>
+<p>October 25-27: <strong><a href="http://2013.boston.wordcamp.org/">WordCamp Boston</a></strong>, Boston, MA, USA<br>
+October 25-26: <strong><a href="http://2013.malaga.wordcamp.org/">WordCamp Malaga</a></strong>, Spain<br>
+October 26: <strong><a href="http://2013.nepal.wordcamp.org/">WordCamp Nepal</a></strong>,&nbsp;Kathmandu, Nepal<br>
+October 26: <strong><a href="http://2013.sofia.wordcamp.org/">WordCamp Sofia</a></strong>, Bulgaria<br>
+November 7: <strong><a href="http://2013.capetown.wordcamp.org/">WordCamp Cape Town</a></strong>, South Africa<br>
+November 9:&nbsp;<strong><a href="http://2013.porto.wordcamp.org/">WordCamp Porto</a></strong>, Portugal<br>
+November 9-10:&nbsp;<strong><a href="http://2013.kenya.wordcamp.org/">WordCamp Kenya</a></strong>, Nairobi, Kenya<br>
+November 15:&nbsp;<strong><a href="http://2013.edmonton.wordcamp.org/">WordCamp Edmonton</a></strong>, AB, Canada<br>
+November 16-17:&nbsp;<strong><a href="http://2013.orlando.wordcamp.org/">WordCamp Orlando</a></strong>, FL, USA<br>
+November 16:&nbsp;<strong><a href="http://2013.denver.wordcamp.org/">WordCamp Denver</a></strong>, CO, USA<br>
+November 23-24:&nbsp;<strong><a href="http://2013.london.wordcamp.org/">WordCamp London</a></strong>, UK<br>
+November 23-24:&nbsp;<strong><a href="http://2013.raleigh.wordcamp.org/">WordCamp Raleigh</a></strong>, NC, USA<br>
+November 23:&nbsp;<strong><a href="http://2013.saopaulo.wordcamp.org/">WordCamp S&atilde;o Paulo</a></strong>, Brazil<br>
+December 14:&nbsp;<strong><a href="http://2013.vegas.wordcamp.org/">WordCamp Las Vegas</a></strong>, NV, USA<br>
+December 14-15:&nbsp;<strong><a href="http://2013.sevilla.wordcamp.org/">WordCamp Sevilla</a></strong>, Spain</p>
+<p>No WordCamps on this list in your area? Not to worry! There are thriving <a href="http://wordpress.meetup.com/">WordPress meetups</a> all over the world where you can meet like-minded people, and we maintain a library of <a href="http://wordpress.tv/category/wordcamptv/">WordCamp videos</a> at <a href="http://wordpress.tv/">WordPress.tv</a>.</p>
+<h3>Get Involved</h3>
+<ul><li>If you&rsquo;re interested in organizing a WordCamp in your area, check out our <a href="http://plan.wordcamp.org/">WordCamp planning</a> site.</li>
+<li>If you&rsquo;re interested in <a href="http://make.wordpress.org/community/meetup-interest-form/">starting a WordPress meetup</a> in your area, let us know and we can set up a group on meetup.com for you.</li>
+<li>And speaking of WordCamp videos, we&rsquo;ve recently enabled volunteer-generated subtitles/closed captioning of the videos on WordPress.tv to make them more accessible. Interested in helping? Check out the <a href="http://wordpress.tv/using-amara-org-to-caption-or-subtitle-a-wordpress-tv-video/">WordPress.tv subtitling instructions</a>.</li>
+</ul></div>

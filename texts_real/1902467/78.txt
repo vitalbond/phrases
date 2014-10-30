@@ -1,0 +1,14 @@
+<div><p>Today the W3C announced a <a href="https://www.w3.org/2014/privacyws/">Workshop on Privacy and User–Centric Controls</a>, to investigate strategies toward better privacy protection on the Web, especially for mobile devices.</p>
+<p>The Workshop focus will be on users: user experience, user behavior and how we can offer controls that provide the necessary transparency of privacy-affecting interactions. We will also discuss how developers can meet users’ privacy needs on the Web, including what APIs are necessary for user privacy.</p>
+<p>Sample Workshop topics include (but are not limited to):</p>
+<ul class="show_items"><li>Improving the UI for stateful services, overview of states</li>
+<li>Defaults for expiration of stateful situations</li>
+<li>How to convey state information to the User</li>
+<li>How to deal with logging and how to provide interfaces for logged data</li>
+<li>Requirements for private browsing on mobile</li>
+<li>A privacy ontology for mobile apps and their use of personal data</li>
+<li>The value of privacy in paradigms for mobile UI</li>
+<li>Selective release of personal information to apps</li>
+<li>Controlling the geo-location interfaces, including UI challenges</li>
+<li>Enforcing data expiry</li>
+</ul><p>W3C membership is not required to participate. There is no cost to participate and the event is open to all. All participants are required to submit a position paper or statement of interest by 10 October 2014. Learn more <a href="http://www.w3.org/2014/privacyws/participation.html">how to participate</a>.</p></div>

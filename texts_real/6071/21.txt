@@ -1,0 +1,5 @@
+<div><p><img src="http://blog.addthiscdn.com/wp-content/uploads/2014/07/Share_EmailTemp_Blue.gif" alt="Share_EmailTemp_Blue" width="900" height="676" class="alignnone size-full wp-image-8969"></p>
+<p>When we launched the <a href="http://www.addthis.com/blog/2014/06/10/whats-new-in-your-addthis-dashboard/">new AddThis Dashboard</a> that lets you manage your tools without constantly changing code, we didn’t realize just how important our Newsletter Sharing buttons were. Good thing all of you are here to remind us!<span id="more-8947"></span></p>
+<p>We heard a ton of comments about how awesome our newsletter sharing buttons are. Many people said that they come back to our site every week to build out links for their email newsletters.</p>
+<p>And why not? Email newsletters are a great way to connect with your audience and keep them coming back to your site. Include sharing buttons in your email marketing and you can even reach new users who learn about your site from an email blast.</p>
+<p>Grab <a href="https://www.addthis.com/dashboard#gallery/tools/newsletter-share">Newsletter Sharing Buttons</a> now from your AddThis Dashboard.</p></div>

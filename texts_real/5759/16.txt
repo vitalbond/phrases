@@ -1,0 +1,1 @@
+<div>WordPress 3.4.2, now available for download, is a maintenance and security release for all previous versions. After nearly 15 million downloads since 3.4 was released not three months ago, we’ve identified and fixed a number of nagging bugs, including: Fix some issues with older browsers in the administration area. Fix an issue where a theme [...]</div>
