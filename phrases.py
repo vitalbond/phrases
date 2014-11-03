@@ -52,7 +52,13 @@ def get_words_fd(documents):
 
 
 _wfr_cache = {}
-def word_freq_ratio(w):
+def wfr_clear_cache():
+    global _wfr_cache
+    _wfr_cache = {}
+
+
+def word_freq_ratio(w, words_fd):
+    global _wfr_cache
     if w in _wfr_cache:
         return _wfr_cache[w]
 
@@ -82,6 +88,7 @@ def phrase_output(words):
 def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
     documents_count = len(documents)
     phrases = []
+    words_fd = get_words_fd(documents)
 
     for N in range(2, maxLength+1):
         ngram_counter = {}
@@ -107,7 +114,7 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
 
             word_freq_ratios = []
             for w in ng:
-                wfr = word_freq_ratio(w)
+                wfr = word_freq_ratio(w, words_fd)
                 if wfr:
                     word_freq_ratios.append(wfr)
 
@@ -149,10 +156,39 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
     return phrases_sorted
 
 
+def process_dir(dir, opts):
+    global time_search, time_load
+    documents = []
+    tokens_set = set()
+    wfr_clear_cache()
+
+    time_load-=time.time()
+    for f in os.listdir(dir):
+        file = os.path.join(dir, f)
+        if os.path.isfile(file):
+            str = strip_tags(open(file, 'r').read().decode('utf-8'))
+            tokens = nltk.word_tokenize(str)
+            tokens = [w for w in tokens]
+            tokens_set = tokens_set.union(tokens)
+            documents.append(tokens)
+    time_load+=time.time()
+
+    if len(tokens_set & _english_stopwords) <= len(tokens_set & _non_english_stopwords):
+        print "Not english text"
+        return
+
+    time_search-=time.time()
+    phrases = find_phrases(documents, maxLength=maxLength, count=count)
+    time_search+=time.time()
+
+    for x in phrases:
+        print phrase_output(x[0]) + (' %0.2f (%0.2f, %0.2f, %0.2f)' % (x[1], x[2], x[3], x[4]) if '--v' in opts else '')
+
+
 try:
-    opts, args = getopt.getopt(sys.argv[1:], '', ['dir=', 'count==', 'maxLength=='])
+    opts, args = getopt.getopt(sys.argv[1:], '', ['dir=', 'count==', 'maxLength==', 'subdirs', 'v'])
 except getopt.GetoptError as err:
-    print('python phrases.py --dir=dir --count=20 --maxLength=6')
+    print('python phrases.py --dir=dir [--count=20] [--maxLength=6] [--v] [--subdirs]')
     exit()
 
 opts = dict(opts)
@@ -165,40 +201,22 @@ if not os.path.isdir(dir):
     print("Dir not exists")
     exit()
 
-time_start = time.time()
-
-documents = []
-tokens_set = set()
-for f in os.listdir(dir):
-    file = os.path.join(dir, f)
-    if os.path.isfile(file):
-        str = strip_tags(open(file, 'r').read().decode('utf-8'))
-        tokens = nltk.word_tokenize(str)
-        tokens = [w for w in tokens]
-        tokens_set = tokens_set.union(tokens)
-        documents.append(tokens)
-
-time_load = time.time()
-
-if len(tokens_set & _english_stopwords) <= len(tokens_set & _non_english_stopwords):
-    print("Not english text")
-    exit()
-
 time_corpus = -time.time()
 corpus_words_fd = get_corpus_words_fd()
 time_corpus += time.time()
 
-words_fd = get_words_fd(documents)
-phrases = find_phrases(documents, maxLength=maxLength, count=count)
+time_load = time_search = 0
 
-time_end = time.time()
+if '--subdirs' in opts:
+    for f in os.listdir(dir):
+        path = os.path.join(dir, f)
+        if os.path.isdir(path):
+            print f+':'
+            process_dir(path, opts)
+            print "\n"
+else:
+    process_dir(dir, opts)
 
-print "\n"
-
-for x in phrases:
-    print phrase_output(x[0]) #+ ' %0.2f (%0.2f, %0.2f, %0.2f)' % (x[1], x[2], x[3], x[4])
-
-print "\n"
 print "Load corpus: %0.2f sec" % time_corpus
-print "Load texts: %0.2f sec" % (time_load-time_start)
-print "Search phrases: %0.2f sec" % (time_end-time_load-time_corpus)
+print "Load texts: %0.2f sec" % (time_load)
+print "Search phrases: %0.2f sec" % (time_search)
