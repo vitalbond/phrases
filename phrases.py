@@ -89,14 +89,27 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
     documents_count = len(documents)
     phrases = []
     words_fd = get_words_fd(documents)
+    documents_lower = [[w.lower() for w in doc] for doc in documents]
 
     for N in range(2, maxLength+1):
+        ngram_names = {2: 'Bigram', 3: 'Trigram', 4: 'Quadgram'}
+        if N in ngram_names:
+            ngram_name = ngram_names[N]
+            finder = getattr(nltk, ngram_name + 'CollocationFinder')
+            finder = finder.from_documents(documents_lower)
+            finder.apply_word_filter(lambda w: is_punct(w))
+            finder.apply_ngram_filter(lambda *ngram: is_stopword(ngram[0]) or is_stopword(ngram[-1]))
+            ngram_measure = getattr(nltk.metrics.association, ngram_name + 'AssocMeasures')().mi_like
+            #phrase values by assoc measure
+            phrases_values1 = dict(finder.score_ngrams(ngram_measure))
+
         ngram_counter = {}
 
         for document in documents:
             ngrams_in_document = {}
             for ng in nltk.ngrams(document, N):
                 ng_lower = tuple([w.lower() for w in ng])
+                #filter by stopwords
                 if not is_stopword(ng_lower[0]) and not  is_stopword(ng_lower[-1]) and not any(is_punct(w) for w in ng_lower):
                     if not ng_lower in ngram_counter:
                         ngram_counter[ng_lower] = [0, 0, ng]
@@ -118,17 +131,21 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
                 if wfr:
                     word_freq_ratios.append(wfr)
 
+            #phrase value by words freq ratio
             phrase_value = gmean(word_freq_ratios)
 
             #filter by phrase value
             if phrase_value<15:
                 continue
 
-            phrases.append((ngram_counter[ng][2], ngram_counter[ng][0], N, ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value))
+            phrase_value2 = phrases_values1[ng] if maxLength<=4 else 0
+
+            phrases.append((ngram_counter[ng][2], ngram_counter[ng][0], N, ngram_counter[ng][0]*(N+2), ngram_counter[ng][1]*(N+2), phrase_value, phrase_value2))
 
     if not phrases:
         return []
 
+    #filter subphrases
     phrases_filtered = []
     for i in xrange(0, len(phrases)):
         ok = True
@@ -146,9 +163,13 @@ def find_phrases(documents, maxLength, count, min_doc_freq=0.03):
     max_freq = max([x[3] for x in phrases])
     max_freq_docs = max([x[4] for x in phrases])
     max_value = max([x[5] for x in phrases])
+    max_value2 = max([x[6] for x in phrases])
 
     #rank
-    phrases_ranked = [(x[0], 0.5*x[4]/max_freq_docs+0.3*x[3]/max_freq+0.2*x[5]/max_value, x[4], x[3], x[5]) for x in phrases]
+    if maxLength<=4:
+        phrases_ranked = [(x[0], 0.3*x[4]/max_freq_docs + 0.3*x[3]/max_freq + 0.2*x[5]/max_value + 0.2*x[6]/max_value2, x[4], x[3], x[5], x[6]) for x in phrases]
+    else:
+        phrases_ranked = [(x[0], 0.5*x[4]/max_freq_docs+0.3*x[3]/max_freq+0.2*x[5]/max_value, x[4], x[3], x[5], 0) for x in phrases]
 
     #sort & limit
     phrases_sorted = sorted(phrases_ranked, key=lambda t: -t[1])[:count]
@@ -182,7 +203,7 @@ def process_dir(dir, opts):
     time_search+=time.time()
 
     for x in phrases:
-        print phrase_output(x[0]) + (' %0.2f (%0.2f, %0.2f, %0.2f)' % (x[1], x[2], x[3], x[4]) if '--v' in opts else '')
+        print phrase_output(x[0]) + (' %0.2f (%0.2f, %0.2f, %0.2f, %0.2f)' % (x[1], x[2], x[3], x[4], x[5]) if '--v' in opts else '')
 
 
 try:
